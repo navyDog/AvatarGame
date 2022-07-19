@@ -5629,8 +5629,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGCFaDwIQ2Emb0="
 							},
-							"name": "ItemID",
-							"type": ""
+							"name": "ItemID"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -5638,8 +5637,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGCFaDwIQ2Emb0="
 							},
-							"name": "BuyerID",
-							"type": ""
+							"name": "BuyerID"
 						}
 					],
 					"operations": [
@@ -5694,8 +5692,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGCFaZYljOqlp4="
 							},
-							"name": "Id",
-							"type": ""
+							"name": "Id"
 						},
 						{
 							"_type": "UMLAttribute",
