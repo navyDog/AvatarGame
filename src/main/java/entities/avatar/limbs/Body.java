@@ -15,8 +15,8 @@ import javax.persistence.Table;
 					@AttributeOverride(name = "owner", column = @Column(name = "body_owner", length = 255)) })
 public class Body extends Item{
 
-	public Body(Long id) {
-		super(id);
+	public Body() {
+		super();
 		// TODO Auto-generated constructor stub
 	}
 

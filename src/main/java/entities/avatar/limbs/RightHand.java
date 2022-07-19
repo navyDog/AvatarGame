@@ -2,8 +2,8 @@ package entities.avatar.limbs;
 
 public class RightHand extends Item {
 
-	public RightHand(Long id) {
-		super(id);
+	public RightHand() {
+		super();
 		// TODO Auto-generated constructor stub
 	}
 

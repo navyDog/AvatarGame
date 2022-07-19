@@ -2,8 +2,8 @@ package entities.avatar.limbs;
 
 public class LeftFoot extends Item {
 
-	public LeftFoot(Long id) {
-		super(id);
+	public LeftFoot() {
+		super();
 		// TODO Auto-generated constructor stub
 	}
 

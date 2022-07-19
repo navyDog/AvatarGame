@@ -23,7 +23,7 @@ public abstract class Personne {
 	private String loginStatus;
 	private String mail;
 	
-	public Personne(Long id) {
+	public Personne() {
 
 	}
 

@@ -56,7 +56,7 @@ public class Avatar{
 	@JoinColumn(name="avatar_id_user", foreignKey = @ForeignKey(name="avatar_avatar_id_user_fk"))
 	private User owner;
 	
-	public Avatar(Long id) {
+	public Avatar() {
 
 	}
 

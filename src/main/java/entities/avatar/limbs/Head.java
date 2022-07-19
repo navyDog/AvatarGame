@@ -2,8 +2,8 @@ package entities.avatar.limbs;
 
 public class Head extends Item {
 
-	public Head(Long id) {
-		super(id);
+	public Head() {
+		super();
 		// TODO Auto-generated constructor stub
 	}
 

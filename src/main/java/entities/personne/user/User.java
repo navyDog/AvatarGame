@@ -12,8 +12,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import entities.avatar.limbs.Item;
 import entities.avatar.Avatar;
+import entities.avatar.limbs.Item;
 import entities.personne.Personne;
 
 
@@ -46,10 +46,8 @@ public class User extends Personne{
 	
 
 	
-	public User(Long id) {
-		super(id);
-		// TODO Auto-generated constructor stub
-
+	public User() {
+		super();
 	}
 
 }

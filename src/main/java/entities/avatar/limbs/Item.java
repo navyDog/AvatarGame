@@ -31,7 +31,7 @@ public abstract class Item {
 	@JoinColumn(name="Item_id_user", foreignKey = @ForeignKey(name="item_item_id_user_fk"))
 	private User owner;
 	
-	public Item(Long id) {
+	public Item() {
 
 	}
 
