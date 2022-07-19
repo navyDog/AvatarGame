@@ -19,7 +19,6 @@ import entities.avatar.limbs.LeftHand;
 import entities.avatar.limbs.RightFoot;
 import entities.avatar.limbs.RightHand;
 import entities.personne.user.User;
-import entities.root.Root;
 
 @Entity
 @Table(name = "avatar")
