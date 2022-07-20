@@ -15,6 +15,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import projetx.entities.avatar.Avatar;
 import projetx.entities.personne.Users;
 
 @Entity
@@ -39,7 +40,11 @@ public class Item {
 	@ManyToOne
 	@JoinColumn(name="item_id_user", foreignKey = @ForeignKey(name="item_item_id_user_fk"))
 	private Users owner;
-//	private Avatar avatar;
+    
+	@ManyToOne
+	@JoinColumn(name="item_id_avatar", foreignKey = @ForeignKey(name="item_item_id_avatar_fk"))
+	private Avatar avatar;
+	
 	@Column(name="item_craft_stat")
 	private Boolean crafted;	//crafting stat
 	
@@ -109,6 +114,16 @@ public class Item {
 
 	public void setOwner(Users owner) {
 		this.owner = owner;
+	}
+	
+	
+
+	public Avatar getAvatar() {
+		return avatar;
+	}
+
+	public void setAvatar(Avatar avatar) {
+		this.avatar = avatar;
 	}
 
 	@Override

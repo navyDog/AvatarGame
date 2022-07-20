@@ -6,10 +6,12 @@ import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
-
+import javax.persistence.NamedQuery;
+import projetx.entities.avatar.Avatar;
 import projetx.entities.items.Item;
 
 @Entity
@@ -22,6 +24,9 @@ import projetx.entities.items.Item;
 	@AttributeOverride(name = "email", column = @Column(name="users_email")),
 	@AttributeOverride(name = "pseudo", column = @Column(name="users_pseudo"))
 })
+@NamedQueries({
+				@NamedQuery(name="Users.findByKeyWithItems", query = "select u from Users u left join fetch u.items where u.id=:id")  
+})
 public class Users extends Personne {
 
 	@Column(name="users_name")
@@ -32,6 +37,9 @@ public class Users extends Personne {
 	private double solde;
 	@OneToMany (mappedBy = "owner")
 	private Set<Item> items;
+	
+	@OneToMany (mappedBy = "owner")
+	private Set<Avatar> avatar;
 	
 	public Users () {	
 		super();
@@ -68,6 +76,16 @@ public class Users extends Personne {
 	public void setItems(Set<Item> items) {
 		this.items = items;
 	}
+
+	public Set<Avatar> getAvatar() {
+		return avatar;
+	}
+
+	public void setAvatar(Set<Avatar> avatar) {
+		this.avatar = avatar;
+	}
+	
+	
 	
 	
 }

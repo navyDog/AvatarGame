@@ -2,14 +2,14 @@ package projetx.entities.dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
-import javax.persistence.TypedQuery;
-import projetx.entities.personne.Users;
+
+import projetx.entities.avatar.Avatar;
 import projetx.util.Context;
 
-public class DaoUsersJpaImpl implements DaoUsers {
+public class DaoAvatarJpaImpl implements DaoAvatar {
 
 	@Override
-	public void insert(Users obj) {
+	public void insert(Avatar obj) {
 		EntityManager em = Context.getEntityManagerFactory().createEntityManager();
 		EntityTransaction tx = em.getTransaction();
 		tx.begin();
@@ -20,7 +20,7 @@ public class DaoUsersJpaImpl implements DaoUsers {
 	}
 
 	@Override
-	public Users update(Users obj) {
+	public Avatar update(Avatar obj) {
 		EntityManager em = Context.getEntityManagerFactory().createEntityManager();
 		EntityTransaction tx = em.getTransaction();
 		tx.begin();
@@ -31,28 +31,13 @@ public class DaoUsersJpaImpl implements DaoUsers {
 	}
 
 	@Override
-	public void delete(Users obj) {
+	public void delete(Avatar obj) {
 		EntityManager em = Context.getEntityManagerFactory().createEntityManager();
 		EntityTransaction tx = em.getTransaction();
 		tx.begin();
 		em.remove(em.merge(obj));
 		tx.commit();
 		em.close();
-	}
-
-	@Override
-	public Users findByKeyWithItems(Long key) {
-		
-		EntityManager em = Context.getEntityManagerFactory().createEntityManager();
-		TypedQuery<Users> query = em.createNamedQuery("Users.findByKeyWithCommandes", Users.class);
-		query.setParameter("id", key);
-		Users users = null;
-		try {
-			users = query.getSingleResult();
-		} catch (Exception e) {
-		}
-		em.close();
-		return users;
 	}
 
 }
