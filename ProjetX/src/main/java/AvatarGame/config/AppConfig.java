@@ -41,7 +41,7 @@ public class AppConfig {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource) {
 		LocalContainerEntityManagerFactoryBean emf = new LocalContainerEntityManagerFactoryBean();
 		emf.setDataSource(dataSource);
-		emf.setPackagesToScan("projetx.entities.*");
+		emf.setPackagesToScan("AvatarGame.entities.*");
 		emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 		Properties properties = new Properties();
 		properties.setProperty("hibernate.dialect", env.getProperty("lcemfb.hibernate_dialect"));
