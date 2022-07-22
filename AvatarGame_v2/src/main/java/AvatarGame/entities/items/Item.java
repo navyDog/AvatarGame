@@ -38,7 +38,7 @@ public class Item {
 	@Column(name="item_price")
 	private Double prix;
 	@ManyToOne
-	@JoinColumn(name="item_id_user", foreignKey = @ForeignKey(name="item_item_id_user_fk"))
+	@JoinColumn(name="item_id_users", foreignKey = @ForeignKey(name="item_item_id_userss_fk"))
 	private Users owner;
     
 	@ManyToOne

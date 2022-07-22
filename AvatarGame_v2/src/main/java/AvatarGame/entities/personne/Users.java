@@ -6,8 +6,11 @@ import javax.persistence.AttributeOverride;
 import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
+import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -37,11 +40,15 @@ public class Users extends Personne {
 	private String prenom;
 	@Column(name="balance")
 	private double solde;
-	@OneToMany (mappedBy = "owner")
+	@OneToMany(mappedBy = "owner")
 	private Set<Item> items;
 	
 	@OneToMany (mappedBy = "owner")
-	private Set<Avatar> avatar;
+	private Set<Avatar> avatars;
+	
+	@OneToOne
+	@JoinColumn(name = "users_id_avatar", foreignKey = @ForeignKey(name="users_users_id_avatar_fk"))
+	private Avatar avatar;
 	
 	public Users () {	
 		super();
@@ -79,14 +86,23 @@ public class Users extends Personne {
 		this.items = items;
 	}
 
-	public Set<Avatar> getAvatar() {
+	public Set<Avatar> getAvatars() {
+		return avatars;
+	}
+
+	public void setAvatars(Set<Avatar> avatars) {
+		this.avatars = avatars;
+	}
+
+	public Avatar getAvatar() {
 		return avatar;
 	}
 
-	public void setAvatar(Set<Avatar> avatar) {
+	public void setAvatar(Avatar avatar) {
 		this.avatar = avatar;
 	}
-	
+
+
 	
 	
 	

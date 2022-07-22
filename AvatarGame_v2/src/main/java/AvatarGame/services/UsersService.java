@@ -20,7 +20,6 @@ public class UsersService {
 		if (users.getNom() == null || users.getPrenom() == null || users.getNom().isEmpty() || users.getNom().isEmpty()) {
 			throw new UsersException();
 		}
-		
 		users.setAvatar(null);
 		return usersRepo.save(users);
 	}
@@ -66,5 +65,11 @@ public class UsersService {
 	public void deleteById(Long id) {
 		delete(getById(id));
 	}
+	
+	public Users inscription() {
+		
+		return null;
+		}
+	
 }
 
