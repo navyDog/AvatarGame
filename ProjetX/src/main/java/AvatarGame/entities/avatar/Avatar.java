@@ -1,4 +1,4 @@
-package Avatar.entities.avatar;
+package AvatarGame.entities.avatar;
 
 import java.util.Objects;
 import java.util.Set;
