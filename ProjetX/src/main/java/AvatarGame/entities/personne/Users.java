@@ -11,7 +11,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import Avatar.entities.avatar.Avatar;
+import AvatarGame.entities.avatar.Avatar;
 import AvatarGame.entities.items.Item;
 
 import javax.persistence.NamedQuery;

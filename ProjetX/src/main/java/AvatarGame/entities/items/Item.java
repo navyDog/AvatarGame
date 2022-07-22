@@ -15,7 +15,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
-import Avatar.entities.avatar.Avatar;
+import AvatarGame.entities.avatar.Avatar;
 import AvatarGame.entities.personne.Users;
 
 @Entity
