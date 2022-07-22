@@ -30,7 +30,7 @@ public class AppConfig {
 	@Bean
 	public BasicDataSource dataSource() {
 		BasicDataSource dataSource = new BasicDataSource();
-		dataSource.setDriverClassName("org.postgresql.Driver");
+		dataSource.setDriverClassName(env.getProperty("datasource.driver"));
 		dataSource.setUrl(env.getProperty("datasource.url"));
 		dataSource.setUsername(env.getProperty("datasource.username"));
 		dataSource.setPassword(env.getProperty("datasource.password"));
@@ -44,10 +44,10 @@ public class AppConfig {
 		emf.setPackagesToScan("projetx.entities.*");
 		emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 		Properties properties = new Properties();
-		properties.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL10Dialect");
-		properties.setProperty("hibernate.hbm2ddl.auto", "validate");
-		properties.setProperty("hibernate.show_sql", env.getProperty("show_sql"));
-		properties.setProperty("hibernate.format_sql", "true");
+		properties.setProperty("hibernate.dialect", env.getProperty("lcemfb.hibernate_dialect"));
+		properties.setProperty("hibernate.hbm2ddl.auto", env.getProperty("lcemfb.hibernate_hbm2ddl"));
+		properties.setProperty("hibernate.show_sql", env.getProperty("lcemfb.show_sql"));
+		properties.setProperty("hibernate.format_sql", env.getProperty("lcemfb.format_sql"));
 		emf.setJpaProperties(properties);
 		return emf;
 	}
