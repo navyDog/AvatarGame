@@ -50,6 +50,7 @@ public class UsersService {
 		clientEnBase.setPrenom(users.getPrenom());
 		clientEnBase.setNom(users.getNom());
 		clientEnBase.setEmail(users.getEmail());
+		clientEnBase.setSolde(users.getSolde());
 		//to DO
 		return usersRepo.save(clientEnBase);
 	}
