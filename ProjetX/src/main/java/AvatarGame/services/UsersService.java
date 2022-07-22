@@ -49,6 +49,7 @@ public class UsersService {
 		Users clientEnBase = getById(users.getId());
 		clientEnBase.setPrenom(users.getPrenom());
 		clientEnBase.setNom(users.getNom());
+		clientEnBase.setEmail(users.getEmail());
 		//to DO
 		return usersRepo.save(clientEnBase);
 	}
