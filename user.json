@@ -15,7 +15,20 @@
 	  "van",
 	  "bao"
 	],
-      "solde":2
+      "solde":2,
+      "items":
+        [
+	  "",
+	  "",
+	  "",
+	],
+      "avatars":
+	[
+	  "",
+	  "",
+	  "",
+	],
+      "avatar":""
     },
 
     {
@@ -28,7 +41,20 @@
       "pseudo":"user",
       "nom":"EMILE",
       "prenoms":"Anthony",
-      "solde":567
+      "solde":567,
+      "items":
+        [
+	  "",
+	  "",
+	  "",
+	],
+      "avatars":
+	[
+	  "",
+	  "",
+	  "",
+	],
+      "avatar":""
     }
   ]
 }
