@@ -1,0 +1,34 @@
+{
+  "users":
+  [
+    {
+      "id";100,
+      "mdp":"jcq7djm",
+      "loginStatue":"Online",
+      "registerDate":"2012-04-23T18:25:43.511Z",
+      "email":"jbabkine@yahoo.com",
+      "pseudo":"jeanChien",
+      "nom":"BABKINE",
+      "prenoms":
+	[
+	  "jean",
+	  "van",
+	  "bao"
+	],
+      "solde":2
+    },
+
+    {
+
+      "id";101,
+      "mdp":"javascript",
+      "loginStatue":"offline",
+      "registerDate":"2015-06-23T18:25:43.550Z",
+      "email":"a.emile@gmail.com",
+      "pseudo":"user",
+      "nom":"EMILE",
+      "prenoms":"Anthony",
+      "solde":567
+    }
+  ]
+}
