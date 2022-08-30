@@ -27,7 +27,8 @@ import javax.persistence.NamedQuery;
 	@AttributeOverride(name = "pseudo", column = @Column(name="users_pseudo"))
 })
 @NamedQueries({
-				@NamedQuery(name="Users.findByKeyWithItems", query = "select u from Users u left join fetch u.items where u.id=:id")  
+				@NamedQuery(name="Users.findByKeyWithItems", query = "select u from Users u left join fetch u.items where u.id=:id"),
+				@NamedQuery(name="Users.findByKeyWithAvatars", query = "select u from Users u left join fetch u.avatar where u.id=:id") 
 })
 public class Users extends Personne {
 

@@ -12,6 +12,7 @@ public interface UsersRepository extends JpaRepository<Users, Long> {
 	List<Users> findBySolde(Double solde);
 	
 	Optional<Users> findByKeyWithItems(@Param("id") Long id);
+	Optional<Users> findByKeyWithAvatars(@Param("id") Long id);
 }
 
 

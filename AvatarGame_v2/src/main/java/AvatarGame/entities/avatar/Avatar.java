@@ -14,29 +14,36 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Version;
+
+import com.fasterxml.jackson.annotation.JsonView;
 
 import AvatarGame.entities.items.Item;
 import AvatarGame.entities.personne.Users;
+import AvatarGame.view.JsonViews;
 
 @Entity
 @Table(name="avatar")
 @SequenceGenerator(name = "seqAvatar", sequenceName = "seq_avatar", allocationSize = 1, initialValue = 20000 )
 public class Avatar {
-
+	@JsonView( {JsonViews.Base.class} )
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqAvatar" )
 	private Long Id;
+	@JsonView( {JsonViews.Base.class} )
 	@Column(name="name")
 	private String nom;
 	@Column(name="price")
 	private Double price;
-	
 	@OneToMany(mappedBy = "avatar")
 	private Set<Item> compose;
-	
+	@JsonView( {JsonViews.Base.class} )
 	@ManyToOne
 	@JoinColumn(name="avatar_id_user", foreignKey = @ForeignKey(name="avatar_avatar_id_user_fk"))
 	private Users owner;
+	
+	@Version
+	private int version;
 	
 	public Avatar() {
 		super();

@@ -5,10 +5,12 @@ package AvatarGame.services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import AvatarGame.entities.personne.Users;
 import AvatarGame.exceptions.UsersException;
 import AvatarGame.repositories.UsersRepository;
 import java.util.List;
+
 
 @Service
 public class UsersService {
@@ -66,5 +68,6 @@ public class UsersService {
 	public void deleteById(Long id) {
 		delete(getById(id));
 	}
+	
 }
 
