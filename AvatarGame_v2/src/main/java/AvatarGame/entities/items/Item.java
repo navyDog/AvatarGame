@@ -14,23 +14,35 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
+
+import com.fasterxml.jackson.annotation.JsonView;
 
 import AvatarGame.entities.avatar.Avatar;
 import AvatarGame.entities.personne.Users;
+import AvatarGame.view.JsonViews;
 
 @Entity
 @Table(name="items")
 @SequenceGenerator(sequenceName = "seqItem", name = "seq_item", allocationSize = 1, initialValue = 1)
 public class Item {
+	@JsonView( {JsonViews.Base.class} )
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqItem")
+	@Column(name = "item_id")
 	private Long id;
-	@Column(name="item_name")
+	@JsonView( {JsonViews.Base.class} )
+	@NotEmpty()
+	@Column(name="item_name", nullable = false)
 	private String nom;
-	@Column(name="item_limb")
+	@JsonView( {JsonViews.Base.class} )
+	@NotEmpty
+	@Column(name="item_limb", nullable = false)
 	@Enumerated(EnumType.ORDINAL)
 	private Membres membre;
-	@Column(name="item_rarity")
+	@JsonView( {JsonViews.Base.class} )
+	@NotEmpty
+	@Column(name="item_rarity", nullable = false)
 	@Enumerated(EnumType.ORDINAL)
 	private Rarity rarity;
 	@Column(name="item_picture")
@@ -44,8 +56,9 @@ public class Item {
 	@ManyToOne
 	@JoinColumn(name="item_id_avatar", foreignKey = @ForeignKey(name="item_item_id_avatar_fk"))
 	private Avatar avatar;
-	
-	@Column(name="item_craft_stat")
+	@JsonView( {JsonViews.Base.class} )
+	@NotEmpty
+	@Column(name="item_craft_stat", nullable = false)
 	private Boolean crafted;	//crafting stat
 	
 	public Item() {
