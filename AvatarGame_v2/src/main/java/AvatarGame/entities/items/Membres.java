@@ -6,6 +6,10 @@ public enum Membres {
 	
 	private String membre;
 
+	private Membres() {
+		
+	}
+	
 	private Membres(String membre) {
 		this.membre = membre;
 	}

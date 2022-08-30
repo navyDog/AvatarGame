@@ -36,13 +36,11 @@ public class Item {
 	@Column(name="item_name", nullable = false)
 	private String nom;
 	@JsonView( {JsonViews.Base.class} )
-	@NotEmpty
-	@Column(name="item_limb", nullable = false)
+	@Column(name="item_limb")
 	@Enumerated(EnumType.ORDINAL)
 	private Membres membre;
 	@JsonView( {JsonViews.Base.class} )
-	@NotEmpty
-	@Column(name="item_rarity", nullable = false)
+	@Column(name="item_rarity")
 	@Enumerated(EnumType.ORDINAL)
 	private Rarity rarity;
 	@Column(name="item_picture")
@@ -56,9 +54,7 @@ public class Item {
 	@ManyToOne
 	@JoinColumn(name="item_id_avatar", foreignKey = @ForeignKey(name="item_item_id_avatar_fk"))
 	private Avatar avatar;
-	@JsonView( {JsonViews.Base.class} )
-	@NotEmpty
-	@Column(name="item_craft_stat", nullable = false)
+	@Column(name="item_craft_stat")
 	private Boolean crafted;	//crafting stat
 	
 	public Item() {

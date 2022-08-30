@@ -17,7 +17,6 @@ import org.springframework.web.server.ResponseStatusException;
 
 import com.fasterxml.jackson.annotation.JsonView;
 
-import AvatarGame.entities.avatar.Avatar;
 import AvatarGame.entities.items.Item;
 import AvatarGame.services.ItemService;
 import AvatarGame.view.JsonViews;
