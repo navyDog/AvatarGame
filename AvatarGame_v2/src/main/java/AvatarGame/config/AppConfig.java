@@ -16,14 +16,14 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 @Configuration
-@ComponentScan(basePackages = {"projetx.services"})
+@ComponentScan(basePackages = {"AvatarGame.services"})
 //@PropertySource("classpath:config.properties")
-@EnableJpaRepositories(basePackages = "projetx.repositories")
+@EnableJpaRepositories(basePackages = "AvatarGame.repositories")
 public class AppConfig {
 
 //	@Autowired
 //	private Environment env;
-
+	
 	@Bean
 	public BasicDataSource dataSource() {
 		BasicDataSource dataSource = new BasicDataSource();

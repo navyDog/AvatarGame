@@ -14,7 +14,6 @@ import AvatarGame.repositories.AvatarRepository;
 @Service
 public class AvatarService {
 	
-
 	@Autowired
 	private AvatarRepository avatarRepo;
 	
