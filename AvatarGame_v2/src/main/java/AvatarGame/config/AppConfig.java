@@ -6,12 +6,9 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 import org.apache.commons.dbcp2.BasicDataSource;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.core.env.Environment;
 import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -20,20 +17,20 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 @Configuration
 @ComponentScan(basePackages = {"projetx.services"})
-@PropertySource("classpath:config.properties")
+//@PropertySource("classpath:config.properties")
 @EnableJpaRepositories(basePackages = "projetx.repositories")
 public class AppConfig {
 
-	@Autowired
-	private Environment env;
+//	@Autowired
+//	private Environment env;
 
 	@Bean
 	public BasicDataSource dataSource() {
 		BasicDataSource dataSource = new BasicDataSource();
-		dataSource.setDriverClassName(env.getProperty("datasource.driver"));
-		dataSource.setUrl(env.getProperty("datasource.url"));
-		dataSource.setUsername(env.getProperty("datasource.username"));
-		dataSource.setPassword(env.getProperty("datasource.password"));
+		dataSource.setDriverClassName("org.postgresql.Driver");
+		dataSource.setUrl("jdbc:postgresql://localhost:5432/AvatarGame");
+		dataSource.setUsername("postgres");
+		dataSource.setPassword("postgres");
 		return dataSource;
 	}
 
@@ -44,10 +41,10 @@ public class AppConfig {
 		emf.setPackagesToScan("AvatarGame.entities.*");
 		emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 		Properties properties = new Properties();
-		properties.setProperty("hibernate.dialect", env.getProperty("lcemfb.hibernate_dialect"));
-		properties.setProperty("hibernate.hbm2ddl.auto", env.getProperty("lcemfb.hibernate_hbm2ddl"));
-		properties.setProperty("hibernate.show_sql", env.getProperty("lcemfb.show_sql"));
-		properties.setProperty("hibernate.format_sql", env.getProperty("lcemfb.format_sql"));
+		properties.setProperty("hibernate.dialect","org.hibernate.dialect.PostgreSQL10Dialect");
+		properties.setProperty("hibernate.hbm2ddl.auto","create");
+		properties.setProperty("hibernate.show_sql","true");
+		properties.setProperty("hibernate.format_sql","true");
 		emf.setJpaProperties(properties);
 		return emf;
 	}
