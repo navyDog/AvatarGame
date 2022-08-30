@@ -18,7 +18,6 @@ import org.springframework.web.server.ResponseStatusException;
 
 import com.fasterxml.jackson.annotation.JsonView;
 
-import AvatarGame.entities.avatar.Avatar;
 import AvatarGame.entities.items.Item;
 import AvatarGame.services.ItemService;
 import AvatarGame.view.JsonViews;
@@ -37,7 +36,7 @@ public class ItemRestController {
 	}
 	
 	@GetMapping("")
-	@JsonView(JsonViews.Base.class)
+	@JsonView(JsonViews.ItemUpdate.class)
 	public List<Item> getAll() {
 		return itemService.getAll();
 	}
