@@ -15,6 +15,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Version;
+import javax.validation.constraints.NotEmpty;
 
 import com.fasterxml.jackson.annotation.JsonView;
 
@@ -29,9 +30,11 @@ public class Avatar {
 	@JsonView( {JsonViews.Base.class} )
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqAvatar" )
-	private Long Id;
+	@Column(name="avatar_id")
+	private Long id;
 	@JsonView( {JsonViews.Base.class} )
-	@Column(name="name")
+	@Column(name="name", nullable = false)
+	@NotEmpty(message = "nom obligatoire")
 	private String nom;
 	@Column(name="price")
 	private Double price;
@@ -41,7 +44,6 @@ public class Avatar {
 	@ManyToOne
 	@JoinColumn(name="avatar_id_user", foreignKey = @ForeignKey(name="avatar_avatar_id_user_fk"))
 	private Users owner;
-	
 	@Version
 	private int version;
 	
@@ -82,18 +84,16 @@ public class Avatar {
 	}
 
 	public Long getId() {
-		return Id;
+		return id;
 	}
 
 	public void setId(Long id) {
-		Id = id;
+		this.id = id;
 	}
-	
-	
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(Id);
+		return Objects.hash(id);
 	}
 
 	@Override
@@ -105,8 +105,12 @@ public class Avatar {
 		if (getClass() != obj.getClass())
 			return false;
 		Avatar other = (Avatar) obj;
-		return Objects.equals(Id, other.Id);
+		return Objects.equals(id, other.id);
 	}
+	
+	
+
+
 	
 	
 	
