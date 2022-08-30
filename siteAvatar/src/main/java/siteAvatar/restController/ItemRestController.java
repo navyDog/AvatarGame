@@ -10,6 +10,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import com.fasterxml.jackson.annotation.JsonView;
 
+import AvatarGame.entities.avatar.Avatar;
 import AvatarGame.entities.items.Item;
 import AvatarGame.services.ItemService;
 import AvatarGame.view.JsonViews;
@@ -48,4 +50,15 @@ public class ItemRestController {
 		}
 	return itemService.create(item);
 	}
+	
+	@PutMapping("/{id}")
+	@JsonView(JsonViews.ItemUpdate.class)
+	public Item update(@PathVariable Long id, @Valid @RequestBody Item item, BindingResult br) {
+		if (br.hasErrors()) {
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+		}
+		item.setId(id);
+		return itemService.update(item);
+	}
+	
 }
