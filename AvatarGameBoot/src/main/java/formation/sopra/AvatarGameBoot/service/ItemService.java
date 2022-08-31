@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import formation.sopra.AvatarGameBoot.entities.avatar.Avatar;
 import formation.sopra.AvatarGameBoot.entities.item.Item;
+import formation.sopra.AvatarGameBoot.entities.user.Users;
 import formation.sopra.AvatarGameBoot.exceptions.ItemException;
 import formation.sopra.AvatarGameBoot.repositories.ItemRepository;
 
@@ -18,6 +19,8 @@ public class ItemService {
 	private ItemRepository itemRepo;
 	@Autowired
 	private AvatarService avatarService;
+	@Autowired
+	private UsersService usersService;
 	
 	public Item create(Item item) {
 		item.setCrafted(false);
@@ -33,15 +36,20 @@ public class ItemService {
 		itemEnBase.setNom(item.getNom());
 		itemEnBase.setMembre(item.getMembre());
 		itemEnBase.setRarity(item.getRarity());
-//		itemEnBase.setImage(item.getImage());
+		itemEnBase.setImage(item.getImage());
 //		itemEnBase.setPrix(item.getPrix()); WIP
-//		itemEnBase.setOwner(item.getOwner());
 		Avatar avatar = item.getAvatar();
 		if (avatar != null) {
 			avatar = avatarService.getById(avatar.getId());
 			itemEnBase.setAvatar(avatar);
 		}
 		itemEnBase.setAvatar(item.getAvatar());
+		Users user = item.getOwner();
+		if (user != null) {
+			user = usersService.getById(user.getId());
+			itemEnBase.setOwner(user);
+		}
+		itemEnBase.setOwner(item.getOwner());
 		itemEnBase.setCrafted(item.getCrafted());
 		//to DO
 		return itemRepo.save(itemEnBase);

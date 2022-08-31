@@ -45,11 +45,13 @@ public class Item {
 	@Enumerated(EnumType.ORDINAL)
 	private Rarity rarity;
 	@Column(name="item_picture")
+	@JsonView( {JsonViews.Base.class} )
 	private String image;
 	@Column(name="item_price")
 	private Double prix;
 	@ManyToOne
 	@JoinColumn(name="item_id_user", foreignKey = @ForeignKey(name="item_item_id_user_fk"))
+	@JsonView( {JsonViews.Base.class} )
 	private Users owner;
     
 	@ManyToOne
@@ -57,7 +59,7 @@ public class Item {
 	@JsonView( {JsonViews.ItemUpdate.class} )
 	private Avatar avatar;
 	@Column(name="item_craft_stat")
-	@JsonView( {JsonViews.ItemUpdate.class} )
+	@JsonView( {JsonViews.Base.class} )
 	private Boolean crafted;	//crafting stat
 	@Version
 	private int version;

@@ -38,6 +38,7 @@ public class Avatar {
 	private String nom;
 	@Column(name="price")
 	private Double price;
+	@JsonView( {JsonViews.AvatarWithItem.class} )
 	@OneToMany(mappedBy = "avatar")
 	private Set<Item> compose;
 	@JsonView( {JsonViews.Base.class} )
