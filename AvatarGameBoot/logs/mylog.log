@@ -1,0 +1,163 @@
+2022-08-31 12:43:51.048  INFO 45398 --- [main] f.s.A.AvatarGameBootApplication          : Starting AvatarGameBootApplication using Java 17.0.3 on navydog-ThinkPad-T470-W10DG with PID 45398 (/home/navydog/Documents/ProjetInfo/AvatarGameBoot/target/classes started by navydog in /home/navydog/Documents/ProjetInfo/AvatarGameBoot)
+2022-08-31 12:43:51.053  INFO 45398 --- [main] f.s.A.AvatarGameBootApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-31 12:43:51.912  INFO 45398 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-31 12:43:51.977  INFO 45398 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2022-08-31 12:43:52.773  INFO 45398 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-31 12:43:52.790  INFO 45398 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-31 12:43:52.791  INFO 45398 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-31 12:43:52.943  INFO 45398 --- [main] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring embedded WebApplicationContext
+2022-08-31 12:43:52.943  INFO 45398 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1804 ms
+2022-08-31 12:43:53.147  INFO 45398 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-31 12:43:53.211  INFO 45398 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-31 12:43:53.403  INFO 45398 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-31 12:43:53.523  INFO 45398 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-31 12:43:53.921  INFO 45398 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-31 12:43:53.946  INFO 45398 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-08-31 12:43:55.261  INFO 45398 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-31 12:43:55.422  INFO 45398 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:43:56.104  WARN 45398 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-31 12:43:56.604  INFO 45398 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/avatar'
+2022-08-31 12:43:56.622  INFO 45398 --- [main] f.s.A.AvatarGameBootApplication          : Started AvatarGameBootApplication in 6.113 seconds (JVM running for 7.081)
+2022-08-31 12:44:06.460  INFO 45398 --- [RMI TCP Connection(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-31 12:44:06.477  INFO 45398 --- [RMI TCP Connection(6)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-08-31 12:44:06.508  INFO 45398 --- [RMI TCP Connection(6)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:44:06.512  INFO 45398 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-31 12:44:06.549  INFO 45398 --- [RMI TCP Connection(6)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-31 12:44:08.830  INFO 45508 --- [main] f.s.A.AvatarGameBootApplication          : Starting AvatarGameBootApplication using Java 17.0.3 on navydog-ThinkPad-T470-W10DG with PID 45508 (/home/navydog/Documents/ProjetInfo/AvatarGameBoot/target/classes started by navydog in /home/navydog/Documents/ProjetInfo/AvatarGameBoot)
+2022-08-31 12:44:08.835  INFO 45508 --- [main] f.s.A.AvatarGameBootApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-31 12:44:09.928  INFO 45508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-31 12:44:10.004  INFO 45508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2022-08-31 12:44:10.689  INFO 45508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-31 12:44:10.710  INFO 45508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-31 12:44:10.713  INFO 45508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-31 12:44:10.847  INFO 45508 --- [main] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring embedded WebApplicationContext
+2022-08-31 12:44:10.847  INFO 45508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1926 ms
+2022-08-31 12:44:11.030  INFO 45508 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-31 12:44:11.082  INFO 45508 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-31 12:44:11.263  INFO 45508 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-31 12:44:11.379  INFO 45508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-31 12:44:11.764  INFO 45508 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-31 12:44:11.789  INFO 45508 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-08-31 12:44:12.876  INFO 45508 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-31 12:44:12.998  INFO 45508 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:44:13.563  WARN 45508 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-31 12:44:14.060  INFO 45508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/avatar'
+2022-08-31 12:44:14.080  INFO 45508 --- [main] f.s.A.AvatarGameBootApplication          : Started AvatarGameBootApplication in 5.792 seconds (JVM running for 6.945)
+2022-08-31 12:46:32.215  INFO 45508 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-31 12:46:32.231  INFO 45508 --- [RMI TCP Connection(12)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-08-31 12:46:32.260  INFO 45508 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:46:32.263  INFO 45508 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-31 12:46:32.306  INFO 45508 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-31 12:46:35.162  INFO 45658 --- [main] f.s.A.AvatarGameBootApplication          : Starting AvatarGameBootApplication using Java 17.0.3 on navydog-ThinkPad-T470-W10DG with PID 45658 (/home/navydog/Documents/ProjetInfo/AvatarGameBoot/target/classes started by navydog in /home/navydog/Documents/ProjetInfo/AvatarGameBoot)
+2022-08-31 12:46:35.169  INFO 45658 --- [main] f.s.A.AvatarGameBootApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-31 12:46:36.097  INFO 45658 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-31 12:46:36.173  INFO 45658 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 3 JPA repository interfaces.
+2022-08-31 12:46:36.859  INFO 45658 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-31 12:46:36.874  INFO 45658 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-31 12:46:36.874  INFO 45658 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-31 12:46:36.998  INFO 45658 --- [main] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring embedded WebApplicationContext
+2022-08-31 12:46:36.999  INFO 45658 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1743 ms
+2022-08-31 12:46:37.175  INFO 45658 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-31 12:46:37.228  INFO 45658 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-31 12:46:37.421  INFO 45658 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-31 12:46:37.538  INFO 45658 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-31 12:46:37.925  INFO 45658 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-31 12:46:37.953  INFO 45658 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-08-31 12:46:39.169  INFO 45658 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-31 12:46:39.314  INFO 45658 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:46:39.884  WARN 45658 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-31 12:46:40.399  INFO 45658 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/avatar'
+2022-08-31 12:46:40.417  INFO 45658 --- [main] f.s.A.AvatarGameBootApplication          : Started AvatarGameBootApplication in 5.8 seconds (JVM running for 7.062)
+2022-08-31 12:47:00.343  INFO 45658 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-31 12:47:00.344  INFO 45658 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-31 12:47:00.346  INFO 45658 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-31 12:48:36.100  INFO 45658 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-31 12:48:36.111  INFO 45658 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-08-31 12:48:36.113  INFO 45658 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[.[localhost].[/avatar]        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-08-31 12:48:36.135  INFO 45658 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:48:36.140  INFO 45658 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-31 12:48:36.181  INFO 45658 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-31 12:48:41.171  INFO 46013 --- [main] f.s.A.AvatarGameBootApplication          : Starting AvatarGameBootApplication using Java 17.0.3 on navydog-ThinkPad-T470-W10DG with PID 46013 (/home/navydog/Documents/ProjetInfo/AvatarGameBoot/target/classes started by navydog in /home/navydog/Documents/ProjetInfo/AvatarGameBoot)
+2022-08-31 12:48:41.180  INFO 46013 --- [main] f.s.A.AvatarGameBootApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-31 12:48:42.483  INFO 46013 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-31 12:48:42.570  INFO 46013 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 3 JPA repository interfaces.
+2022-08-31 12:48:43.379  INFO 46013 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-31 12:48:43.405  INFO 46013 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-31 12:48:43.406  INFO 46013 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-31 12:48:43.741  INFO 46013 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-31 12:48:43.762  INFO 46013 --- [main] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring embedded WebApplicationContext
+2022-08-31 12:48:43.763  INFO 46013 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2481 ms
+2022-08-31 12:48:44.010  INFO 46013 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-31 12:48:44.085  INFO 46013 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-31 12:48:44.315  INFO 46013 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-31 12:48:44.465  INFO 46013 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-31 12:48:44.947  INFO 46013 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-31 12:48:44.976  INFO 46013 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-08-31 12:48:46.342  INFO 46013 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-31 12:48:46.476  INFO 46013 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:48:47.220  WARN 46013 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-31 12:48:47.770  INFO 46013 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/avatar'
+2022-08-31 12:48:47.786  INFO 46013 --- [main] f.s.A.AvatarGameBootApplication          : Started AvatarGameBootApplication in 7.564 seconds (JVM running for 8.969)
+2022-08-31 12:49:04.261  INFO 46013 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-31 12:49:04.261  INFO 46013 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-31 12:49:04.264  INFO 46013 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-08-31 12:50:29.699  INFO 46013 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-31 12:50:29.709  INFO 46013 --- [RMI TCP Connection(11)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-08-31 12:50:29.712  INFO 46013 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.c.C.[.[localhost].[/avatar]        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-08-31 12:50:29.724  INFO 46013 --- [RMI TCP Connection(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:50:29.726  INFO 46013 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-31 12:50:29.761  INFO 46013 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-31 12:50:32.230  INFO 46257 --- [main] f.s.A.AvatarGameBootApplication          : Starting AvatarGameBootApplication using Java 17.0.3 on navydog-ThinkPad-T470-W10DG with PID 46257 (/home/navydog/Documents/ProjetInfo/AvatarGameBoot/target/classes started by navydog in /home/navydog/Documents/ProjetInfo/AvatarGameBoot)
+2022-08-31 12:50:32.234  INFO 46257 --- [main] f.s.A.AvatarGameBootApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-31 12:50:33.657  INFO 46257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-31 12:50:33.733  INFO 46257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 3 JPA repository interfaces.
+2022-08-31 12:50:34.585  INFO 46257 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-31 12:50:34.602  INFO 46257 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-31 12:50:34.603  INFO 46257 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-31 12:50:34.951  INFO 46257 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-31 12:50:34.967  INFO 46257 --- [main] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring embedded WebApplicationContext
+2022-08-31 12:50:34.967  INFO 46257 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2590 ms
+2022-08-31 12:50:35.160  INFO 46257 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-31 12:50:35.213  INFO 46257 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-31 12:50:35.380  INFO 46257 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-31 12:50:35.499  INFO 46257 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-31 12:50:35.950  INFO 46257 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-31 12:50:35.979  INFO 46257 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-08-31 12:50:37.208  INFO 46257 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-31 12:50:37.339  INFO 46257 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:50:37.867  WARN 46257 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-31 12:50:38.334  INFO 46257 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/avatar'
+2022-08-31 12:50:38.356  INFO 46257 --- [main] f.s.A.AvatarGameBootApplication          : Started AvatarGameBootApplication in 6.698 seconds (JVM running for 7.831)
+2022-08-31 12:50:53.064  INFO 46257 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-31 12:50:53.065  INFO 46257 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-31 12:50:53.068  INFO 46257 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-08-31 12:54:49.342  INFO 46257 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-31 12:54:49.346  INFO 46257 --- [RMI TCP Connection(15)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-08-31 12:54:49.348  INFO 46257 --- [RMI TCP Connection(15)-127.0.0.1] o.a.c.c.C.[.[localhost].[/avatar]        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-08-31 12:54:49.358  INFO 46257 --- [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:54:49.360  INFO 46257 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-31 12:54:49.379  INFO 46257 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-31 12:54:51.604  INFO 46488 --- [main] f.s.A.AvatarGameBootApplication          : Starting AvatarGameBootApplication using Java 17.0.3 on navydog-ThinkPad-T470-W10DG with PID 46488 (/home/navydog/Documents/ProjetInfo/AvatarGameBoot/target/classes started by navydog in /home/navydog/Documents/ProjetInfo/AvatarGameBoot)
+2022-08-31 12:54:51.622  INFO 46488 --- [main] f.s.A.AvatarGameBootApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-08-31 12:54:52.569  INFO 46488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-31 12:54:52.637  INFO 46488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 3 JPA repository interfaces.
+2022-08-31 12:54:53.384  INFO 46488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-31 12:54:53.397  INFO 46488 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-31 12:54:53.398  INFO 46488 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-31 12:54:53.709  INFO 46488 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-08-31 12:54:53.729  INFO 46488 --- [main] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring embedded WebApplicationContext
+2022-08-31 12:54:53.730  INFO 46488 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2023 ms
+2022-08-31 12:54:53.898  INFO 46488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-31 12:54:53.950  INFO 46488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-08-31 12:54:54.115  INFO 46488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-31 12:54:54.221  INFO 46488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-31 12:54:54.593  INFO 46488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-31 12:54:54.615  INFO 46488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-08-31 12:54:55.660  INFO 46488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-31 12:54:55.829  INFO 46488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-31 12:54:55.892  WARN 46488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-31 12:54:56.812  INFO 46488 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/avatar'
+2022-08-31 12:54:56.827  INFO 46488 --- [main] f.s.A.AvatarGameBootApplication          : Started AvatarGameBootApplication in 5.788 seconds (JVM running for 6.854)
+2022-08-31 12:55:11.627  INFO 46488 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-31 12:55:11.627  INFO 46488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-31 12:55:11.630  INFO 46488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

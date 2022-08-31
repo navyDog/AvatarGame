@@ -28,8 +28,8 @@ public class AppConfig {
 	public BasicDataSource dataSource() {
 		BasicDataSource dataSource = new BasicDataSource();
 		dataSource.setDriverClassName("org.postgresql.Driver");
-		dataSource.setUrl("jdbc:postgresql://localhost:5432/AvatarGame");
-		dataSource.setUsername("postgres");
+		dataSource.setUrl("jdbc:postgresql://localhost:5432/avatargame");
+		dataSource.setUsername("navydog");
 		dataSource.setPassword("postgres");
 		return dataSource;
 	}
@@ -42,7 +42,7 @@ public class AppConfig {
 		emf.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 		Properties properties = new Properties();
 		properties.setProperty("hibernate.dialect","org.hibernate.dialect.PostgreSQL10Dialect");
-		properties.setProperty("hibernate.hbm2ddl.auto","validate");
+		properties.setProperty("hibernate.hbm2ddl.auto","create");
 		properties.setProperty("hibernate.show_sql","true");
 		properties.setProperty("hibernate.format_sql","true");
 		emf.setJpaProperties(properties);
