@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import formation.sopra.AvatarGameBoot.entities.avatar.Avatar;
 import formation.sopra.AvatarGameBoot.exceptions.AvatarException;
 import formation.sopra.AvatarGameBoot.repositories.AvatarRepository;
+import formation.sopra.AvatarGameBoot.repositories.ItemRepository;
 
 
 
@@ -16,6 +17,8 @@ public class AvatarService {
 	
 	@Autowired
 	private AvatarRepository avatarRepo;
+	@Autowired
+	private ItemRepository itemRepository;
 	
 	public Avatar create(Avatar avatar) {
 
@@ -27,12 +30,11 @@ public class AvatarService {
 	}
 
 	public Avatar update(Avatar avatar) {
-		Avatar clientEnBase = getById(avatar.getId());
-		clientEnBase.setNom(avatar.getNom());
-		clientEnBase.setPrice(avatar.getPrice());
-	
-		//to DO
-		return avatarRepo.save(clientEnBase);
+		Avatar avatarEnBase = getById(avatar.getId());
+		avatarEnBase.setNom(avatar.getNom());
+		avatarEnBase.setPrice(avatar.getPrice());
+		avatarEnBase.setOwner(avatar.getOwner());
+		return avatarRepo.save(avatarEnBase);
 	}
 
 	public List<Avatar> getAll() {
@@ -40,7 +42,8 @@ public class AvatarService {
 	}
 
 	public void delete(Avatar avatar) {
-		//to DO
+		itemRepository.deleteItemByAvatar(avatar);
+		avatarRepo.delete(avatar);
 	}
 
 	public void deleteById(Long id) {

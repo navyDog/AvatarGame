@@ -60,7 +60,7 @@ public class ItemService {
 	}
 	
 	public void delete(Item item) {
-		//to DO
+		itemRepo.delete(item);
 	}
 	
 	public void deleteById(Long id) {

@@ -12,6 +12,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Pattern;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -19,17 +22,18 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 
 @Entity
-@SequenceGenerator(name="seqUtilisateur",sequenceName="seq_utilisateur",allocationSize = 1, initialValue = 1)
+@Table(name = "utilisateur")
+@SequenceGenerator(name="seqUtilisateur",sequenceName="seq_utilisateur",allocationSize = 1, initialValue = 99999)
 public class Utilisateur implements UserDetails{
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "seqUtilisateur")
 	private Long id;
 	@Column(name = "login", nullable = false, unique = true)
+	@NotEmpty
 	private String login;
-	@Column(name = "password", nullable = false, length = 255)
+	@Column(name = "password", nullable = false)
+	//@Pattern(regexp = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[*$.@!#]).{4,}$")
 	private String password;
-	@Enumerated(EnumType.STRING)
-	private Role role;
 
 	public Utilisateur() {
 		
@@ -50,21 +54,15 @@ public class Utilisateur implements UserDetails{
 	public void setLogin(String login) {
 		this.login = login;
 	}
-
+	
+	@Override
 	public String getPassword() {
 		return password;
 	}
 
+	
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	public Role getRole() {
-		return role;
-	}
-
-	public void setRole(Role role) {
-		this.role = role;
 	}
 
 	@Override
@@ -87,7 +85,7 @@ public class Utilisateur implements UserDetails{
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		// TODO Auto-generated method stub
-		return Arrays.asList(new SimpleGrantedAuthority(role.toString()));
+		return Arrays.asList(new SimpleGrantedAuthority("ROLE_"+getClass().getSimpleName().toUpperCase()));
 	}
 
 	@Override

@@ -11,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -26,6 +28,9 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 @Entity
 @Table(name="avatar")
 @SequenceGenerator(name = "seqAvatar", sequenceName = "seq_avatar", allocationSize = 1, initialValue = 20000 )
+@NamedQueries({
+	@NamedQuery(name="Avatar.findByKeyWithItems", query = "select a from Avatar a left join fetch a.compose where a.id=:id"),
+})
 public class Avatar {
 	@JsonView( {JsonViews.Base.class} )
 	@Id

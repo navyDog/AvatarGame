@@ -1,0 +1,33 @@
+logging:
+  file:
+    name: logs/mylog.log
+  level:
+    formation:
+      sopra:
+        formationSpringBoot:
+          service:
+            DisplayConsolService: trace
+    root: info
+server:
+  servlet:
+    context-path: /avatar
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/avatargame
+    username: navydog
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect
+        format_sql: true
+        show_sql: false
+  main:
+    allow-circular-references: true
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
