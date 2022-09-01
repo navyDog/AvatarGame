@@ -28,6 +28,10 @@ public class AvatarService {
 	public Avatar getById(Long id) {
 		return avatarRepo.findById(id).orElseThrow(AvatarException::new);
 	}
+	
+	public Avatar getByIdWithItems(Long id) {
+		return avatarRepo.findByKeyWithItems(id).orElseThrow(AvatarException::new);
+	}
 
 	public Avatar update(Avatar avatar) {
 		Avatar avatarEnBase = getById(avatar.getId());

@@ -37,6 +37,12 @@ public class AvatarRestController {
 		return avatarService.getById(id);
 	}
 	
+	@GetMapping("/{id}/items")
+	@JsonView(JsonViews.AvatarWithItem.class)
+	public Avatar getByIdWithItems(@PathVariable Long id) {
+		return avatarService.getByIdWithItems(id);
+	}
+	
 	@GetMapping("")
 	@JsonView(JsonViews.Base.class)
 	public List<Avatar> getAll() {
