@@ -62,12 +62,12 @@ item_id,item_craft_stat,item_picture,item_limb,item_name,item_price,item_rarity,
 61,FALSE,head_10,0,Visière du Guerriero,0,72,0,0,0
 62,FALSE,head_10,0,Visière du Guerriero,0,22,0,0,0
 63,FALSE,head_10,0,Visière du Guerriero,0,5,0,0,0
-64,FALSE,head_20,0,Casque du Samurai,0,72,0,0,0
-65,FALSE,head_20,0,Casque du Samurai,0,22,0,0,0
-66,FALSE,head_20,0,Casque du Samurai,0,5,0,0,0
-67,FALSE,head_6,0,Bi-cornes du roi Viking,0,22,0,0,0
-68,FALSE,head_6,0,Bi-cornes du roi Viking,0,5,0,0,0
-69,FALSE,head_6,0,Bi-cornes du roi Viking,0,1,0,0,0
+64,FALSE,head_20,0,Casque du Samourai,0,72,0,0,0
+65,FALSE,head_20,0,Casque du Samourai,0,22,0,0,0
+66,FALSE,head_20,0,Casque du Samourai,0,5,0,0,0
+67,FALSE,head_6,0,Bi-cornes du roi Germanique,0,22,0,0,0
+68,FALSE,head_6,0,Bi-cornes du roi Germanique,0,5,0,0,0
+69,FALSE,head_6,0,Bi-cornes du roi Germanique,0,1,0,0,0
 70,FALSE,head_7,0,Casque en Or de l'Empereur,0,22,0,0,0
 71,FALSE,head_7,0,Casque en Or de l'Empereur,0,5,0,0,0
 72,FALSE,head_7,0,Casque en Or de l'Empereur,0,1,0,0,0
@@ -91,8 +91,8 @@ item_id,item_craft_stat,item_picture,item_limb,item_name,item_price,item_rarity,
 90,FALSE,head_18,0,Casque du Damné Boultag,0,1,0,0,0
 91,FALSE,head_19,0,Vision du Bushi Yamino,0,5,0,0,0
 92,FALSE,head_19,0,Vision du Bushi Yamino,0,1,0,0,0
-93,FALSE,head_31,0,Masque de l'Unique,0,1,0,0,0
-94,FALSE,head_32,0,Casque du Serviteur du Mal,0,1,0,0,0
+93,FALSE,head_31,0,Orchestrateur de l'Unique,0,1,0,0,0
+94,FALSE,head_32,0,Visage du Serviteur du Mal,0,1,0,0,0
 95,FALSE,body_1,1,Etoffe de cuir,0,72,0,0,0
 96,FALSE,body_1,1,Etoffe de cuir,0,22,0,0,0
 97,FALSE,body_2,1,Cage en fer,0,72,0,0,0
@@ -125,8 +125,8 @@ item_id,item_craft_stat,item_picture,item_limb,item_name,item_price,item_rarity,
 124,FALSE,body_27,1,Epaulière droite du Samnite,0,22,0,0,0
 125,FALSE,body_28,1,Cotte de mailles du Myrmidon,0,72,0,0,0
 126,FALSE,body_28,1,Cotte de mailles du Myrmidon,0,22,0,0,0
-127,FALSE,body_29,1,Plastron échancré de l'hoplites,0,72,0,0,0
-128,FALSE,body_29,1,Plastron échancré de l'hoplites,0,22,0,0,0
+127,FALSE,body_29,1,Plastron échancré de l'hoplite,0,72,0,0,0
+128,FALSE,body_29,1,Plastron échancré de l'hoplite,0,22,0,0,0
 129,FALSE,body_30,1,Plastron du centurion,0,72,0,0,0
 130,FALSE,body_30,1,Plastron du centurion,0,22,0,0,0
 131,FALSE,body_33,1,Epaulière du Berzerker,0,72,0,0,0
@@ -156,12 +156,12 @@ item_id,item_craft_stat,item_picture,item_limb,item_name,item_price,item_rarity,
 155,FALSE,body_10,1,Armatura du Guerriero,0,72,0,0,0
 156,FALSE,body_10,1,Armatura du Guerriero,0,22,0,0,0
 157,FALSE,body_10,1,Armatura du Guerriero,0,5,0,0,0
-158,FALSE,body_20,1,Armure du Samurai,0,72,0,0,0
-159,FALSE,body_20,1,Armure du Samurai,0,22,0,0,0
-160,FALSE,body_20,1,Armure du Samurai,0,5,0,0,0
-161,FALSE,body_6,1,Torse du roi Viking,0,22,0,0,0
-162,FALSE,body_6,1,Torse du roi Viking,0,5,0,0,0
-163,FALSE,body_6,1,Torse du roi Viking,0,1,0,0,0
+158,FALSE,body_20,1,Armure du Samourai,0,72,0,0,0
+159,FALSE,body_20,1,Armure du Samourai,0,22,0,0,0
+160,FALSE,body_20,1,Armure du Samourai,0,5,0,0,0
+161,FALSE,body_6,1,Torse du roi Germanique,0,22,0,0,0
+162,FALSE,body_6,1,Torse du roi Germanique,0,5,0,0,0
+163,FALSE,body_6,1,Torse du roi Germanique,0,1,0,0,0
 164,FALSE,body_7,1,Armure en Or de l'Empereur,0,22,0,0,0
 165,FALSE,body_7,1,Armure en Or de l'Empereur,0,5,0,0,0
 166,FALSE,body_7,1,Armure en Or de l'Empereur,0,1,0,0,0
@@ -219,8 +219,8 @@ item_id,item_craft_stat,item_picture,item_limb,item_name,item_price,item_rarity,
 218,FALSE,hand_left_27,2,Gantelet gauche en fer du Samnite,0,22,0,0,0
 219,FALSE,hand_left_28,2,Main gauche du Myrmidon,0,72,0,0,0
 220,FALSE,hand_left_28,2,Main gauche du Myrmidon,0,22,0,0,0
-221,FALSE,hand_left_29,2,Avant-bras gauche de l'hoplites,0,72,0,0,0
-222,FALSE,hand_left_29,2,Avant-bras gauche de l'hoplites,0,22,0,0,0
+221,FALSE,hand_left_29,2,Avant-bras gauche de l'hoplite,0,72,0,0,0
+222,FALSE,hand_left_29,2,Avant-bras gauche de l'hoplite,0,22,0,0,0
 223,FALSE,hand_left_30,2,Gantelet gauche du centurion,0,72,0,0,0
 224,FALSE,hand_left_30,2,Gantelet gauche du centurion,0,22,0,0,0
 225,FALSE,hand_left_33,2,Doigts de sang gauches du Berzerker,0,72,0,0,0
@@ -250,12 +250,12 @@ item_id,item_craft_stat,item_picture,item_limb,item_name,item_price,item_rarity,
 249,FALSE,hand_left_10,2,Avant-bras gauche creux du Guerriero,0,72,0,0,0
 250,FALSE,hand_left_10,2,Avant-bras gauche creux du Guerriero,0,22,0,0,0
 251,FALSE,hand_left_10,2,Avant-bras gauche creux du Guerriero,0,5,0,0,0
-252,FALSE,hand_left_20,2,Gantelet gauche du Samurai,0,72,0,0,0
-253,FALSE,hand_left_20,2,Gantelet gauche du Samurai,0,22,0,0,0
-254,FALSE,hand_left_20,2,Gantelet gauche du Samurai,0,5,0,0,0
-255,FALSE,hand_left_6,2,Poignée gauche du roi Viking,0,22,0,0,0
-256,FALSE,hand_left_6,2,Poignée gauche du roi Viking,0,5,0,0,0
-257,FALSE,hand_left_6,2,Poignée gauche du roi Viking,0,1,0,0,0
+252,FALSE,hand_left_20,2,Gantelet gauche du Samourai,0,72,0,0,0
+253,FALSE,hand_left_20,2,Gantelet gauche du Samourai,0,22,0,0,0
+254,FALSE,hand_left_20,2,Gantelet gauche du Samourai,0,5,0,0,0
+255,FALSE,hand_left_6,2,Poignée gauche du roi Germanique,0,22,0,0,0
+256,FALSE,hand_left_6,2,Poignée gauche du roi Germanique,0,5,0,0,0
+257,FALSE,hand_left_6,2,Poignée gauche du roi Germanique,0,1,0,0,0
 258,FALSE,hand_left_7,2,Gantelet gauche serti de l'Empereur,0,22,0,0,0
 259,FALSE,hand_left_7,2,Gantelet gauche serti de l'Empereur,0,5,0,0,0
 260,FALSE,hand_left_7,2,Gantelet gauche serti de l'Empereur,0,1,0,0,0
@@ -313,8 +313,8 @@ item_id,item_craft_stat,item_picture,item_limb,item_name,item_price,item_rarity,
 312,FALSE,hand_right_27,3,Gantelet droit en fer du Samnite,0,22,0,0,0
 313,FALSE,hand_right_28,3,Main droite du Myrmidon,0,72,0,0,0
 314,FALSE,hand_right_28,3,Main droite du Myrmidon,0,22,0,0,0
-315,FALSE,hand_right_29,3,Avant-bras droit de l'hoplites,0,72,0,0,0
-316,FALSE,hand_right_29,3,Avant-bras droit de l'hoplites,0,22,0,0,0
+315,FALSE,hand_right_29,3,Avant-bras droit de l'hoplite,0,72,0,0,0
+316,FALSE,hand_right_29,3,Avant-bras droit de l'hoplite,0,22,0,0,0
 317,FALSE,hand_right_30,3,Gantelet droit du centurion,0,72,0,0,0
 318,FALSE,hand_right_30,3,Gantelet droit du centurion,0,22,0,0,0
 319,FALSE,hand_right_33,3,Doigts de sang droit du Berzerker,0,72,0,0,0
@@ -344,12 +344,12 @@ item_id,item_craft_stat,item_picture,item_limb,item_name,item_price,item_rarity,
 343,FALSE,hand_right_10,3,Avant-bras droit creux du Guerriero,0,72,0,0,0
 344,FALSE,hand_right_10,3,Avant-bras droit creux du Guerriero,0,22,0,0,0
 345,FALSE,hand_right_10,3,Avant-bras droit creux du Guerriero,0,5,0,0,0
-346,FALSE,hand_right_20,3,Gantelet droit du Samurai,0,72,0,0,0
-347,FALSE,hand_right_20,3,Gantelet droit du Samurai,0,22,0,0,0
-348,FALSE,hand_right_20,3,Gantelet droit du Samurai,0,5,0,0,0
-349,FALSE,hand_right_6,3,Poignée droite du roi Viking,0,22,0,0,0
-350,FALSE,hand_right_6,3,Poignée droite du roi Viking,0,5,0,0,0
-351,FALSE,hand_right_6,3,Poignée droite du roi Viking,0,1,0,0,0
+346,FALSE,hand_right_20,3,Gantelet droit du Samourai,0,72,0,0,0
+347,FALSE,hand_right_20,3,Gantelet droit du Samourai,0,22,0,0,0
+348,FALSE,hand_right_20,3,Gantelet droit du Samourai,0,5,0,0,0
+349,FALSE,hand_right_6,3,Poignée droite du roi Germanique,0,22,0,0,0
+350,FALSE,hand_right_6,3,Poignée droite du roi Germanique,0,5,0,0,0
+351,FALSE,hand_right_6,3,Poignée droite du roi Germanique,0,1,0,0,0
 352,FALSE,hand_right_7,3,Gantelet droit serti de l'Empereur,0,22,0,0,0
 353,FALSE,hand_right_7,3,Gantelet droit serti de l'Empereur,0,5,0,0,0
 354,FALSE,hand_right_7,3,Gantelet droit serti de l'Empereur,0,1,0,0,0
@@ -375,3 +375,191 @@ item_id,item_craft_stat,item_picture,item_limb,item_name,item_price,item_rarity,
 374,FALSE,hand_right_19,3,Trahison droite du Bushi Yamino,0,1,0,0,0
 375,FALSE,hand_right_31,3,Omega de l'Unique,0,1,0,0,0
 376,FALSE,hand_right_32,3,Anihilation du Serviteur du Mal,0,1,0,0,0
+377,FALSE,feet_left_1,4,Protège tibias gauche de cuir,0,72,0,0,0
+378,FALSE,feet_left_1,4,Protège tibias gauche de cuir,0,22,0,0,0
+379,FALSE,feet_left_2,4,Protège tibias gauche en fer,0,72,0,0,0
+380,FALSE,feet_left_2,4,Protège tibias gauche en fer,0,22,0,0,0
+381,FALSE,feet_left_3,4,Jambière gauche de fer,0,72,0,0,0
+382,FALSE,feet_left_3,4,Jambière gauche de fer,0,22,0,0,0
+383,FALSE,feet_left_4,4,Jambière pointue gauche de fer,0,72,0,0,0
+384,FALSE,feet_left_4,4,Jambière pointue gauche de fer,0,22,0,0,0
+385,FALSE,feet_left_11,4,Soulier gauche de l'archet,0,72,0,0,0
+386,FALSE,feet_left_11,4,Soulier gauche de l'archet,0,22,0,0,0
+387,FALSE,feet_left_12,4,Botte gauche en cuir,0,72,0,0,0
+388,FALSE,feet_left_12,4,Botte gauche en cuir,0,22,0,0,0
+389,FALSE,feet_left_13,4,Botte gauche rembourrée d'écuyer,0,72,0,0,0
+390,FALSE,feet_left_13,4,Botte gauche rembourrée d'écuyer,0,22,0,0,0
+391,FALSE,feet_left_14,4,Chausse à lacet gauche du gardien de la porte,0,72,0,0,0
+392,FALSE,feet_left_14,4,Chausse à lacet gauche du gardien de la porte,0,22,0,0,0
+393,FALSE,feet_left_21,4,Tabis gauche en corde,0,72,0,0,0
+394,FALSE,feet_left_21,4,Tabis gauche en corde,0,22,0,0,0
+395,FALSE,feet_left_22,4,Bottine gauche du forestier,0,72,0,0,0
+396,FALSE,feet_left_22,4,Bottine gauche du forestier,0,22,0,0,0
+397,FALSE,feet_left_23,4,Chaussure gauche du Trax,0,72,0,0,0
+398,FALSE,feet_left_23,4,Chaussure gauche du Trax,0,22,0,0,0
+399,FALSE,feet_left_24,4,Chevillère gauche de l'Hoplomacus,0,72,0,0,0
+400,FALSE,feet_left_24,4,Chevillère gauche de l'Hoplomacus,0,22,0,0,0
+401,FALSE,feet_left_25,4,Spartiate gauche du Scissor,0,72,0,0,0
+402,FALSE,feet_left_25,4,Spartiate gauche du Scissor,0,22,0,0,0
+403,FALSE,feet_left_26,4,Botte renforcée gauche de combat du Secutor,0,72,0,0,0
+404,FALSE,feet_left_26,4,Botte renforcée gauche de combat du Secutor,0,22,0,0,0
+405,FALSE,feet_left_27,4,Calceus gauche du Samnite,0,72,0,0,0
+406,FALSE,feet_left_27,4,Calceus gauche du Samnite,0,22,0,0,0
+407,FALSE,feet_left_28,4,Socci gauche du Myrmidon,0,72,0,0,0
+408,FALSE,feet_left_28,4,Socci gauche du Myrmidon,0,22,0,0,0
+409,FALSE,feet_left_29,4,Spartiate montante gauche de l'hoplite,0,72,0,0,0
+410,FALSE,feet_left_29,4,Spartiate montante gauche de l'hoplite,0,22,0,0,0
+411,FALSE,feet_left_30,4,Sandale montante gauche du centurion,0,72,0,0,0
+412,FALSE,feet_left_30,4,Sandale montante gauche du centurion,0,22,0,0,0
+413,FALSE,feet_left_33,4,Socci rougeoyant gauche du Berzerker,0,72,0,0,0
+414,FALSE,feet_left_33,4,Socci rougeoyant gauche du Berzerker,0,22,0,0,0
+415,FALSE,feet_left_33,4,Socci rougeoyant gauche du Berzerker,0,5,0,0,0
+416,FALSE,feet_left_34,4,Semelle-souche gauche du Paladin,0,72,0,0,0
+417,FALSE,feet_left_34,4,Semelle-souche gauche du Paladin,0,22,0,0,0
+418,FALSE,feet_left_34,4,Semelle-souche gauche du Paladin,0,5,0,0,0
+419,FALSE,feet_left_35,4,Coque gauche du Purgateur,0,72,0,0,0
+420,FALSE,feet_left_35,4,Coque gauche du Purgateur,0,22,0,0,0
+421,FALSE,feet_left_35,4,Coque gauche du Purgateur,0,5,0,0,0
+422,FALSE,feet_left_36,4,Soleret gauche du Chevalier Blanc,0,72,0,0,0
+423,FALSE,feet_left_36,4,Soleret gauche du Chevalier Blanc,0,22,0,0,0
+424,FALSE,feet_left_36,4,Soleret gauche du Chevalier Blanc,0,5,0,0,0
+425,FALSE,feet_left_37,4,Pointe gauche des Executants,0,72,0,0,0
+426,FALSE,feet_left_37,4,Pointe gauche des Executants,0,22,0,0,0
+427,FALSE,feet_left_37,4,Pointe gauche des Executants,0,5,0,0,0
+428,FALSE,feet_left_38,4,Chausse moutante gauche de l'Expéditionnaire,0,72,0,0,0
+429,FALSE,feet_left_38,4,Chausse moutante gauche de l'Expéditionnaire,0,22,0,0,0
+430,FALSE,feet_left_38,4,Chausse moutante gauche de l'Expéditionnaire,0,5,0,0,0
+431,FALSE,feet_left_5,4,Sabaton gauche de la garde royale,0,72,0,0,0
+432,FALSE,feet_left_5,4,Sabaton gauche de la garde royale,0,22,0,0,0
+433,FALSE,feet_left_5,4,Sabaton gauche de la garde royale,0,5,0,0,0
+434,FALSE,feet_left_15,4,Haute-brogue gauche du dernier Gaulois,0,72,0,0,0
+435,FALSE,feet_left_15,4,Haute-brogue gauche du dernier Gaulois,0,22,0,0,0
+436,FALSE,feet_left_15,4,Haute-brogue gauche du dernier Gaulois,0,5,0,0,0
+437,FALSE,feet_left_10,4,Scarpa gauche creux du Guerriero,0,72,0,0,0
+438,FALSE,feet_left_10,4,Scarpa gauche creux du Guerriero,0,22,0,0,0
+439,FALSE,feet_left_10,4,Scarpa gauche creux du Guerriero,0,5,0,0,0
+440,FALSE,feet_left_20,4,Waraji gauche de combat,0,72,0,0,0
+441,FALSE,feet_left_20,4,Waraji gauche de combat,0,22,0,0,0
+442,FALSE,feet_left_20,4,Waraji gauche de combat,0,5,0,0,0
+443,FALSE,feet_left_6,4,Pointe gauche du roi Germanique,0,22,0,0,0
+444,FALSE,feet_left_6,4,Pointe gauche du roi Germanique,0,5,0,0,0
+445,FALSE,feet_left_6,4,Pointe gauche du roi Germanique,0,1,0,0,0
+446,FALSE,feet_left_7,4,Chausse d'Or gauche de l'Empereur,0,22,0,0,0
+447,FALSE,feet_left_7,4,Chausse d'Or gauche de l'Empereur,0,5,0,0,0
+448,FALSE,feet_left_7,4,Chausse d'Or gauche de l'Empereur,0,1,0,0,0
+449,FALSE,feet_left_8,4,Ronde-botte gauche du Sans-âme,0,22,0,0,0
+450,FALSE,feet_left_8,4,Ronde-botte gauche du Sans-âme,0,5,0,0,0
+451,FALSE,feet_left_8,4,Ronde-botte gauche du Sans-âme,0,1,0,0,0
+452,FALSE,feet_left_9,4,Epine-vrille gauche du Yersine,0,22,0,0,0
+453,FALSE,feet_left_9,4,Epine-vrille gauche du Yersine,0,5,0,0,0
+454,FALSE,feet_left_9,4,Epine-vrille gauche du Yersine,0,1,0,0,0
+455,FALSE,feet_left_39,4,Soleret gauche des gardiens du Sanctuaire,0,22,0,0,0
+456,FALSE,feet_left_39,4,Soleret gauche des gardiens du Sanctuaire,0,5,0,0,0
+457,FALSE,feet_left_39,4,Soleret gauche des gardiens du Sanctuaire,0,1,0,0,0
+458,FALSE,feet_left_40,4,Humble chausse Ouest du premier Templier,0,22,0,0,0
+459,FALSE,feet_left_40,4,Humble chausse Ouest du premier Templier,0,5,0,0,0
+460,FALSE,feet_left_40,4,Humble chausse Ouest du premier Templier,0,1,0,0,0
+461,FALSE,feet_left_16,4,Bottine gauche des fils du Valhalla,0,5,0,0,0
+462,FALSE,feet_left_16,4,Bottine gauche des fils du Valhalla,0,1,0,0,0
+463,FALSE,feet_left_17,4,Scubotte gauche de Rhaal'Zath,0,5,0,0,0
+464,FALSE,feet_left_17,4,Scubotte gauche de Rhaal'Zath,0,1,0,0,0
+465,FALSE,feet_left_18,4,Protège jambe gauche du Damné Boultag,0,5,0,0,0
+466,FALSE,feet_left_18,4,Protège jambe gauche du Damné Boultag,0,1,0,0,0
+467,FALSE,feet_left_19,4,Foule-terre gauche du Bushi Yamino,0,5,0,0,0
+468,FALSE,feet_left_19,4,Foule-terre gauche du Bushi Yamino,0,1,0,0,0
+469,FALSE,feet_left_31,4,Appuie de l'Unique,0,1,0,0,0
+470,FALSE,feet_left_32,4,Désolation du Serviteur du Mal,0,1,0,0,0
+471,FALSE,feet_right_1,5,Protège tibias droit de cuir,0,72,0,0,0
+472,FALSE,feet_right_1,5,Protège tibias droit de cuir,0,22,0,0,0
+473,FALSE,feet_right_2,5,Protège tibias droit en fer,0,72,0,0,0
+474,FALSE,feet_right_2,5,Protège tibias droit en fer,0,22,0,0,0
+475,FALSE,feet_right_3,5,Jambière droite de fer,0,72,0,0,0
+476,FALSE,feet_right_3,5,Jambière droite de fer,0,22,0,0,0
+477,FALSE,feet_right_4,5,Jambière pointue droite de fer,0,72,0,0,0
+478,FALSE,feet_right_4,5,Jambière pointue droite de fer,0,22,0,0,0
+479,FALSE,feet_right_11,5,Soulier droit de l'archet,0,72,0,0,0
+480,FALSE,feet_right_11,5,Soulier droit de l'archet,0,22,0,0,0
+481,FALSE,feet_right_12,5,Botte droite en cuir,0,72,0,0,0
+482,FALSE,feet_right_12,5,Botte droite en cuir,0,22,0,0,0
+483,FALSE,feet_right_13,5,Botte droite rembourrée d'écuyer,0,72,0,0,0
+484,FALSE,feet_right_13,5,Botte droite rembourrée d'écuyer,0,22,0,0,0
+485,FALSE,feet_right_14,5,Chausse à lacet droite du gardien de la porte,0,72,0,0,0
+486,FALSE,feet_right_14,5,Chausse à lacet droite du gardien de la porte,0,22,0,0,0
+487,FALSE,feet_right_21,5,Tabis droit en corde,0,72,0,0,0
+488,FALSE,feet_right_21,5,Tabis droit en corde,0,22,0,0,0
+489,FALSE,feet_right_22,5,Bottine droite du forestier,0,72,0,0,0
+490,FALSE,feet_right_22,5,Bottine droite du forestier,0,22,0,0,0
+491,FALSE,feet_right_23,5,Chaussure droite du Trax,0,72,0,0,0
+492,FALSE,feet_right_23,5,Chaussure droite du Trax,0,22,0,0,0
+493,FALSE,feet_right_24,5,Chevillère droite de l'Hoplomacus,0,72,0,0,0
+494,FALSE,feet_right_24,5,Chevillère droite de l'Hoplomacus,0,22,0,0,0
+495,FALSE,feet_right_25,5,Spartiate droite du Scissor,0,72,0,0,0
+496,FALSE,feet_right_25,5,Spartiate droite du Scissor,0,22,0,0,0
+497,FALSE,feet_right_26,5,Botte renforcée droite de combat du Secutor,0,72,0,0,0
+498,FALSE,feet_right_26,5,Botte renforcée droite de combat du Secutor,0,22,0,0,0
+499,FALSE,feet_right_27,5,Calceus droit du Samnite,0,72,0,0,0
+500,FALSE,feet_right_27,5,Calceus droit du Samnite,0,22,0,0,0
+501,FALSE,feet_right_28,5,Socci droit du Myrmidon,0,72,0,0,0
+502,FALSE,feet_right_28,5,Socci droit du Myrmidon,0,22,0,0,0
+503,FALSE,feet_right_29,5,Spartiate montante droite de l'hoplite,0,72,0,0,0
+504,FALSE,feet_right_29,5,Spartiate montante droite de l'hoplite,0,22,0,0,0
+505,FALSE,feet_right_30,5,Sandale montante droite du centurion,0,72,0,0,0
+506,FALSE,feet_right_30,5,Sandale montante droite du centurion,0,22,0,0,0
+507,FALSE,feet_right_33,5,Socci rougeoyant droit du Berzerker,0,72,0,0,0
+508,FALSE,feet_right_33,5,Socci rougeoyant droit du Berzerker,0,22,0,0,0
+509,FALSE,feet_right_33,5,Socci rougeoyant droit du Berzerker,0,5,0,0,0
+510,FALSE,feet_right_34,5,Semelle-souche droite du Paladin,0,72,0,0,0
+511,FALSE,feet_right_34,5,Semelle-souche droite du Paladin,0,22,0,0,0
+512,FALSE,feet_right_34,5,Semelle-souche droite du Paladin,0,5,0,0,0
+513,FALSE,feet_right_35,5,Coque droite du Purgateur,0,72,0,0,0
+514,FALSE,feet_right_35,5,Coque droite du Purgateur,0,22,0,0,0
+515,FALSE,feet_right_35,5,Coque droite du Purgateur,0,5,0,0,0
+516,FALSE,feet_right_36,5,Soleret droit du Chevalier Blanc,0,72,0,0,0
+517,FALSE,feet_right_36,5,Soleret droit du Chevalier Blanc,0,22,0,0,0
+518,FALSE,feet_right_36,5,Soleret droit du Chevalier Blanc,0,5,0,0,0
+519,FALSE,feet_right_37,5,Pointe droite des Executants,0,72,0,0,0
+520,FALSE,feet_right_37,5,Pointe droite des Executants,0,22,0,0,0
+521,FALSE,feet_right_37,5,Pointe droite des Executants,0,5,0,0,0
+522,FALSE,feet_right_38,5,Chausse moutante droite de l'Expéditionnaire,0,72,0,0,0
+523,FALSE,feet_right_38,5,Chausse moutante droite de l'Expéditionnaire,0,22,0,0,0
+524,FALSE,feet_right_38,5,Chausse moutante droite de l'Expéditionnaire,0,5,0,0,0
+525,FALSE,feet_right_5,5,Sabaton droit de la garde royale,0,72,0,0,0
+526,FALSE,feet_right_5,5,Sabaton droit de la garde royale,0,22,0,0,0
+527,FALSE,feet_right_5,5,Sabaton droit de la garde royale,0,5,0,0,0
+528,FALSE,feet_right_15,5,Haute-brogue droite du dernier Gaulois,0,72,0,0,0
+529,FALSE,feet_right_15,5,Haute-brogue droite du dernier Gaulois,0,22,0,0,0
+530,FALSE,feet_right_15,5,Haute-brogue droite du dernier Gaulois,0,5,0,0,0
+531,FALSE,feet_right_10,5,Scarpa droit creux du Guerriero,0,72,0,0,0
+532,FALSE,feet_right_10,5,Scarpa droit creux du Guerriero,0,22,0,0,0
+533,FALSE,feet_right_10,5,Scarpa droit creux du Guerriero,0,5,0,0,0
+534,FALSE,feet_right_20,5,Waraji droit de combat,0,72,0,0,0
+535,FALSE,feet_right_20,5,Waraji droit de combat,0,22,0,0,0
+536,FALSE,feet_right_20,5,Waraji droit de combat,0,5,0,0,0
+537,FALSE,feet_right_6,5,Pointe droite du roi Germanique,0,22,0,0,0
+538,FALSE,feet_right_6,5,Pointe droite du roi Germanique,0,5,0,0,0
+539,FALSE,feet_right_6,5,Pointe droite du roi Germanique,0,1,0,0,0
+540,FALSE,feet_right_7,5,Chausse d'Or droite de l'Empereur,0,22,0,0,0
+541,FALSE,feet_right_7,5,Chausse d'Or droite de l'Empereur,0,5,0,0,0
+542,FALSE,feet_right_7,5,Chausse d'Or droite de l'Empereur,0,1,0,0,0
+543,FALSE,feet_right_8,5,Ronde-botte droite du Sans-âme,0,22,0,0,0
+544,FALSE,feet_right_8,5,Ronde-botte droite du Sans-âme,0,5,0,0,0
+545,FALSE,feet_right_8,5,Ronde-botte droite du Sans-âme,0,1,0,0,0
+546,FALSE,feet_right_9,5,Epine-vrille droite du Yersine,0,22,0,0,0
+547,FALSE,feet_right_9,5,Epine-vrille droite du Yersine,0,5,0,0,0
+548,FALSE,feet_right_9,5,Epine-vrille droite du Yersine,0,1,0,0,0
+549,FALSE,feet_right_39,5,Soleret droit des gardiens du Sanctuaire,0,22,0,0,0
+550,FALSE,feet_right_39,5,Soleret droit des gardiens du Sanctuaire,0,5,0,0,0
+551,FALSE,feet_right_39,5,Soleret droit des gardiens du Sanctuaire,0,1,0,0,0
+552,FALSE,feet_right_40,5,Humble chausse Ouest du premier Templier,0,22,0,0,0
+553,FALSE,feet_right_40,5,Humble chausse Ouest du premier Templier,0,5,0,0,0
+554,FALSE,feet_right_40,5,Humble chausse Ouest du premier Templier,0,1,0,0,0
+555,FALSE,feet_right_16,5,Bottine droite des fils du Valhalla,0,5,0,0,0
+556,FALSE,feet_right_16,5,Bottine droite des fils du Valhalla,0,1,0,0,0
+557,FALSE,feet_right_17,5,Scubotte droite de Rhaal'Zath,0,5,0,0,0
+558,FALSE,feet_right_17,5,Scubotte droite de Rhaal'Zath,0,1,0,0,0
+559,FALSE,feet_right_18,5,Protège jambe droit du Damné Boultag,0,5,0,0,0
+560,FALSE,feet_right_18,5,Protège jambe droit du Damné Boultag,0,1,0,0,0
+561,FALSE,feet_right_19,5,Foule-terre droite du Bushi Yamino,0,5,0,0,0
+562,FALSE,feet_right_19,5,Foule-terre droite du Bushi Yamino,0,1,0,0,0
+563,FALSE,feet_right_31,5,Appel de l'Unique,0,1,0,0,0
+564,FALSE,feet_right_32,5,Calamité du Serviteur du Mal,0,1,0,0,0
