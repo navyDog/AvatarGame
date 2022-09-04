@@ -1,0 +1,377 @@
+item_id,item_craft_stat,item_picture,item_limb,item_name,item_price,item_rarity,version,item_id_avatar,item_id_user
+1,FALSE,head_1,0,Beret,0,72,0,0,0
+2,FALSE,head_1,0,Beret,0,22,0,0,0
+3,FALSE,head_2,0,Casque en fer,0,72,0,0,0
+4,FALSE,head_2,0,Casque en fer,0,22,0,0,0
+5,FALSE,head_3,0,Chapel de fer,0,72,0,0,0
+6,FALSE,head_3,0,Chapel de fer,0,22,0,0,0
+7,FALSE,head_4,0,Visière de fer,0,72,0,0,0
+8,FALSE,head_4,0,Visière de fer,0,22,0,0,0
+9,FALSE,head_11,0,Couvre chef en cuir,0,72,0,0,0
+10,FALSE,head_11,0,Couvre chef en cuir,0,22,0,0,0
+11,FALSE,head_12,0,Casque en cuir,0,72,0,0,0
+12,FALSE,head_12,0,Casque en cuir,0,22,0,0,0
+13,FALSE,head_13,0,Casque d'écuyer,0,72,0,0,0
+14,FALSE,head_13,0,Casque d'écuyer,0,22,0,0,0
+15,FALSE,head_14,0,Casque du gardien de la porte,0,72,0,0,0
+16,FALSE,head_14,0,Casque du gardien de la porte,0,22,0,0,0
+17,FALSE,head_21,0,Bandeau en corde,0,72,0,0,0
+18,FALSE,head_21,0,Bandeau en corde,0,22,0,0,0
+19,FALSE,head_22,0,Tête d'ours,0,72,0,0,0
+20,FALSE,head_22,0,Tête d'ours,0,22,0,0,0
+21,FALSE,head_23,0,Casque du Trax,0,72,0,0,0
+22,FALSE,head_23,0,Casque du Trax,0,22,0,0,0
+23,FALSE,head_24,0,Casque de l'Hoplomacus,0,72,0,0,0
+24,FALSE,head_24,0,Casque de l'Hoplomacus,0,22,0,0,0
+25,FALSE,head_25,0,Casque du Scissor,0,72,0,0,0
+26,FALSE,head_25,0,Casque du Scissor,0,22,0,0,0
+27,FALSE,head_26,0,Casque du Secutor,0,72,0,0,0
+28,FALSE,head_26,0,Casque du Secutor,0,22,0,0,0
+29,FALSE,head_27,0,Casque du Samnite,0,72,0,0,0
+30,FALSE,head_27,0,Casque du Samnite,0,22,0,0,0
+31,FALSE,head_28,0,Casque du Myrmidon,0,72,0,0,0
+32,FALSE,head_28,0,Casque du Myrmidon,0,22,0,0,0
+33,FALSE,head_29,0,Casque de l'hoplites,0,72,0,0,0
+34,FALSE,head_29,0,Casque de l'hoplites,0,22,0,0,0
+35,FALSE,head_30,0,Casque du centurion,0,72,0,0,0
+36,FALSE,head_30,0,Casque du centurion,0,22,0,0,0
+37,FALSE,head_33,0,Casque du Berzerker,0,72,0,0,0
+38,FALSE,head_33,0,Casque du Berzerker,0,22,0,0,0
+39,FALSE,head_33,0,Casque du Berzerker,0,5,0,0,0
+40,FALSE,head_34,0,Heaume du Paladin,0,72,0,0,0
+41,FALSE,head_34,0,Heaume du Paladin,0,22,0,0,0
+42,FALSE,head_34,0,Heaume du Paladin,0,5,0,0,0
+43,FALSE,head_35,0,Heaume du Purgateur,0,72,0,0,0
+44,FALSE,head_35,0,Heaume du Purgateur,0,22,0,0,0
+45,FALSE,head_35,0,Heaume du Purgateur,0,5,0,0,0
+46,FALSE,head_36,0,Casque du Chevalier Blanc,0,72,0,0,0
+47,FALSE,head_36,0,Casque du Chevalier Blanc,0,22,0,0,0
+48,FALSE,head_36,0,Casque du Chevalier Blanc,0,5,0,0,0
+49,FALSE,head_37,0,Bassinet des Executants,0,72,0,0,0
+50,FALSE,head_37,0,Bassinet des Executants,0,22,0,0,0
+51,FALSE,head_37,0,Bassinet des Executants,0,5,0,0,0
+52,FALSE,head_38,0,Klappvisor de l'Expéditionnaire,0,72,0,0,0
+53,FALSE,head_38,0,Klappvisor de l'Expéditionnaire,0,22,0,0,0
+54,FALSE,head_38,0,Klappvisor de l'Expéditionnaire,0,5,0,0,0
+55,FALSE,head_5,0,Heaume de la garde royale,0,72,0,0,0
+56,FALSE,head_5,0,Heaume de la garde royale,0,22,0,0,0
+57,FALSE,head_5,0,Heaume de la garde royale,0,5,0,0,0
+58,FALSE,head_15,0,Casque du dernier Gaulois,0,72,0,0,0
+59,FALSE,head_15,0,Casque du dernier Gaulois,0,22,0,0,0
+60,FALSE,head_15,0,Casque du dernier Gaulois,0,5,0,0,0
+61,FALSE,head_10,0,Visière du Guerriero,0,72,0,0,0
+62,FALSE,head_10,0,Visière du Guerriero,0,22,0,0,0
+63,FALSE,head_10,0,Visière du Guerriero,0,5,0,0,0
+64,FALSE,head_20,0,Casque du Samurai,0,72,0,0,0
+65,FALSE,head_20,0,Casque du Samurai,0,22,0,0,0
+66,FALSE,head_20,0,Casque du Samurai,0,5,0,0,0
+67,FALSE,head_6,0,Bi-cornes du roi Viking,0,22,0,0,0
+68,FALSE,head_6,0,Bi-cornes du roi Viking,0,5,0,0,0
+69,FALSE,head_6,0,Bi-cornes du roi Viking,0,1,0,0,0
+70,FALSE,head_7,0,Casque en Or de l'Empereur,0,22,0,0,0
+71,FALSE,head_7,0,Casque en Or de l'Empereur,0,5,0,0,0
+72,FALSE,head_7,0,Casque en Or de l'Empereur,0,1,0,0,0
+73,FALSE,head_8,0,Heaume du Sans-âme,0,22,0,0,0
+74,FALSE,head_8,0,Heaume du Sans-âme,0,5,0,0,0
+75,FALSE,head_8,0,Heaume du Sans-âme,0,1,0,0,0
+76,FALSE,head_9,0,Casque du Yersine,0,22,0,0,0
+77,FALSE,head_9,0,Casque du Yersine,0,5,0,0,0
+78,FALSE,head_9,0,Casque du Yersine,0,1,0,0,0
+79,FALSE,head_39,0,Casque des gardiens du Sanctuaire,0,22,0,0,0
+80,FALSE,head_39,0,Casque des gardiens du Sanctuaire,0,5,0,0,0
+81,FALSE,head_39,0,Casque des gardiens du Sanctuaire,0,1,0,0,0
+82,FALSE,head_40,0,Heaume du premier Templier,0,22,0,0,0
+83,FALSE,head_40,0,Heaume du premier Templier,0,5,0,0,0
+84,FALSE,head_40,0,Heaume du premier Templier,0,1,0,0,0
+85,FALSE,head_16,0,Heaume des fils du Valhalla,0,5,0,0,0
+86,FALSE,head_16,0,Heaume des fils du Valhalla,0,1,0,0,0
+87,FALSE,head_17,0,Masque de Rhaal'Zath,0,5,0,0,0
+88,FALSE,head_17,0,Masque de Rhaal'Zath,0,1,0,0,0
+89,FALSE,head_18,0,Casque du Damné Boultag,0,5,0,0,0
+90,FALSE,head_18,0,Casque du Damné Boultag,0,1,0,0,0
+91,FALSE,head_19,0,Vision du Bushi Yamino,0,5,0,0,0
+92,FALSE,head_19,0,Vision du Bushi Yamino,0,1,0,0,0
+93,FALSE,head_31,0,Masque de l'Unique,0,1,0,0,0
+94,FALSE,head_32,0,Casque du Serviteur du Mal,0,1,0,0,0
+95,FALSE,body_1,1,Etoffe de cuir,0,72,0,0,0
+96,FALSE,body_1,1,Etoffe de cuir,0,22,0,0,0
+97,FALSE,body_2,1,Cage en fer,0,72,0,0,0
+98,FALSE,body_2,1,Cage en fer,0,22,0,0,0
+99,FALSE,body_3,1,Plastron de fer,0,72,0,0,0
+100,FALSE,body_3,1,Plastron de fer,0,22,0,0,0
+101,FALSE,body_4,1,Buste de fer,0,72,0,0,0
+102,FALSE,body_4,1,Buste de fer,0,22,0,0,0
+103,FALSE,body_11,1,Plastron en cuir,0,72,0,0,0
+104,FALSE,body_11,1,Plastron en cuir,0,22,0,0,0
+105,FALSE,body_12,1,Intégral en cuir,0,72,0,0,0
+106,FALSE,body_12,1,Intagral en cuir,0,22,0,0,0
+107,FALSE,body_13,1,Tunique d'écuyer,0,72,0,0,0
+108,FALSE,body_13,1,Tunique d'écuyer,0,22,0,0,0
+109,FALSE,body_14,1,Armure du gardien de la porte,0,72,0,0,0
+110,FALSE,body_14,1,Armure du gardien de la porte,0,22,0,0,0
+111,FALSE,body_21,1,Tunique rayée,0,72,0,0,0
+112,FALSE,body_21,1,Tunique rayée,0,22,0,0,0
+113,FALSE,body_22,1,Habit du forestier,0,72,0,0,0
+114,FALSE,body_22,1,Habit du forestier,0,22,0,0,0
+115,FALSE,body_23,1,Epaulière droite du Trax,0,72,0,0,0
+116,FALSE,body_23,1,Epaulière droite du Trax,0,22,0,0,0
+117,FALSE,body_24,1,Cotte de mailles de l'Hoplomacus,0,72,0,0,0
+118,FALSE,body_24,1,Cotte de mailles de l'Hoplomacus,0,22,0,0,0
+119,FALSE,body_25,1,Epaulière droite du Scissor,0,72,0,0,0
+120,FALSE,body_25,1,Epaulière droite du Scissor,0,22,0,0,0
+121,FALSE,body_26,1,Epaulière gauche du Secutor,0,72,0,0,0
+122,FALSE,body_26,1,Epaulière gauche du Secutor,0,22,0,0,0
+123,FALSE,body_27,1,Epaulière droite du Samnite,0,72,0,0,0
+124,FALSE,body_27,1,Epaulière droite du Samnite,0,22,0,0,0
+125,FALSE,body_28,1,Cotte de mailles du Myrmidon,0,72,0,0,0
+126,FALSE,body_28,1,Cotte de mailles du Myrmidon,0,22,0,0,0
+127,FALSE,body_29,1,Plastron échancré de l'hoplites,0,72,0,0,0
+128,FALSE,body_29,1,Plastron échancré de l'hoplites,0,22,0,0,0
+129,FALSE,body_30,1,Plastron du centurion,0,72,0,0,0
+130,FALSE,body_30,1,Plastron du centurion,0,22,0,0,0
+131,FALSE,body_33,1,Epaulière du Berzerker,0,72,0,0,0
+132,FALSE,body_33,1,Epaulière du Berzerker,0,22,0,0,0
+133,FALSE,body_33,1,Epaulière du Berzerker,0,5,0,0,0
+134,FALSE,body_34,1,Armure du Paladin,0,72,0,0,0
+135,FALSE,body_34,1,Armure du Paladin,0,22,0,0,0
+136,FALSE,body_34,1,Armure du Paladin,0,5,0,0,0
+137,FALSE,body_35,1,Haut du Purgateur,0,72,0,0,0
+138,FALSE,body_35,1,Haut du Purgateur,0,22,0,0,0
+139,FALSE,body_35,1,Haut du Purgateur,0,5,0,0,0
+140,FALSE,body_36,1,Armure du Chevalier Blanc,0,72,0,0,0
+141,FALSE,body_36,1,Armure du Chevalier Blanc,0,22,0,0,0
+142,FALSE,body_36,1,Armure du Chevalier Blanc,0,5,0,0,0
+143,FALSE,body_37,1,Cuirasse des Executants,0,72,0,0,0
+144,FALSE,body_37,1,Cuirasse des Executants,0,22,0,0,0
+145,FALSE,body_37,1,Cuirasse des Executants,0,5,0,0,0
+146,FALSE,body_38,1,Armure lourde de l'Expéditionnaire,0,72,0,0,0
+147,FALSE,body_38,1,Armure lourde de l'Expéditionnaire,0,22,0,0,0
+148,FALSE,body_38,1,Armure lourde de l'Expéditionnaire,0,5,0,0,0
+149,FALSE,body_5,1,Armure à noyau de la garde royale,0,72,0,0,0
+150,FALSE,body_5,1,Armure à noyau de la garde royale,0,22,0,0,0
+151,FALSE,body_5,1,Armure à noyau de la garde royale,0,5,0,0,0
+152,FALSE,body_15,1,Brigandine du dernier Gaulois,0,72,0,0,0
+153,FALSE,body_15,1,Brigandine du dernier Gaulois,0,22,0,0,0
+154,FALSE,body_15,1,Brigandine du dernier Gaulois,0,5,0,0,0
+155,FALSE,body_10,1,Armatura du Guerriero,0,72,0,0,0
+156,FALSE,body_10,1,Armatura du Guerriero,0,22,0,0,0
+157,FALSE,body_10,1,Armatura du Guerriero,0,5,0,0,0
+158,FALSE,body_20,1,Armure du Samurai,0,72,0,0,0
+159,FALSE,body_20,1,Armure du Samurai,0,22,0,0,0
+160,FALSE,body_20,1,Armure du Samurai,0,5,0,0,0
+161,FALSE,body_6,1,Torse du roi Viking,0,22,0,0,0
+162,FALSE,body_6,1,Torse du roi Viking,0,5,0,0,0
+163,FALSE,body_6,1,Torse du roi Viking,0,1,0,0,0
+164,FALSE,body_7,1,Armure en Or de l'Empereur,0,22,0,0,0
+165,FALSE,body_7,1,Armure en Or de l'Empereur,0,5,0,0,0
+166,FALSE,body_7,1,Armure en Or de l'Empereur,0,1,0,0,0
+167,FALSE,body_8,1,Corps du Sans-âme,0,22,0,0,0
+168,FALSE,body_8,1,Corps du Sans-âme,0,5,0,0,0
+169,FALSE,body_8,1,Corps du Sans-âme,0,1,0,0,0
+170,FALSE,body_9,1,Robe du Yersine,0,22,0,0,0
+171,FALSE,body_9,1,Robe du Yersine,0,5,0,0,0
+172,FALSE,body_9,1,Robe du Yersine,0,1,0,0,0
+173,FALSE,body_39,1,Plastron des gardiens du Sanctuaire,0,22,0,0,0
+174,FALSE,body_39,1,Plastron des gardiens du Sanctuaire,0,5,0,0,0
+175,FALSE,body_39,1,Plastron des gardiens du Sanctuaire,0,1,0,0,0
+176,FALSE,body_40,1,Armure lourde du premier Templier,0,22,0,0,0
+177,FALSE,body_40,1,Armure lourde du premier Templier,0,5,0,0,0
+178,FALSE,body_40,1,Armure lourde du premier Templier,0,1,0,0,0
+179,FALSE,body_16,1,Haubert des fils du Valhalla,0,5,0,0,0
+180,FALSE,body_16,1,Haubert des fils du Valhalla,0,1,0,0,0
+181,FALSE,body_17,1,Buste de Rhaal'Zath,0,5,0,0,0
+182,FALSE,body_17,1,Buste de Rhaal'Zath,0,1,0,0,0
+183,FALSE,body_18,1,Protection du Damné Boultag,0,5,0,0,0
+184,FALSE,body_18,1,Protection du Damné Boultag,0,1,0,0,0
+185,FALSE,body_19,1,Cotte à épines du Bushi Yamino,0,5,0,0,0
+186,FALSE,body_19,1,Cotte à épines du Bushi Yamino,0,1,0,0,0
+187,FALSE,body_31,1,Invincible de l'Unique,0,1,0,0,0
+188,FALSE,body_32,1,Immunité du Serviteur du Mal,0,1,0,0,0
+189,FALSE,hand_left_1,2,Moufle de cuir gauche,0,72,0,0,0
+190,FALSE,hand_left_1,2,Moufle de cuir gauche,0,22,0,0,0
+191,FALSE,hand_left_2,2,Poignée gauche en fer,0,72,0,0,0
+192,FALSE,hand_left_2,2,Poignée gauche en fer,0,22,0,0,0
+193,FALSE,hand_left_3,2,Gant gauche de fer,0,72,0,0,0
+194,FALSE,hand_left_3,2,Gant gauche de fer,0,22,0,0,0
+195,FALSE,hand_left_4,2,Gantelet gauche de fer,0,72,0,0,0
+196,FALSE,hand_left_4,2,Gantelet gauche de fer,0,22,0,0,0
+197,FALSE,hand_left_11,2,Mitaine gauche de l'archet,0,72,0,0,0
+198,FALSE,hand_left_11,2,Mitaine gauche de l'archet,0,22,0,0,0
+199,FALSE,hand_left_12,2,Gant court gauche en cuir,0,72,0,0,0
+200,FALSE,hand_left_12,2,Gant court gauche en cuir,0,22,0,0,0
+201,FALSE,hand_left_13,2,Gantelet gauche d'écuyer,0,72,0,0,0
+202,FALSE,hand_left_13,2,Gantelet gauche d'écuyer,0,22,0,0,0
+203,FALSE,hand_left_14,2,Gantelet gauche du gardien de la porte,0,72,0,0,0
+204,FALSE,hand_left_14,2,Gantelet gauche du gardien de la porte,0,22,0,0,0
+205,FALSE,hand_left_21,2,Avant-bras gauche en corde,0,72,0,0,0
+206,FALSE,hand_left_21,2,Avant-bras gauche en corde,0,22,0,0,0
+207,FALSE,hand_left_22,2,Avant-bras gauche du forestier,0,72,0,0,0
+208,FALSE,hand_left_22,2,Avant-bras gauche du forestier,0,22,0,0,0
+209,FALSE,hand_left_23,2,Avant-bras gauche du Trax,0,72,0,0,0
+210,FALSE,hand_left_23,2,Avant-bras gauche du Trax,0,22,0,0,0
+211,FALSE,hand_left_24,2,Avant-bras gauche de l'Hoplomacus,0,72,0,0,0
+212,FALSE,hand_left_24,2,Avant-bras gauche de l'Hoplomacus,0,22,0,0,0
+213,FALSE,hand_left_25,2,Gantelet gauche du Scissor,0,72,0,0,0
+214,FALSE,hand_left_25,2,Gantelet gauche du Scissor,0,22,0,0,0
+215,FALSE,hand_left_26,2,Moufle gauche de combat du Secutor,0,72,0,0,0
+216,FALSE,hand_left_26,2,Moufle gauche de combat du Secutor,0,22,0,0,0
+217,FALSE,hand_left_27,2,Gantelet gauche en fer du Samnite,0,72,0,0,0
+218,FALSE,hand_left_27,2,Gantelet gauche en fer du Samnite,0,22,0,0,0
+219,FALSE,hand_left_28,2,Main gauche du Myrmidon,0,72,0,0,0
+220,FALSE,hand_left_28,2,Main gauche du Myrmidon,0,22,0,0,0
+221,FALSE,hand_left_29,2,Avant-bras gauche de l'hoplites,0,72,0,0,0
+222,FALSE,hand_left_29,2,Avant-bras gauche de l'hoplites,0,22,0,0,0
+223,FALSE,hand_left_30,2,Gantelet gauche du centurion,0,72,0,0,0
+224,FALSE,hand_left_30,2,Gantelet gauche du centurion,0,22,0,0,0
+225,FALSE,hand_left_33,2,Doigts de sang gauches du Berzerker,0,72,0,0,0
+226,FALSE,hand_left_33,2,Doigts de sang gauches du Berzerker,0,22,0,0,0
+227,FALSE,hand_left_33,2,Doigts de sang gauches du Berzerker,0,5,0,0,0
+228,FALSE,hand_left_34,2,Gantelet à lamelles gauche du Paladin,0,72,0,0,0
+229,FALSE,hand_left_34,2,Gantelet à lamelles gauche du Paladin,0,22,0,0,0
+230,FALSE,hand_left_34,2,Gantelet à lamelles gauche du Paladin,0,5,0,0,0
+231,FALSE,hand_left_35,2,Paume gauche inversée du Purgateur,0,72,0,0,0
+232,FALSE,hand_left_35,2,Paume gauche inversée du Purgateur,0,22,0,0,0
+233,FALSE,hand_left_35,2,Paume gauche inversée du Purgateur,0,5,0,0,0
+234,FALSE,hand_left_36,2,Poing gauche du Chevalier Blanc,0,72,0,0,0
+235,FALSE,hand_left_36,2,Poing gauche du Chevalier Blanc,0,22,0,0,0
+236,FALSE,hand_left_36,2,Poing gauche du Chevalier Blanc,0,5,0,0,0
+237,FALSE,hand_left_37,2,Rond-doigts gauche des Executants,0,72,0,0,0
+238,FALSE,hand_left_37,2,Rond-doigts gauche des Executants,0,22,0,0,0
+239,FALSE,hand_left_37,2,Rond-doigts gauche des Executants,0,5,0,0,0
+240,FALSE,hand_left_38,2,Hexagone gauche de l'Expéditionnaire,0,72,0,0,0
+241,FALSE,hand_left_38,2,Hexagone gauche de l'Expéditionnaire,0,22,0,0,0
+242,FALSE,hand_left_38,2,Hexagone gauche de l'Expéditionnaire,0,5,0,0,0
+243,FALSE,hand_left_5,2,Main gauche de la garde royale,0,72,0,0,0
+244,FALSE,hand_left_5,2,Main gauche de la garde royale,0,22,0,0,0
+245,FALSE,hand_left_5,2,Main gauche de la garde royale,0,5,0,0,0
+246,FALSE,hand_left_15,2,Baffe gauche du dernier Gaulois,0,72,0,0,0
+247,FALSE,hand_left_15,2,Baffe gauche du dernier Gaulois,0,22,0,0,0
+248,FALSE,hand_left_15,2,Baffe gauche du dernier Gaulois,0,5,0,0,0
+249,FALSE,hand_left_10,2,Avant-bras gauche creux du Guerriero,0,72,0,0,0
+250,FALSE,hand_left_10,2,Avant-bras gauche creux du Guerriero,0,22,0,0,0
+251,FALSE,hand_left_10,2,Avant-bras gauche creux du Guerriero,0,5,0,0,0
+252,FALSE,hand_left_20,2,Gantelet gauche du Samurai,0,72,0,0,0
+253,FALSE,hand_left_20,2,Gantelet gauche du Samurai,0,22,0,0,0
+254,FALSE,hand_left_20,2,Gantelet gauche du Samurai,0,5,0,0,0
+255,FALSE,hand_left_6,2,Poignée gauche du roi Viking,0,22,0,0,0
+256,FALSE,hand_left_6,2,Poignée gauche du roi Viking,0,5,0,0,0
+257,FALSE,hand_left_6,2,Poignée gauche du roi Viking,0,1,0,0,0
+258,FALSE,hand_left_7,2,Gantelet gauche serti de l'Empereur,0,22,0,0,0
+259,FALSE,hand_left_7,2,Gantelet gauche serti de l'Empereur,0,5,0,0,0
+260,FALSE,hand_left_7,2,Gantelet gauche serti de l'Empereur,0,1,0,0,0
+261,FALSE,hand_left_8,2,Revers gauche du Sans-âme,0,22,0,0,0
+262,FALSE,hand_left_8,2,Revers gauche du Sans-âme,0,5,0,0,0
+263,FALSE,hand_left_8,2,Revers gauche du Sans-âme,0,1,0,0,0
+264,FALSE,hand_left_9,2,Griffes gauches du Yersine,0,22,0,0,0
+265,FALSE,hand_left_9,2,Griffes gauches du Yersine,0,5,0,0,0
+266,FALSE,hand_left_9,2,Griffes gauches du Yersine,0,1,0,0,0
+267,FALSE,hand_left_39,2,Joyau gauche des gardiens du Sanctuaire,0,22,0,0,0
+268,FALSE,hand_left_39,2,Joyau gauche des gardiens du Sanctuaire,0,5,0,0,0
+269,FALSE,hand_left_39,2,Joyau gauche des gardiens du Sanctuaire,0,1,0,0,0
+270,FALSE,hand_left_40,2,Promesse Ouest du premier Templier,0,22,0,0,0
+271,FALSE,hand_left_40,2,Promesse Ouest du premier Templier,0,5,0,0,0
+272,FALSE,hand_left_40,2,Promesse Ouest du premier Templier,0,1,0,0,0
+273,FALSE,hand_left_16,2,Levée gauche des fils du Valhalla,0,5,0,0,0
+274,FALSE,hand_left_16,2,Levée gauche des fils du Valhalla,0,1,0,0,0
+275,FALSE,hand_left_17,2,Liane gauche de Rhaal'Zath,0,5,0,0,0
+276,FALSE,hand_left_17,2,Liane gauche de Rhaal'Zath,0,1,0,0,0
+277,FALSE,hand_left_18,2,Saisie gauche du Damné Boultag,0,5,0,0,0
+278,FALSE,hand_left_18,2,Saisie gauche du Damné Boultag,0,1,0,0,0
+279,FALSE,hand_left_19,2,Trahison gauche du Bushi Yamino,0,5,0,0,0
+280,FALSE,hand_left_19,2,Trahison gauche du Bushi Yamino,0,1,0,0,0
+281,FALSE,hand_left_31,2,Alpha de l'Unique,0,1,0,0,0
+282,FALSE,hand_left_32,2,Chaos du Serviteur du Mal,0,1,0,0,0
+283,FALSE,hand_right_1,3,Moufle de cuir droite,0,72,0,0,0
+284,FALSE,hand_right_1,3,Moufle de cuir droite,0,22,0,0,0
+285,FALSE,hand_right_2,3,Poignée droite en fer,0,72,0,0,0
+286,FALSE,hand_right_2,3,Poignée droite en fer,0,22,0,0,0
+287,FALSE,hand_right_3,3,Gant droit de fer,0,72,0,0,0
+288,FALSE,hand_right_3,3,Gant droit de fer,0,22,0,0,0
+289,FALSE,hand_right_4,3,Gantelet droit de fer,0,72,0,0,0
+290,FALSE,hand_right_4,3,Gantelet droit de fer,0,22,0,0,0
+291,FALSE,hand_right_11,3,Mitaine droite de l'archet,0,72,0,0,0
+292,FALSE,hand_right_11,3,Mitaine droite de l'archet,0,22,0,0,0
+293,FALSE,hand_right_12,3,Gant court droit en cuir,0,72,0,0,0
+294,FALSE,hand_right_12,3,Gant court droit en cuir,0,22,0,0,0
+295,FALSE,hand_right_13,3,Gantelet droit d'écuyer,0,72,0,0,0
+296,FALSE,hand_right_13,3,Gantelet droit d'écuyer,0,22,0,0,0
+297,FALSE,hand_right_14,3,Gantelet droit du gardien de la porte,0,72,0,0,0
+298,FALSE,hand_right_14,3,Gantelet droit du gardien de la porte,0,22,0,0,0
+299,FALSE,hand_right_21,3,Avant-bras droit en corde,0,72,0,0,0
+300,FALSE,hand_right_21,3,Avant-bras droit en corde,0,22,0,0,0
+301,FALSE,hand_right_22,3,Avant-bras droit du forestier,0,72,0,0,0
+302,FALSE,hand_right_22,3,Avant-bras droit du forestier,0,22,0,0,0
+303,FALSE,hand_right_23,3,Avant-bras droit du Trax,0,72,0,0,0
+304,FALSE,hand_right_23,3,Avant-bras droit du Trax,0,22,0,0,0
+305,FALSE,hand_right_24,3,Avant-bras droit de l'Hoplomacus,0,72,0,0,0
+306,FALSE,hand_right_24,3,Avant-bras droit de l'Hoplomacus,0,22,0,0,0
+307,FALSE,hand_right_25,3,Gantelet droit du Scissor,0,72,0,0,0
+308,FALSE,hand_right_25,3,Gantelet droit du Scissor,0,22,0,0,0
+309,FALSE,hand_right_26,3,Moufle droite de combat du Secutor,0,72,0,0,0
+310,FALSE,hand_right_26,3,Moufle droite de combat du Secutor,0,22,0,0,0
+311,FALSE,hand_right_27,3,Gantelet droit en fer du Samnite,0,72,0,0,0
+312,FALSE,hand_right_27,3,Gantelet droit en fer du Samnite,0,22,0,0,0
+313,FALSE,hand_right_28,3,Main droite du Myrmidon,0,72,0,0,0
+314,FALSE,hand_right_28,3,Main droite du Myrmidon,0,22,0,0,0
+315,FALSE,hand_right_29,3,Avant-bras droit de l'hoplites,0,72,0,0,0
+316,FALSE,hand_right_29,3,Avant-bras droit de l'hoplites,0,22,0,0,0
+317,FALSE,hand_right_30,3,Gantelet droit du centurion,0,72,0,0,0
+318,FALSE,hand_right_30,3,Gantelet droit du centurion,0,22,0,0,0
+319,FALSE,hand_right_33,3,Doigts de sang droit du Berzerker,0,72,0,0,0
+320,FALSE,hand_right_33,3,Doigts de sang droit du Berzerker,0,22,0,0,0
+321,FALSE,hand_right_33,3,Doigts de sang droit du Berzerker,0,5,0,0,0
+322,FALSE,hand_right_34,3,Gantelet à lamelles droit du Paladin,0,72,0,0,0
+323,FALSE,hand_right_34,3,Gantelet à lamelles droit du Paladin,0,22,0,0,0
+324,FALSE,hand_right_34,3,Gantelet à lamelles droit du Paladin,0,5,0,0,0
+325,FALSE,hand_right_35,3,Paume droite inversée du Purgateur,0,72,0,0,0
+326,FALSE,hand_right_35,3,Paume droite inversée du Purgateur,0,22,0,0,0
+327,FALSE,hand_right_35,3,Paume droite inversée du Purgateur,0,5,0,0,0
+328,FALSE,hand_right_36,3,Poing droit du Chevalier Blanc,0,72,0,0,0
+329,FALSE,hand_right_36,3,Poing droit du Chevalier Blanc,0,22,0,0,0
+330,FALSE,hand_right_36,3,Poing droit du Chevalier Blanc,0,5,0,0,0
+331,FALSE,hand_right_37,3,Rond-doigts droit des Executants,0,72,0,0,0
+332,FALSE,hand_right_37,3,Rond-doigts droit des Executants,0,22,0,0,0
+333,FALSE,hand_right_37,3,Rond-doigts droit des Executants,0,5,0,0,0
+334,FALSE,hand_right_38,3,Hexagone droit de l'Expéditionnaire,0,72,0,0,0
+335,FALSE,hand_right_38,3,Hexagone droit de l'Expéditionnaire,0,22,0,0,0
+336,FALSE,hand_right_38,3,Hexagone droit de l'Expéditionnaire,0,5,0,0,0
+337,FALSE,hand_right_5,3,Main droite de la garde royale,0,72,0,0,0
+338,FALSE,hand_right_5,3,Main droite de la garde royale,0,22,0,0,0
+339,FALSE,hand_right_5,3,Main droite de la garde royale,0,5,0,0,0
+340,FALSE,hand_right_15,3,Baffe droite du dernier Gaulois,0,72,0,0,0
+341,FALSE,hand_right_15,3,Baffe droite du dernier Gaulois,0,22,0,0,0
+342,FALSE,hand_right_15,3,Baffe droite du dernier Gaulois,0,5,0,0,0
+343,FALSE,hand_right_10,3,Avant-bras droit creux du Guerriero,0,72,0,0,0
+344,FALSE,hand_right_10,3,Avant-bras droit creux du Guerriero,0,22,0,0,0
+345,FALSE,hand_right_10,3,Avant-bras droit creux du Guerriero,0,5,0,0,0
+346,FALSE,hand_right_20,3,Gantelet droit du Samurai,0,72,0,0,0
+347,FALSE,hand_right_20,3,Gantelet droit du Samurai,0,22,0,0,0
+348,FALSE,hand_right_20,3,Gantelet droit du Samurai,0,5,0,0,0
+349,FALSE,hand_right_6,3,Poignée droite du roi Viking,0,22,0,0,0
+350,FALSE,hand_right_6,3,Poignée droite du roi Viking,0,5,0,0,0
+351,FALSE,hand_right_6,3,Poignée droite du roi Viking,0,1,0,0,0
+352,FALSE,hand_right_7,3,Gantelet droit serti de l'Empereur,0,22,0,0,0
+353,FALSE,hand_right_7,3,Gantelet droit serti de l'Empereur,0,5,0,0,0
+354,FALSE,hand_right_7,3,Gantelet droit serti de l'Empereur,0,1,0,0,0
+355,FALSE,hand_right_8,3,Revers droit du Sans-âme,0,22,0,0,0
+356,FALSE,hand_right_8,3,Revers droit du Sans-âme,0,5,0,0,0
+357,FALSE,hand_right_8,3,Revers droit du Sans-âme,0,1,0,0,0
+358,FALSE,hand_right_9,3,Griffes droites du Yersine,0,22,0,0,0
+359,FALSE,hand_right_9,3,Griffes droites du Yersine,0,5,0,0,0
+360,FALSE,hand_right_9,3,Griffes droites du Yersine,0,1,0,0,0
+361,FALSE,hand_right_39,3,Joyau droit des gardiens du Sanctuaire,0,22,0,0,0
+362,FALSE,hand_right_39,3,Joyau droit des gardiens du Sanctuaire,0,5,0,0,0
+363,FALSE,hand_right_39,3,Joyau droit des gardiens du Sanctuaire,0,1,0,0,0
+364,FALSE,hand_right_40,3,Promesse Est du premier Templier,0,22,0,0,0
+365,FALSE,hand_right_40,3,Promesse Est du premier Templier,0,5,0,0,0
+366,FALSE,hand_right_40,3,Promesse Est du premier Templier,0,1,0,0,0
+367,FALSE,hand_right_16,3,Levée droite des fils du Valhalla,0,5,0,0,0
+368,FALSE,hand_right_16,3,Levée droite des fils du Valhalla,0,1,0,0,0
+369,FALSE,hand_right_17,3,Liane droite de Rhaal'Zath,0,5,0,0,0
+370,FALSE,hand_right_17,3,Liane droite de Rhaal'Zath,0,1,0,0,0
+371,FALSE,hand_right_18,3,Saisie droite du Damné Boultag,0,5,0,0,0
+372,FALSE,hand_right_18,3,Saisie droite du Damné Boultag,0,1,0,0,0
+373,FALSE,hand_right_19,3,Trahison droite du Bushi Yamino,0,5,0,0,0
+374,FALSE,hand_right_19,3,Trahison droite du Bushi Yamino,0,1,0,0,0
+375,FALSE,hand_right_31,3,Omega de l'Unique,0,1,0,0,0
+376,FALSE,hand_right_32,3,Anihilation du Serviteur du Mal,0,1,0,0,0
