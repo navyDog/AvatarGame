@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+
+  --dist-1: 10px;
+  --dist-2: 20px;
+  --dist-3: 40px;
+}
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  font-family: arial, sans-serif;
+}
+app-component {
+  width: auto;
+  height: auto;
+}
