@@ -1,7 +1,13 @@
-#navTop {
+#navTop,
+app-navigation-top {
   width: 100vw;
   height: 100px;
-  /*background-color: lightcoral;*/
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 #bodyContent {
   width: 100vw;
