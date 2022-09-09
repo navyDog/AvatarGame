@@ -8,9 +8,10 @@ import { Produit } from './formation/class/produit';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+<<<<<<< HEAD
   title = 'AngularAvatarGame';
 
   produits:Array<Produit> = new Array();
@@ -27,4 +28,7 @@ export class AppComponent {
 
   }
 
+=======
+  title = 'AvatarGame';
+>>>>>>> e2b43961bb96e1f4928780112a49b95f335738c7
 }
