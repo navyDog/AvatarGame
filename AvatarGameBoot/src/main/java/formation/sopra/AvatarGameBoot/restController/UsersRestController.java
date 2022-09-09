@@ -20,6 +20,7 @@ public class UsersRestController {
 	private UsersService usersService;
 	
 	
+	
 	@GetMapping("/{id}")
 	@JsonView(JsonViews.Base.class)
 	public Users getById(@PathVariable Long id) {

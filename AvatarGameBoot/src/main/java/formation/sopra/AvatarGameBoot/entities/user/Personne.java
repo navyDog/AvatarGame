@@ -14,16 +14,7 @@ public abstract class Personne {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqPersonne")
 	private Long id;
-	@Column(name="password")
-	private String mdp;
-	@Column(name="statue")
-	private String loginStatue;
-	@Column(name="register_date")
-	private LocalDate registerDate;
-	@Column(name="email")
-	private String email;
-	@Column(name="pseudo")
-	private String pseudo;
+
 	
 	public Personne() {
 	}
@@ -36,47 +27,6 @@ public abstract class Personne {
 	public void setId(Long id) {
 		this.id = id;
 	}
-
-	public String getMdp() {
-		return mdp;
-	}
-
-	public void setMdp(String mdp) {
-		this.mdp = mdp;
-	}
-
-	public String getLoginStatue() {
-		return loginStatue;
-	}
-
-	public void setLoginStatue(String loginStatue) {
-		this.loginStatue = loginStatue;
-	}
-
-	public LocalDate getLocalDate() {
-		return registerDate;
-	}
-
-	public void setLocalDate(LocalDate localDate) {
-		this.registerDate = localDate;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getPseudo() {
-		return pseudo;
-	}
-
-	public void setPseudo(String pseudo) {
-		this.pseudo = pseudo;
-	}
-
 
 	@Override
 	public int hashCode() {

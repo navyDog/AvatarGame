@@ -48,6 +48,7 @@ public class Item {
 	@JsonView( {JsonViews.Base.class} )
 	private String image;
 	@Column(name="item_price")
+	@JsonView( {JsonViews.Base.class} )
 	private Double prix;
 	@ManyToOne
 	@JoinColumn(name="item_id_user", foreignKey = @ForeignKey(name="item_item_id_user_fk"))
