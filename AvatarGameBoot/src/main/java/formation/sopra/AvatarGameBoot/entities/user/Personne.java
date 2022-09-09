@@ -1,18 +1,21 @@
 package formation.sopra.AvatarGameBoot.entities.user;
 
-import java.time.LocalDate;
 import java.util.Objects;
 
-import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
+import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
+
 @MappedSuperclass
 public abstract class Personne {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqPersonne")
+	@JsonView(JsonViews.Base.class)
 	private Long id;
 
 	

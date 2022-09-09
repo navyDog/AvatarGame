@@ -52,7 +52,7 @@ public class Item {
 	private Double prix;
 	@ManyToOne
 	@JoinColumn(name="item_id_user", foreignKey = @ForeignKey(name="item_item_id_user_fk"))
-	@JsonView( {JsonViews.Base.class} )
+	@JsonView( {JsonViews.ItemUpdate.class} )
 	private Users owner;
     
 	@ManyToOne

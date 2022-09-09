@@ -9,15 +9,14 @@ import org.springframework.stereotype.Service;
 import formation.sopra.AvatarGameBoot.repositories.UtilisateurRepository;
 
 @Service
-public class CustomUserDetailsService implements UserDetailsService{
-	
+public class CustomUserDetailsService implements UserDetailsService {
+
 	@Autowired
-	private UtilisateurRepository utilisateurRepository;
-	
+	private UtilisateurRepository utilisateurRepo;
+
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		return utilisateurRepository
-				.findByLogin(username.toLowerCase())
-					.orElseThrow(()->{throw new UsernameNotFoundException("utilisateur inconnu");});
-		}
+		return utilisateurRepo.findByLogin(username).orElseThrow(()->{throw new UsernameNotFoundException("utilisateur inconnu");});
+	}
+
 }

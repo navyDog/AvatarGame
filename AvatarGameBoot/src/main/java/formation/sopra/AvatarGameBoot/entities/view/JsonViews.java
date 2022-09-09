@@ -9,4 +9,8 @@ public class JsonViews {
 	
 	public static class AvatarWithItem extends Base {}
 	
+	public static class UsersWithItems extends Base{}
+	
+	public static class UsersWithAvatars extends Base{}
+	
 }

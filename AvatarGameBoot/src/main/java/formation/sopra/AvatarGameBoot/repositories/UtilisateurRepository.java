@@ -8,4 +8,5 @@ import formation.sopra.AvatarGameBoot.entities.user.Utilisateur;
 
 public interface UtilisateurRepository extends JpaRepository<Utilisateur, Long>{
 	Optional<Utilisateur> findByLogin(String login);
+	Optional<Utilisateur> findByEmail(String email);
 }

@@ -21,9 +21,13 @@ import org.springframework.web.server.ResponseStatusException;
 import com.fasterxml.jackson.annotation.JsonView;
 
 import formation.sopra.AvatarGameBoot.entities.user.Role;
+import formation.sopra.AvatarGameBoot.entities.user.Users;
 import formation.sopra.AvatarGameBoot.entities.user.Utilisateur;
 import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
+import formation.sopra.AvatarGameBoot.repositories.UsersRepository;
 import formation.sopra.AvatarGameBoot.repositories.UtilisateurRepository;
+import formation.sopra.AvatarGameBoot.service.ItemService;
+import formation.sopra.AvatarGameBoot.service.UsersService;
 
 //de la merde
 
@@ -37,6 +41,10 @@ public class UtilisateurRestController {
 	private UtilisateurRepository utilisateurRepo;
 	@Autowired
 	private PasswordEncoder passwordEncoder;
+	@Autowired
+	private UsersService usersService;
+	@Autowired
+	private ItemService itemService;
 
 	private final static Logger LOGGER=LoggerFactory.getLogger(UtilisateurRestController.class);
 	
@@ -56,8 +64,15 @@ public class UtilisateurRestController {
 		if(utilisateurRepo.findByLogin(utilisateur.getLogin()).isPresent()) {
 			throw new ResponseStatusException(HttpStatus.CONFLICT);
 		}
+		if(utilisateurRepo.findByEmail(utilisateur.getEmail()).isPresent()) {
+		throw new ResponseStatusException(HttpStatus.CONFLICT);
+		}
 		utilisateur.setPassword(passwordEncoder.encode(utilisateur.getPass()));
 		utilisateur.setRole(Role.ROLE_USER);
+		utilisateur.setUsers(
+				usersService.create(new Users())
+				);
+		itemService.InscriptionCreation(utilisateur.getUsers());
 		return utilisateurRepo.save(utilisateur);
 	}
 	

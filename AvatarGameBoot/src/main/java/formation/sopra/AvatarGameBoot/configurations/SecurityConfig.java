@@ -23,7 +23,6 @@ public class SecurityConfig {
 				.antMatchers(HttpMethod.OPTIONS).anonymous()
 				.antMatchers(HttpMethod.POST,"/api/auth/inscription").anonymous()
 				.antMatchers(HttpMethod.GET,"/api/auth/check/**").anonymous()
-				
 				.antMatchers("/api/**").anonymous()
 			.and()
 			.httpBasic();

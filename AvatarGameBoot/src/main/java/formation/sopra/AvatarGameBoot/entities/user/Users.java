@@ -9,28 +9,37 @@ import javax.persistence.Entity;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
 import formation.sopra.AvatarGameBoot.entities.avatar.Avatar;
 import formation.sopra.AvatarGameBoot.entities.item.Item;
+import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 
 @Entity
 @Table(name="users")
 @SequenceGenerator(name = "seqPersonne", sequenceName = "seq_users", allocationSize = 1, initialValue = 88810000)
 @NamedQueries({
-				@NamedQuery(name="Users.findByKeyWithItems", query = "select u from Users u left join fetch u.items where u.id=:id"),
-				@NamedQuery(name="Users.findByKeyWithAvatars", query = "select u from Users u left join fetch u.avatar where u.id=:id") 
+				@NamedQuery(name="Users.findByKeyWithItems", 
+						query = "select u from Users u left join fetch u.items where u.id=:id"),
+				@NamedQuery(name="Users.findByKeyWithAvatars", 
+						query = "select u from Users u left join fetch u.avatar where u.id=:id") 
 })
 public class Users extends Personne {
 
-
+	@JsonView(JsonViews.Base.class)
 	@Column(name="balance")
 	private double solde;
 	@OneToMany (mappedBy = "owner")
+	@JsonView(JsonViews.UsersWithItems.class)
 	private Set<Item> items;
-	
+	@OneToOne (mappedBy = "users")
+	private Utilisateur utilisateur;
 	@OneToMany (mappedBy = "owner")
+	@JsonView(JsonViews.UsersWithAvatars.class)
 	private Set<Avatar> avatar;
 	
 	public Users () {	
@@ -59,6 +68,14 @@ public class Users extends Personne {
 
 	public void setAvatar(Set<Avatar> avatar) {
 		this.avatar = avatar;
+	}
+
+	public Utilisateur getUtilisateur() {
+		return utilisateur;
+	}
+
+	public void setUtilisateur(Utilisateur utilisateur) {
+		this.utilisateur = utilisateur;
 	}
 	
 	

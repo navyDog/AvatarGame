@@ -29,7 +29,8 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 @Table(name="avatar")
 @SequenceGenerator(name = "seqAvatar", sequenceName = "seq_avatar", allocationSize = 1, initialValue = 20000 )
 @NamedQueries({
-	@NamedQuery(name="Avatar.findByKeyWithItems", query = "select a from Avatar a left join fetch a.compose where a.id=:id"),
+	@NamedQuery(name="Avatar.findByKeyWithItems", 
+			query = "select a from Avatar a left join fetch a.compose where a.id=:id"),
 })
 public class Avatar {
 	@JsonView( {JsonViews.Base.class} )
@@ -49,6 +50,7 @@ public class Avatar {
 	@JsonView( {JsonViews.Base.class} )
 	@ManyToOne
 	@JoinColumn(name="avatar_id_user", foreignKey = @ForeignKey(name="avatar_avatar_id_user_fk"))
+	@NotEmpty(message ="owner obligatoire")
 	private Users owner;
 	@Version
 	private int version;

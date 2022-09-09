@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 
 import formation.sopra.AvatarGameBoot.entities.avatar.Avatar;
 import formation.sopra.AvatarGameBoot.entities.item.Item;
+import formation.sopra.AvatarGameBoot.entities.item.Membres;
+import formation.sopra.AvatarGameBoot.entities.item.Rarity;
 import formation.sopra.AvatarGameBoot.entities.user.Users;
 import formation.sopra.AvatarGameBoot.exceptions.ItemException;
 import formation.sopra.AvatarGameBoot.repositories.ItemRepository;
@@ -23,6 +25,7 @@ public class ItemService {
 	private UsersService usersService;
 	
 	public Item create(Item item) {
+		item.setAvatar(null);
 		item.setCrafted(false);
 		return itemRepo.save(item);
 	}
@@ -66,4 +69,20 @@ public class ItemService {
 	public void deleteById(Long id) {
 		delete(getById(id));
 	}
+	
+	public void InscriptionCreation(Users users) {
+			creationHead(users);
+	}
+	
+	public void creationHead(Users users) {
+		Item head = new Item();
+		head.setMembre(Membres.H);
+		head.setRarity(Rarity.C);
+		head.setNom("testInscription");
+		head.setOwner(users);
+		head.setImage("");
+		head.setPrix(null);
+		create(head);
+	}
+	
 }

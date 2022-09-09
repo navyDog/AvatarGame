@@ -8,9 +8,13 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
@@ -31,11 +35,24 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 
 @Entity
 @Table(name = "utilisateur")
-@SequenceGenerator(name="seqUtilisateur",sequenceName="seq_utilisateur",allocationSize = 1, initialValue = 99910000)
+@SequenceGenerator(name="seqUtilisateur",sequenceName="seq_utilisateur",
+allocationSize = 1, initialValue = 99910000)
 public class Utilisateur implements UserDetails{
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "seqUtilisateur")
 	private Long id;
+	@Column(name = "prenom", nullable = false)
+	@NotEmpty
+	@JsonView(JsonViews.Base.class)
+	private String prenom;
+	@Column(name = "nom", nullable = false)
+	@NotEmpty
+	@JsonView(JsonViews.Base.class)
+	private String nom;
+	@Column(name = "email", nullable = false, unique = true)
+	@NotEmpty
+	@JsonView(JsonViews.Base.class)
+	private String email;
 	@Column(name = "login", nullable = false, unique = true)
 	@NotEmpty
 	@JsonView(JsonViews.Base.class)
@@ -45,6 +62,10 @@ public class Utilisateur implements UserDetails{
 	@Enumerated(EnumType.STRING)
 	@JsonView(JsonViews.Base.class)
 	private Role role;
+	@JsonView( {JsonViews.Base.class} )
+	@OneToOne
+	@JoinColumn(name="utilisateur_id_user", foreignKey = @ForeignKey(name="utilisateur_utilisateur_id_user_fk"))
+	private Users users;
 
 	@Transient
 	@Pattern(regexp = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[*?.@!=+#]).{4,20}$")
@@ -149,6 +170,38 @@ public class Utilisateur implements UserDetails{
 	public boolean isEnabled() {
 		// TODO Auto-generated method stub
 		return true;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Users getUsers() {
+		return users;
+	}
+
+	public void setUsers(Users users) {
+		this.users = users;
 	}
 	
 	
