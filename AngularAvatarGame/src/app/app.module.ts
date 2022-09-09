@@ -12,6 +12,9 @@ import { MarketComponent } from './pages/market/market.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { GamesComponent } from './pages/games/games.component';
 import { NavigationTopComponent } from './config/navigation-top/navigation-top.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { AuthComponent } from './pages/auth/auth.component';
+import { RegisComponent } from './pages/regis/regis.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { NavigationTopComponent } from './config/navigation-top/navigation-top.c
     GalleryComponent,
     GamesComponent,
     NavigationTopComponent,
+    SettingsComponent,
+    AuthComponent,
+    RegisComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
