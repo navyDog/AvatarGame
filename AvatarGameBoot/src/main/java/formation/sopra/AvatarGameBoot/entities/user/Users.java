@@ -17,7 +17,7 @@ import formation.sopra.AvatarGameBoot.entities.item.Item;
 
 @Entity
 @Table(name="users")
-@SequenceGenerator(name = "seqPersonne", sequenceName = "seq_users", allocationSize = 1, initialValue = 10000)
+@SequenceGenerator(name = "seqPersonne", sequenceName = "seq_users", allocationSize = 1, initialValue = 88810000)
 @AttributeOverrides({
 	@AttributeOverride(name = "password", column = @Column(name="users_password")),
 	@AttributeOverride(name = "statue", column = @Column(name="users_statue")),
