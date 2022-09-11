@@ -9,7 +9,7 @@
 </div>
 <div id="navTopContent">
   <div class="navTopItem">
-    <h1>GrosseCourgeDu31</h1>
+    <h1>{{ getUserName }}</h1>
   </div>
   <div class="navTopItem">
     <img
@@ -23,7 +23,7 @@
   </div>
   <div class="navTopItem">
     <img
-      src="assets/imgs/004-2.png"
+      src="assets/imgs/003-2.png"
       title=""
       alt=""
       draggable="false"
@@ -50,7 +50,14 @@
       ondragstart="return false"
     />
   </button>
-  <button class="navTopItem btn">
+  <button (click)="logout()">Déconnexion</button>
+  <a
+    class="navTopItem btn"
+    [routerLink]="['/settings']"
+    routerLinkActive="active"
+    draggable="false"
+    ondragstart="return false"
+  >
     <img
       src="assets/imgs/005-1.png"
       title=""
@@ -58,6 +65,5 @@
       draggable="false"
       ondragstart="return false"
     />
-    <a [routerLink]="['/auth']" routerLinkActive="active">a</a>
-  </button>
+  </a>
 </div>

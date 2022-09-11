@@ -25,7 +25,7 @@
   width: 400px;
   /*background-color: darksalmon;*/
 }
-#navTopContent button[class~="navTopItem"]:last-child {
+#navTopContent a[class~="navTopItem"]:last-child {
   margin-right: 2em;
 }
 .navTopItem {
