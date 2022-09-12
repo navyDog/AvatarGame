@@ -62,7 +62,7 @@ public class Utilisateur implements UserDetails{
 	@Enumerated(EnumType.STRING)
 	@JsonView(JsonViews.Base.class)
 	private Role role;
-	@JsonView( {JsonViews.Base.class} )
+	@JsonView( {JsonViews.Utilisateur.class} )
 	@OneToOne
 	@JoinColumn(name="utilisateur_id_user", foreignKey = @ForeignKey(name="utilisateur_utilisateur_id_user_fk"))
 	private Users users;

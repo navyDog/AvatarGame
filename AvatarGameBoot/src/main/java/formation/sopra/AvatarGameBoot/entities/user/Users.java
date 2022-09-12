@@ -2,8 +2,6 @@ package formation.sopra.AvatarGameBoot.entities.user;
 
 import java.util.Set;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.NamedQueries;
@@ -26,7 +24,11 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 				@NamedQuery(name="Users.findByKeyWithItems", 
 						query = "select u from Users u left join fetch u.items where u.id=:id"),
 				@NamedQuery(name="Users.findByKeyWithAvatars", 
-						query = "select u from Users u left join fetch u.avatar where u.id=:id") 
+						query = "select u from Users u left join fetch u.avatar where u.id=:id"),
+//				@NamedQuery(name="Users.findByKeyWithCommonItems", 
+//				query = "select u from Users u left join fetch u.items where u.id=:id and u.items.rarity=0"),
+				@NamedQuery(name="Users.findInfo",
+						query = "select u from Users u left join fetch u.utilisateur where u.id=:id")
 })
 public class Users extends Personne {
 
@@ -37,6 +39,7 @@ public class Users extends Personne {
 	@JsonView(JsonViews.UsersWithItems.class)
 	private Set<Item> items;
 	@OneToOne (mappedBy = "users")
+	@JsonView(JsonViews.UsersInfo.class)
 	private Utilisateur utilisateur;
 	@OneToMany (mappedBy = "owner")
 	@JsonView(JsonViews.UsersWithAvatars.class)

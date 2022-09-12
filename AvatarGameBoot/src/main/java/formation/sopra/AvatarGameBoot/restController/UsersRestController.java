@@ -43,11 +43,24 @@ public class UsersRestController {
 		
 		return usersService.getByIdWithItems(id);
 	}
+//	
+//	@GetMapping("/{id}/items/common")
+//	@JsonView(JsonViews.UsersWithItems.class)
+//	public Users findByKeyWithCommonItems(@PathVariable Long id) {
+//		
+//		return usersService.getByIdWithCommonItems(id);
+//	}
 	
 	@GetMapping("/{id}/avatars")
 	@JsonView(JsonViews.UsersWithAvatars.class)
 	public Users findByKeyWithAvatars(@PathVariable Long id) {
 		
 		return usersService.getByIdWithAvatars(id);	
+	}
+	
+	@GetMapping("/{id}/information")
+	@JsonView(JsonViews.UsersInfo.class)
+	public Users findByIdWithInfo(@PathVariable Long id) {
+		return usersService.getByIdWithInfo(id);
 	}
 }

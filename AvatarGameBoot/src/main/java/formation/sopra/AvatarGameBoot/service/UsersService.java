@@ -41,6 +41,13 @@ public class UsersService {
 		return usersRepo.findByKeyWithAvatars(id).orElseThrow(UsersException::new);
 	}
 	
+	public Users getByIdWithInfo(Long id) {
+		return usersRepo.findInfo(id).orElseThrow(UsersException::new);
+	}
+	
+//	public Users getByIdWithCommonItems(Long id) {
+//		return usersRepo.findByKeyWithCommonItems(id).orElseThrow(UsersException::new);
+//	}
 	
 	public Users update(Users users) {
 		Users clientEnBase = getById(users.getId());

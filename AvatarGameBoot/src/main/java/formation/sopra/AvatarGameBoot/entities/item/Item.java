@@ -27,7 +27,7 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 @Table(name="items")
 @SequenceGenerator(sequenceName = "seqItem", name = "seq_item", allocationSize = 1, initialValue = 1)
 public class Item {
-	@JsonView( {JsonViews.Base.class} )
+	@JsonView( {JsonViews.Item.class} )
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqItem")
 	@Column(name = "item_id")
@@ -52,12 +52,12 @@ public class Item {
 	private Double prix;
 	@ManyToOne
 	@JoinColumn(name="item_id_user", foreignKey = @ForeignKey(name="item_item_id_user_fk"))
-	@JsonView( {JsonViews.ItemUpdate.class} )
+	@JsonView( {JsonViews.Item.class} )
 	private Users owner;
     
 	@ManyToOne
 	@JoinColumn(name="item_id_avatar", foreignKey = @ForeignKey(name="item_item_id_avatar_fk"))
-	@JsonView( {JsonViews.ItemUpdate.class} )
+	@JsonView( {JsonViews.Base.class} )
 	private Avatar avatar;
 	@Column(name="item_craft_stat")
 	@JsonView( {JsonViews.Base.class} )

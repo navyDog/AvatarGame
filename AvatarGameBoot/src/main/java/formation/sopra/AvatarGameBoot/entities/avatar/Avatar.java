@@ -38,11 +38,12 @@ public class Avatar {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqAvatar" )
 	@Column(name="avatar_id")
 	private Long id;
-	@JsonView( {JsonViews.Avatar.class} )
+	@JsonView( {JsonViews.Base.class} )
 	@Column(name="name", nullable = false)
 	@NotEmpty(message = "nom obligatoire")
 	private String nom;
 	@Column(name="price")
+	@JsonView( {JsonViews.Base.class} )
 	private Double price;
 	@JsonView( {JsonViews.AvatarWithItem.class} )
 	@OneToMany(mappedBy = "avatar")
