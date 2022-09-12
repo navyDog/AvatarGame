@@ -16,6 +16,7 @@
 
   --col-text-sec: rgba(180, 180, 180, 1);
   --col-text-hover-red: rgba(239, 84, 102, 1);
+  --col-text-hover-redbis: rgba(219, 52, 61, 1);
 }
 body {
   position: absolute;

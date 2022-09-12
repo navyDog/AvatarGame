@@ -32,24 +32,27 @@
 }
 #regis form label {
   font-size: 0.8em;
+  margin-right: 0.5em;
 }
 #regis form input {
   border: none;
   background-color: var(--col-line);
   padding: 0.5em 1em;
 }
-#regis form button {
-  border: solid 1px var(--col-line);
-  padding: 0.5em;
-  background-color: transparent;
+form button {
+  border: solid 1px var(--col-text-hover-red);
+  padding: 0.5em 0.75em;
+  background-color: var(--col-text-hover-red);
   cursor: pointer;
   transition: 0.2s;
-  border-radius: 6px;
+  border-radius: 1.5em;
   margin: 1em;
+  font-family: inherit;
+  font-size: 0.7em;
+  color: white;
 }
-#regis form button:hover {
-  background-color: var(--col-line);
-  border: solid 1px var(--col-text-hover-red);
+form button:hover {
+  background-color: var(--col-text-hover-redbis);
 }
 #regis form a {
   font-size: 0.7em;

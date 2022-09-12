@@ -30,3 +30,6 @@
 2022-09-12 09:48:26.727  INFO 13028 --- [http-nio-8080-exec-8] f.s.A.r.UtilisateurRestController        : user
 2022-09-12 09:49:17.988  INFO 13028 --- [http-nio-8080-exec-10] f.s.A.r.UtilisateurRestController        : user
 2022-09-12 09:52:22.033  INFO 13028 --- [http-nio-8080-exec-2] f.s.A.r.UtilisateurRestController        : user
+2022-09-12 10:13:29.281  INFO 13028 --- [http-nio-8080-exec-6] f.s.A.r.UtilisateurRestController        : user
+2022-09-12 10:17:35.699  INFO 13028 --- [http-nio-8080-exec-9] f.s.A.r.UtilisateurRestController        : user
+2022-09-12 10:22:27.637  INFO 13028 --- [http-nio-8080-exec-2] f.s.A.r.UtilisateurRestController        : user
