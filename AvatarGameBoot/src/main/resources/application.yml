@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6c6c19ac95fe4779912c248eb122077170941f7d
 server:
   servlet:
     context-path: /avatar
@@ -6,7 +10,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     password: postgres
     url: jdbc:postgresql://localhost:5432/avatargame
-    username: navydog
+    username: postgres
   jpa:
     hibernate:
       ddl-auto: update

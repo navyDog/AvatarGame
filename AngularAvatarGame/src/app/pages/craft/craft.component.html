@@ -1,1 +1,84 @@
-<p>craft works!</p>
+<div id="craft">
+  <p id="note">
+    <i class="fa-solid fa-lightbulb"></i>
+    Pour crafter un nouvel <b>Avatar</b>, sélectionnez les 6 composants qui vous
+    souhaitez, puis cliquez sur le bouton <b>Craft</b>.
+  </p>
+  <div id="craftContent">
+    <div class="craftLine">
+      <img
+        id="craftAvatarHead"
+        src="assets/items/HEAD/head_18.png"
+        alt=""
+        title=""
+        ondrag="false"
+        ondragstart="return false"
+        onclick=""
+      />
+    </div>
+    <div class="craftLine">
+      <img
+        id="craftAvatarHandRight"
+        src="assets/items/HAND_R/hand_right_18.png"
+        alt=""
+        title=""
+        ondrag="false"
+        ondragstart="return false"
+        onclick=""
+      />
+      <img
+        id="craftAvatarBody"
+        src="assets/items/BODY/body_18.png"
+        alt=""
+        title=""
+        ondrag="false"
+        ondragstart="return false"
+        onclick=""
+      />
+      <img
+        id="craftAvatarHandLeft"
+        src="assets/items/HAND_L/hand_left_18.png"
+        alt=""
+        title=""
+        ondrag="false"
+        ondragstart="return false"
+        onclick=""
+      />
+    </div>
+    <div class="craftLine">
+      <img
+        id="craftAvatarFeetRight"
+        src="assets/items/FEET_R/feet_right_18.png"
+        alt=""
+        title=""
+        ondrag="false"
+        ondragstart="return false"
+        onclick=""
+      />
+      <img
+        id="craftAvatarFeetLeft"
+        src="assets/items/FEET_L/feet_left_18.png"
+        alt=""
+        title=""
+        ondrag="false"
+        ondragstart="return false"
+        onclick=""
+      />
+    </div>
+    <div>
+      <button onclick="craftOverlay('on')" class="submit">Crafter !</button>
+      <button onclick="craftErase()" class="erase">Annuler</button>
+    </div>
+  </div>
+  <div id="craftConfirm">
+    <h1>Êtes-vous sûr ?</h1>
+    <div>
+      <button onclick="craftOverlay('off')" class="submit">Oui</button>
+      <button onclick="craftOverlay('off')" class="erase">Non</button>
+    </div>
+  </div>
+  <div>
+    <h1>Choix d'un item</h1>
+    <div><div class="craftItem"></div></div>
+  </div>
+</div>
