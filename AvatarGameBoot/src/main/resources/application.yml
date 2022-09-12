@@ -1,13 +1,3 @@
-logging:
-  file:
-    name: logs/mylog.log
-  level:
-    formation:
-      sopra:
-        formationSpringBoot:
-          service:
-            DisplayConsolService: trace
-    root: info
 server:
   servlet:
     context-path: /avatar
