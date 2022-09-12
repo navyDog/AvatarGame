@@ -40,7 +40,7 @@ public class UsersRestController {
 	@GetMapping("/{id}/items")
 	@JsonView(JsonViews.UsersWithItems.class)
 	public Users findByKeyWithItems(@PathVariable Long id) {
-		LOGGER.info("jjjjj");
+		
 		return usersService.getByIdWithItems(id);
 	}
 	

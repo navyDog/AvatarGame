@@ -1,11 +1,15 @@
 package formation.sopra.AvatarGameBoot.service;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import formation.sopra.AvatarGameBoot.entities.avatar.Avatar;
+import formation.sopra.AvatarGameBoot.entities.item.Item;
 import formation.sopra.AvatarGameBoot.exceptions.AvatarException;
 import formation.sopra.AvatarGameBoot.repositories.AvatarRepository;
 import formation.sopra.AvatarGameBoot.repositories.ItemRepository;
@@ -19,9 +23,17 @@ public class AvatarService {
 	private AvatarRepository avatarRepo;
 	@Autowired
 	private ItemRepository itemRepository;
+	@Autowired
+	private ItemService itemService;
+	
+	public Avatar setItems(Avatar avatar, Set<Item> items) {
+		items.forEach(t -> t.setAvatar(avatar));
+		items.forEach(t -> t.setCrafted(true));
+		items.forEach(t -> itemService.update(t));	
+		return avatarRepo.save(avatar);
+	}
 	
 	public Avatar create(Avatar avatar) {
-
 		return avatarRepo.save(avatar);
 	}
 	

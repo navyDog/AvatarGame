@@ -33,12 +33,12 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 			query = "select a from Avatar a left join fetch a.compose where a.id=:id"),
 })
 public class Avatar {
-	@JsonView( {JsonViews.Base.class} )
+	@JsonView( {JsonViews.Avatar.class} )
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqAvatar" )
 	@Column(name="avatar_id")
 	private Long id;
-	@JsonView( {JsonViews.Base.class} )
+	@JsonView( {JsonViews.Avatar.class} )
 	@Column(name="name", nullable = false)
 	@NotEmpty(message = "nom obligatoire")
 	private String nom;
@@ -47,10 +47,10 @@ public class Avatar {
 	@JsonView( {JsonViews.AvatarWithItem.class} )
 	@OneToMany(mappedBy = "avatar")
 	private Set<Item> compose;
-	@JsonView( {JsonViews.Base.class} )
+	@JsonView( {JsonViews.Avatar.class} )
 	@ManyToOne
 	@JoinColumn(name="avatar_id_user", foreignKey = @ForeignKey(name="avatar_avatar_id_user_fk"))
-	@NotEmpty(message ="owner obligatoire")
+	//@NotEmpty(message ="owner obligatoire")
 	private Users owner;
 	@Version
 	private int version;
