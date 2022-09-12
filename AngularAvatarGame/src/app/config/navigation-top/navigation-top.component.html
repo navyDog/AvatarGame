@@ -12,45 +12,20 @@
     <h1>{{ getUserName }}</h1>
   </div>
   <div class="navTopItem">
-    <img
-      src="assets/imgs/001-1.png"
-      title=""
-      alt=""
-      draggable="false"
-      ondragstart="return false"
-    />
+    <i class="fa-solid fa-star"></i>
     <p>4,5</p>
   </div>
   <div class="navTopItem">
-    <img
-      src="assets/imgs/003-2.png"
-      title=""
-      alt=""
-      draggable="false"
-      ondragstart="return false"
-    />
+    <i class="fa-solid fa-list-ol"></i>
     <p>13</p>
   </div>
   <div class="navTopItem">
-    <img
-      src="assets/imgs/001-2.png"
-      title=""
-      alt=""
-      draggable="false"
-      ondragstart="return false"
-    />
-    <p>19€</p>
+    <i class="fa-solid fa-sack-dollar"></i>
+    <p>19</p>
   </div>
   <button class="navTopItem btn">
-    <img
-      src="assets/imgs/002-2.png"
-      title=""
-      alt=""
-      draggable="false"
-      ondragstart="return false"
-    />
+    <i class="fa-solid fa-bell"></i>
   </button>
-  <button (click)="logout()">Déconnexion</button>
   <a
     class="navTopItem btn"
     [routerLink]="['/settings']"
@@ -58,12 +33,9 @@
     draggable="false"
     ondragstart="return false"
   >
-    <img
-      src="assets/imgs/005-1.png"
-      title=""
-      alt=""
-      draggable="false"
-      ondragstart="return false"
-    />
+    <i class="fa-solid fa-user-gear"></i>
   </a>
+  <button (click)="logout()" class="navTopItem btn">
+    <i class="fa-solid fa-right-from-bracket"></i>
+  </button>
 </div>

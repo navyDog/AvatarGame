@@ -1,7 +1,18 @@
+#navTopContent {
+  width: calc(100% - 300px);
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+}
+/* -------------------------------------------- IMAGE -------------------------------------------- */
 #navTopLogo {
   width: 300px;
-  height: 150px;
-  background-color: lightseagreen;
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,24 +22,10 @@
   width: 100%;
   height: auto;
 }
-#navTopContent {
-  width: calc(100% - 300px);
-  height: auto;
-  /*background-color: lightsteelblue;*/
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-}
+/* -------------------------------------------- NAME -------------------------------------------- */
 #navTopContent .navTopItem:first-child {
   width: 400px;
-  /*background-color: darksalmon;*/
-}
-#navTopContent a[class~="navTopItem"]:last-child {
-  margin-right: 2em;
-}
-.navTopItem {
+  height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -37,18 +34,54 @@
 .navTopItem h1 {
   font-family: var(--font-titles);
 }
-.navTopItem img {
-  width: 50px;
-  height: 50px;
+/* -------------------------------------------- ITEMS -------------------------------------------- */
+#navTopContent *[class~="navTopItem"]:last-child {
+  margin-right: 2em;
 }
-.navTopItem p {
-  padding-left: 0.25em;
-  font-family: var(--font-titles);
-  font-weight: bold;
-}
-button[class~="navTopItem"] {
-  margin: 0;
+.navTopItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   border: none;
+}
+.navTopItem * {
+  text-decoration: inherit;
+  color: inherit;
+  size: inherit;
+  padding: 0;
+  margin: 0;
+}
+.navTopItem i {
+  margin-bottom: 0.25em;
+}
+.navTopItem p {
+  before: "-";
+  font-size: 0.6em;
+  font-family: var(--font-main);
+  color: var(--col-text-sec);
+}
+.navTopItem p:before {
+  content: "- ";
+}
+.navTopItem p:after {
+  content: " -";
+}
+.navTopItem + .btn {
+  width: 2em;
+  height: 2em;
+  font-size: 1em;
+  transition: 0.4s;
+  border-radius: 50%;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
   cursor: pointer;
+}
+.navTopItem + .btn:hover {
+  background-color: var(--col-line);
 }

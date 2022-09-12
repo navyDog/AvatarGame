@@ -1,0 +1,99 @@
+#inventory {
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - var(--height-nav-top));
+  /*background-color: red;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+/* -------------------------------------------- COMMON -------------------------------------------- */
+.invTopBtns {
+  width: 100%;
+  height: 50px;
+  /*background-color: purple;*/
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+.invTopBtns button {
+  height: 75%;
+  width: auto;
+  border: solid 3px var(--col-border);
+  border-radius: 15px 15px 0 0;
+  border-bottom: none;
+  background-color: var(--col-btn-1);
+  box-shadow: 1px 4px 5px 1px var(--col-btn-1bis) inset;
+  margin-left: -3px;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s;
+}
+.invTopBtns button:first-child {
+  margin-left: 0;
+}
+.invTopBtns button:hover {
+  height: 100%;
+  box-shadow: 1px 4px 5px 1px var(--col-btn-1ter) inset;
+  background-image: radial-gradient(
+    var(--col-btn1) 50%,
+    var(--col-btn1bis) 50%
+  );
+}
+.invContent {
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - var(--height-nav-top) - var(--dist-2) - 50px);
+  /*background-color: brown;*/
+  border-radius: 15px;
+}
+/* -------------------------------------------- LEFT -------------------------------------------- */
+#invLeft {
+  width: calc(100% - 400px);
+  height: 100%;
+  height: calc(100vh - var(--height-nav-top));
+  /* background-color: lemonchiffon;*/
+  padding: var(--dist-1);
+}
+#invContentItems {
+}
+/* -------------------------------------------- RIGHT -------------------------------------------- */
+#invRight {
+  width: 400px;
+  height: 100%;
+  min-height: calc(100vh - var(--height-nav-top));
+  /*background-color: aqua;*/
+  padding: var(--dist-1);
+}
+#invContentAvatar {
+  border: solid 3px var(--col-border);
+  height: auto;
+}
+.invContentAvatar {
+  width: 100%;
+  height: 120px;
+  /*background-color: darkgoldenrod;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+#invContentAvatar div:first-child img:first-child,
+#invContentAvatar div:nth-child(2) img:nth-child(2) {
+  /*background-color: red;*/
+  width: 120px;
+  height: 120px;
+}
+#invContentAvatar div:nth-child(2) img:first-child,
+#invContentAvatar div:nth-child(2) img:last-child,
+#invContentAvatar div:last-child img {
+  /*background-color: green;*/
+  width: 100px;
+  height: 120px;
+}

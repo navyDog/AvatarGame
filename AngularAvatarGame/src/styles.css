@@ -6,8 +6,16 @@
   --dist-2: 20px;
   --dist-3: 40px;
 
-  --font-main: ;
-  --font-titles: "morris_romanbold";
+  --font-main: "Open Sans";
+  --font-titles: "Titillium Web";
+
+  --height-nav-top: 100px;
+  --width-nav: 200px;
+
+  --col-line: rgba(234, 234, 234, 1);
+
+  --col-text-sec: rgba(180, 180, 180, 1);
+  --col-text-hover-red: rgba(239, 84, 102, 1);
 }
 body {
   position: absolute;

@@ -1,42 +1,45 @@
-<form (ngSubmit)="submit(form)" #form="ngForm">
-  <table>
-    <tr>
-      <td><label>Utilisateur :</label></td>
-      <td>
-        <input
-          id="login"
-          name="login"
-          class="form-control"
-          [(ngModel)]="login"
-          required
-          #loginCtrl="ngModel"
-        />
-      </td>
-    </tr>
-    <tr>
-      <td><label>Mot de passe :</label></td>
-      <td>
-        <input
-          type="password"
-          name="password"
-          class="form-control"
-          [(ngModel)]="password"
-          #passwordCtrl="ngModel"
-          required
-        />
-      </td>
-    </tr>
-  </table>
-  <div class="form-group">
-    <button type="submit" class="btn btn-outline-primary">
-      <!--[disabled]="form.invalid"-->
-      S'authentifier
-    </button>
-    <a
-      routerLink="/regis"
-      routerLinkActive="active"
-      class="btn btn-outline-warning"
-      >Créer un compte</a
-    >
-  </div>
-</form>
+<div id="auth">
+  <form (ngSubmit)="submit(form)" #form="ngForm">
+    <h1>Authentification</h1>
+    <table>
+      <tr>
+        <td><label>Utilisateur :</label></td>
+        <td>
+          <input
+            id="login"
+            name="login"
+            class="form-control"
+            [(ngModel)]="login"
+            required
+            #loginCtrl="ngModel"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label>Mot de passe :</label></td>
+        <td>
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            [(ngModel)]="password"
+            #passwordCtrl="ngModel"
+            required
+          />
+        </td>
+      </tr>
+    </table>
+    <div class="form-group">
+      <button type="submit" class="btn btn-outline-primary">
+        <!--[disabled]="form.invalid"-->
+        S'authentifier
+      </button>
+      <a
+        routerLink="/regis"
+        routerLinkActive="active"
+        class="btn btn-outline-warning"
+        >Créer un compte</a
+      >
+    </div>
+  </form>
+</div>
