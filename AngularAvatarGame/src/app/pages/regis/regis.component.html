@@ -1,85 +1,90 @@
-<form>
-  <table>
-    <tr>
-      <td><label for="regisFirstName">Nom :</label></td>
-      <td>
-        <input
-          type="text"
-          id="regisFirstName"
-          autocomplete="off"
-          placeholder="DOE"
-        />
-      </td>
-    </tr>
-    <tr>
-      <td><label for="regisLastName">Prénom :</label></td>
-      <td>
-        <input
-          type="text"
-          id="regisLastName"
-          autocomplete="off"
-          placeholder="John"
-        />
-      </td>
-    </tr>
-    <tr>
-      <td><label for="regisMailFirst">Mail :</label></td>
-      <td>
-        <input
-          type="text"
-          id="regisMailFirst"
-          autocomplete="off"
-          placeholder="john.doe@gmail.com"
-        />
-      </td>
-    </tr>
-    <tr>
-      <td><label for="regisMailSec">Confirmez votre mail :</label></td>
-      <td>
-        <input
-          type="text"
-          id="regisMailSec"
-          autocomplete="off"
-          placeholder="john.doe@gmail.com"
-        />
-      </td>
-    </tr>
-    <tr>
-      <td><label for="regisUsername">Pseudo :</label></td>
-      <td>
-        <input
-          type="text"
-          id="regisUsername"
-          autocomplete="off"
-          placeholder="TheDestructor"
-        />
-      </td>
-    </tr>
-    <tr>
-      <td><label for="regisPasswordFirst">Mot de passe :</label></td>
-      <td>
-        <input
-          type="password"
-          id="regisPasswordFirst"
-          autocomplete="off"
-          placeholder="123456789132456789"
-        />
-      </td>
-    </tr>
-    <tr>
-      <td><label for="regisPasswordSec">Confirmez le mot de passe :</label></td>
-      <td>
-        <input
-          type="password"
-          id="regisPasswordSec"
-          autocomplete="off"
-          placeholder="123456789132456789"
-        />
-      </td>
-    </tr>
-  </table>
-  <div class="form-group">
-    <button type="submit">S'enregistrer</button>
-    <a routerLink="/auth" routerLinkActive="active">S'identifier</a>
-  </div>
-</form>
+<div id="regis">
+  <form>
+    <h1>Créer un compte</h1>
+    <table>
+      <tr>
+        <td><label for="regisFirstName">Nom :</label></td>
+        <td>
+          <input
+            type="text"
+            id="regisFirstName"
+            autocomplete="off"
+            placeholder="DOE"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="regisLastName">Prénom :</label></td>
+        <td>
+          <input
+            type="text"
+            id="regisLastName"
+            autocomplete="off"
+            placeholder="John"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="regisMailFirst">Mail :</label></td>
+        <td>
+          <input
+            type="text"
+            id="regisMailFirst"
+            autocomplete="off"
+            placeholder="john.doe@gmail.com"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="regisMailSec">Confirmez votre mail :</label></td>
+        <td>
+          <input
+            type="text"
+            id="regisMailSec"
+            autocomplete="off"
+            placeholder="john.doe@gmail.com"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="regisUsername">Pseudo :</label></td>
+        <td>
+          <input
+            type="text"
+            id="regisUsername"
+            autocomplete="off"
+            placeholder="TheDestructor"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="regisPasswordFirst">Mot de passe :</label></td>
+        <td>
+          <input
+            type="password"
+            id="regisPasswordFirst"
+            autocomplete="off"
+            placeholder="•••••••••••••••"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="regisPasswordSec">Confirmez le mot de passe :</label>
+        </td>
+        <td>
+          <input
+            type="password"
+            id="regisPasswordSec"
+            autocomplete="off"
+            placeholder="•••••••••••••••"
+          />
+        </td>
+      </tr>
+    </table>
+    <div class="form-group">
+      <button type="submit">Créer un compte</button>
+      <a routerLink="/auth" routerLinkActive="active">S'authentifier</a>
+    </div>
+  </form>
+</div>

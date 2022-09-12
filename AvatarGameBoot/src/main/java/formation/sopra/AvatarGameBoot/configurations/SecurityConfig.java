@@ -24,6 +24,8 @@ public class SecurityConfig {
 				.antMatchers(HttpMethod.POST,"/api/auth/inscription").anonymous()
 				.antMatchers(HttpMethod.GET,"/api/auth/check/**").anonymous()
 				.antMatchers("/api/**").anonymous()
+				.antMatchers(HttpMethod.GET,"/api/auth/check/**").permitAll()
+				.antMatchers("/api/**").permitAll()
 			.and()
 			.httpBasic();
 

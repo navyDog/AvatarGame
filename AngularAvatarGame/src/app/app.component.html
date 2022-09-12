@@ -1,9 +1,8 @@
-<div id="navTop" *ngIf="true">
-  <p [(ngModel)]="this.navDisplay"></p>
+<div id="navTop" *ngIf="logged()">
   <app-navigation-top></app-navigation-top>
 </div>
 <div id="bodyContent">
-  <app-navigation *ngIf="true"></app-navigation>
+  <app-navigation *ngIf="logged()"></app-navigation>
   <div id="mainContent">
     <router-outlet></router-outlet>
   </div>
