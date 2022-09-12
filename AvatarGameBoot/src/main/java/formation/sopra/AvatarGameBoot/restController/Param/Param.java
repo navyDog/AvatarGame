@@ -8,12 +8,12 @@ public class Param {
 	
 	private Users user;
 	private Avatar avatar;
-	private Item H;
-	private Item B;
-	private Item LH;
-	private Item RH;
-	private Item LL;
-	private Item RL;
+	private Item h;
+	private Item b;
+	private Item lh;
+	private Item rh;
+	private Item ll;
+	private Item rl;
 	
 	
 	
@@ -33,42 +33,44 @@ public class Param {
 	public void setAvatar(Avatar avatar) {
 		this.avatar = avatar;
 	}
-	public Item getLL() {
-		return LL;
-	}
-	public void setLL(Item lL) {
-		LL = lL;
-	}
+
 	public Item getH() {
-		return H;
+		return this.h;
 	}
 	public void setH(Item h) {
-		H = h;
+		this.h = h;
 	}
 	public Item getB() {
-		return B;
+		return this.b;
 	}
 	public void setB(Item b) {
-		B = b;
+		this.b = b;
 	}
-	public Item getLH() {
-		return LH;
+	public Item getLh() {
+		return lh;
 	}
-	public void setLH(Item lH) {
-		LH = lH;
+	public void setLh(Item lh) {
+		this.lh = lh;
 	}
-	public Item getRH() {
-		return RH;
+	public Item getRh() {
+		return rh;
 	}
-	public void setRH(Item rH) {
-		RH = rH;
+	public void setRh(Item rh) {
+		this.rh = rh;
 	}
-	public Item getRL() {
-		return RL;
+	public Item getLl() {
+		return ll;
 	}
-	public void setRL(Item rL) {
-		RL = rL;
+	public void setLl(Item ll) {
+		this.ll = ll;
 	}
+	public Item getRl() {
+		return rl;
+	}
+	public void setRl(Item rl) {
+		this.rl = rl;
+	}
+
 
 	
 }

@@ -1,12 +1,10 @@
 package formation.sopra.AvatarGameBoot.service;
 
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import formation.sopra.AvatarGameBoot.entities.avatar.Avatar;
 import formation.sopra.AvatarGameBoot.entities.item.Item;
@@ -27,6 +25,7 @@ public class AvatarService {
 	private ItemService itemService;
 	
 	public Avatar setItems(Avatar avatar, Set<Item> items) {
+		
 		items.forEach(t -> t.setAvatar(avatar));
 		items.forEach(t -> t.setCrafted(true));
 		items.forEach(t -> itemService.update(t));	

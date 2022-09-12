@@ -26,6 +26,7 @@ import formation.sopra.AvatarGameBoot.entities.item.Item;
 import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 import formation.sopra.AvatarGameBoot.restController.Param.Param;
 import formation.sopra.AvatarGameBoot.service.AvatarService;
+import formation.sopra.AvatarGameBoot.service.ItemService;
 
 
 @RestController
@@ -34,6 +35,8 @@ public class AvatarRestController {
 
 	@Autowired
 	private AvatarService avatarService;
+
+
 	
 	
 	@GetMapping("/{id}")
@@ -54,7 +57,7 @@ public class AvatarRestController {
 		return avatarService.getAll();
 	}
 	
-	@PostMapping("/{id}%{id1}%{id2}%{id3}%{id4}%{id5}%{id6}")
+	@PostMapping("/{id}/{id1}/{id2}/{id3}/{id4}/{id5}/{id6}")
 	@JsonView(JsonViews.Avatar.class)
 	public Avatar create(@Valid @RequestBody Param param,@PathVariable Long id,			
 			@PathVariable Long id1,@PathVariable Long id2,@PathVariable Long id3,
@@ -65,15 +68,19 @@ public class AvatarRestController {
 		}
 	param.getUser().setId(id);
 	param.getAvatar().setOwner(param.getUser());
-	avatarService.create(param.getAvatar());
+	
+	
 	Set<Item> items = new HashSet<>();
 	param.getH().setId(id1);items.add(param.getH());
 	param.getB().setId(id2);items.add(param.getB());
-	param.getLH().setId(id3);items.add(param.getLH());
-	param.getRL().setId(id4);items.add(param.getRH());
-	param.getLL().setId(id5);items.add(param.getLL());
-	param.getRL().setId(id6);items.add(param.getRL());
-	return avatarService.setItems(param.getAvatar(),items);
+	param.getLh().setId(id3);items.add(param.getLh());
+	param.getRh().setId(id4);items.add(param.getRh());
+	param.getLl().setId(id5);items.add(param.getLl());
+	param.getRl().setId(id6);items.add(param.getRl());
+	
+
+	//return avatarService.setItems(avatarService.create(param.getAvatar()),items);
+	return avatarService.setItems(avatarService.create(param.getAvatar()),items);
 	}
 	
 	@PutMapping("/{id}")
