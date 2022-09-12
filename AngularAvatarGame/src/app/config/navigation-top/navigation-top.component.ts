@@ -1,5 +1,8 @@
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
+import { Observable } from "rxjs";
+import { UserService } from "../services/user.service";
 
 @Component({
   selector: "app-navigation-top",
@@ -7,16 +10,32 @@ import { Router } from "@angular/router";
   styleUrls: ["./navigation-top.component.css"],
 })
 export class NavigationTopComponent implements OnInit {
-  constructor(private router: Router) {}
+  private _userBalance: any;
 
-  ngOnInit(): void {}
+  constructor(
+    private router: Router,
+    private httpClient: HttpClient /*private profileService = UpdateProfileService*/,
+    private userService: UserService
+  ) {}
+
+  ngOnInit() {
+    this._userBalance = this.userBalance();
+  }
 
   public logout() {
     sessionStorage.clear();
     this.router.navigateByUrl("/auth");
   }
 
-  public get getUserName(): string {
-    return JSON.parse(sessionStorage.getItem("user")!).login;
+  public userLogin(): string {
+    return this.userService.userLogin();
+  }
+
+  public userBalance() {
+    console.log(this.userService.userBalance().subscribe());
+    return this.userService.userBalance().subscribe((result) => {
+      /*this.userBalance;*/
+      console.log(result);
+    });
   }
 }

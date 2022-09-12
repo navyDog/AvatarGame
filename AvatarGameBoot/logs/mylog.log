@@ -1371,3 +1371,37 @@ Caused by: org.postgresql.util.PSQLException: ERREUR: la colonne « prenom » de
 2022-09-12 15:54:24.831  WARN 16272 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-09-12 15:54:25.058  INFO 16272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/avatar'
 2022-09-12 15:54:25.064  INFO 16272 --- [main] f.s.A.AvatarGameBootApplication          : Started AvatarGameBootApplication in 3.145 seconds (JVM running for 3.605)
+2022-09-12 16:10:24.895  INFO 16272 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-12 16:10:24.896  INFO 16272 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-12 16:10:24.897  INFO 16272 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-09-12 16:12:14.352  INFO 16272 --- [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-09-12 16:12:14.358  INFO 16272 --- [RMI TCP Connection(21)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-09-12 16:12:14.359  INFO 16272 --- [RMI TCP Connection(21)-127.0.0.1] o.a.c.c.C.[.[localhost].[/avatar]        : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-09-12 16:12:14.363  INFO 16272 --- [RMI TCP Connection(21)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-09-12 16:12:14.363  INFO 16272 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-09-12 16:12:14.365  INFO 16272 --- [RMI TCP Connection(21)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-09-12 16:12:15.867  INFO 11220 --- [main] f.s.A.AvatarGameBootApplication          : Starting AvatarGameBootApplication using Java 17.0.3 on PCFixe-Toul with PID 11220 (C:\Travail\GitKraken\formation_sopra\projet\AvatarGame\AvatarGameBoot\target\classes started by PC_fixe in C:\Travail\GitKraken\formation_sopra\projet\AvatarGame\AvatarGameBoot)
+2022-09-12 16:12:15.868  INFO 11220 --- [main] f.s.A.AvatarGameBootApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-09-12 16:12:16.199  INFO 11220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-09-12 16:12:16.235  INFO 11220 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 4 JPA repository interfaces.
+2022-09-12 16:12:16.534  INFO 11220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-09-12 16:12:16.540  INFO 11220 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-09-12 16:12:16.541  INFO 11220 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-12 16:12:16.700  INFO 11220 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-09-12 16:12:16.708  INFO 11220 --- [main] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring embedded WebApplicationContext
+2022-09-12 16:12:16.708  INFO 11220 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 816 ms
+2022-09-12 16:12:16.792  INFO 11220 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-09-12 16:12:16.822  INFO 11220 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-09-12 16:12:16.922  INFO 11220 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-09-12 16:12:16.981  INFO 11220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-09-12 16:12:17.090  INFO 11220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-09-12 16:12:17.101  INFO 11220 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-09-12 16:12:17.623  INFO 11220 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-09-12 16:12:17.677  INFO 11220 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-09-12 16:12:18.000  INFO 11220 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/api/**'] with [org.springframework.security.web.session.DisableEncodeUrlFilter@4220468, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@727e61ed, org.springframework.security.web.context.SecurityContextPersistenceFilter@f2b4303, org.springframework.security.web.header.HeaderWriterFilter@6771fc29, org.springframework.security.web.authentication.logout.LogoutFilter@220e1b7b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5354bfce, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d399e88, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18139a43, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3df681cc, org.springframework.security.web.session.SessionManagementFilter@3a5ffea, org.springframework.security.web.access.ExceptionTranslationFilter@4b808427, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3fe11091]
+2022-09-12 16:12:18.023  WARN 11220 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-09-12 16:12:18.227  INFO 11220 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/avatar'
+2022-09-12 16:12:18.232  INFO 11220 --- [main] f.s.A.AvatarGameBootApplication          : Started AvatarGameBootApplication in 2.607 seconds (JVM running for 3.046)
+2022-09-12 16:12:20.960  INFO 11220 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/avatar]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-12 16:12:20.960  INFO 11220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-09-12 16:12:20.962  INFO 11220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
