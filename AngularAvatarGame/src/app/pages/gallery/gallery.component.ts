@@ -20,6 +20,9 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit(): void {
      // ALLS ITEMS NO CRAFTED OF CURRENT USER
+     this.userService.userItemsNoCraftedList().subscribe((result) => {
+        console.log(result)
+     })
      this.userService.users().subscribe((result) => {
       this.listUsers = result;
   
