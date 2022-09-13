@@ -74,7 +74,7 @@ public class ItemService {
 	}
 	
 	public void InscriptionCreation(Users users) {
-		creationStartRandom(users);
+		creationStart(users);
 	}
 	
 	public void creationHead(Users users) {
