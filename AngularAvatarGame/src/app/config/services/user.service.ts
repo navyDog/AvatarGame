@@ -82,8 +82,17 @@ export class UserService {
         headers: this.sessionUserHeader
       }
     );
-
+  } 
+    
+  public usersAvatar(): Observable<any> {
+    return this.httpClient.get(
+       "http://localhost:8080/avatar/api/users/avatars",
+       {
+         headers: this.sessionUserHeader
+       }
+     );
   }
+  
   public userAvatarList2(): Observable<any> {
     return this.httpClient.get(
       "http://localhost:8080/avatar/api/avatar/" + this.localId + "/items",
