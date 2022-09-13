@@ -1,19 +1,43 @@
+import { Items } from "./items";
+
 export class Avatars {
   constructor(
-    private _itemCraftStat?: boolean,
-    private _itemId?: number,
-    private _itemPicture?: string,
-    private _itemLimb?: string,
-    private _itemName?: string,
-    private _itemprice?: number,
-    private _itemRarity?: number,
-    private _itemAvatarId?: number,
-    private _itemUserId?: number
+    private _avatarItems: Items[],
+    private _avatarId?: number,
+    private _avatarName?: string,
+    private _avatarPrice?: number
   ) {}
-}
-/* -------------------------------------------- GETTERS -------------------------------------------- */
-public get id(): number | undefined {
-    return this._itemId;
+  /* -------------------------------------------- GETTERS -------------------------------------------- */
+  public get id(): number | undefined {
+    return this._avatarId;
   }
 
-/* -------------------------------------------- SETTERS -------------------------------------------- */
+  public get name(): string | undefined {
+    return this._avatarName;
+  }
+
+  public get price(): number | undefined {
+    return this._avatarPrice;
+  }
+
+  public get compose(): Items[] {
+    return this._avatarItems;
+  }
+
+  /* -------------------------------------------- SETTERS -------------------------------------------- */
+  public set id(value: number | undefined) {
+    this._avatarId = value;
+  }
+
+  public set name(value: string | undefined) {
+    this._avatarName = value;
+  }
+
+  public set price(value: number | undefined) {
+    this._avatarPrice = value;
+  }
+
+  public set compose(value: Items[]) {
+    this._avatarItems = value;
+  }
+}

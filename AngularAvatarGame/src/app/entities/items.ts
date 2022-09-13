@@ -6,7 +6,7 @@ export class Items {
     private _itemLimb?: string,
     private _itemName?: string,
     private _itemprice?: number,
-    private _itemRarity?: number,
+    private _itemRarity?: string,
     private _itemAvatarId?: number,
     private _itemUserId?: number
   ) {}
@@ -30,7 +30,7 @@ export class Items {
   public get prix(): number | undefined {
     return this._itemprice;
   }
-  public get rarity(): number | undefined {
+  public get rarity(): string | undefined {
     return this._itemRarity;
   }
   public get avatar(): number | undefined {
@@ -59,7 +59,7 @@ export class Items {
   public set prix(value: number | undefined) {
     this._itemprice = value;
   }
-  public set rarity(value: number | undefined) {
+  public set rarity(value: string | undefined) {
     this._itemRarity = value;
   }
   public set avatar(value: number | undefined) {

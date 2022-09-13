@@ -98,6 +98,15 @@
   border-radius: inherit;
   border: solid 1px var(--col-line);
 }
+.invItem div img[class~="itemRare"] {
+  background-image: radial-gradient(green 0.2%, transparent 90%);
+}
+.invItem div img[class~="itemEpic"] {
+  background-image: radial-gradient(purple 0.2%, transparent 90%);
+}
+.invItem div img[class~="itemLegendary"] {
+  background-image: radial-gradient(gold 0.2%, transparent 90%);
+}
 .invItem[class~="selable"] {
   background-color: var(--col-bckg-note);
 }
