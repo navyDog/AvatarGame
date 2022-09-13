@@ -1,3 +1,5 @@
+let otherPlayer = "";
+
 // CRAFT -- DISPLAY CONFIRMATION BOX AND BLUR BACKGROUND
 function craftOverlay(p) {
   let x1 = document.querySelector("#craftContent");

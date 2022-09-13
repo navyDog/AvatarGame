@@ -1,7 +1,6 @@
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
-import { Items } from "src/app/entities/items";
 import { ConverterService } from "./converter.service";
 
 @Injectable({
@@ -12,7 +11,6 @@ export class UserService {
     private httpClient: HttpClient,
     private converter: ConverterService
   ) {}
-
   private sessionUserId = JSON.parse(sessionStorage.getItem("user")!).users.id;
   private sessionUserHeader = new HttpHeaders({
     "Content-Type": "application/json",
