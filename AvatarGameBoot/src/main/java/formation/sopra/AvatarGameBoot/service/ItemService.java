@@ -104,7 +104,7 @@ public class ItemService {
 		}
 	}
 	
-	public void creationStartRandom(Users users) {
+	public void creationRandom(Users users) {
 			Item item = new Item();
 			BankItem bankItem = new BankItem();
 			bankItem = bankItemService.getBankItemRandom();
@@ -115,7 +115,6 @@ public class ItemService {
 			item.setImage(bankItem.getPicture());
 			item.setPrix(null);
 			create(item);
-		
 	}
 	
 }
