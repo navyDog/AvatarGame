@@ -95,6 +95,13 @@ public class UsersRestController {
 		return usersService.getByIdWithRightLegItems(id);
 	}
 	
+	@GetMapping("/{id}/items/crafted")
+	@JsonView(JsonViews.UsersWithItems.class)
+	public Users getByIdWithNoCraftItems(@PathVariable Long id) {
+		return usersService.getByIdWithNoCraftItems(id);
+	}
+	
+	
 	@GetMapping("/{id}/avatars")
 	@JsonView(JsonViews.UsersWithAvatars.class)
 	public Users findByKeyWithAvatars(@PathVariable Long id) {
