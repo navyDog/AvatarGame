@@ -33,7 +33,7 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 			query = "select a from Avatar a left join fetch a.compose where a.id=:id"),
 })
 public class Avatar {
-	@JsonView( {JsonViews.Avatar.class} )
+	@JsonView( {JsonViews.Base.class} )
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqAvatar" )
 	@Column(name="avatar_id")
