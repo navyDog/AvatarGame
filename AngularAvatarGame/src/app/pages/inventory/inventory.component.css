@@ -24,7 +24,6 @@
   border-bottom: solid 1px var(--col-line);
   font-family: var(--font-titles);
   font-weight: bold;
-  margin-bottom: 0.25em;
 }
 .invTopBtns button {
   height: 100%;
@@ -69,43 +68,52 @@
 .invBotItems {
   width: 100%;
   height: auto;
+  min-height: calc(120px - var(--dist-2));
   display: none;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 0.25em;
+  border: solid 1px var(--col-line);
+  border-top: none;
 }
 .invItem {
-  width: 120px;
-  height: calc(120px + 1em + 0.25em + 0.7em + var(--dist-2) + 0.25em + 0.25em);
+  /* width: 120px;
+  height: calc(120px + 1em + 0.25em + 0.7em + var(--dist-2) + 0.25em + 0.25em);*/
   border-radius: 10px;
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  margin: var(--dist-1);
-  overflow: hidden;
+  align-items: center;*/
+  /*margin: var(--dist-1);
+  overflow: hidden;*/
 }
 .invItem:hover div {
   background-color: var(--col-line-hover);
   border: solid 1px var(--col-line-dark);
 }
 .invItem div {
-  width: 100%;
-  height: 100%;
-  display: inherit;
-  flex-direction: inherit;
-  border-radius: inherit;
+  /* width: 100%;
+  height: 100%;*/
+  width: calc(120px + var(--dist-1));
+  height: calc(120px + 1em + 0.25em + 0.7em + var(--dist-2) + 0.25em + 0.25em);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   border: solid 1px var(--col-line);
+  margin: var(--dist-1);
+  overflow: hidden;
 }
 .invItem div img[class~="itemRare"] {
-  background-image: radial-gradient(green 0.2%, transparent 90%);
+  background-image: radial-gradient(green 0.2%, transparent 70%);
 }
 .invItem div img[class~="itemEpic"] {
-  background-image: radial-gradient(purple 0.2%, transparent 90%);
+  background-image: radial-gradient(purple 0.2%, transparent 70%);
 }
 .invItem div img[class~="itemLegendary"] {
-  background-image: radial-gradient(gold 0.2%, transparent 90%);
+  background-image: radial-gradient(gold 0.2%, transparent 70%);
 }
 .invItem[class~="selable"] {
   background-color: var(--col-bckg-note);
@@ -161,16 +169,24 @@
   flex-wrap: nowrap;
   border: solid 1px var(--col-line);
   border-top: none;
+  padding-top: 0.25em;
 }
 #invContentAvatarLeft {
   width: 400px;
-  height: 400px;
+  height: calc(400px + 2em);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
   border-right: solid 1px var(--col-line);
+}
+#invContentAvatarLeft p {
+  width: 100%;
+  height: 2em;
+  margin: 0.5em 0;
+  padding: 0;
+  text-align: center;
 }
 #invContentAvatarLeft div {
   height: 120px;
