@@ -15,24 +15,28 @@ import javax.persistence.Table;
 @Table(name = "bank_item")
 @NamedQueries({
 	@NamedQuery(name="BankItem.findByRarity", 
-		query = "SELECT id FROM BankItem WHERE rarity=:rarity"),
+		query = "SELECT b FROM BankItem b WHERE b.xrarity=:xrarity"),
 	@NamedQuery(name="BankItem.findByRarityAndMember", 
-		query = "SELECT id FROM BankItem WHERE rarity=:rarity AND membre=:membre")
+		query = "SELECT b FROM BankItem b WHERE b.xrarity=:xrarity AND b.xmembre=:xmembre")
 })
 public class BankItem {
 	@Id
 	@Column(name = "bank_item_id")
 	private Long id;
 	@Column(name = "bank_item_membre")
-	@Enumerated(EnumType.ORDINAL)
+	@Enumerated(EnumType.STRING)
 	private Membres membre;
 	@Column(name = "bank_item_name")
 	private String name;
 	@Column(name = "bank_item_picture")
 	private String picture;
 	@Column(name = "bank_item_rarity")
-	@Enumerated(EnumType.ORDINAL)
+	@Enumerated(EnumType.STRING)
 	private Rarity rarity;
+	@Column(name = "bank_item_xmembre")
+	private int xmembre;
+	@Column(name = "bank_item_xrarity")
+	private int xrarity;
 	
 	public BankItem() {
 		
@@ -76,6 +80,22 @@ public class BankItem {
 
 	public void setRarity(Rarity rarity) {
 		this.rarity = rarity;
+	}
+
+	public int getXmembre() {
+		return xmembre;
+	}
+
+	public void setXmembre(int xmembre) {
+		this.xmembre = xmembre;
+	}
+
+	public int getXrarity() {
+		return xrarity;
+	}
+
+	public void setXrarity(int xrarity) {
+		this.xrarity = xrarity;
 	}
 
 	@Override

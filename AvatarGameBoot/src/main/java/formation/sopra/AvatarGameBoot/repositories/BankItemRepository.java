@@ -9,9 +9,9 @@ import formation.sopra.AvatarGameBoot.entities.item.BankItem;
 
 public interface BankItemRepository extends JpaRepository<BankItem, Long>{
 
-	@Query("SELECT id FROM BankItem WHERE rarity=:rarity")
-	List<Long> findByRarity(int rarity);
+	@Query("SELECT b FROM BankItem b WHERE b.xrarity=:xrarity")
+	List<BankItem> findByRarity(int xrarity);
 	
-	@Query("SELECT id FROM BankItem WHERE rarity=:rarity AND membre=:membre")
-	List<Long> findByRarityAndMembre(int rarity, int membre);
+	@Query("SELECT b FROM BankItem b WHERE b.xrarity=:xrarity AND b.xmembre=:xmembre")
+	List<BankItem> findByRarityAndMembre(int xrarity, int xmembre);
 }
