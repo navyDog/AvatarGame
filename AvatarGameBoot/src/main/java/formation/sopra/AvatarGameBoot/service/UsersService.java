@@ -73,6 +73,10 @@ public class UsersService {
 		return usersRepo.findByKeyWithRightLegItems(id).orElseThrow(UsersException::new);
 	}
 	
+	public Users getByIdWithNoCraftItems(Long id) {
+		return usersRepo.findByKeyWithNoCraftItems(id).orElseThrow(UsersException::new);
+	}
+	
 	public Users update(Users users) {
 		Users clientEnBase = getById(users.getId());
 		clientEnBase.setSolde(users.getSolde());

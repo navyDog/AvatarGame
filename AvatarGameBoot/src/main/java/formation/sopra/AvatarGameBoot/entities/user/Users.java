@@ -30,6 +30,8 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 				@NamedQuery(name="Users.findInfo",
 						query = "select u from Users u left join fetch u.utilisateur where u.id=:id"),
 				
+				@NamedQuery(name="Users.findByKeyWithNoCraftItems",
+						query = "select u from Users u left join fetch u.items i where u.id=:id and i.crafted=f"),
 				
 				@NamedQuery(name="Users.findByKeyWithHeadItems", 
 				query = "select u from Users u left join fetch u.items i where u.id=:id and i.membre=0"),

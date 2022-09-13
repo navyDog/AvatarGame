@@ -49,7 +49,7 @@ public class UtilisateurRestController {
 	private final static Logger LOGGER=LoggerFactory.getLogger(UtilisateurRestController.class);
 	
 	@GetMapping("")
-	@JsonView(JsonViews.Base.class)
+	@JsonView(JsonViews.Utilisateur.class)
 	public Utilisateur auth(@AuthenticationPrincipal Utilisateur utilisateur) {
 		LOGGER.info(utilisateur.getLogin());
 		return utilisateur;
