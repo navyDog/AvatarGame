@@ -10,8 +10,10 @@ import { Items } from "src/app/entities/items";
 })
 export class InventoryComponent implements OnInit {
   private _userItemsNoCraftList: Items[] = []; // LIST OF ALL ITEMS NO CRAFTED OF CURRENT USER
-  private _userAvatarsItemsList: Avatars[] = []; //
-  private _userAvatarsMain: Avatars = new Avatars();
+  private _userAvatarsItemsIDList: Avatars[] = []; //
+
+  private _userAvatarsMain: number | undefined;
+  private _userAvatarMainItems: Items[] = [];
   imgPath: string = "assets/items/";
 
   constructor(private userService: UserService) {}
@@ -23,10 +25,19 @@ export class InventoryComponent implements OnInit {
     });
     // ALLS ITEMS OF ALL AVATARS OF CURRENT USER
     this.userService.userAvatarList().subscribe((result) => {
-      this._userAvatarsMain = result.avatar[0];
-      this._userAvatarsItemsList = result;
-      this._userAvatarsItemsList.shift();
-      console.log(result.avatar[0]);
+      this.userAvatarsMain = result.avatar[0].id;
+      /* console.log(result.avatar[0].id);
+      console.log(this.userAvatarsMain);*/
+      this._userAvatarsItemsIDList = result;
+
+      // LIST OF ITEMS OF MAIN AVATAR OF CURRENT USER
+      this.userService.localId = this.userAvatarsMain;
+      /*console.log(this.userService.localId);
+      console.log(this.userAvatarsMain);*/
+      this.userService.userAvatarList2().subscribe((result) => {
+        this.userAvatarMainItems = result.compose;
+        console.log(result.compose);
+      });
     });
   }
 
@@ -34,14 +45,24 @@ export class InventoryComponent implements OnInit {
     return this._userItemsNoCraftList;
   }
 
-  public get userAvatarsItemsList(): Avatars[] {
-    return this._userAvatarsItemsList;
+  public get userAvatarsItemsIdList(): Avatars[] {
+    return this._userAvatarsItemsIDList;
   }
-  public set userAvatarsItemsList(value: Avatars[]) {
-    this._userAvatarsItemsList = value;
+  public set userAvatarsItemsIdList(value: Avatars[]) {
+    this._userAvatarsItemsIDList = value;
   }
 
-  public get userAvatarsMain(): Avatars {
+  public get userAvatarsMain(): number | undefined {
     return this._userAvatarsMain;
+  }
+  public set userAvatarsMain(value: number | undefined) {
+    this._userAvatarsMain = value;
+  }
+
+  public get userAvatarMainItems(): Items[] {
+    return this._userAvatarMainItems;
+  }
+  public set userAvatarMainItems(value: Items[]) {
+    this._userAvatarMainItems = value;
   }
 }

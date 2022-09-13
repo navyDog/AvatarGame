@@ -11,6 +11,7 @@ export class UserService {
     private httpClient: HttpClient,
     private converter: ConverterService
   ) {}
+  private _localId?: number | undefined;
   private sessionUserId = JSON.parse(sessionStorage.getItem("user")!).users.id;
   private sessionUserHeader = new HttpHeaders({
     "Content-Type": "application/json",
@@ -72,5 +73,20 @@ export class UserService {
         headers: this.sessionUserHeader
       }
     );
+  }
+  public userAvatarList2(): Observable<any> {
+    return this.httpClient.get(
+      "http://localhost:8080/avatar/api/avatar/" + this.localId + "/items",
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+
+  public get localId(): number | undefined {
+    return this._localId;
+  }
+  public set localId(value: number | undefined) {
+    this._localId = value;
   }
 }
