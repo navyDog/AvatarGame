@@ -36,14 +36,15 @@ public class BankItemService {
 		List<BankItem> listBankItem = new ArrayList<>(bankItemRepo.findByRarity(interval(random())));
 		//défini un nombre random à partir de la taille de la list
 		int random = randomDef(listBankItem.size());
-			System.out.println(random);
+			System.out.println(random+" getbankINTEMrandom");
 		BankItem bankItem = new BankItem();
 		bankItem = listBankItem.get(random);
 		return bankItem;
 	}
 	
 	public int random() {
-		int random = (int)Math.random()*100;
+		int random = (int) (Math.random()*100);
+		System.out.println(random);
 		return random;
 	}
 	
@@ -64,6 +65,7 @@ public class BankItemService {
 		} else {
 			xrarity = 1;
 		}
+		System.out.println(xrarity+"intervalfct");
 		return xrarity;
 	}
 

@@ -33,6 +33,13 @@ public class UsersRestController {
 		return usersService.getAll();
 	}
 	
+	@GetMapping("/items")
+	@JsonView(JsonViews.UsersWithItems.class)
+	public List<Users> getNoCraftItems() {
+		return usersService.getNoCraftItems();
+	}
+
+	
 	@GetMapping("/{id}")
 	@JsonView(JsonViews.Base.class)
 	public Users getById(@PathVariable Long id) {

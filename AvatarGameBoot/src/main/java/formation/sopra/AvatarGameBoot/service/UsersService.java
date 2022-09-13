@@ -77,6 +77,12 @@ public class UsersService {
 		return usersRepo.findByKeyWithNoCraftItems(id).orElseThrow(UsersException::new);
 	}
 	
+	public List<Users> getNoCraftItems() {
+		return usersRepo.findNoCraftItems().orElseThrow(UsersException::new);
+	}
+	
+	
+	
 	public Users update(Users users) {
 		Users clientEnBase = getById(users.getId());
 		clientEnBase.setSolde(users.getSolde());

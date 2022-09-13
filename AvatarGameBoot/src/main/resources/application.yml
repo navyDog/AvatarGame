@@ -6,7 +6,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     password: postgres
     url: jdbc:postgresql://localhost:5432/avatargame
-    username: postgres
+    username: navydog
 
   jpa:
     hibernate:
