@@ -14,4 +14,5 @@ public interface BankItemRepository extends JpaRepository<BankItem, Long>{
 	
 	@Query("SELECT b FROM BankItem b WHERE b.xrarity=:xrarity AND b.xmembre=:xmembre")
 	List<BankItem> findByRarityAndMembre(int xrarity, int xmembre);
+
 }
