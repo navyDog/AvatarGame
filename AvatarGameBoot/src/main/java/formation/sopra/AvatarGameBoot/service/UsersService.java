@@ -81,7 +81,9 @@ public class UsersService {
 		return usersRepo.findNoCraftItems().orElseThrow(UsersException::new);
 	}
 	
-	
+	public List<Users> getAvatar() {
+		return usersRepo.findAvatar().orElseThrow(UsersException::new);
+	}
 	
 	public Users update(Users users) {
 		Users clientEnBase = getById(users.getId());
