@@ -1,565 +1,565 @@
 bank_item_id,bank_item_membre,bank_item_name,bank_item_picture,bank_item_rarity,bank_item_xmembre,bank_item_xrarity
-1,H,Beret,head_1,C,0,72
-2,H,Beret,head_1,R,0,22
-3,H,Casque en fer,head_2,C,0,72
-4,H,Casque en fer,head_2,R,0,22
-5,H,Chapel de fer,head_3,C,0,72
-6,H,Chapel de fer,head_3,R,0,22
-7,H,Visière de fer,head_4,C,0,72
-8,H,Visière de fer,head_4,R,0,22
-9,H,Couvre chef en cuir,head_11,C,0,72
-10,H,Couvre chef en cuir,head_11,R,0,22
-11,H,Casque en cuir,head_12,C,0,72
-12,H,Casque en cuir,head_12,R,0,22
-13,H,Casque d'écuyer,head_13,C,0,72
-14,H,Casque d'écuyer,head_13,R,0,22
-15,H,Casque du gardien de la porte,head_14,C,0,72
-16,H,Casque du gardien de la porte,head_14,R,0,22
-17,H,Bandeau en corde,head_21,C,0,72
-18,H,Bandeau en corde,head_21,R,0,22
-19,H,Tête d'ours,head_22,C,0,72
-20,H,Tête d'ours,head_22,R,0,22
-21,H,Casque du Trax,head_23,C,0,72
-22,H,Casque du Trax,head_23,R,0,22
-23,H,Casque de l'Hoplomacus,head_24,C,0,72
-24,H,Casque de l'Hoplomacus,head_24,R,0,22
-25,H,Casque du Scissor,head_25,C,0,72
-26,H,Casque du Scissor,head_25,R,0,22
-27,H,Casque du Secutor,head_26,C,0,72
-28,H,Casque du Secutor,head_26,R,0,22
-29,H,Casque du Samnite,head_27,C,0,72
-30,H,Casque du Samnite,head_27,R,0,22
-31,H,Casque du Myrmidon,head_28,C,0,72
-32,H,Casque du Myrmidon,head_28,R,0,22
-33,H,Casque de l'hoplites,head_29,C,0,72
-34,H,Casque de l'hoplites,head_29,R,0,22
-35,H,Casque du centurion,head_30,C,0,72
-36,H,Casque du centurion,head_30,R,0,22
-37,H,Casque du Berzerker,head_33,C,0,72
-38,H,Casque du Berzerker,head_33,R,0,22
-39,H,Casque du Berzerker,head_33,E,0,5
-40,H,Heaume du Paladin,head_34,C,0,72
-41,H,Heaume du Paladin,head_34,R,0,22
-42,H,Heaume du Paladin,head_34,E,0,5
-43,H,Heaume du Purgateur,head_35,C,0,72
-44,H,Heaume du Purgateur,head_35,R,0,22
-45,H,Heaume du Purgateur,head_35,E,0,5
-46,H,Casque du Chevalier Blanc,head_36,C,0,72
-47,H,Casque du Chevalier Blanc,head_36,R,0,22
-48,H,Casque du Chevalier Blanc,head_36,E,0,5
-49,H,Bassinet des Executants,head_37,C,0,72
-50,H,Bassinet des Executants,head_37,R,0,22
-51,H,Bassinet des Executants,head_37,E,0,5
-52,H,Klappvisor de l'Expéditionnaire,head_38,C,0,72
-53,H,Klappvisor de l'Expéditionnaire,head_38,R,0,22
-54,H,Klappvisor de l'Expéditionnaire,head_38,E,0,5
-55,H,Heaume de la garde royale,head_5,C,0,72
-56,H,Heaume de la garde royale,head_5,R,0,22
-57,H,Heaume de la garde royale,head_5,E,0,5
-58,H,Casque du dernier Gaulois,head_15,C,0,72
-59,H,Casque du dernier Gaulois,head_15,R,0,22
-60,H,Casque du dernier Gaulois,head_15,E,0,5
-61,H,Visière du Guerriero,head_10,C,0,72
-62,H,Visière du Guerriero,head_10,R,0,22
-63,H,Visière du Guerriero,head_10,E,0,5
-64,H,Casque du Samourai,head_20,C,0,72
-65,H,Casque du Samourai,head_20,R,0,22
-66,H,Casque du Samourai,head_20,E,0,5
-67,H,Bi-cornes du roi Germanique,head_6,R,0,22
-68,H,Bi-cornes du roi Germanique,head_6,E,0,5
-69,H,Bi-cornes du roi Germanique,head_6,L,0,1
-70,H,Casque en Or de l'Empereur,head_7,R,0,22
-71,H,Casque en Or de l'Empereur,head_7,E,0,5
-72,H,Casque en Or de l'Empereur,head_7,L,0,1
-73,H,Heaume du Sans-âme,head_8,R,0,22
-74,H,Heaume du Sans-âme,head_8,E,0,5
-75,H,Heaume du Sans-âme,head_8,L,0,1
-76,H,Casque du Yersine,head_9,R,0,22
-77,H,Casque du Yersine,head_9,E,0,5
-78,H,Casque du Yersine,head_9,L,0,1
-79,H,Casque des gardiens du Sanctuaire,head_39,R,0,22
-80,H,Casque des gardiens du Sanctuaire,head_39,E,0,5
-81,H,Casque des gardiens du Sanctuaire,head_39,L,0,1
-82,H,Heaume du premier Templier,head_40,R,0,22
-83,H,Heaume du premier Templier,head_40,E,0,5
-84,H,Heaume du premier Templier,head_40,L,0,1
-85,H,Heaume des fils du Valhalla,head_16,E,0,5
-86,H,Heaume des fils du Valhalla,head_16,L,0,1
-87,H,Masque de Rhaal'Zath,head_17,E,0,5
-88,H,Masque de Rhaal'Zath,head_17,L,0,1
-89,H,Casque du Damné Boultag,head_18,E,0,5
-90,H,Casque du Damné Boultag,head_18,L,0,1
-91,H,Vision du Bushi Yamino,head_19,E,0,5
-92,H,Vision du Bushi Yamino,head_19,L,0,1
-93,H,Orchestrateur de l'Unique,head_31,L,0,1
-94,H,Visage du Serviteur du Mal,head_32,L,0,1
-95,B,Etoffe de cuir,body_1,C,1,72
-96,B,Etoffe de cuir,body_1,R,1,22
-97,B,Cage en fer,body_2,C,1,72
-98,B,Cage en fer,body_2,R,1,22
-99,B,Plastron de fer,body_3,C,1,72
-100,B,Plastron de fer,body_3,R,1,22
-101,B,Buste de fer,body_4,C,1,72
-102,B,Buste de fer,body_4,R,1,22
-103,B,Plastron en cuir,body_11,C,1,72
-104,B,Plastron en cuir,body_11,R,1,22
-105,B,Intégral en cuir,body_12,C,1,72
-106,B,Intagral en cuir,body_12,R,1,22
-107,B,Tunique d'écuyer,body_13,C,1,72
-108,B,Tunique d'écuyer,body_13,R,1,22
-109,B,Armure du gardien de la porte,body_14,C,1,72
-110,B,Armure du gardien de la porte,body_14,R,1,22
-111,B,Tunique rayée,body_21,C,1,72
-112,B,Tunique rayée,body_21,R,1,22
-113,B,Habit du forestier,body_22,C,1,72
-114,B,Habit du forestier,body_22,R,1,22
-115,B,Epaulière droite du Trax,body_23,C,1,72
-116,B,Epaulière droite du Trax,body_23,R,1,22
-117,B,Cotte de mailles de l'Hoplomacus,body_24,C,1,72
-118,B,Cotte de mailles de l'Hoplomacus,body_24,R,1,22
-119,B,Epaulière droite du Scissor,body_25,C,1,72
-120,B,Epaulière droite du Scissor,body_25,R,1,22
-121,B,Epaulière gauche du Secutor,body_26,C,1,72
-122,B,Epaulière gauche du Secutor,body_26,R,1,22
-123,B,Epaulière droite du Samnite,body_27,C,1,72
-124,B,Epaulière droite du Samnite,body_27,R,1,22
-125,B,Cotte de mailles du Myrmidon,body_28,C,1,72
-126,B,Cotte de mailles du Myrmidon,body_28,R,1,22
-127,B,Plastron échancré de l'hoplite,body_29,C,1,72
-128,B,Plastron échancré de l'hoplite,body_29,R,1,22
-129,B,Plastron du centurion,body_30,C,1,72
-130,B,Plastron du centurion,body_30,R,1,22
-131,B,Epaulière du Berzerker,body_33,C,1,72
-132,B,Epaulière du Berzerker,body_33,R,1,22
-133,B,Epaulière du Berzerker,body_33,E,1,5
-134,B,Armure du Paladin,body_34,C,1,72
-135,B,Armure du Paladin,body_34,R,1,22
-136,B,Armure du Paladin,body_34,E,1,5
-137,B,Haut du Purgateur,body_35,C,1,72
-138,B,Haut du Purgateur,body_35,R,1,22
-139,B,Haut du Purgateur,body_35,E,1,5
-140,B,Armure du Chevalier Blanc,body_36,C,1,72
-141,B,Armure du Chevalier Blanc,body_36,R,1,22
-142,B,Armure du Chevalier Blanc,body_36,E,1,5
-143,B,Cuirasse des Executants,body_37,C,1,72
-144,B,Cuirasse des Executants,body_37,R,1,22
-145,B,Cuirasse des Executants,body_37,E,1,5
-146,B,Armure lourde de l'Expéditionnaire,body_38,C,1,72
-147,B,Armure lourde de l'Expéditionnaire,body_38,R,1,22
-148,B,Armure lourde de l'Expéditionnaire,body_38,E,1,5
-149,B,Armure à noyau de la garde royale,body_5,C,1,72
-150,B,Armure à noyau de la garde royale,body_5,R,1,22
-151,B,Armure à noyau de la garde royale,body_5,E,1,5
-152,B,Brigandine du dernier Gaulois,body_15,C,1,72
-153,B,Brigandine du dernier Gaulois,body_15,R,1,22
-154,B,Brigandine du dernier Gaulois,body_15,E,1,5
-155,B,Armatura du Guerriero,body_10,C,1,72
-156,B,Armatura du Guerriero,body_10,R,1,22
-157,B,Armatura du Guerriero,body_10,E,1,5
-158,B,Armure du Samourai,body_20,C,1,72
-159,B,Armure du Samourai,body_20,R,1,22
-160,B,Armure du Samourai,body_20,E,1,5
-161,B,Torse du roi Germanique,body_6,R,1,22
-162,B,Torse du roi Germanique,body_6,E,1,5
-163,B,Torse du roi Germanique,body_6,L,1,1
-164,B,Armure en Or de l'Empereur,body_7,R,1,22
-165,B,Armure en Or de l'Empereur,body_7,E,1,5
-166,B,Armure en Or de l'Empereur,body_7,L,1,1
-167,B,Corps du Sans-âme,body_8,R,1,22
-168,B,Corps du Sans-âme,body_8,E,1,5
-169,B,Corps du Sans-âme,body_8,L,1,1
-170,B,Robe du Yersine,body_9,R,1,22
-171,B,Robe du Yersine,body_9,E,1,5
-172,B,Robe du Yersine,body_9,L,1,1
-173,B,Plastron des gardiens du Sanctuaire,body_39,R,1,22
-174,B,Plastron des gardiens du Sanctuaire,body_39,E,1,5
-175,B,Plastron des gardiens du Sanctuaire,body_39,L,1,1
-176,B,Armure lourde du premier Templier,body_40,R,1,22
-177,B,Armure lourde du premier Templier,body_40,E,1,5
-178,B,Armure lourde du premier Templier,body_40,L,1,1
-179,B,Haubert des fils du Valhalla,body_16,E,1,5
-180,B,Haubert des fils du Valhalla,body_16,L,1,1
-181,B,Buste de Rhaal'Zath,body_17,E,1,5
-182,B,Buste de Rhaal'Zath,body_17,L,1,1
-183,B,Protection du Damné Boultag,body_18,E,1,5
-184,B,Protection du Damné Boultag,body_18,L,1,1
-185,B,Cotte à épines du Bushi Yamino,body_19,E,1,5
-186,B,Cotte à épines du Bushi Yamino,body_19,L,1,1
-187,B,Invincible de l'Unique,body_31,L,1,1
-188,B,Immunité du Serviteur du Mal,body_32,L,1,1
-189,LH,Moufle de cuir gauche,hand_left_1,C,2,72
-190,LH,Moufle de cuir gauche,hand_left_1,R,2,22
-191,LH,Poignée gauche en fer,hand_left_2,C,2,72
-192,LH,Poignée gauche en fer,hand_left_2,R,2,22
-193,LH,Gant gauche de fer,hand_left_3,C,2,72
-194,LH,Gant gauche de fer,hand_left_3,R,2,22
-195,LH,Gantelet gauche de fer,hand_left_4,C,2,72
-196,LH,Gantelet gauche de fer,hand_left_4,R,2,22
-197,LH,Mitaine gauche de l'archet,hand_left_11,C,2,72
-198,LH,Mitaine gauche de l'archet,hand_left_11,R,2,22
-199,LH,Gant court gauche en cuir,hand_left_12,C,2,72
-200,LH,Gant court gauche en cuir,hand_left_12,R,2,22
-201,LH,Gantelet gauche d'écuyer,hand_left_13,C,2,72
-202,LH,Gantelet gauche d'écuyer,hand_left_13,R,2,22
-203,LH,Gantelet gauche du gardien de la porte,hand_left_14,C,2,72
-204,LH,Gantelet gauche du gardien de la porte,hand_left_14,R,2,22
-205,LH,Avant-bras gauche en corde,hand_left_21,C,2,72
-206,LH,Avant-bras gauche en corde,hand_left_21,R,2,22
-207,LH,Avant-bras gauche du forestier,hand_left_22,C,2,72
-208,LH,Avant-bras gauche du forestier,hand_left_22,R,2,22
-209,LH,Avant-bras gauche du Trax,hand_left_23,C,2,72
-210,LH,Avant-bras gauche du Trax,hand_left_23,R,2,22
-211,LH,Avant-bras gauche de l'Hoplomacus,hand_left_24,C,2,72
-212,LH,Avant-bras gauche de l'Hoplomacus,hand_left_24,R,2,22
-213,LH,Gantelet gauche du Scissor,hand_left_25,C,2,72
-214,LH,Gantelet gauche du Scissor,hand_left_25,R,2,22
-215,LH,Moufle gauche de combat du Secutor,hand_left_26,C,2,72
-216,LH,Moufle gauche de combat du Secutor,hand_left_26,R,2,22
-217,LH,Gantelet gauche en fer du Samnite,hand_left_27,C,2,72
-218,LH,Gantelet gauche en fer du Samnite,hand_left_27,R,2,22
-219,LH,Main gauche du Myrmidon,hand_left_28,C,2,72
-220,LH,Main gauche du Myrmidon,hand_left_28,R,2,22
-221,LH,Avant-bras gauche de l'hoplite,hand_left_29,C,2,72
-222,LH,Avant-bras gauche de l'hoplite,hand_left_29,R,2,22
-223,LH,Gantelet gauche du centurion,hand_left_30,C,2,72
-224,LH,Gantelet gauche du centurion,hand_left_30,R,2,22
-225,LH,Doigts de sang gauches du Berzerker,hand_left_33,C,2,72
-226,LH,Doigts de sang gauches du Berzerker,hand_left_33,R,2,22
-227,LH,Doigts de sang gauches du Berzerker,hand_left_33,E,2,5
-228,LH,Gantelet à lamelles gauche du Paladin,hand_left_34,C,2,72
-229,LH,Gantelet à lamelles gauche du Paladin,hand_left_34,R,2,22
-230,LH,Gantelet à lamelles gauche du Paladin,hand_left_34,E,2,5
-231,LH,Paume gauche inversée du Purgateur,hand_left_35,C,2,72
-232,LH,Paume gauche inversée du Purgateur,hand_left_35,R,2,22
-233,LH,Paume gauche inversée du Purgateur,hand_left_35,E,2,5
-234,LH,Poing gauche du Chevalier Blanc,hand_left_36,C,2,72
-235,LH,Poing gauche du Chevalier Blanc,hand_left_36,R,2,22
-236,LH,Poing gauche du Chevalier Blanc,hand_left_36,E,2,5
-237,LH,Rond-doigts gauche des Executants,hand_left_37,C,2,72
-238,LH,Rond-doigts gauche des Executants,hand_left_37,R,2,22
-239,LH,Rond-doigts gauche des Executants,hand_left_37,E,2,5
-240,LH,Hexagone gauche de l'Expéditionnaire,hand_left_38,C,2,72
-241,LH,Hexagone gauche de l'Expéditionnaire,hand_left_38,R,2,22
-242,LH,Hexagone gauche de l'Expéditionnaire,hand_left_38,E,2,5
-243,LH,Main gauche de la garde royale,hand_left_5,C,2,72
-244,LH,Main gauche de la garde royale,hand_left_5,R,2,22
-245,LH,Main gauche de la garde royale,hand_left_5,E,2,5
-246,LH,Baffe gauche du dernier Gaulois,hand_left_15,C,2,72
-247,LH,Baffe gauche du dernier Gaulois,hand_left_15,R,2,22
-248,LH,Baffe gauche du dernier Gaulois,hand_left_15,E,2,5
-249,LH,Avant-bras gauche creux du Guerriero,hand_left_10,C,2,72
-250,LH,Avant-bras gauche creux du Guerriero,hand_left_10,R,2,22
-251,LH,Avant-bras gauche creux du Guerriero,hand_left_10,E,2,5
-252,LH,Gantelet gauche du Samourai,hand_left_20,C,2,72
-253,LH,Gantelet gauche du Samourai,hand_left_20,R,2,22
-254,LH,Gantelet gauche du Samourai,hand_left_20,E,2,5
-255,LH,Poignée gauche du roi Germanique,hand_left_6,R,2,22
-256,LH,Poignée gauche du roi Germanique,hand_left_6,E,2,5
-257,LH,Poignée gauche du roi Germanique,hand_left_6,L,2,1
-258,LH,Gantelet gauche serti de l'Empereur,hand_left_7,R,2,22
-259,LH,Gantelet gauche serti de l'Empereur,hand_left_7,E,2,5
-260,LH,Gantelet gauche serti de l'Empereur,hand_left_7,L,2,1
-261,LH,Revers gauche du Sans-âme,hand_left_8,R,2,22
-262,LH,Revers gauche du Sans-âme,hand_left_8,E,2,5
-263,LH,Revers gauche du Sans-âme,hand_left_8,L,2,1
-264,LH,Griffes gauches du Yersine,hand_left_9,R,2,22
-265,LH,Griffes gauches du Yersine,hand_left_9,E,2,5
-266,LH,Griffes gauches du Yersine,hand_left_9,L,2,1
-267,LH,Joyau gauche des gardiens du Sanctuaire,hand_left_39,R,2,22
-268,LH,Joyau gauche des gardiens du Sanctuaire,hand_left_39,E,2,5
-269,LH,Joyau gauche des gardiens du Sanctuaire,hand_left_39,L,2,1
-270,LH,Promesse Ouest du premier Templier,hand_left_40,R,2,22
-271,LH,Promesse Ouest du premier Templier,hand_left_40,E,2,5
-272,LH,Promesse Ouest du premier Templier,hand_left_40,L,2,1
-273,LH,Levée gauche des fils du Valhalla,hand_left_16,E,2,5
-274,LH,Levée gauche des fils du Valhalla,hand_left_16,L,2,1
-275,LH,Liane gauche de Rhaal'Zath,hand_left_17,E,2,5
-276,LH,Liane gauche de Rhaal'Zath,hand_left_17,L,2,1
-277,LH,Saisie gauche du Damné Boultag,hand_left_18,E,2,5
-278,LH,Saisie gauche du Damné Boultag,hand_left_18,L,2,1
-279,LH,Trahison gauche du Bushi Yamino,hand_left_19,E,2,5
-280,LH,Trahison gauche du Bushi Yamino,hand_left_19,L,2,1
-281,LH,Alpha de l'Unique,hand_left_31,L,2,1
-282,LH,Chaos du Serviteur du Mal,hand_left_32,L,2,1
-283,RH,Moufle de cuir droite,hand_right_1,C,3,72
-284,RH,Moufle de cuir droite,hand_right_1,R,3,22
-285,RH,Poignée droite en fer,hand_right_2,C,3,72
-286,RH,Poignée droite en fer,hand_right_2,R,3,22
-287,RH,Gant droit de fer,hand_right_3,C,3,72
-288,RH,Gant droit de fer,hand_right_3,R,3,22
-289,RH,Gantelet droit de fer,hand_right_4,C,3,72
-290,RH,Gantelet droit de fer,hand_right_4,R,3,22
-291,RH,Mitaine droite de l'archet,hand_right_11,C,3,72
-292,RH,Mitaine droite de l'archet,hand_right_11,R,3,22
-293,RH,Gant court droit en cuir,hand_right_12,C,3,72
-294,RH,Gant court droit en cuir,hand_right_12,R,3,22
-295,RH,Gantelet droit d'écuyer,hand_right_13,C,3,72
-296,RH,Gantelet droit d'écuyer,hand_right_13,R,3,22
-297,RH,Gantelet droit du gardien de la porte,hand_right_14,C,3,72
-298,RH,Gantelet droit du gardien de la porte,hand_right_14,R,3,22
-299,RH,Avant-bras droit en corde,hand_right_21,C,3,72
-300,RH,Avant-bras droit en corde,hand_right_21,R,3,22
-301,RH,Avant-bras droit du forestier,hand_right_22,C,3,72
-302,RH,Avant-bras droit du forestier,hand_right_22,R,3,22
-303,RH,Avant-bras droit du Trax,hand_right_23,C,3,72
-304,RH,Avant-bras droit du Trax,hand_right_23,R,3,22
-305,RH,Avant-bras droit de l'Hoplomacus,hand_right_24,C,3,72
-306,RH,Avant-bras droit de l'Hoplomacus,hand_right_24,R,3,22
-307,RH,Gantelet droit du Scissor,hand_right_25,C,3,72
-308,RH,Gantelet droit du Scissor,hand_right_25,R,3,22
-309,RH,Moufle droite de combat du Secutor,hand_right_26,C,3,72
-310,RH,Moufle droite de combat du Secutor,hand_right_26,R,3,22
-311,RH,Gantelet droit en fer du Samnite,hand_right_27,C,3,72
-312,RH,Gantelet droit en fer du Samnite,hand_right_27,R,3,22
-313,RH,Main droite du Myrmidon,hand_right_28,C,3,72
-314,RH,Main droite du Myrmidon,hand_right_28,R,3,22
-315,RH,Avant-bras droit de l'hoplite,hand_right_29,C,3,72
-316,RH,Avant-bras droit de l'hoplite,hand_right_29,R,3,22
-317,RH,Gantelet droit du centurion,hand_right_30,C,3,72
-318,RH,Gantelet droit du centurion,hand_right_30,R,3,22
-319,RH,Doigts de sang droit du Berzerker,hand_right_33,C,3,72
-320,RH,Doigts de sang droit du Berzerker,hand_right_33,R,3,22
-321,RH,Doigts de sang droit du Berzerker,hand_right_33,E,3,5
-322,RH,Gantelet à lamelles droit du Paladin,hand_right_34,C,3,72
-323,RH,Gantelet à lamelles droit du Paladin,hand_right_34,R,3,22
-324,RH,Gantelet à lamelles droit du Paladin,hand_right_34,E,3,5
-325,RH,Paume droite inversée du Purgateur,hand_right_35,C,3,72
-326,RH,Paume droite inversée du Purgateur,hand_right_35,R,3,22
-327,RH,Paume droite inversée du Purgateur,hand_right_35,E,3,5
-328,RH,Poing droit du Chevalier Blanc,hand_right_36,C,3,72
-329,RH,Poing droit du Chevalier Blanc,hand_right_36,R,3,22
-330,RH,Poing droit du Chevalier Blanc,hand_right_36,E,3,5
-331,RH,Rond-doigts droit des Executants,hand_right_37,C,3,72
-332,RH,Rond-doigts droit des Executants,hand_right_37,R,3,22
-333,RH,Rond-doigts droit des Executants,hand_right_37,E,3,5
-334,RH,Hexagone droit de l'Expéditionnaire,hand_right_38,C,3,72
-335,RH,Hexagone droit de l'Expéditionnaire,hand_right_38,R,3,22
-336,RH,Hexagone droit de l'Expéditionnaire,hand_right_38,E,3,5
-337,RH,Main droite de la garde royale,hand_right_5,C,3,72
-338,RH,Main droite de la garde royale,hand_right_5,R,3,22
-339,RH,Main droite de la garde royale,hand_right_5,E,3,5
-340,RH,Baffe droite du dernier Gaulois,hand_right_15,C,3,72
-341,RH,Baffe droite du dernier Gaulois,hand_right_15,R,3,22
-342,RH,Baffe droite du dernier Gaulois,hand_right_15,E,3,5
-343,RH,Avant-bras droit creux du Guerriero,hand_right_10,C,3,72
-344,RH,Avant-bras droit creux du Guerriero,hand_right_10,R,3,22
-345,RH,Avant-bras droit creux du Guerriero,hand_right_10,E,3,5
-346,RH,Gantelet droit du Samourai,hand_right_20,C,3,72
-347,RH,Gantelet droit du Samourai,hand_right_20,R,3,22
-348,RH,Gantelet droit du Samourai,hand_right_20,E,3,5
-349,RH,Poignée droite du roi Germanique,hand_right_6,R,3,22
-350,RH,Poignée droite du roi Germanique,hand_right_6,E,3,5
-351,RH,Poignée droite du roi Germanique,hand_right_6,L,3,1
-352,RH,Gantelet droit serti de l'Empereur,hand_right_7,R,3,22
-353,RH,Gantelet droit serti de l'Empereur,hand_right_7,E,3,5
-354,RH,Gantelet droit serti de l'Empereur,hand_right_7,L,3,1
-355,RH,Revers droit du Sans-âme,hand_right_8,R,3,22
-356,RH,Revers droit du Sans-âme,hand_right_8,E,3,5
-357,RH,Revers droit du Sans-âme,hand_right_8,L,3,1
-358,RH,Griffes droites du Yersine,hand_right_9,R,3,22
-359,RH,Griffes droites du Yersine,hand_right_9,E,3,5
-360,RH,Griffes droites du Yersine,hand_right_9,L,3,1
-361,RH,Joyau droit des gardiens du Sanctuaire,hand_right_39,R,3,22
-362,RH,Joyau droit des gardiens du Sanctuaire,hand_right_39,E,3,5
-363,RH,Joyau droit des gardiens du Sanctuaire,hand_right_39,L,3,1
-364,RH,Promesse Est du premier Templier,hand_right_40,R,3,22
-365,RH,Promesse Est du premier Templier,hand_right_40,E,3,5
-366,RH,Promesse Est du premier Templier,hand_right_40,L,3,1
-367,RH,Levée droite des fils du Valhalla,hand_right_16,E,3,5
-368,RH,Levée droite des fils du Valhalla,hand_right_16,L,3,1
-369,RH,Liane droite de Rhaal'Zath,hand_right_17,E,3,5
-370,RH,Liane droite de Rhaal'Zath,hand_right_17,L,3,1
-371,RH,Saisie droite du Damné Boultag,hand_right_18,E,3,5
-372,RH,Saisie droite du Damné Boultag,hand_right_18,L,3,1
-373,RH,Trahison droite du Bushi Yamino,hand_right_19,E,3,5
-374,RH,Trahison droite du Bushi Yamino,hand_right_19,L,3,1
-375,RH,Omega de l'Unique,hand_right_31,L,3,1
-376,RH,Anihilation du Serviteur du Mal,hand_right_32,L,3,1
-377,LL,Protège tibias gauche de cuir,feet_left_1,C,4,72
-378,LL,Protège tibias gauche de cuir,feet_left_1,R,4,22
-379,LL,Protège tibias gauche en fer,feet_left_2,C,4,72
-380,LL,Protège tibias gauche en fer,feet_left_2,R,4,22
-381,LL,Jambière gauche de fer,feet_left_3,C,4,72
-382,LL,Jambière gauche de fer,feet_left_3,R,4,22
-383,LL,Jambière pointue gauche de fer,feet_left_4,C,4,72
-384,LL,Jambière pointue gauche de fer,feet_left_4,R,4,22
-385,LL,Soulier gauche de l'archet,feet_left_11,C,4,72
-386,LL,Soulier gauche de l'archet,feet_left_11,R,4,22
-387,LL,Botte gauche en cuir,feet_left_12,C,4,72
-388,LL,Botte gauche en cuir,feet_left_12,R,4,22
-389,LL,Botte gauche rembourrée d'écuyer,feet_left_13,C,4,72
-390,LL,Botte gauche rembourrée d'écuyer,feet_left_13,R,4,22
-391,LL,Chausse à lacet gauche du gardien de la porte,feet_left_14,C,4,72
-392,LL,Chausse à lacet gauche du gardien de la porte,feet_left_14,R,4,22
-393,LL,Tabis gauche en corde,feet_left_21,C,4,72
-394,LL,Tabis gauche en corde,feet_left_21,R,4,22
-395,LL,Bottine gauche du forestier,feet_left_22,C,4,72
-396,LL,Bottine gauche du forestier,feet_left_22,R,4,22
-397,LL,Chaussure gauche du Trax,feet_left_23,C,4,72
-398,LL,Chaussure gauche du Trax,feet_left_23,R,4,22
-399,LL,Chevillère gauche de l'Hoplomacus,feet_left_24,C,4,72
-400,LL,Chevillère gauche de l'Hoplomacus,feet_left_24,R,4,22
-401,LL,Spartiate gauche du Scissor,feet_left_25,C,4,72
-402,LL,Spartiate gauche du Scissor,feet_left_25,R,4,22
-403,LL,Botte renforcée gauche de combat du Secutor,feet_left_26,C,4,72
-404,LL,Botte renforcée gauche de combat du Secutor,feet_left_26,R,4,22
-405,LL,Calceus gauche du Samnite,feet_left_27,C,4,72
-406,LL,Calceus gauche du Samnite,feet_left_27,R,4,22
-407,LL,Socci gauche du Myrmidon,feet_left_28,C,4,72
-408,LL,Socci gauche du Myrmidon,feet_left_28,R,4,22
-409,LL,Spartiate montante gauche de l'hoplite,feet_left_29,C,4,72
-410,LL,Spartiate montante gauche de l'hoplite,feet_left_29,R,4,22
-411,LL,Sandale montante gauche du centurion,feet_left_30,C,4,72
-412,LL,Sandale montante gauche du centurion,feet_left_30,R,4,22
-413,LL,Socci rougeoyant gauche du Berzerker,feet_left_33,C,4,72
-414,LL,Socci rougeoyant gauche du Berzerker,feet_left_33,R,4,22
-415,LL,Socci rougeoyant gauche du Berzerker,feet_left_33,E,4,5
-416,LL,Semelle-souche gauche du Paladin,feet_left_34,C,4,72
-417,LL,Semelle-souche gauche du Paladin,feet_left_34,R,4,22
-418,LL,Semelle-souche gauche du Paladin,feet_left_34,E,4,5
-419,LL,Coque gauche du Purgateur,feet_left_35,C,4,72
-420,LL,Coque gauche du Purgateur,feet_left_35,R,4,22
-421,LL,Coque gauche du Purgateur,feet_left_35,E,4,5
-422,LL,Soleret gauche du Chevalier Blanc,feet_left_36,C,4,72
-423,LL,Soleret gauche du Chevalier Blanc,feet_left_36,R,4,22
-424,LL,Soleret gauche du Chevalier Blanc,feet_left_36,E,4,5
-425,LL,Pointe gauche des Executants,feet_left_37,C,4,72
-426,LL,Pointe gauche des Executants,feet_left_37,R,4,22
-427,LL,Pointe gauche des Executants,feet_left_37,E,4,5
-428,LL,Chausse moutante gauche de l'Expéditionnaire,feet_left_38,C,4,72
-429,LL,Chausse moutante gauche de l'Expéditionnaire,feet_left_38,R,4,22
-430,LL,Chausse moutante gauche de l'Expéditionnaire,feet_left_38,E,4,5
-431,LL,Sabaton gauche de la garde royale,feet_left_5,C,4,72
-432,LL,Sabaton gauche de la garde royale,feet_left_5,R,4,22
-433,LL,Sabaton gauche de la garde royale,feet_left_5,E,4,5
-434,LL,Haute-brogue gauche du dernier Gaulois,feet_left_15,C,4,72
-435,LL,Haute-brogue gauche du dernier Gaulois,feet_left_15,R,4,22
-436,LL,Haute-brogue gauche du dernier Gaulois,feet_left_15,E,4,5
-437,LL,Scarpa gauche creux du Guerriero,feet_left_10,C,4,72
-438,LL,Scarpa gauche creux du Guerriero,feet_left_10,R,4,22
-439,LL,Scarpa gauche creux du Guerriero,feet_left_10,E,4,5
-440,LL,Waraji gauche de combat,feet_left_20,C,4,72
-441,LL,Waraji gauche de combat,feet_left_20,R,4,22
-442,LL,Waraji gauche de combat,feet_left_20,E,4,5
-443,LL,Pointe gauche du roi Germanique,feet_left_6,R,4,22
-444,LL,Pointe gauche du roi Germanique,feet_left_6,E,4,5
-445,LL,Pointe gauche du roi Germanique,feet_left_6,L,4,1
-446,LL,Chausse d'Or gauche de l'Empereur,feet_left_7,R,4,22
-447,LL,Chausse d'Or gauche de l'Empereur,feet_left_7,E,4,5
-448,LL,Chausse d'Or gauche de l'Empereur,feet_left_7,L,4,1
-449,LL,Ronde-botte gauche du Sans-âme,feet_left_8,R,4,22
-450,LL,Ronde-botte gauche du Sans-âme,feet_left_8,E,4,5
-451,LL,Ronde-botte gauche du Sans-âme,feet_left_8,L,4,1
-452,LL,Epine-vrille gauche du Yersine,feet_left_9,R,4,22
-453,LL,Epine-vrille gauche du Yersine,feet_left_9,E,4,5
-454,LL,Epine-vrille gauche du Yersine,feet_left_9,L,4,1
-455,LL,Soleret gauche des gardiens du Sanctuaire,feet_left_39,R,4,22
-456,LL,Soleret gauche des gardiens du Sanctuaire,feet_left_39,E,4,5
-457,LL,Soleret gauche des gardiens du Sanctuaire,feet_left_39,L,4,1
-458,LL,Humble chausse Ouest du premier Templier,feet_left_40,R,4,22
-459,LL,Humble chausse Ouest du premier Templier,feet_left_40,E,4,5
-460,LL,Humble chausse Ouest du premier Templier,feet_left_40,L,4,1
-461,LL,Bottine gauche des fils du Valhalla,feet_left_16,E,4,5
-462,LL,Bottine gauche des fils du Valhalla,feet_left_16,L,4,1
-463,LL,Scubotte gauche de Rhaal'Zath,feet_left_17,E,4,5
-464,LL,Scubotte gauche de Rhaal'Zath,feet_left_17,L,4,1
-465,LL,Protège jambe gauche du Damné Boultag,feet_left_18,E,4,5
-466,LL,Protège jambe gauche du Damné Boultag,feet_left_18,L,4,1
-467,LL,Foule-terre gauche du Bushi Yamino,feet_left_19,E,4,5
-468,LL,Foule-terre gauche du Bushi Yamino,feet_left_19,L,4,1
-469,LL,Appuie de l'Unique,feet_left_31,L,4,1
-470,LL,Désolation du Serviteur du Mal,feet_left_32,L,4,1
-471,RL,Protège tibias droit de cuir,feet_right_1,C,5,72
-472,RL,Protège tibias droit de cuir,feet_right_1,R,5,22
-473,RL,Protège tibias droit en fer,feet_right_2,C,5,72
-474,RL,Protège tibias droit en fer,feet_right_2,R,5,22
-475,RL,Jambière droite de fer,feet_right_3,C,5,72
-476,RL,Jambière droite de fer,feet_right_3,R,5,22
-477,RL,Jambière pointue droite de fer,feet_right_4,C,5,72
-478,RL,Jambière pointue droite de fer,feet_right_4,R,5,22
-479,RL,Soulier droit de l'archet,feet_right_11,C,5,72
-480,RL,Soulier droit de l'archet,feet_right_11,R,5,22
-481,RL,Botte droite en cuir,feet_right_12,C,5,72
-482,RL,Botte droite en cuir,feet_right_12,R,5,22
-483,RL,Botte droite rembourrée d'écuyer,feet_right_13,C,5,72
-484,RL,Botte droite rembourrée d'écuyer,feet_right_13,R,5,22
-485,RL,Chausse à lacet droite du gardien de la porte,feet_right_14,C,5,72
-486,RL,Chausse à lacet droite du gardien de la porte,feet_right_14,R,5,22
-487,RL,Tabis droit en corde,feet_right_21,C,5,72
-488,RL,Tabis droit en corde,feet_right_21,R,5,22
-489,RL,Bottine droite du forestier,feet_right_22,C,5,72
-490,RL,Bottine droite du forestier,feet_right_22,R,5,22
-491,RL,Chaussure droite du Trax,feet_right_23,C,5,72
-492,RL,Chaussure droite du Trax,feet_right_23,R,5,22
-493,RL,Chevillère droite de l'Hoplomacus,feet_right_24,C,5,72
-494,RL,Chevillère droite de l'Hoplomacus,feet_right_24,R,5,22
-495,RL,Spartiate droite du Scissor,feet_right_25,C,5,72
-496,RL,Spartiate droite du Scissor,feet_right_25,R,5,22
-497,RL,Botte renforcée droite de combat du Secutor,feet_right_26,C,5,72
-498,RL,Botte renforcée droite de combat du Secutor,feet_right_26,R,5,22
-499,RL,Calceus droit du Samnite,feet_right_27,C,5,72
-500,RL,Calceus droit du Samnite,feet_right_27,R,5,22
-501,RL,Socci droit du Myrmidon,feet_right_28,C,5,72
-502,RL,Socci droit du Myrmidon,feet_right_28,R,5,22
-503,RL,Spartiate montante droite de l'hoplite,feet_right_29,C,5,72
-504,RL,Spartiate montante droite de l'hoplite,feet_right_29,R,5,22
-505,RL,Sandale montante droite du centurion,feet_right_30,C,5,72
-506,RL,Sandale montante droite du centurion,feet_right_30,R,5,22
-507,RL,Socci rougeoyant droit du Berzerker,feet_right_33,C,5,72
-508,RL,Socci rougeoyant droit du Berzerker,feet_right_33,R,5,22
-509,RL,Socci rougeoyant droit du Berzerker,feet_right_33,E,5,5
-510,RL,Semelle-souche droite du Paladin,feet_right_34,C,5,72
-511,RL,Semelle-souche droite du Paladin,feet_right_34,R,5,22
-512,RL,Semelle-souche droite du Paladin,feet_right_34,E,5,5
-513,RL,Coque droite du Purgateur,feet_right_35,C,5,72
-514,RL,Coque droite du Purgateur,feet_right_35,R,5,22
-515,RL,Coque droite du Purgateur,feet_right_35,E,5,5
-516,RL,Soleret droit du Chevalier Blanc,feet_right_36,C,5,72
-517,RL,Soleret droit du Chevalier Blanc,feet_right_36,R,5,22
-518,RL,Soleret droit du Chevalier Blanc,feet_right_36,E,5,5
-519,RL,Pointe droite des Executants,feet_right_37,C,5,72
-520,RL,Pointe droite des Executants,feet_right_37,R,5,22
-521,RL,Pointe droite des Executants,feet_right_37,E,5,5
-522,RL,Chausse moutante droite de l'Expéditionnaire,feet_right_38,C,5,72
-523,RL,Chausse moutante droite de l'Expéditionnaire,feet_right_38,R,5,22
-524,RL,Chausse moutante droite de l'Expéditionnaire,feet_right_38,E,5,5
-525,RL,Sabaton droit de la garde royale,feet_right_5,C,5,72
-526,RL,Sabaton droit de la garde royale,feet_right_5,R,5,22
-527,RL,Sabaton droit de la garde royale,feet_right_5,E,5,5
-528,RL,Haute-brogue droite du dernier Gaulois,feet_right_15,C,5,72
-529,RL,Haute-brogue droite du dernier Gaulois,feet_right_15,R,5,22
-530,RL,Haute-brogue droite du dernier Gaulois,feet_right_15,E,5,5
-531,RL,Scarpa droit creux du Guerriero,feet_right_10,C,5,72
-532,RL,Scarpa droit creux du Guerriero,feet_right_10,R,5,22
-533,RL,Scarpa droit creux du Guerriero,feet_right_10,E,5,5
-534,RL,Waraji droit de combat,feet_right_20,C,5,72
-535,RL,Waraji droit de combat,feet_right_20,R,5,22
-536,RL,Waraji droit de combat,feet_right_20,E,5,5
-537,RL,Pointe droite du roi Germanique,feet_right_6,R,5,22
-538,RL,Pointe droite du roi Germanique,feet_right_6,E,5,5
-539,RL,Pointe droite du roi Germanique,feet_right_6,L,5,1
-540,RL,Chausse d'Or droite de l'Empereur,feet_right_7,R,5,22
-541,RL,Chausse d'Or droite de l'Empereur,feet_right_7,E,5,5
-542,RL,Chausse d'Or droite de l'Empereur,feet_right_7,L,5,1
-543,RL,Ronde-botte droite du Sans-âme,feet_right_8,R,5,22
-544,RL,Ronde-botte droite du Sans-âme,feet_right_8,E,5,5
-545,RL,Ronde-botte droite du Sans-âme,feet_right_8,L,5,1
-546,RL,Epine-vrille droite du Yersine,feet_right_9,R,5,22
-547,RL,Epine-vrille droite du Yersine,feet_right_9,E,5,5
-548,RL,Epine-vrille droite du Yersine,feet_right_9,L,5,1
-549,RL,Soleret droit des gardiens du Sanctuaire,feet_right_39,R,5,22
-550,RL,Soleret droit des gardiens du Sanctuaire,feet_right_39,E,5,5
-551,RL,Soleret droit des gardiens du Sanctuaire,feet_right_39,L,5,1
-552,RL,Humble chausse Ouest du premier Templier,feet_right_40,R,5,22
-553,RL,Humble chausse Ouest du premier Templier,feet_right_40,E,5,5
-554,RL,Humble chausse Ouest du premier Templier,feet_right_40,L,5,1
-555,RL,Bottine droite des fils du Valhalla,feet_right_16,E,5,5
-556,RL,Bottine droite des fils du Valhalla,feet_right_16,L,5,1
-557,RL,Scubotte droite de Rhaal'Zath,feet_right_17,E,5,5
-558,RL,Scubotte droite de Rhaal'Zath,feet_right_17,L,5,1
-559,RL,Protège jambe droit du Damné Boultag,feet_right_18,E,5,5
-560,RL,Protège jambe droit du Damné Boultag,feet_right_18,L,5,1
-561,RL,Foule-terre droite du Bushi Yamino,feet_right_19,E,5,5
-562,RL,Foule-terre droite du Bushi Yamino,feet_right_19,L,5,1
-563,RL,Appel de l'Unique,feet_right_31,L,5,1
-564,RL,Calamité du Serviteur du Mal,feet_right_32,L,5,1
+1,H,Beret,HEAD/head_1,C,0,72
+2,H,Beret,HEAD/head_1,R,0,22
+3,H,Casque en fer,HEAD/head_2,C,0,72
+4,H,Casque en fer,HEAD/head_2,R,0,22
+5,H,Chapel de fer,HEAD/head_3,C,0,72
+6,H,Chapel de fer,HEAD/head_3,R,0,22
+7,H,Visière de fer,HEAD/head_4,C,0,72
+8,H,Visière de fer,HEAD/head_4,R,0,22
+9,H,Couvre chef en cuir,HEAD/head_11,C,0,72
+10,H,Couvre chef en cuir,HEAD/head_11,R,0,22
+11,H,Casque en cuir,HEAD/head_12,C,0,72
+12,H,Casque en cuir,HEAD/head_12,R,0,22
+13,H,Casque d'écuyer,HEAD/head_13,C,0,72
+14,H,Casque d'écuyer,HEAD/head_13,R,0,22
+15,H,Casque du gardien de la porte,HEAD/head_14,C,0,72
+16,H,Casque du gardien de la porte,HEAD/head_14,R,0,22
+17,H,Bandeau en corde,HEAD/head_21,C,0,72
+18,H,Bandeau en corde,HEAD/head_21,R,0,22
+19,H,Tête d'ours,HEAD/head_22,C,0,72
+20,H,Tête d'ours,HEAD/head_22,R,0,22
+21,H,Casque du Trax,HEAD/head_23,C,0,72
+22,H,Casque du Trax,HEAD/head_23,R,0,22
+23,H,Casque de l'Hoplomacus,HEAD/head_24,C,0,72
+24,H,Casque de l'Hoplomacus,HEAD/head_24,R,0,22
+25,H,Casque du Scissor,HEAD/head_25,C,0,72
+26,H,Casque du Scissor,HEAD/head_25,R,0,22
+27,H,Casque du Secutor,HEAD/head_26,C,0,72
+28,H,Casque du Secutor,HEAD/head_26,R,0,22
+29,H,Casque du Samnite,HEAD/head_27,C,0,72
+30,H,Casque du Samnite,HEAD/head_27,R,0,22
+31,H,Casque du Myrmidon,HEAD/head_28,C,0,72
+32,H,Casque du Myrmidon,HEAD/head_28,R,0,22
+33,H,Casque de l'hoplites,HEAD/head_29,C,0,72
+34,H,Casque de l'hoplites,HEAD/head_29,R,0,22
+35,H,Casque du centurion,HEAD/head_30,C,0,72
+36,H,Casque du centurion,HEAD/head_30,R,0,22
+37,H,Casque du Berzerker,HEAD/head_33,C,0,72
+38,H,Casque du Berzerker,HEAD/head_33,R,0,22
+39,H,Casque du Berzerker,HEAD/head_33,E,0,5
+40,H,Heaume du Paladin,HEAD/head_34,C,0,72
+41,H,Heaume du Paladin,HEAD/head_34,R,0,22
+42,H,Heaume du Paladin,HEAD/head_34,E,0,5
+43,H,Heaume du Purgateur,HEAD/head_35,C,0,72
+44,H,Heaume du Purgateur,HEAD/head_35,R,0,22
+45,H,Heaume du Purgateur,HEAD/head_35,E,0,5
+46,H,Casque du Chevalier Blanc,HEAD/head_36,C,0,72
+47,H,Casque du Chevalier Blanc,HEAD/head_36,R,0,22
+48,H,Casque du Chevalier Blanc,HEAD/head_36,E,0,5
+49,H,Bassinet des Executants,HEAD/head_37,C,0,72
+50,H,Bassinet des Executants,HEAD/head_37,R,0,22
+51,H,Bassinet des Executants,HEAD/head_37,E,0,5
+52,H,Klappvisor de l'Expéditionnaire,HEAD/head_38,C,0,72
+53,H,Klappvisor de l'Expéditionnaire,HEAD/head_38,R,0,22
+54,H,Klappvisor de l'Expéditionnaire,HEAD/head_38,E,0,5
+55,H,Heaume de la garde royale,HEAD/head_5,C,0,72
+56,H,Heaume de la garde royale,HEAD/head_5,R,0,22
+57,H,Heaume de la garde royale,HEAD/head_5,E,0,5
+58,H,Casque du dernier Gaulois,HEAD/head_15,C,0,72
+59,H,Casque du dernier Gaulois,HEAD/head_15,R,0,22
+60,H,Casque du dernier Gaulois,HEAD/head_15,E,0,5
+61,H,Visière du Guerriero,HEAD/head_10,C,0,72
+62,H,Visière du Guerriero,HEAD/head_10,R,0,22
+63,H,Visière du Guerriero,HEAD/head_10,E,0,5
+64,H,Casque du Samourai,HEAD/head_20,C,0,72
+65,H,Casque du Samourai,HEAD/head_20,R,0,22
+66,H,Casque du Samourai,HEAD/head_20,E,0,5
+67,H,Bi-cornes du roi Germanique,HEAD/head_6,R,0,22
+68,H,Bi-cornes du roi Germanique,HEAD/head_6,E,0,5
+69,H,Bi-cornes du roi Germanique,HEAD/head_6,L,0,1
+70,H,Casque en Or de l'Empereur,HEAD/head_7,R,0,22
+71,H,Casque en Or de l'Empereur,HEAD/head_7,E,0,5
+72,H,Casque en Or de l'Empereur,HEAD/head_7,L,0,1
+73,H,Heaume du Sans-âme,HEAD/head_8,R,0,22
+74,H,Heaume du Sans-âme,HEAD/head_8,E,0,5
+75,H,Heaume du Sans-âme,HEAD/head_8,L,0,1
+76,H,Casque du Yersine,HEAD/head_9,R,0,22
+77,H,Casque du Yersine,HEAD/head_9,E,0,5
+78,H,Casque du Yersine,HEAD/head_9,L,0,1
+79,H,Casque des gardiens du Sanctuaire,HEAD/head_39,R,0,22
+80,H,Casque des gardiens du Sanctuaire,HEAD/head_39,E,0,5
+81,H,Casque des gardiens du Sanctuaire,HEAD/head_39,L,0,1
+82,H,Heaume du premier Templier,HEAD/head_40,R,0,22
+83,H,Heaume du premier Templier,HEAD/head_40,E,0,5
+84,H,Heaume du premier Templier,HEAD/head_40,L,0,1
+85,H,Heaume des fils du Valhalla,HEAD/head_16,E,0,5
+86,H,Heaume des fils du Valhalla,HEAD/head_16,L,0,1
+87,H,Masque de Rhaal'Zath,HEAD/head_17,E,0,5
+88,H,Masque de Rhaal'Zath,HEAD/head_17,L,0,1
+89,H,Casque du Damné Boultag,HEAD/head_18,E,0,5
+90,H,Casque du Damné Boultag,HEAD/head_18,L,0,1
+91,H,Vision du Bushi Yamino,HEAD/head_19,E,0,5
+92,H,Vision du Bushi Yamino,HEAD/head_19,L,0,1
+93,H,Orchestrateur de l'Unique,HEAD/head_31,L,0,1
+94,H,Visage du Serviteur du Mal,HEAD/head_32,L,0,1
+95,B,Etoffe de cuir,BODY/body_1,C,1,72
+96,B,Etoffe de cuir,BODY/body_1,R,1,22
+97,B,Cage en fer,BODY/body_2,C,1,72
+98,B,Cage en fer,BODY/body_2,R,1,22
+99,B,Plastron de fer,BODY/body_3,C,1,72
+100,B,Plastron de fer,BODY/body_3,R,1,22
+101,B,Buste de fer,BODY/body_4,C,1,72
+102,B,Buste de fer,BODY/body_4,R,1,22
+103,B,Plastron en cuir,BODY/body_11,C,1,72
+104,B,Plastron en cuir,BODY/body_11,R,1,22
+105,B,Intégral en cuir,BODY/body_12,C,1,72
+106,B,Intagral en cuir,BODY/body_12,R,1,22
+107,B,Tunique d'écuyer,BODY/body_13,C,1,72
+108,B,Tunique d'écuyer,BODY/body_13,R,1,22
+109,B,Armure du gardien de la porte,BODY/body_14,C,1,72
+110,B,Armure du gardien de la porte,BODY/body_14,R,1,22
+111,B,Tunique rayée,BODY/body_21,C,1,72
+112,B,Tunique rayée,BODY/body_21,R,1,22
+113,B,Habit du forestier,BODY/body_22,C,1,72
+114,B,Habit du forestier,BODY/body_22,R,1,22
+115,B,Epaulière droite du Trax,BODY/body_23,C,1,72
+116,B,Epaulière droite du Trax,BODY/body_23,R,1,22
+117,B,Cotte de mailles de l'Hoplomacus,BODY/body_24,C,1,72
+118,B,Cotte de mailles de l'Hoplomacus,BODY/body_24,R,1,22
+119,B,Epaulière droite du Scissor,BODY/body_25,C,1,72
+120,B,Epaulière droite du Scissor,BODY/body_25,R,1,22
+121,B,Epaulière gauche du Secutor,BODY/body_26,C,1,72
+122,B,Epaulière gauche du Secutor,BODY/body_26,R,1,22
+123,B,Epaulière droite du Samnite,BODY/body_27,C,1,72
+124,B,Epaulière droite du Samnite,BODY/body_27,R,1,22
+125,B,Cotte de mailles du Myrmidon,BODY/body_28,C,1,72
+126,B,Cotte de mailles du Myrmidon,BODY/body_28,R,1,22
+127,B,Plastron échancré de l'hoplite,BODY/body_29,C,1,72
+128,B,Plastron échancré de l'hoplite,BODY/body_29,R,1,22
+129,B,Plastron du centurion,BODY/body_30,C,1,72
+130,B,Plastron du centurion,BODY/body_30,R,1,22
+131,B,Epaulière du Berzerker,BODY/body_33,C,1,72
+132,B,Epaulière du Berzerker,BODY/body_33,R,1,22
+133,B,Epaulière du Berzerker,BODY/body_33,E,1,5
+134,B,Armure du Paladin,BODY/body_34,C,1,72
+135,B,Armure du Paladin,BODY/body_34,R,1,22
+136,B,Armure du Paladin,BODY/body_34,E,1,5
+137,B,Haut du Purgateur,BODY/body_35,C,1,72
+138,B,Haut du Purgateur,BODY/body_35,R,1,22
+139,B,Haut du Purgateur,BODY/body_35,E,1,5
+140,B,Armure du Chevalier Blanc,BODY/body_36,C,1,72
+141,B,Armure du Chevalier Blanc,BODY/body_36,R,1,22
+142,B,Armure du Chevalier Blanc,BODY/body_36,E,1,5
+143,B,Cuirasse des Executants,BODY/body_37,C,1,72
+144,B,Cuirasse des Executants,BODY/body_37,R,1,22
+145,B,Cuirasse des Executants,BODY/body_37,E,1,5
+146,B,Armure lourde de l'Expéditionnaire,BODY/body_38,C,1,72
+147,B,Armure lourde de l'Expéditionnaire,BODY/body_38,R,1,22
+148,B,Armure lourde de l'Expéditionnaire,BODY/body_38,E,1,5
+149,B,Armure à noyau de la garde royale,BODY/body_5,C,1,72
+150,B,Armure à noyau de la garde royale,BODY/body_5,R,1,22
+151,B,Armure à noyau de la garde royale,BODY/body_5,E,1,5
+152,B,Brigandine du dernier Gaulois,BODY/body_15,C,1,72
+153,B,Brigandine du dernier Gaulois,BODY/body_15,R,1,22
+154,B,Brigandine du dernier Gaulois,BODY/body_15,E,1,5
+155,B,Armatura du Guerriero,BODY/body_10,C,1,72
+156,B,Armatura du Guerriero,BODY/body_10,R,1,22
+157,B,Armatura du Guerriero,BODY/body_10,E,1,5
+158,B,Armure du Samourai,BODY/body_20,C,1,72
+159,B,Armure du Samourai,BODY/body_20,R,1,22
+160,B,Armure du Samourai,BODY/body_20,E,1,5
+161,B,Torse du roi Germanique,BODY/body_6,R,1,22
+162,B,Torse du roi Germanique,BODY/body_6,E,1,5
+163,B,Torse du roi Germanique,BODY/body_6,L,1,1
+164,B,Armure en Or de l'Empereur,BODY/body_7,R,1,22
+165,B,Armure en Or de l'Empereur,BODY/body_7,E,1,5
+166,B,Armure en Or de l'Empereur,BODY/body_7,L,1,1
+167,B,Corps du Sans-âme,BODY/body_8,R,1,22
+168,B,Corps du Sans-âme,BODY/body_8,E,1,5
+169,B,Corps du Sans-âme,BODY/body_8,L,1,1
+170,B,Robe du Yersine,BODY/body_9,R,1,22
+171,B,Robe du Yersine,BODY/body_9,E,1,5
+172,B,Robe du Yersine,BODY/body_9,L,1,1
+173,B,Plastron des gardiens du Sanctuaire,BODY/body_39,R,1,22
+174,B,Plastron des gardiens du Sanctuaire,BODY/body_39,E,1,5
+175,B,Plastron des gardiens du Sanctuaire,BODY/body_39,L,1,1
+176,B,Armure lourde du premier Templier,BODY/body_40,R,1,22
+177,B,Armure lourde du premier Templier,BODY/body_40,E,1,5
+178,B,Armure lourde du premier Templier,BODY/body_40,L,1,1
+179,B,Haubert des fils du Valhalla,BODY/body_16,E,1,5
+180,B,Haubert des fils du Valhalla,BODY/body_16,L,1,1
+181,B,Buste de Rhaal'Zath,BODY/body_17,E,1,5
+182,B,Buste de Rhaal'Zath,BODY/body_17,L,1,1
+183,B,Protection du Damné Boultag,BODY/body_18,E,1,5
+184,B,Protection du Damné Boultag,BODY/body_18,L,1,1
+185,B,Cotte à épines du Bushi Yamino,BODY/body_19,E,1,5
+186,B,Cotte à épines du Bushi Yamino,BODY/body_19,L,1,1
+187,B,Invincible de l'Unique,BODY/body_31,L,1,1
+188,B,Immunité du Serviteur du Mal,BODY/body_32,L,1,1
+189,LH,Moufle de cuir gauche,HAND_L/hand_left_1,C,2,72
+190,LH,Moufle de cuir gauche,HAND_L/hand_left_1,R,2,22
+191,LH,Poignée gauche en fer,HAND_L/hand_left_2,C,2,72
+192,LH,Poignée gauche en fer,HAND_L/hand_left_2,R,2,22
+193,LH,Gant gauche de fer,HAND_L/hand_left_3,C,2,72
+194,LH,Gant gauche de fer,HAND_L/hand_left_3,R,2,22
+195,LH,Gantelet gauche de fer,HAND_L/hand_left_4,C,2,72
+196,LH,Gantelet gauche de fer,HAND_L/hand_left_4,R,2,22
+197,LH,Mitaine gauche de l'archet,HAND_L/hand_left_11,C,2,72
+198,LH,Mitaine gauche de l'archet,HAND_L/hand_left_11,R,2,22
+199,LH,Gant court gauche en cuir,HAND_L/hand_left_12,C,2,72
+200,LH,Gant court gauche en cuir,HAND_L/hand_left_12,R,2,22
+201,LH,Gantelet gauche d'écuyer,HAND_L/hand_left_13,C,2,72
+202,LH,Gantelet gauche d'écuyer,HAND_L/hand_left_13,R,2,22
+203,LH,Gantelet gauche du gardien de la porte,HAND_L/hand_left_14,C,2,72
+204,LH,Gantelet gauche du gardien de la porte,HAND_L/hand_left_14,R,2,22
+205,LH,Avant-bras gauche en corde,HAND_L/hand_left_21,C,2,72
+206,LH,Avant-bras gauche en corde,HAND_L/hand_left_21,R,2,22
+207,LH,Avant-bras gauche du forestier,HAND_L/hand_left_22,C,2,72
+208,LH,Avant-bras gauche du forestier,HAND_L/hand_left_22,R,2,22
+209,LH,Avant-bras gauche du Trax,HAND_L/hand_left_23,C,2,72
+210,LH,Avant-bras gauche du Trax,HAND_L/hand_left_23,R,2,22
+211,LH,Avant-bras gauche de l'Hoplomacus,HAND_L/hand_left_24,C,2,72
+212,LH,Avant-bras gauche de l'Hoplomacus,HAND_L/hand_left_24,R,2,22
+213,LH,Gantelet gauche du Scissor,HAND_L/hand_left_25,C,2,72
+214,LH,Gantelet gauche du Scissor,HAND_L/hand_left_25,R,2,22
+215,LH,Moufle gauche de combat du Secutor,HAND_L/hand_left_26,C,2,72
+216,LH,Moufle gauche de combat du Secutor,HAND_L/hand_left_26,R,2,22
+217,LH,Gantelet gauche en fer du Samnite,HAND_L/hand_left_27,C,2,72
+218,LH,Gantelet gauche en fer du Samnite,HAND_L/hand_left_27,R,2,22
+219,LH,Main gauche du Myrmidon,HAND_L/hand_left_28,C,2,72
+220,LH,Main gauche du Myrmidon,HAND_L/hand_left_28,R,2,22
+221,LH,Avant-bras gauche de l'hoplite,HAND_L/hand_left_29,C,2,72
+222,LH,Avant-bras gauche de l'hoplite,HAND_L/hand_left_29,R,2,22
+223,LH,Gantelet gauche du centurion,HAND_L/hand_left_30,C,2,72
+224,LH,Gantelet gauche du centurion,HAND_L/hand_left_30,R,2,22
+225,LH,Doigts de sang gauches du Berzerker,HAND_L/hand_left_33,C,2,72
+226,LH,Doigts de sang gauches du Berzerker,HAND_L/hand_left_33,R,2,22
+227,LH,Doigts de sang gauches du Berzerker,HAND_L/hand_left_33,E,2,5
+228,LH,Gantelet à lamelles gauche du Paladin,HAND_L/hand_left_34,C,2,72
+229,LH,Gantelet à lamelles gauche du Paladin,HAND_L/hand_left_34,R,2,22
+230,LH,Gantelet à lamelles gauche du Paladin,HAND_L/hand_left_34,E,2,5
+231,LH,Paume gauche inversée du Purgateur,HAND_L/hand_left_35,C,2,72
+232,LH,Paume gauche inversée du Purgateur,HAND_L/hand_left_35,R,2,22
+233,LH,Paume gauche inversée du Purgateur,HAND_L/hand_left_35,E,2,5
+234,LH,Poing gauche du Chevalier Blanc,HAND_L/hand_left_36,C,2,72
+235,LH,Poing gauche du Chevalier Blanc,HAND_L/hand_left_36,R,2,22
+236,LH,Poing gauche du Chevalier Blanc,HAND_L/hand_left_36,E,2,5
+237,LH,Rond-doigts gauche des Executants,HAND_L/hand_left_37,C,2,72
+238,LH,Rond-doigts gauche des Executants,HAND_L/hand_left_37,R,2,22
+239,LH,Rond-doigts gauche des Executants,HAND_L/hand_left_37,E,2,5
+240,LH,Hexagone gauche de l'Expéditionnaire,HAND_L/hand_left_38,C,2,72
+241,LH,Hexagone gauche de l'Expéditionnaire,HAND_L/hand_left_38,R,2,22
+242,LH,Hexagone gauche de l'Expéditionnaire,HAND_L/hand_left_38,E,2,5
+243,LH,Main gauche de la garde royale,HAND_L/hand_left_5,C,2,72
+244,LH,Main gauche de la garde royale,HAND_L/hand_left_5,R,2,22
+245,LH,Main gauche de la garde royale,HAND_L/hand_left_5,E,2,5
+246,LH,Baffe gauche du dernier Gaulois,HAND_L/hand_left_15,C,2,72
+247,LH,Baffe gauche du dernier Gaulois,HAND_L/hand_left_15,R,2,22
+248,LH,Baffe gauche du dernier Gaulois,HAND_L/hand_left_15,E,2,5
+249,LH,Avant-bras gauche creux du Guerriero,HAND_L/hand_left_10,C,2,72
+250,LH,Avant-bras gauche creux du Guerriero,HAND_L/hand_left_10,R,2,22
+251,LH,Avant-bras gauche creux du Guerriero,HAND_L/hand_left_10,E,2,5
+252,LH,Gantelet gauche du Samourai,HAND_L/hand_left_20,C,2,72
+253,LH,Gantelet gauche du Samourai,HAND_L/hand_left_20,R,2,22
+254,LH,Gantelet gauche du Samourai,HAND_L/hand_left_20,E,2,5
+255,LH,Poignée gauche du roi Germanique,HAND_L/hand_left_6,R,2,22
+256,LH,Poignée gauche du roi Germanique,HAND_L/hand_left_6,E,2,5
+257,LH,Poignée gauche du roi Germanique,HAND_L/hand_left_6,L,2,1
+258,LH,Gantelet gauche serti de l'Empereur,HAND_L/hand_left_7,R,2,22
+259,LH,Gantelet gauche serti de l'Empereur,HAND_L/hand_left_7,E,2,5
+260,LH,Gantelet gauche serti de l'Empereur,HAND_L/hand_left_7,L,2,1
+261,LH,Revers gauche du Sans-âme,HAND_L/hand_left_8,R,2,22
+262,LH,Revers gauche du Sans-âme,HAND_L/hand_left_8,E,2,5
+263,LH,Revers gauche du Sans-âme,HAND_L/hand_left_8,L,2,1
+264,LH,Griffes gauches du Yersine,HAND_L/hand_left_9,R,2,22
+265,LH,Griffes gauches du Yersine,HAND_L/hand_left_9,E,2,5
+266,LH,Griffes gauches du Yersine,HAND_L/hand_left_9,L,2,1
+267,LH,Joyau gauche des gardiens du Sanctuaire,HAND_L/hand_left_39,R,2,22
+268,LH,Joyau gauche des gardiens du Sanctuaire,HAND_L/hand_left_39,E,2,5
+269,LH,Joyau gauche des gardiens du Sanctuaire,HAND_L/hand_left_39,L,2,1
+270,LH,Promesse Ouest du premier Templier,HAND_L/hand_left_40,R,2,22
+271,LH,Promesse Ouest du premier Templier,HAND_L/hand_left_40,E,2,5
+272,LH,Promesse Ouest du premier Templier,HAND_L/hand_left_40,L,2,1
+273,LH,Levée gauche des fils du Valhalla,HAND_L/hand_left_16,E,2,5
+274,LH,Levée gauche des fils du Valhalla,HAND_L/hand_left_16,L,2,1
+275,LH,Liane gauche de Rhaal'Zath,HAND_L/hand_left_17,E,2,5
+276,LH,Liane gauche de Rhaal'Zath,HAND_L/hand_left_17,L,2,1
+277,LH,Saisie gauche du Damné Boultag,HAND_L/hand_left_18,E,2,5
+278,LH,Saisie gauche du Damné Boultag,HAND_L/hand_left_18,L,2,1
+279,LH,Trahison gauche du Bushi Yamino,HAND_L/hand_left_19,E,2,5
+280,LH,Trahison gauche du Bushi Yamino,HAND_L/hand_left_19,L,2,1
+281,LH,Alpha de l'Unique,HAND_L/hand_left_31,L,2,1
+282,LH,Chaos du Serviteur du Mal,HAND_L/hand_left_32,L,2,1
+283,RH,Moufle de cuir droite,HAND_R/hand_right_1,C,3,72
+284,RH,Moufle de cuir droite,HAND_R/hand_right_1,R,3,22
+285,RH,Poignée droite en fer,HAND_R/hand_right_2,C,3,72
+286,RH,Poignée droite en fer,HAND_R/hand_right_2,R,3,22
+287,RH,Gant droit de fer,HAND_R/hand_right_3,C,3,72
+288,RH,Gant droit de fer,HAND_R/hand_right_3,R,3,22
+289,RH,Gantelet droit de fer,HAND_R/hand_right_4,C,3,72
+290,RH,Gantelet droit de fer,HAND_R/hand_right_4,R,3,22
+291,RH,Mitaine droite de l'archet,HAND_R/hand_right_11,C,3,72
+292,RH,Mitaine droite de l'archet,HAND_R/hand_right_11,R,3,22
+293,RH,Gant court droit en cuir,HAND_R/hand_right_12,C,3,72
+294,RH,Gant court droit en cuir,HAND_R/hand_right_12,R,3,22
+295,RH,Gantelet droit d'écuyer,HAND_R/hand_right_13,C,3,72
+296,RH,Gantelet droit d'écuyer,HAND_R/hand_right_13,R,3,22
+297,RH,Gantelet droit du gardien de la porte,HAND_R/hand_right_14,C,3,72
+298,RH,Gantelet droit du gardien de la porte,HAND_R/hand_right_14,R,3,22
+299,RH,Avant-bras droit en corde,HAND_R/hand_right_21,C,3,72
+300,RH,Avant-bras droit en corde,HAND_R/hand_right_21,R,3,22
+301,RH,Avant-bras droit du forestier,HAND_R/hand_right_22,C,3,72
+302,RH,Avant-bras droit du forestier,HAND_R/hand_right_22,R,3,22
+303,RH,Avant-bras droit du Trax,HAND_R/hand_right_23,C,3,72
+304,RH,Avant-bras droit du Trax,HAND_R/hand_right_23,R,3,22
+305,RH,Avant-bras droit de l'Hoplomacus,HAND_R/hand_right_24,C,3,72
+306,RH,Avant-bras droit de l'Hoplomacus,HAND_R/hand_right_24,R,3,22
+307,RH,Gantelet droit du Scissor,HAND_R/hand_right_25,C,3,72
+308,RH,Gantelet droit du Scissor,HAND_R/hand_right_25,R,3,22
+309,RH,Moufle droite de combat du Secutor,HAND_R/hand_right_26,C,3,72
+310,RH,Moufle droite de combat du Secutor,HAND_R/hand_right_26,R,3,22
+311,RH,Gantelet droit en fer du Samnite,HAND_R/hand_right_27,C,3,72
+312,RH,Gantelet droit en fer du Samnite,HAND_R/hand_right_27,R,3,22
+313,RH,Main droite du Myrmidon,HAND_R/hand_right_28,C,3,72
+314,RH,Main droite du Myrmidon,HAND_R/hand_right_28,R,3,22
+315,RH,Avant-bras droit de l'hoplite,HAND_R/hand_right_29,C,3,72
+316,RH,Avant-bras droit de l'hoplite,HAND_R/hand_right_29,R,3,22
+317,RH,Gantelet droit du centurion,HAND_R/hand_right_30,C,3,72
+318,RH,Gantelet droit du centurion,HAND_R/hand_right_30,R,3,22
+319,RH,Doigts de sang droit du Berzerker,HAND_R/hand_right_33,C,3,72
+320,RH,Doigts de sang droit du Berzerker,HAND_R/hand_right_33,R,3,22
+321,RH,Doigts de sang droit du Berzerker,HAND_R/hand_right_33,E,3,5
+322,RH,Gantelet à lamelles droit du Paladin,HAND_R/hand_right_34,C,3,72
+323,RH,Gantelet à lamelles droit du Paladin,HAND_R/hand_right_34,R,3,22
+324,RH,Gantelet à lamelles droit du Paladin,HAND_R/hand_right_34,E,3,5
+325,RH,Paume droite inversée du Purgateur,HAND_R/hand_right_35,C,3,72
+326,RH,Paume droite inversée du Purgateur,HAND_R/hand_right_35,R,3,22
+327,RH,Paume droite inversée du Purgateur,HAND_R/hand_right_35,E,3,5
+328,RH,Poing droit du Chevalier Blanc,HAND_R/hand_right_36,C,3,72
+329,RH,Poing droit du Chevalier Blanc,HAND_R/hand_right_36,R,3,22
+330,RH,Poing droit du Chevalier Blanc,HAND_R/hand_right_36,E,3,5
+331,RH,Rond-doigts droit des Executants,HAND_R/hand_right_37,C,3,72
+332,RH,Rond-doigts droit des Executants,HAND_R/hand_right_37,R,3,22
+333,RH,Rond-doigts droit des Executants,HAND_R/hand_right_37,E,3,5
+334,RH,Hexagone droit de l'Expéditionnaire,HAND_R/hand_right_38,C,3,72
+335,RH,Hexagone droit de l'Expéditionnaire,HAND_R/hand_right_38,R,3,22
+336,RH,Hexagone droit de l'Expéditionnaire,HAND_R/hand_right_38,E,3,5
+337,RH,Main droite de la garde royale,HAND_R/hand_right_5,C,3,72
+338,RH,Main droite de la garde royale,HAND_R/hand_right_5,R,3,22
+339,RH,Main droite de la garde royale,HAND_R/hand_right_5,E,3,5
+340,RH,Baffe droite du dernier Gaulois,HAND_R/hand_right_15,C,3,72
+341,RH,Baffe droite du dernier Gaulois,HAND_R/hand_right_15,R,3,22
+342,RH,Baffe droite du dernier Gaulois,HAND_R/hand_right_15,E,3,5
+343,RH,Avant-bras droit creux du Guerriero,HAND_R/hand_right_10,C,3,72
+344,RH,Avant-bras droit creux du Guerriero,HAND_R/hand_right_10,R,3,22
+345,RH,Avant-bras droit creux du Guerriero,HAND_R/hand_right_10,E,3,5
+346,RH,Gantelet droit du Samourai,HAND_R/hand_right_20,C,3,72
+347,RH,Gantelet droit du Samourai,HAND_R/hand_right_20,R,3,22
+348,RH,Gantelet droit du Samourai,HAND_R/hand_right_20,E,3,5
+349,RH,Poignée droite du roi Germanique,HAND_R/hand_right_6,R,3,22
+350,RH,Poignée droite du roi Germanique,HAND_R/hand_right_6,E,3,5
+351,RH,Poignée droite du roi Germanique,HAND_R/hand_right_6,L,3,1
+352,RH,Gantelet droit serti de l'Empereur,HAND_R/hand_right_7,R,3,22
+353,RH,Gantelet droit serti de l'Empereur,HAND_R/hand_right_7,E,3,5
+354,RH,Gantelet droit serti de l'Empereur,HAND_R/hand_right_7,L,3,1
+355,RH,Revers droit du Sans-âme,HAND_R/hand_right_8,R,3,22
+356,RH,Revers droit du Sans-âme,HAND_R/hand_right_8,E,3,5
+357,RH,Revers droit du Sans-âme,HAND_R/hand_right_8,L,3,1
+358,RH,Griffes droites du Yersine,HAND_R/hand_right_9,R,3,22
+359,RH,Griffes droites du Yersine,HAND_R/hand_right_9,E,3,5
+360,RH,Griffes droites du Yersine,HAND_R/hand_right_9,L,3,1
+361,RH,Joyau droit des gardiens du Sanctuaire,HAND_R/hand_right_39,R,3,22
+362,RH,Joyau droit des gardiens du Sanctuaire,HAND_R/hand_right_39,E,3,5
+363,RH,Joyau droit des gardiens du Sanctuaire,HAND_R/hand_right_39,L,3,1
+364,RH,Promesse Est du premier Templier,HAND_R/hand_right_40,R,3,22
+365,RH,Promesse Est du premier Templier,HAND_R/hand_right_40,E,3,5
+366,RH,Promesse Est du premier Templier,HAND_R/hand_right_40,L,3,1
+367,RH,Levée droite des fils du Valhalla,HAND_R/hand_right_16,E,3,5
+368,RH,Levée droite des fils du Valhalla,HAND_R/hand_right_16,L,3,1
+369,RH,Liane droite de Rhaal'Zath,HAND_R/hand_right_17,E,3,5
+370,RH,Liane droite de Rhaal'Zath,HAND_R/hand_right_17,L,3,1
+371,RH,Saisie droite du Damné Boultag,HAND_R/hand_right_18,E,3,5
+372,RH,Saisie droite du Damné Boultag,HAND_R/hand_right_18,L,3,1
+373,RH,Trahison droite du Bushi Yamino,HAND_R/hand_right_19,E,3,5
+374,RH,Trahison droite du Bushi Yamino,HAND_R/hand_right_19,L,3,1
+375,RH,Omega de l'Unique,HAND_R/hand_right_31,L,3,1
+376,RH,Anihilation du Serviteur du Mal,HAND_R/hand_right_32,L,3,1
+377,LL,Protège tibias gauche de cuir,FEET_L/feet_left_1,C,4,72
+378,LL,Protège tibias gauche de cuir,FEET_L/feet_left_1,R,4,22
+379,LL,Protège tibias gauche en fer,FEET_L/feet_left_2,C,4,72
+380,LL,Protège tibias gauche en fer,FEET_L/feet_left_2,R,4,22
+381,LL,Jambière gauche de fer,FEET_L/feet_left_3,C,4,72
+382,LL,Jambière gauche de fer,FEET_L/feet_left_3,R,4,22
+383,LL,Jambière pointue gauche de fer,FEET_L/feet_left_4,C,4,72
+384,LL,Jambière pointue gauche de fer,FEET_L/feet_left_4,R,4,22
+385,LL,Soulier gauche de l'archet,FEET_L/feet_left_11,C,4,72
+386,LL,Soulier gauche de l'archet,FEET_L/feet_left_11,R,4,22
+387,LL,Botte gauche en cuir,FEET_L/feet_left_12,C,4,72
+388,LL,Botte gauche en cuir,FEET_L/feet_left_12,R,4,22
+389,LL,Botte gauche rembourrée d'écuyer,FEET_L/feet_left_13,C,4,72
+390,LL,Botte gauche rembourrée d'écuyer,FEET_L/feet_left_13,R,4,22
+391,LL,Chausse à lacet gauche du gardien de la porte,FEET_L/feet_left_14,C,4,72
+392,LL,Chausse à lacet gauche du gardien de la porte,FEET_L/feet_left_14,R,4,22
+393,LL,Tabis gauche en corde,FEET_L/feet_left_21,C,4,72
+394,LL,Tabis gauche en corde,FEET_L/feet_left_21,R,4,22
+395,LL,Bottine gauche du forestier,FEET_L/feet_left_22,C,4,72
+396,LL,Bottine gauche du forestier,FEET_L/feet_left_22,R,4,22
+397,LL,Chaussure gauche du Trax,FEET_L/feet_left_23,C,4,72
+398,LL,Chaussure gauche du Trax,FEET_L/feet_left_23,R,4,22
+399,LL,Chevillère gauche de l'Hoplomacus,FEET_L/feet_left_24,C,4,72
+400,LL,Chevillère gauche de l'Hoplomacus,FEET_L/feet_left_24,R,4,22
+401,LL,Spartiate gauche du Scissor,FEET_L/feet_left_25,C,4,72
+402,LL,Spartiate gauche du Scissor,FEET_L/feet_left_25,R,4,22
+403,LL,Botte renforcée gauche de combat du Secutor,FEET_L/feet_left_26,C,4,72
+404,LL,Botte renforcée gauche de combat du Secutor,FEET_L/feet_left_26,R,4,22
+405,LL,Calceus gauche du Samnite,FEET_L/feet_left_27,C,4,72
+406,LL,Calceus gauche du Samnite,FEET_L/feet_left_27,R,4,22
+407,LL,Socci gauche du Myrmidon,FEET_L/feet_left_28,C,4,72
+408,LL,Socci gauche du Myrmidon,FEET_L/feet_left_28,R,4,22
+409,LL,Spartiate montante gauche de l'hoplite,FEET_L/feet_left_29,C,4,72
+410,LL,Spartiate montante gauche de l'hoplite,FEET_L/feet_left_29,R,4,22
+411,LL,Sandale montante gauche du centurion,FEET_L/feet_left_30,C,4,72
+412,LL,Sandale montante gauche du centurion,FEET_L/feet_left_30,R,4,22
+413,LL,Socci rougeoyant gauche du Berzerker,FEET_L/feet_left_33,C,4,72
+414,LL,Socci rougeoyant gauche du Berzerker,FEET_L/feet_left_33,R,4,22
+415,LL,Socci rougeoyant gauche du Berzerker,FEET_L/feet_left_33,E,4,5
+416,LL,Semelle-souche gauche du Paladin,FEET_L/feet_left_34,C,4,72
+417,LL,Semelle-souche gauche du Paladin,FEET_L/feet_left_34,R,4,22
+418,LL,Semelle-souche gauche du Paladin,FEET_L/feet_left_34,E,4,5
+419,LL,Coque gauche du Purgateur,FEET_L/feet_left_35,C,4,72
+420,LL,Coque gauche du Purgateur,FEET_L/feet_left_35,R,4,22
+421,LL,Coque gauche du Purgateur,FEET_L/feet_left_35,E,4,5
+422,LL,Soleret gauche du Chevalier Blanc,FEET_L/feet_left_36,C,4,72
+423,LL,Soleret gauche du Chevalier Blanc,FEET_L/feet_left_36,R,4,22
+424,LL,Soleret gauche du Chevalier Blanc,FEET_L/feet_left_36,E,4,5
+425,LL,Pointe gauche des Executants,FEET_L/feet_left_37,C,4,72
+426,LL,Pointe gauche des Executants,FEET_L/feet_left_37,R,4,22
+427,LL,Pointe gauche des Executants,FEET_L/feet_left_37,E,4,5
+428,LL,Chausse moutante gauche de l'Expéditionnaire,FEET_L/feet_left_38,C,4,72
+429,LL,Chausse moutante gauche de l'Expéditionnaire,FEET_L/feet_left_38,R,4,22
+430,LL,Chausse moutante gauche de l'Expéditionnaire,FEET_L/feet_left_38,E,4,5
+431,LL,Sabaton gauche de la garde royale,FEET_L/feet_left_5,C,4,72
+432,LL,Sabaton gauche de la garde royale,FEET_L/feet_left_5,R,4,22
+433,LL,Sabaton gauche de la garde royale,FEET_L/feet_left_5,E,4,5
+434,LL,Haute-brogue gauche du dernier Gaulois,FEET_L/feet_left_15,C,4,72
+435,LL,Haute-brogue gauche du dernier Gaulois,FEET_L/feet_left_15,R,4,22
+436,LL,Haute-brogue gauche du dernier Gaulois,FEET_L/feet_left_15,E,4,5
+437,LL,Scarpa gauche creux du Guerriero,FEET_L/feet_left_10,C,4,72
+438,LL,Scarpa gauche creux du Guerriero,FEET_L/feet_left_10,R,4,22
+439,LL,Scarpa gauche creux du Guerriero,FEET_L/feet_left_10,E,4,5
+440,LL,Waraji gauche de combat,FEET_L/feet_left_20,C,4,72
+441,LL,Waraji gauche de combat,FEET_L/feet_left_20,R,4,22
+442,LL,Waraji gauche de combat,FEET_L/feet_left_20,E,4,5
+443,LL,Pointe gauche du roi Germanique,FEET_L/feet_left_6,R,4,22
+444,LL,Pointe gauche du roi Germanique,FEET_L/feet_left_6,E,4,5
+445,LL,Pointe gauche du roi Germanique,FEET_L/feet_left_6,L,4,1
+446,LL,Chausse d'Or gauche de l'Empereur,FEET_L/feet_left_7,R,4,22
+447,LL,Chausse d'Or gauche de l'Empereur,FEET_L/feet_left_7,E,4,5
+448,LL,Chausse d'Or gauche de l'Empereur,FEET_L/feet_left_7,L,4,1
+449,LL,Ronde-botte gauche du Sans-âme,FEET_L/feet_left_8,R,4,22
+450,LL,Ronde-botte gauche du Sans-âme,FEET_L/feet_left_8,E,4,5
+451,LL,Ronde-botte gauche du Sans-âme,FEET_L/feet_left_8,L,4,1
+452,LL,Epine-vrille gauche du Yersine,FEET_L/feet_left_9,R,4,22
+453,LL,Epine-vrille gauche du Yersine,FEET_L/feet_left_9,E,4,5
+454,LL,Epine-vrille gauche du Yersine,FEET_L/feet_left_9,L,4,1
+455,LL,Soleret gauche des gardiens du Sanctuaire,FEET_L/feet_left_39,R,4,22
+456,LL,Soleret gauche des gardiens du Sanctuaire,FEET_L/feet_left_39,E,4,5
+457,LL,Soleret gauche des gardiens du Sanctuaire,FEET_L/feet_left_39,L,4,1
+458,LL,Humble chausse Ouest du premier Templier,FEET_L/feet_left_40,R,4,22
+459,LL,Humble chausse Ouest du premier Templier,FEET_L/feet_left_40,E,4,5
+460,LL,Humble chausse Ouest du premier Templier,FEET_L/feet_left_40,L,4,1
+461,LL,Bottine gauche des fils du Valhalla,FEET_L/feet_left_16,E,4,5
+462,LL,Bottine gauche des fils du Valhalla,FEET_L/feet_left_16,L,4,1
+463,LL,Scubotte gauche de Rhaal'Zath,FEET_L/feet_left_17,E,4,5
+464,LL,Scubotte gauche de Rhaal'Zath,FEET_L/feet_left_17,L,4,1
+465,LL,Protège jambe gauche du Damné Boultag,FEET_L/feet_left_18,E,4,5
+466,LL,Protège jambe gauche du Damné Boultag,FEET_L/feet_left_18,L,4,1
+467,LL,Foule-terre gauche du Bushi Yamino,FEET_L/feet_left_19,E,4,5
+468,LL,Foule-terre gauche du Bushi Yamino,FEET_L/feet_left_19,L,4,1
+469,LL,Appuie de l'Unique,FEET_L/feet_left_31,L,4,1
+470,LL,Désolation du Serviteur du Mal,FEET_L/feet_left_32,L,4,1
+471,RL,Protège tibias droit de cuir,FEET_R/feet_right_1,C,5,72
+472,RL,Protège tibias droit de cuir,FEET_R/feet_right_1,R,5,22
+473,RL,Protège tibias droit en fer,FEET_R/feet_right_2,C,5,72
+474,RL,Protège tibias droit en fer,FEET_R/feet_right_2,R,5,22
+475,RL,Jambière droite de fer,FEET_R/feet_right_3,C,5,72
+476,RL,Jambière droite de fer,FEET_R/feet_right_3,R,5,22
+477,RL,Jambière pointue droite de fer,FEET_R/feet_right_4,C,5,72
+478,RL,Jambière pointue droite de fer,FEET_R/feet_right_4,R,5,22
+479,RL,Soulier droit de l'archet,FEET_R/feet_right_11,C,5,72
+480,RL,Soulier droit de l'archet,FEET_R/feet_right_11,R,5,22
+481,RL,Botte droite en cuir,FEET_R/feet_right_12,C,5,72
+482,RL,Botte droite en cuir,FEET_R/feet_right_12,R,5,22
+483,RL,Botte droite rembourrée d'écuyer,FEET_R/feet_right_13,C,5,72
+484,RL,Botte droite rembourrée d'écuyer,FEET_R/feet_right_13,R,5,22
+485,RL,Chausse à lacet droite du gardien de la porte,FEET_R/feet_right_14,C,5,72
+486,RL,Chausse à lacet droite du gardien de la porte,FEET_R/feet_right_14,R,5,22
+487,RL,Tabis droit en corde,FEET_R/feet_right_21,C,5,72
+488,RL,Tabis droit en corde,FEET_R/feet_right_21,R,5,22
+489,RL,Bottine droite du forestier,FEET_R/feet_right_22,C,5,72
+490,RL,Bottine droite du forestier,FEET_R/feet_right_22,R,5,22
+491,RL,Chaussure droite du Trax,FEET_R/feet_right_23,C,5,72
+492,RL,Chaussure droite du Trax,FEET_R/feet_right_23,R,5,22
+493,RL,Chevillère droite de l'Hoplomacus,FEET_R/feet_right_24,C,5,72
+494,RL,Chevillère droite de l'Hoplomacus,FEET_R/feet_right_24,R,5,22
+495,RL,Spartiate droite du Scissor,FEET_R/feet_right_25,C,5,72
+496,RL,Spartiate droite du Scissor,FEET_R/feet_right_25,R,5,22
+497,RL,Botte renforcée droite de combat du Secutor,FEET_R/feet_right_26,C,5,72
+498,RL,Botte renforcée droite de combat du Secutor,FEET_R/feet_right_26,R,5,22
+499,RL,Calceus droit du Samnite,FEET_R/feet_right_27,C,5,72
+500,RL,Calceus droit du Samnite,FEET_R/feet_right_27,R,5,22
+501,RL,Socci droit du Myrmidon,FEET_R/feet_right_28,C,5,72
+502,RL,Socci droit du Myrmidon,FEET_R/feet_right_28,R,5,22
+503,RL,Spartiate montante droite de l'hoplite,FEET_R/feet_right_29,C,5,72
+504,RL,Spartiate montante droite de l'hoplite,FEET_R/feet_right_29,R,5,22
+505,RL,Sandale montante droite du centurion,FEET_R/feet_right_30,C,5,72
+506,RL,Sandale montante droite du centurion,FEET_R/feet_right_30,R,5,22
+507,RL,Socci rougeoyant droit du Berzerker,FEET_R/feet_right_33,C,5,72
+508,RL,Socci rougeoyant droit du Berzerker,FEET_R/feet_right_33,R,5,22
+509,RL,Socci rougeoyant droit du Berzerker,FEET_R/feet_right_33,E,5,5
+510,RL,Semelle-souche droite du Paladin,FEET_R/feet_right_34,C,5,72
+511,RL,Semelle-souche droite du Paladin,FEET_R/feet_right_34,R,5,22
+512,RL,Semelle-souche droite du Paladin,FEET_R/feet_right_34,E,5,5
+513,RL,Coque droite du Purgateur,FEET_R/feet_right_35,C,5,72
+514,RL,Coque droite du Purgateur,FEET_R/feet_right_35,R,5,22
+515,RL,Coque droite du Purgateur,FEET_R/feet_right_35,E,5,5
+516,RL,Soleret droit du Chevalier Blanc,FEET_R/feet_right_36,C,5,72
+517,RL,Soleret droit du Chevalier Blanc,FEET_R/feet_right_36,R,5,22
+518,RL,Soleret droit du Chevalier Blanc,FEET_R/feet_right_36,E,5,5
+519,RL,Pointe droite des Executants,FEET_R/feet_right_37,C,5,72
+520,RL,Pointe droite des Executants,FEET_R/feet_right_37,R,5,22
+521,RL,Pointe droite des Executants,FEET_R/feet_right_37,E,5,5
+522,RL,Chausse moutante droite de l'Expéditionnaire,FEET_R/feet_right_38,C,5,72
+523,RL,Chausse moutante droite de l'Expéditionnaire,FEET_R/feet_right_38,R,5,22
+524,RL,Chausse moutante droite de l'Expéditionnaire,FEET_R/feet_right_38,E,5,5
+525,RL,Sabaton droit de la garde royale,FEET_R/feet_right_5,C,5,72
+526,RL,Sabaton droit de la garde royale,FEET_R/feet_right_5,R,5,22
+527,RL,Sabaton droit de la garde royale,FEET_R/feet_right_5,E,5,5
+528,RL,Haute-brogue droite du dernier Gaulois,FEET_R/feet_right_15,C,5,72
+529,RL,Haute-brogue droite du dernier Gaulois,FEET_R/feet_right_15,R,5,22
+530,RL,Haute-brogue droite du dernier Gaulois,FEET_R/feet_right_15,E,5,5
+531,RL,Scarpa droit creux du Guerriero,FEET_R/feet_right_10,C,5,72
+532,RL,Scarpa droit creux du Guerriero,FEET_R/feet_right_10,R,5,22
+533,RL,Scarpa droit creux du Guerriero,FEET_R/feet_right_10,E,5,5
+534,RL,Waraji droit de combat,FEET_R/feet_right_20,C,5,72
+535,RL,Waraji droit de combat,FEET_R/feet_right_20,R,5,22
+536,RL,Waraji droit de combat,FEET_R/feet_right_20,E,5,5
+537,RL,Pointe droite du roi Germanique,FEET_R/feet_right_6,R,5,22
+538,RL,Pointe droite du roi Germanique,FEET_R/feet_right_6,E,5,5
+539,RL,Pointe droite du roi Germanique,FEET_R/feet_right_6,L,5,1
+540,RL,Chausse d'Or droite de l'Empereur,FEET_R/feet_right_7,R,5,22
+541,RL,Chausse d'Or droite de l'Empereur,FEET_R/feet_right_7,E,5,5
+542,RL,Chausse d'Or droite de l'Empereur,FEET_R/feet_right_7,L,5,1
+543,RL,Ronde-botte droite du Sans-âme,FEET_R/feet_right_8,R,5,22
+544,RL,Ronde-botte droite du Sans-âme,FEET_R/feet_right_8,E,5,5
+545,RL,Ronde-botte droite du Sans-âme,FEET_R/feet_right_8,L,5,1
+546,RL,Epine-vrille droite du Yersine,FEET_R/feet_right_9,R,5,22
+547,RL,Epine-vrille droite du Yersine,FEET_R/feet_right_9,E,5,5
+548,RL,Epine-vrille droite du Yersine,FEET_R/feet_right_9,L,5,1
+549,RL,Soleret droit des gardiens du Sanctuaire,FEET_R/feet_right_39,R,5,22
+550,RL,Soleret droit des gardiens du Sanctuaire,FEET_R/feet_right_39,E,5,5
+551,RL,Soleret droit des gardiens du Sanctuaire,FEET_R/feet_right_39,L,5,1
+552,RL,Humble chausse Ouest du premier Templier,FEET_R/feet_right_40,R,5,22
+553,RL,Humble chausse Ouest du premier Templier,FEET_R/feet_right_40,E,5,5
+554,RL,Humble chausse Ouest du premier Templier,FEET_R/feet_right_40,L,5,1
+555,RL,Bottine droite des fils du Valhalla,FEET_R/feet_right_16,E,5,5
+556,RL,Bottine droite des fils du Valhalla,FEET_R/feet_right_16,L,5,1
+557,RL,Scubotte droite de Rhaal'Zath,FEET_R/feet_right_17,E,5,5
+558,RL,Scubotte droite de Rhaal'Zath,FEET_R/feet_right_17,L,5,1
+559,RL,Protège jambe droit du Damné Boultag,FEET_R/feet_right_18,E,5,5
+560,RL,Protège jambe droit du Damné Boultag,FEET_R/feet_right_18,L,5,1
+561,RL,Foule-terre droite du Bushi Yamino,FEET_R/feet_right_19,E,5,5
+562,RL,Foule-terre droite du Bushi Yamino,FEET_R/feet_right_19,L,5,1
+563,RL,Appel de l'Unique,FEET_R/feet_right_31,L,5,1
+564,RL,Calamité du Serviteur du Mal,FEET_R/feet_right_32,L,5,1
