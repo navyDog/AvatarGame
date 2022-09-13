@@ -1,5 +1,6 @@
 package formation.sopra.AvatarGameBoot.configurations;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -22,11 +23,7 @@ public class SecurityConfig {
 			.authorizeRequests()
 				.antMatchers(HttpMethod.OPTIONS).anonymous()
 				.antMatchers(HttpMethod.POST,"/api/auth/inscription").anonymous()
-
 				.antMatchers(HttpMethod.GET,"/api/auth/check/**").anonymous()
-		
-
-
 				.antMatchers(HttpMethod.GET,"/api/auth/users/**").authenticated()
 				.antMatchers("/api/**").authenticated()
 
