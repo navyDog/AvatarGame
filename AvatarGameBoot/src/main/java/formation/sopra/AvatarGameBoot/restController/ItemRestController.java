@@ -33,12 +33,16 @@ public class ItemRestController {
 	@Autowired
 	private ItemService itemService;
 	
+	
+	//get an item
 	@GetMapping("/{id}")
 	@JsonView(JsonViews.ItemUpdate.class)
 	public Item getById(@PathVariable Long id) {
 		return itemService.getById(id);
 	}
 	
+	
+	//get ALL ITEMS
 	@GetMapping("")
 	@JsonView(JsonViews.ItemUpdate.class)
 	public List<Item> getAll() {
@@ -46,7 +50,7 @@ public class ItemRestController {
 	}
 	
 	@PostMapping("")
-	@JsonView(JsonViews.Base.class)
+	@JsonView(JsonViews.Item.class)
 	public Item create(@Valid @RequestBody Item item, BindingResult br) {
 		if (br.hasErrors()) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST);

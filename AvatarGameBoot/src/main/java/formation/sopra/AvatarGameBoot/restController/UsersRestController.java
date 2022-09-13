@@ -42,8 +42,57 @@ public class UsersRestController {
 	@GetMapping("/{id}/items")
 	@JsonView(JsonViews.UsersWithItems.class)
 	public Users findByKeyWithItems(@PathVariable Long id) {
-		LOGGER.info("jjjjj");
+		
 		return usersService.getByIdWithItems(id);
+	}
+	
+	@GetMapping("/{id}/items/solde")
+	@JsonView(JsonViews.UsersWithItems.class)
+	public Users findByKeyWithSItems(@PathVariable Long id) {
+		
+		return usersService.getByIdWithSItems(id);
+	}
+	
+	@GetMapping("/{id}/items/head")
+	@JsonView(JsonViews.UsersWithItems.class)
+	public Users findByKeyWithHeadItems(@PathVariable Long id) {
+		
+		return usersService.getByIdWithHeadItems(id);
+	}
+	
+	@GetMapping("/{id}/items/body")
+	@JsonView(JsonViews.UsersWithItems.class)
+	public Users findByKeyWithBodyItems(@PathVariable Long id) {
+		
+		return usersService.getByIdWithBodyItems(id);
+	}
+	
+	@GetMapping("/{id}/items/lefthand")
+	@JsonView(JsonViews.UsersWithItems.class)
+	public Users findByKeyWithLeftHandItems(@PathVariable Long id) {
+		
+		return usersService.getByIdWithLeftHandItems(id);
+	}
+	
+	@GetMapping("/{id}/items/righthand")
+	@JsonView(JsonViews.UsersWithItems.class)
+	public Users findByKeyWithRightHandItems(@PathVariable Long id) {
+		
+		return usersService.getByIdWithRightHandItems(id);
+	}
+	
+	@GetMapping("/{id}/items/leftleg")
+	@JsonView(JsonViews.UsersWithItems.class)
+	public Users findByKeyWithLeftLegItems(@PathVariable Long id) {
+		
+		return usersService.getByIdWithLeftLegItems(id);
+	}
+	
+	@GetMapping("/{id}/items/rightleg")
+	@JsonView(JsonViews.UsersWithItems.class)
+	public Users findByKeyWithRightLegItems(@PathVariable Long id) {
+		
+		return usersService.getByIdWithRightLegItems(id);
 	}
 	
 	@GetMapping("/{id}/avatars")
@@ -52,4 +101,12 @@ public class UsersRestController {
 		
 		return usersService.getByIdWithAvatars(id);	
 	}
+	
+	@GetMapping("/{id}/information")
+	@JsonView(JsonViews.UsersInfo.class)
+	public Users findByIdWithInfo(@PathVariable Long id) {
+		return usersService.getByIdWithInfo(id);
+	}
+	
+	
 }

@@ -23,7 +23,7 @@ public class UsersService {
 	
 	public Users create(Users users) {		
 		users.setAvatar(null);
-		users.setSolde(0);
+		users.setSolde(1000); 
 		users.setItems(null);
 		return usersRepo.save(users);	
 	}
@@ -41,6 +41,37 @@ public class UsersService {
 		return usersRepo.findByKeyWithAvatars(id).orElseThrow(UsersException::new);
 	}
 	
+	public Users getByIdWithInfo(Long id) {
+		return usersRepo.findInfo(id).orElseThrow(UsersException::new);
+	}
+	
+	public Users getByIdWithSItems(Long id) {
+		return usersRepo.findByKeyWithSItems(id).orElseThrow(UsersException::new);
+	}
+	
+	public Users getByIdWithHeadItems(Long id) {
+		return usersRepo.findByKeyWithHeadItems(id).orElseThrow(UsersException::new);
+	}
+	
+	public Users getByIdWithBodyItems(Long id) {
+		return usersRepo.findByKeyWithBodyItems(id).orElseThrow(UsersException::new);
+	}
+	
+	public Users getByIdWithLeftHandItems(Long id) {
+		return usersRepo.findByKeyWithLeftHandItems(id).orElseThrow(UsersException::new);
+	}
+	
+	public Users getByIdWithRightHandItems(Long id) {
+		return usersRepo.findByKeyWithRightHandItems(id).orElseThrow(UsersException::new);
+	}
+	
+	public Users getByIdWithLeftLegItems(Long id) {
+		return usersRepo.findByKeyWithLeftLegItems(id).orElseThrow(UsersException::new);
+	}
+	
+	public Users getByIdWithRightLegItems(Long id) {
+		return usersRepo.findByKeyWithRightLegItems(id).orElseThrow(UsersException::new);
+	}
 	
 	public Users update(Users users) {
 		Users clientEnBase = getById(users.getId());

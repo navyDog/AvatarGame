@@ -14,6 +14,15 @@ public interface UsersRepository extends JpaRepository<Users, Long> {
 	
 	Optional<Users> findByKeyWithItems(@Param("id") Long id);
 	Optional<Users> findByKeyWithAvatars(@Param("id") Long id);
+	Optional<Users> findByKeyWithSItems(@Param("id") Long id);
+	Optional<Users> findByKeyWithHeadItems(@Param("id") Long id);
+	Optional<Users> findByKeyWithBodyItems(@Param("id") Long id);
+	Optional<Users> findByKeyWithLeftHandItems(@Param("id") Long id);
+	Optional<Users> findByKeyWithRightHandItems(@Param("id") Long id);
+	Optional<Users> findByKeyWithLeftLegItems(@Param("id") Long id);
+	Optional<Users> findByKeyWithRightLegItems(@Param("id") Long id);
+	
+	Optional<Users> findInfo(@Param("id") Long id);
 }
 
 

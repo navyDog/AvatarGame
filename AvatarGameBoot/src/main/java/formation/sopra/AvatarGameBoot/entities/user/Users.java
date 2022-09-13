@@ -2,8 +2,6 @@ package formation.sopra.AvatarGameBoot.entities.user;
 
 import java.util.Set;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.AttributeOverrides;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.NamedQueries;
@@ -26,7 +24,26 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 				@NamedQuery(name="Users.findByKeyWithItems", 
 						query = "select u from Users u left join fetch u.items where u.id=:id"),
 				@NamedQuery(name="Users.findByKeyWithAvatars", 
-						query = "select u from Users u left join fetch u.avatar where u.id=:id") 
+						query = "select u from Users u left join fetch u.avatar where u.id=:id"),
+				@NamedQuery(name="Users.findByKeyWithSItems", 
+				query = "select u from Users u left join fetch u.items i where u.id=:id and i.prix<>0"),
+				@NamedQuery(name="Users.findInfo",
+						query = "select u from Users u left join fetch u.utilisateur where u.id=:id"),
+				
+				
+				@NamedQuery(name="Users.findByKeyWithHeadItems", 
+				query = "select u from Users u left join fetch u.items i where u.id=:id and i.membre=0"),
+				@NamedQuery(name="Users.findByKeyWithBodyItems", 
+				query = "select u from Users u left join fetch u.items i where u.id=:id and i.membre=1"),
+				@NamedQuery(name="Users.findByKeyWithLeftHandItems", 
+				query = "select u from Users u left join fetch u.items i where u.id=:id and i.membre=2"),
+				@NamedQuery(name="Users.findByKeyWithRightHandItems", 
+				query = "select u from Users u left join fetch u.items i where u.id=:id and i.membre=3"),
+				@NamedQuery(name="Users.findByKeyWithLeftLegItems", 
+				query = "select u from Users u left join fetch u.items i where u.id=:id and i.membre=4"),
+				@NamedQuery(name="Users.findByKeyWithRightLegItems", 
+				query = "select u from Users u left join fetch u.items i where u.id=:id and i.membre=5"),
+				
 })
 public class Users extends Personne {
 
@@ -37,6 +54,7 @@ public class Users extends Personne {
 	@JsonView(JsonViews.UsersWithItems.class)
 	private Set<Item> items;
 	@OneToOne (mappedBy = "users")
+	@JsonView(JsonViews.UsersInfo.class)
 	private Utilisateur utilisateur;
 	@OneToMany (mappedBy = "owner")
 	@JsonView(JsonViews.UsersWithAvatars.class)
