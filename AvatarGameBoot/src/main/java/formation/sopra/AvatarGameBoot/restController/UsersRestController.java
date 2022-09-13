@@ -38,6 +38,12 @@ public class UsersRestController {
 	public List<Users> getNoCraftItems() {
 		return usersService.getNoCraftItems();
 	}
+	
+	@GetMapping("/avatars")
+	@JsonView(JsonViews.UsersWithAvatars.class)
+	public List<Users> getAvatar() {
+		return usersService.getAvatar();
+	}
 
 	
 	@GetMapping("/{id}")
