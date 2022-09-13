@@ -10,7 +10,8 @@ import { Items } from "src/app/entities/items";
 })
 export class InventoryComponent implements OnInit {
   private _userItemsNoCraftList: Items[] = []; // LIST OF ALL ITEMS NO CRAFTED OF CURRENT USER
-  private _suerAvatarsItemsList: Avatars[] = [];
+  private _userAvatarsItemsList: Avatars[] = []; //
+  private _userAvatarsMain: Avatars = new Avatars();
   imgPath: string = "assets/items/";
 
   constructor(private userService: UserService) {}
@@ -22,8 +23,10 @@ export class InventoryComponent implements OnInit {
     });
     // ALLS ITEMS OF ALL AVATARS OF CURRENT USER
     this.userService.userAvatarList().subscribe((result) => {
-      this._suerAvatarsItemsList = result;
-      console.log(result);
+      this._userAvatarsMain = result.avatar[0];
+      this._userAvatarsItemsList = result;
+      this._userAvatarsItemsList.shift();
+      console.log(result.avatar[0]);
     });
   }
 
@@ -31,7 +34,14 @@ export class InventoryComponent implements OnInit {
     return this._userItemsNoCraftList;
   }
 
-  public get suerAvatarsItemsList(): Avatars[] {
-    return this._suerAvatarsItemsList;
+  public get userAvatarsItemsList(): Avatars[] {
+    return this._userAvatarsItemsList;
+  }
+  public set userAvatarsItemsList(value: Avatars[]) {
+    this._userAvatarsItemsList = value;
+  }
+
+  public get userAvatarsMain(): Avatars {
+    return this._userAvatarsMain;
   }
 }

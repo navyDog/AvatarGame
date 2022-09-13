@@ -2,7 +2,7 @@ import { Items } from "./items";
 
 export class Avatars {
   constructor(
-    private _avatarItems: Items[],
+    private _avatarItems?: Items[],
     private _avatarId?: number,
     private _avatarName?: string,
     private _avatarPrice?: number
@@ -20,7 +20,7 @@ export class Avatars {
     return this._avatarPrice;
   }
 
-  public get compose(): Items[] {
+  public get compose(): Items[] | undefined {
     return this._avatarItems;
   }
 
@@ -37,7 +37,7 @@ export class Avatars {
     this._avatarPrice = value;
   }
 
-  public set compose(value: Items[]) {
+  public set compose(value: Items[] | undefined) {
     this._avatarItems = value;
   }
 }
