@@ -23,8 +23,8 @@ public class ItemService {
 	private AvatarService avatarService;
 	@Autowired
 	private UsersService usersService;
-//	@Autowired
-//	private BankItemService bankItemService;
+	@Autowired
+	private BankItemService bankItemService;
 	
 	public Item create(Item item) {
 		item.setAvatar(null);
@@ -86,20 +86,20 @@ public class ItemService {
 		head.setPrix(null);
 		create(head);
 	}
-//	//1/trouver un moyen de creer directement un item avec le BankItem
-//	//2/gérer compatibilité int et Long
-//	public void creationStart(Users users) {
-//		for (int i = 1; i<7 ; i++) {
-//			Item item = new Item();
-//			bankItemService.getBankItemRandomByMembre(i);
-//			item.setMembre(bankItemService.getMembre());
-//			item.setRarity(bankItemService.getById(i).getRarity());
-//			item.setNom(bankItemService.getById(i).getName());
-//			item.setOwner(users);
-//			item.setImage(bankItemService.getById(i).getPicture());
-//			item.setPrix(null);
-//			create(item);
-//		}
-//	}
+	//1/trouver un moyen de creer directement un item avec le BankItem
+	//2/gérer compatibilité int et Long
+	public void creationStart(Users users) {
+		for (int i = 1; i<7 ; i++) {
+			Item item = new Item();
+			bankItemService.getBankItemRandomByMembre(i);
+			item.setMembre(bankItemService.getMembre());
+			item.setRarity(bankItemService.getById(i).getRarity());
+			item.setNom(bankItemService.getById(i).getName());
+			item.setOwner(users);
+			item.setImage(bankItemService.getById(i).getPicture());
+			item.setPrix(null);
+			create(item);
+		}
+	}
 	
 }
