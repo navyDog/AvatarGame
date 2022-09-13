@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import formation.sopra.AvatarGameBoot.entities.avatar.Avatar;
+import formation.sopra.AvatarGameBoot.entities.item.BankItem;
 import formation.sopra.AvatarGameBoot.entities.item.Item;
 import formation.sopra.AvatarGameBoot.entities.item.Membres;
 import formation.sopra.AvatarGameBoot.entities.item.Rarity;
@@ -73,7 +74,7 @@ public class ItemService {
 	}
 	
 	public void InscriptionCreation(Users users) {
-			creationHead(users);
+		creationStartRandom(users);
 	}
 	
 	public void creationHead(Users users) {
@@ -86,20 +87,35 @@ public class ItemService {
 		head.setPrix(null);
 		create(head);
 	}
-	//1/trouver un moyen de creer directement un item avec le BankItem
-	//2/gérer compatibilité int et Long
+
+	//Peut etre une gestion des problèmes long-int
 	public void creationStart(Users users) {
-		for (int i = 1; i<7 ; i++) {
+		for (int i = 0; i<6 ; i++) {
 			Item item = new Item();
-			bankItemService.getBankItemRandomByMembre(i);
-			item.setMembre(bankItemService.getMembre());
-			item.setRarity(bankItemService.getById(i).getRarity());
-			item.setNom(bankItemService.getById(i).getName());
+			BankItem bankItem = new BankItem();
+			bankItem = bankItemService.getBankItemRandomByMembre(i);
+			item.setMembre(bankItem.getMembre());
+			item.setRarity(bankItem.getRarity());
+			item.setNom(bankItem.getName());
 			item.setOwner(users);
-			item.setImage(bankItemService.getById(i).getPicture());
+			item.setImage(bankItem.getPicture());
 			item.setPrix(null);
 			create(item);
 		}
+	}
+	
+	public void creationStartRandom(Users users) {
+			Item item = new Item();
+			BankItem bankItem = new BankItem();
+			bankItem = bankItemService.getBankItemRandom();
+			item.setMembre(bankItem.getMembre());
+			item.setRarity(bankItem.getRarity());
+			item.setNom(bankItem.getName());
+			item.setOwner(users);
+			item.setImage(bankItem.getPicture());
+			item.setPrix(null);
+			create(item);
+		
 	}
 	
 }

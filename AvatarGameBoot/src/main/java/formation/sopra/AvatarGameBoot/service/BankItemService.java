@@ -2,6 +2,7 @@ package formation.sopra.AvatarGameBoot.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,22 +21,25 @@ public class BankItemService {
 		return bankItemRepo.findById(id).orElseThrow(BankItemException::new);
 	}
 	
-	public BankItem getBankItemRandomByMembre(int membre) {
+	public BankItem getBankItemRandomByMembre(int xmembre) {
 		//récupère la liste d'ID correspondant à cette rarity random
-		List<Long> listId = new ArrayList<>(bankItemRepo.findByRarityAndMembre(random(), membre));
+		List<BankItem> listBankItem = new ArrayList<>(bankItemRepo.findByRarityAndMembre(interval(random()), xmembre));
 		//défini un nombre random à partir de la taille de la list
-		int random = randomDef(listId.size());
-		Long id = listId.get(random);
-		return bankItemRepo.findById(id).orElseThrow(BankItemException::new);
+		int random = randomDef(listBankItem.size());
+		BankItem bankItem = new BankItem();
+		bankItem = listBankItem.get(random);
+		return bankItem;
 	}
 	
 	public BankItem getBankItemRandom() {
 		//récupère la liste d'ID correspondant à cette rarity random
-		List<Long> listId = new ArrayList<>(bankItemRepo.findByRarity(random()));
+		List<BankItem> listBankItem = new ArrayList<>(bankItemRepo.findByRarity(interval(random())));
 		//défini un nombre random à partir de la taille de la list
-		int random = randomDef(listId.size());
-		Long id = listId.get(random);
-		return bankItemRepo.findById(id).orElseThrow(BankItemException::new);
+		int random = randomDef(listBankItem.size());
+			System.out.println(random);
+		BankItem bankItem = new BankItem();
+		bankItem = listBankItem.get(random);
+		return bankItem;
 	}
 	
 	public int random() {
@@ -44,7 +48,23 @@ public class BankItemService {
 	}
 	
 	public int randomDef(int def) {
-		int random = (int)Math.random()*def;
+		Random randomDef = new Random();
+		int random = randomDef.nextInt(def+1);
 		return random;
 	}
+	
+	public int interval(int random) {
+		int xrarity;
+		if (random<=72) {
+			xrarity = 72;
+		} else if (random<=94 || random>=73) {
+			xrarity = 22;
+		} else if (random<=99 || random>=95) {
+			xrarity = 5;
+		} else {
+			xrarity = 1;
+		}
+		return xrarity;
+	}
+
 }
