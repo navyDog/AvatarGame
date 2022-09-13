@@ -75,6 +75,9 @@ public class ItemService {
 	
 	public void InscriptionCreation(Users users) {
 		creationStart(users);
+		for (int i = 0; i<10; i++) {
+			creationRandom(users);
+		}
 	}
 	
 	public void creationHead(Users users) {
