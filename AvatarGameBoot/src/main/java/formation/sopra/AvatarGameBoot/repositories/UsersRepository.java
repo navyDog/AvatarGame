@@ -3,6 +3,8 @@ package formation.sopra.AvatarGameBoot.repositories;
 import java.util.List;
 import java.util.Optional;
 
+import javax.persistence.NamedQuery;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 
@@ -22,6 +24,9 @@ public interface UsersRepository extends JpaRepository<Users, Long> {
 	Optional<Users> findByKeyWithLeftLegItems(@Param("id") Long id);
 	Optional<Users> findByKeyWithRightLegItems(@Param("id") Long id);
 	
+	
+
+	Optional<List<Users>> findAvatar();
 	
 	Optional<List<Users>> findNoCraftItems();
 	Optional<Users> findByKeyWithNoCraftItems(@Param("id") Long id);
