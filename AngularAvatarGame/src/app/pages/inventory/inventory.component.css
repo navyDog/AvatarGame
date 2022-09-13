@@ -1,98 +1,182 @@
 #inventory {
   width: 100%;
-  height: 100%;
+  height: auto;
   min-height: calc(100vh - var(--height-nav-top));
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 /* -------------------------------------------- COMMON -------------------------------------------- */
 .invTopBtns {
   width: 100%;
-  height: 50px;
-  /*background-color: purple;*/
-  padding: 0 15px;
+  height: 2em;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
   flex-wrap: nowrap;
+  background-color: var(--col-line);
+  border-bottom: solid 1px var(--col-line);
+  font-family: var(--font-titles);
+  font-weight: bold;
+  margin-bottom: 0.25em;
 }
 .invTopBtns button {
-  height: 75%;
+  height: 100%;
   width: auto;
-  border: solid 3px var(--col-border);
-  border-radius: 15px 15px 0 0;
+  border: none;
+  border-radius: 0;
   border-bottom: none;
-  background-color: var(--col-btn-1);
-  box-shadow: 1px 4px 5px 1px var(--col-btn-1bis) inset;
-  margin-left: -3px;
+  background-color: transparent;
   cursor: pointer;
-  color: white;
   transition: 0.2s;
-}
-.invTopBtns button:first-child {
-  margin-left: 0;
+  margin: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 1em;
 }
 .invTopBtns button:hover {
-  height: 100%;
-  box-shadow: 1px 4px 5px 1px var(--col-btn-1ter) inset;
-  background-image: radial-gradient(
-    var(--col-btn1) 50%,
-    var(--col-btn1bis) 50%
-  );
+  color: var(--col-text-hover-red);
 }
-.invContent {
-  width: 100%;
-  height: 100%;
-  min-height: calc(100vh - var(--height-nav-top) - var(--dist-2) - 50px);
-  /*background-color: brown;*/
-  border-radius: 15px;
-}
-/* -------------------------------------------- LEFT -------------------------------------------- */
-#invLeft {
-  width: calc(100% - 400px);
-  height: 100%;
-  height: calc(100vh - var(--height-nav-top));
-  /* background-color: lemonchiffon;*/
-  padding: var(--dist-1);
-}
-#invContentItems {
-}
-/* -------------------------------------------- RIGHT -------------------------------------------- */
-#invRight {
-  width: 400px;
-  height: 100%;
-  min-height: calc(100vh - var(--height-nav-top));
-  /*background-color: aqua;*/
-  padding: var(--dist-1);
-}
-#invContentAvatar {
-  border: solid 3px var(--col-border);
-  height: auto;
-}
-.invContentAvatar {
-  width: 100%;
-  height: 120px;
-  /*background-color: darkgoldenrod;*/
+.invTopBtns h2 {
+  height: 0.75em;
+  margin: 0;
+  padding: 0 1em 0 0.25em;
+  font-size: 1.5em;
+  margin: 0.25em 1em;
+  border-right: solid 1px var(--col-line-dark);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* -------------------------------------------- BOTTOM -------------------------------------------- */
+#invBottom,
+#invTop {
+  width: calc(100vw - var(--width-nav));
+  height: auto;
+  padding: var(--dist-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.invBotItems {
+  width: 100%;
+  height: auto;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.invItem {
+  width: 120px;
+  height: calc(120px + 1em + 0.25em + 0.7em + var(--dist-2) + 0.25em + 0.25em);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: var(--dist-1);
+  overflow: hidden;
+}
+.invItem:hover div {
+  background-color: var(--col-line-hover);
+  border: solid 1px var(--col-line-dark);
+}
+.invItem div {
+  width: 100%;
+  height: 100%;
+  display: inherit;
+  flex-direction: inherit;
+  border-radius: inherit;
+  border: solid 1px var(--col-line);
+}
+.invItem[class~="selable"] {
+  background-color: var(--col-bckg-note);
+}
+.invItem img {
+  min-width: 100px;
+  height: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid 1px transparent;
+  /*border: solid 2px pink;*/
+  /*background-color: lightgreen;*/
+}
+.invItem p,
+.invItem button {
+  border: none;
+  background-color: transparent;
+  font-size: 0.7em;
+  color: inherit;
+  text-decoration: none;
+  color: rgba(150, 150, 150, 1);
+  cursor: pointer;
+  margin-top: 0.25em;
+  line-height: 1em;
+  border: none;
+}
+.invItem button {
+  margin-top: 1em;
+  text-align: center;
+}
+.invItem p {
+  font-size: 0.8em;
+  border: none;
+  padding: 0.25em;
+  margin: 0;
+  margin-bottom: 0.25em;
+  cursor: default;
+  /*background-color: rgba(255, 0, 255, 0.2);*/
+  text-align: center;
+}
+.invItem button:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------- TOP -------------------------------------------- */
+#invContentAvatar {
+  width: auto;
+  min-width: calc(100vw - var(--width-nav));
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
 }
-#invContentAvatar div:first-child img:first-child,
-#invContentAvatar div:nth-child(2) img:nth-child(2) {
-  /*background-color: red;*/
+#invContentAvatarLeft {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-right: solid 1px var(--col-line);
+}
+#invContentAvatarLeft div {
+  height: 120px;
+}
+#invContentAvatarLeft div:first-child img:first-child {
   width: 120px;
   height: 120px;
 }
-#invContentAvatar div:nth-child(2) img:first-child,
-#invContentAvatar div:nth-child(2) img:last-child,
-#invContentAvatar div:last-child img {
-  /*background-color: green;*/
+#invContentAvatarLeft div:nth-child(2) img:first-child,
+#invContentAvatarLeft div:nth-child(2) img:last-child,
+#invContentAvatarLeft div:last-child img {
   width: 100px;
   height: 120px;
+}
+#invContentAvatarRight {
+  width: calc();
+  min-width: calc(calc(100vw - var(--width-nav)) - 400px - var(--dist-2));
+  height: 400px;
+  /*background-color: lightblue;*/
 }

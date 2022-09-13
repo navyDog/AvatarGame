@@ -11,15 +11,24 @@ import { UserService } from "../services/user.service";
 })
 export class NavigationTopComponent implements OnInit {
   private _userBalance: any;
+  private _userItemsLength: number = 0;
 
   constructor(
     private router: Router,
-    private httpClient: HttpClient /*private profileService = UpdateProfileService*/,
+    private httpClient: HttpClient,
     private userService: UserService
   ) {}
 
   ngOnInit() {
-    this._userBalance = this.userBalance();
+    // USER BALANCE
+    this.userService.userBalance().subscribe((result) => {
+      this._userBalance = result.solde;
+    });
+    // ITEMS LENGHT
+    this.userService.userItemsList().subscribe((result) => {
+      this._userItemsLength = result.items.length;
+    });
+    this.userItemsLength;
   }
 
   public logout() {
@@ -27,15 +36,15 @@ export class NavigationTopComponent implements OnInit {
     this.router.navigateByUrl("/auth");
   }
 
-  public userLogin(): string {
+  public get userLogin() {
     return this.userService.userLogin();
   }
 
-  public userBalance() {
-    console.log(this.userService.userBalance().subscribe());
-    return this.userService.userBalance().subscribe((result) => {
-      /*this.userBalance;*/
-      console.log(result);
-    });
+  public get userBalance() {
+    return this._userBalance;
+  }
+
+  public get userItemsLength() {
+    return this._userItemsLength;
   }
 }

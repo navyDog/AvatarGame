@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { UserService } from "src/app/config/services/user.service";
+import { Items } from "src/app/entities/items";
 
 @Component({
   selector: "app-inventory",
@@ -6,13 +8,20 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./inventory.component.css"],
 })
 export class InventoryComponent implements OnInit {
-  private _navDisplay: boolean = true;
+  private _userItemsList: Items[] = [];
+  imgPath: string = "assets/items/";
 
-  constructor() {}
+  constructor(private userService: UserService) {}
 
-  public get navDisplay(): boolean {
-    return this._navDisplay;
+  ngOnInit() {
+    this.userService.userItemsList().subscribe((result) => {
+      this._userItemsList = result.items;
+      console.log(result.items);
+    });
+    /*this.userItemsList;*/
   }
 
-  ngOnInit(): void {}
+  public get userItemsList(): Items[] {
+    return this._userItemsList;
+  }
 }

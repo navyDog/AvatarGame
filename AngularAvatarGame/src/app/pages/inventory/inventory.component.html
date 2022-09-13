@@ -1,78 +1,105 @@
 <div id="inventory">
-  <div id="invLeft">
+  <div id="invTop">
     <div class="invTopBtns">
-      <button type="button">Tête</button>
-      <button type="button">Corps</button>
-      <button type="button">Main droite</button>
-      <button type="button">Main gauche</button>
-      <button type="button">Corps</button>
-      <button type="button">Jame droite</button>
-      <button type="button">Jambe gauche</button>
+      <h2>Avatars</h2>
     </div>
-    <div class="invBotItems"></div>
-    <div class="invContent" id="invContentItems"></div>
+    <div id="invContentAvatar">
+      <div id="invContentAvatarLeft">
+        <div class="invContentAvatar">
+          <img
+            id="invContentAvatarHead"
+            src="assets/items/HEAD/head_16.png"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+        </div>
+        <div class="incVontentAvatar">
+          <img
+            id="invContentAvatarHandRight"
+            src="assets/items/HAND_R/hand_right_16.png"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+          <img
+            id="invContentAvatarBody"
+            src="assets/items/BODY/body_16.png"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+          <img
+            id="invContentAvatarHandLeft"
+            src="assets/items/HAND_L/hand_left_16.png"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+        </div>
+        <div class="incVontentAvatar">
+          <img
+            id="invContentAvatarFeetRight"
+            src="assets/items/FEET_R/feet_right_16.png"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+          <img
+            id="invContentAvatarHandLeft"
+            src="assets/items/FEET_L/feet_left_16.png"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+        </div>
+      </div>
+      <div id="invContentAvatarRight"></div>
+    </div>
   </div>
 
-  <div id="invRight">
+  <div id="invBottom">
     <div class="invTopBtns">
-      <button type="button">Avatar</button>
-      <button type="button">Avatars</button>
+      <h2>Items</h2>
+      <button type="button" onclick="craftAccordion('head')">Tête</button>
+      <button type="button" onclick="craftAccordion('body')">Corps</button>
+      <button type="button" onclick="craftAccordion('handRight')">
+        Main droite
+      </button>
+      <button type="button" onclick="craftAccordion('handLeft')">
+        Main gauche
+      </button>
+      <button type="button" onclick="craftAccordion('feetRight')">
+        Jambe droite
+      </button>
+      <button type="button" onclick="craftAccordion('feetLeft')">
+        Jambe gauche
+      </button>
     </div>
-    <div class="invContent" id="invContentAvatar">
-      <div class="invContentAvatar">
-        <img
-          id="invContentAvatarHead"
-          src="assets/items/HEAD/head_16.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div class="incVontentAvatar">
-        <img
-          id="invContentAvatarHandRight"
-          src="assets/items/HAND_R/hand_right_16.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id="invContentAvatarBody"
-          src="assets/items/BODY/body_16.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id="invContentAvatarHandLeft"
-          src="assets/items/HAND_L/hand_left_16.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div class="incVontentAvatar">
-        <img
-          id="invContentAvatarFeetRight"
-          src="assets/items/FEET_R/feet_right_16.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id="invContentAvatarHandLeft"
-          src="assets/items/FEET_L/feet_left_16.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
+    <div class="invBotItems" id="invBotItemsHead" style="display: flex">
+      <div class="invItem" *ngFor="let i of userItemsList">
+        <div>
+          <p>{{ i.nom }}</p>
+          <img
+            [src]="imgPath + i.image"
+            alt=""
+            draggable="false"
+            ondragstart="return false"
+          />
+          <button onclick="" class="erase">vendre</button>
+        </div>
       </div>
     </div>
+    <div class="invBotItems" id="invBotItemsHandRight"></div>
+    <div class="invBotItems" id="invBotItemsBody"></div>
+    <div class="invBotItems" id="invBotItemsHandLeft"></div>
+    <div class="invBotItems" id="invBotItemsFeetRight"></div>
+    <div class="invBotItems" id="invBotItemsFeetLeft"></div>
   </div>
 </div>

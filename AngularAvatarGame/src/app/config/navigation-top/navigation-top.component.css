@@ -23,8 +23,8 @@
   height: auto;
 }
 /* -------------------------------------------- NAME -------------------------------------------- */
-#navTopContent .navTopItem:first-child {
-  width: 400px;
+#navTopContent .title {
+  width: 600px;
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -35,6 +35,15 @@
   font-family: var(--font-titles);
 }
 /* -------------------------------------------- ITEMS -------------------------------------------- */
+/*#navTopIcons {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}*/
 #navTopContent *[class~="navTopItem"]:last-child {
   margin-right: 2em;
 }

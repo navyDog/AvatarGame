@@ -1,12 +1,18 @@
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
+import { Items } from "src/app/entities/items";
+import { ConverterService } from "./converter.service";
 
 @Injectable({
   providedIn: "root",
 })
 export class UserService {
-  constructor(private httpClient: HttpClient) {}
+  constructor(
+    private httpClient: HttpClient,
+    private converter: ConverterService
+  ) {}
+
   private sessionUserId = JSON.parse(sessionStorage.getItem("user")!).users.id;
   private sessionUserHeader = new HttpHeaders({
     "Content-Type": "application/json",
@@ -21,9 +27,18 @@ export class UserService {
     return JSON.parse(sessionStorage.getItem("user")!).login;
   }
 
-  public userBalance() {
+  public userBalance(): Observable<any> {
     return this.httpClient.get(
       "http://localhost:8080/avatar/api/users/" + this.sessionUserId,
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+
+  public userItemsList(): Observable<any> {
+    return this.httpClient.get(
+      "http://localhost:8080/avatar/api/users/" + this.sessionUserId + "/items",
       {
         headers: this.sessionUserHeader,
       }

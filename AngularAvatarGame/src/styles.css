@@ -13,10 +13,16 @@
   --width-nav: 200px;
 
   --col-line: rgba(234, 234, 234, 1);
+  --col-line-dark: rgba(212, 212, 212, 1);
+  --col-line-hover: rgba(240, 240, 240, 1);
 
   --col-text-sec: rgba(180, 180, 180, 1);
   --col-text-hover-red: rgba(239, 84, 102, 1);
   --col-text-hover-redbis: rgba(219, 52, 61, 1);
+
+  --col-bckg-note: rgba(51, 142, 255, 0.1);
+  --col-bckg-note-border: rgba(51, 255, 144, 0.1);
+  --col-bckg-note-i: rgba(51, 142, 255, 1);
 }
 body {
   position: absolute;
