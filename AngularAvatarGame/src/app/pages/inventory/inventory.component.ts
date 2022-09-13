@@ -8,20 +8,19 @@ import { Items } from "src/app/entities/items";
   styleUrls: ["./inventory.component.css"],
 })
 export class InventoryComponent implements OnInit {
-  private _userItemsList: Items[] = [];
+  private _userItemsNoCraftList: Items[] = []; // LIST OF ALL ITEMS NO CRAFTED OF CURRENT USER
   imgPath: string = "assets/items/";
 
   constructor(private userService: UserService) {}
 
   ngOnInit() {
-    this.userService.userItemsList().subscribe((result) => {
-      this._userItemsList = result.items;
-      console.log(result.items);
+    // ALLS ITEMS NO CRAFTED OF CURRENT USER
+    this.userService.userItemsNoCraftedList().subscribe((result) => {
+      this._userItemsNoCraftList = result.items;
     });
-    /*this.userItemsList;*/
   }
 
-  public get userItemsList(): Items[] {
-    return this._userItemsList;
+  public get userItemsNoCraftList(): Items[] {
+    return this._userItemsNoCraftList;
   }
 }

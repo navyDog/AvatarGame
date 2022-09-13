@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { Observable } from "rxjs";
+import { Items } from "src/app/entities/items";
 import { UserService } from "../services/user.service";
 
 @Component({
@@ -11,7 +12,7 @@ import { UserService } from "../services/user.service";
 })
 export class NavigationTopComponent implements OnInit {
   private _userBalance: any;
-  private _userItemsLength: number = 0;
+  private _userItemsNoCraftLength: Items[] = []; // LIST OF ALL ITEMS NO CRAFTED OF CURRENT USER
 
   constructor(
     private router: Router,
@@ -24,11 +25,10 @@ export class NavigationTopComponent implements OnInit {
     this.userService.userBalance().subscribe((result) => {
       this._userBalance = result.solde;
     });
-    // ITEMS LENGHT
-    this.userService.userItemsList().subscribe((result) => {
-      this._userItemsLength = result.items.length;
+    // ALLS ITEMS NO CRAFTED OF CURRENT USER
+    this.userService.userItemsNoCraftedList().subscribe((result) => {
+      this._userItemsNoCraftLength = result.items.length;
     });
-    this.userItemsLength;
   }
 
   public logout() {
@@ -44,7 +44,7 @@ export class NavigationTopComponent implements OnInit {
     return this._userBalance;
   }
 
-  public get userItemsLength() {
-    return this._userItemsLength;
+  public get userItemsNoCraftLength(): Items[] {
+    return this._userItemsNoCraftLength;
   }
 }

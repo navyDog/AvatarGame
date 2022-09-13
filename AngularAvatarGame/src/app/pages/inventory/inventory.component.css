@@ -150,6 +150,8 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+  border: solid 1px var(--col-line);
+  border-top: none;
 }
 #invContentAvatarLeft {
   width: 400px;

@@ -83,8 +83,8 @@
       </button>
     </div>
     <div class="invBotItems" id="invBotItemsHead" style="display: flex">
-      <div class="invItem" *ngFor="let i of userItemsList">
-        <div>
+      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
+        <div *ngIf="i.membre === 'H'">
           <p>{{ i.nom }}</p>
           <img
             [src]="imgPath + i.image"
@@ -96,10 +96,75 @@
         </div>
       </div>
     </div>
-    <div class="invBotItems" id="invBotItemsHandRight"></div>
-    <div class="invBotItems" id="invBotItemsBody"></div>
-    <div class="invBotItems" id="invBotItemsHandLeft"></div>
-    <div class="invBotItems" id="invBotItemsFeetRight"></div>
-    <div class="invBotItems" id="invBotItemsFeetLeft"></div>
+    <div class="invBotItems" id="invBotItemsHandRight">
+      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
+        <div *ngIf="i.membre === 'RH'">
+          <p>{{ i.nom }}</p>
+          <img
+            [src]="imgPath + i.image"
+            alt=""
+            draggable="false"
+            ondragstart="return false"
+          />
+          <button onclick="" class="erase">vendre</button>
+        </div>
+      </div>
+    </div>
+    <div class="invBotItems" id="invBotItemsBody">
+      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
+        <div *ngIf="i.membre === 'B'">
+          <p>{{ i.nom }}</p>
+          <img
+            [src]="imgPath + i.image"
+            alt=""
+            draggable="false"
+            ondragstart="return false"
+          />
+          <button onclick="" class="erase">vendre</button>
+        </div>
+      </div>
+    </div>
+    <div class="invBotItems" id="invBotItemsHandLeft">
+      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
+        <div *ngIf="i.membre === 'LH'">
+          <p>{{ i.nom }}</p>
+          <img
+            [src]="imgPath + i.image"
+            alt=""
+            draggable="false"
+            ondragstart="return false"
+          />
+          <button onclick="" class="erase">vendre</button>
+        </div>
+      </div>
+    </div>
+    <div class="invBotItems" id="invBotItemsFeetRight">
+      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
+        <div *ngIf="i.membre === 'RL'">
+          <p>{{ i.nom }}</p>
+          <img
+            [src]="imgPath + i.image"
+            alt=""
+            draggable="false"
+            ondragstart="return false"
+          />
+          <button onclick="" class="erase">vendre</button>
+        </div>
+      </div>
+    </div>
+    <div class="invBotItems" id="invBotItemsFeetLeft">
+      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
+        <div *ngIf="i.membre === 'LL'">
+          <p>{{ i.nom }}</p>
+          <img
+            [src]="imgPath + i.image"
+            alt=""
+            draggable="false"
+            ondragstart="return false"
+          />
+          <button onclick="" class="erase">vendre</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

@@ -42,4 +42,26 @@ export class UserService {
       }
     );
   }
+
+  public userItemsNoCraftedList(): Observable<any> {
+    return this.httpClient.get(
+      "http://localhost:8080/avatar/api/users/" +
+        this.sessionUserId +
+        "/items/crafted",
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+
+  public userAvatarList(): Observable<any> {
+    return this.httpClient.get(
+      "http://localhost:8080/avatar/api/users/" +
+        this.sessionUserId +
+        "/avatars",
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
 }
