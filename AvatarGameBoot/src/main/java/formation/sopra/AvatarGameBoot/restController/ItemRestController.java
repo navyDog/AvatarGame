@@ -24,6 +24,7 @@ import com.fasterxml.jackson.annotation.JsonView;
 import formation.sopra.AvatarGameBoot.entities.item.Item;
 import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 import formation.sopra.AvatarGameBoot.service.ItemService;
+import formation.sopra.AvatarGameBoot.service.UsersService;
 
 @RestController
 @RequestMapping("/api/item")
@@ -32,6 +33,8 @@ public class ItemRestController {
 
 	@Autowired
 	private ItemService itemService;
+	@Autowired
+	private UsersService userService;
 	
 	
 	//get an item
@@ -56,6 +59,12 @@ public class ItemRestController {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
 		}
 	return itemService.create(item);
+	}
+	
+	@PostMapping("/{id}")
+	@JsonView(JsonViews.Item.class)
+	public void createRandom(@PathVariable Long id) {
+		itemService.creationRandom(userService.getById(id));
 	}
 	
 	@PutMapping("/{id}")
