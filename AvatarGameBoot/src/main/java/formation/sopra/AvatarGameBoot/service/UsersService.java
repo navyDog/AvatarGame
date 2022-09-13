@@ -23,7 +23,7 @@ public class UsersService {
 	
 	public Users create(Users users) {		
 		users.setAvatar(null);
-		users.setSolde(0);
+		users.setSolde(1000); 
 		users.setItems(null);
 		return usersRepo.save(users);	
 	}
