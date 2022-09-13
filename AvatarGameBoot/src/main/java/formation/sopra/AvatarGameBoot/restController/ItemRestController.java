@@ -67,6 +67,12 @@ public class ItemRestController {
 		itemService.creationRandom(userService.getById(id));
 	}
 	
+	@PostMapping("/{id}/set")
+	@JsonView(JsonViews.Item.class)
+	public void createStart(@PathVariable Long id) {
+		itemService.creationStart(userService.getById(id));
+	}
+	
 	@PutMapping("/{id}")
 	@JsonView(JsonViews.ItemUpdate.class)
 	public Item update(@PathVariable Long id, @Valid @RequestBody Item item, BindingResult br) {
