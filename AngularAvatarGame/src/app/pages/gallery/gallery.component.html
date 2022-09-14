@@ -1,4 +1,68 @@
 <div id="gallery">
+  <h2>Test</h2>
+  <div id="galAvatar" *ngIf="listAvatars?.length">
+    <div class="galAvatarTop" *ngFor="let i of listAvatars">
+      <p>{{i.nom}}</p>
+      <div class="invContentAvatar">
+        <img
+          id="invContentAvatarHead"
+          [src]="imgPath + i.compose![0].image +imgSufix"
+          alt=""
+          title=""
+          ondrag="false"
+          ondragstart="return false"
+        />
+      </div>
+      <div class="incVontentAvatar">
+        <img
+          id="invContentAvatarHandRight"
+          [src]="imgPath + i.compose![1].image + imgSufix"
+          alt=""
+          title=""
+          ondrag="false"
+          ondragstart="return false"
+        />
+        <img
+          id="invContentAvatarBody"
+          [src]="imgPath + i.compose![2].image + imgSufix"
+          alt=""
+          title=""
+          ondrag="false"
+          ondragstart="return false"
+        />
+        <img
+          id="invContentAvatarHandLeft"
+          [src]="imgPath + i.compose![3].image + imgSufix"
+          alt=""
+          title=""
+          ondrag="false"
+          ondragstart="return false"
+        />
+      </div>
+      <div class="incVontentAvatar">
+        <img
+          id="invContentAvatarFeetRight"
+          [src]="imgPath + i.compose![4].image + imgSufix"
+          alt=""
+          title=""
+          ondrag="false"
+          ondragstart="return false"
+        />
+        <img
+          id="invContentAvatarHandLeft"
+          [src]="imgPath + i.compose![5].image + imgSufix"
+          alt=""
+          title=""
+          ondrag="false"
+          ondragstart="return false"
+        />
+      </div>
+
+    </div>
+
+  </div>
+
+
   <div class="galItem">
     <div class="galItemsAvatar">
       <div>

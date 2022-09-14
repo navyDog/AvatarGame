@@ -12,7 +12,7 @@ export class Avatars {
     return this._avatarId;
   }
 
-  public get name(): string | undefined {
+  public get nom(): string | undefined {
     return this._avatarName;
   }
 
@@ -29,7 +29,7 @@ export class Avatars {
     this._avatarId = value;
   }
 
-  public set name(value: string | undefined) {
+  public set nom(value: string | undefined) {
     this._avatarName = value;
   }
 

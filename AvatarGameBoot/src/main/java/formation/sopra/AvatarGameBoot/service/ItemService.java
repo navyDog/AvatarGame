@@ -120,4 +120,17 @@ public class ItemService {
 			create(item);
 	}
 	
+	public void creationLegendary(Users users) {
+		Item item = new Item();
+		BankItem bankItem = new BankItem();
+		bankItem = bankItemService.getBankItemLegendaryRandom();
+		item.setMembre(bankItem.getMembre());
+		item.setRarity(bankItem.getRarity());
+		item.setNom(bankItem.getName());
+		item.setOwner(users);
+		item.setImage(bankItem.getPicture());
+		item.setPrix(null);
+		create(item);
+	}
+	
 }

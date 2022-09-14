@@ -73,6 +73,12 @@ public class ItemRestController {
 		itemService.creationStart(userService.getById(id));
 	}
 	
+	@PostMapping("/{id}/legendary")
+	@JsonView(JsonViews.Item.class)
+	public void createLegendary(@PathVariable Long id) {
+		itemService.creationLegendary(userService.getById(id));
+	}
+	
 	@PutMapping("/{id}")
 	@JsonView(JsonViews.ItemUpdate.class)
 	public Item update(@PathVariable Long id, @Valid @RequestBody Item item, BindingResult br) {

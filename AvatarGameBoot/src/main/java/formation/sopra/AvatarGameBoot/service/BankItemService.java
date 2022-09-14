@@ -41,6 +41,16 @@ public class BankItemService {
 		return bankItem;
 	}
 	
+	public BankItem getBankItemLegendaryRandom() {
+		//récupère la liste d'ID correspondant à cette rarity random
+		List<BankItem> listBankItem = new ArrayList<>(bankItemRepo.findByRarity(1));
+		//défini un nombre random à partir de la taille de la list
+		int random = randomDef(listBankItem.size());
+		BankItem bankItem = new BankItem();
+		bankItem = listBankItem.get(random);
+		return bankItem;
+	}
+	
 	public int random() {
 		int random = (int)(Math.random()*100);
 		return random;
