@@ -8,7 +8,11 @@
     <div class="craftLine">
       <img
         id="craftAvatarHead"
-        src="assets/items/empty.png"
+        [src]="
+          this.newAvatarItemsImage[0]
+            ? this.newAvatarItemsImage[0]
+            : 'assets/items/empty.png'
+        "
         alt=""
         title=""
         ondrag="false"
@@ -19,7 +23,11 @@
     <div class="craftLine">
       <img
         id="craftAvatarHandRight"
-        src="assets/items/empty.png"
+        [src]="
+          this.newAvatarItemsImage[1]
+            ? this.newAvatarItemsImage[1]
+            : 'assets/items/empty.png'
+        "
         alt=""
         title=""
         ondrag="false"
@@ -28,7 +36,11 @@
       />
       <img
         id="craftAvatarBody"
-        src="assets/items/empty.png"
+        [src]="
+          this.newAvatarItemsImage[2]
+            ? this.newAvatarItemsImage[2]
+            : 'assets/items/empty.png'
+        "
         alt=""
         title=""
         ondrag="false"
@@ -37,7 +49,11 @@
       />
       <img
         id="craftAvatarHandLeft"
-        src="assets/items/empty.png"
+        [src]="
+          this.newAvatarItemsImage[3]
+            ? this.newAvatarItemsImage[3]
+            : 'assets/items/empty.png'
+        "
         alt=""
         title=""
         ondrag="false"
@@ -48,7 +64,11 @@
     <div class="craftLine">
       <img
         id="craftAvatarFeetRight"
-        src="assets/items/empty.png"
+        [src]="
+          this.newAvatarItemsImage[4]
+            ? this.newAvatarItemsImage[4]
+            : 'assets/items/empty.png'
+        "
         alt=""
         title=""
         ondrag="false"
@@ -57,7 +77,11 @@
       />
       <img
         id="craftAvatarFeetLeft"
-        src="assets/items/empty.png"
+        [src]="
+          this.newAvatarItemsImage[5]
+            ? this.newAvatarItemsImage[5]
+            : 'assets/items/empty.png'
+        "
         alt=""
         title=""
         ondrag="false"
@@ -66,14 +90,18 @@
       />
     </div>
     <div>
-      <label
-        >Nom de l'avatar :
-        <input
-          type="text"
-          autocomplete="off"
-          placeholder="test"
-          id="craftAvatarNameInput"
-      /></label>
+      <form (submit)="craftNewAvatarNameInput()">
+        <label
+          >Nom de l'avatar :
+          <input
+            [(ngModel)]="newAvatarName"
+            type="text"
+            autocomplete="off"
+            placeholder="test"
+            id="craftAvatarNameInput"
+            name="newAvatarNameBtn"
+        /></label>
+      </form>
     </div>
     <div>
       <button onclick="craftOverlay('on')" class="submit">Crafter !</button>
@@ -83,7 +111,13 @@
   <div id="craftConfirm">
     <h1>Êtes-vous sûr ?</h1>
     <div>
-      <button onclick="craftOverlay('off')" class="submit">Oui</button>
+      <button
+        onclick="craftOverlay('off')"
+        (click)="craftNewAvatar()"
+        class="submit"
+      >
+        Oui
+      </button>
       <button onclick="craftOverlay('off')" class="erase">Non</button>
     </div>
   </div>
@@ -108,6 +142,9 @@
                   itemEpic: i.rarity == 'E',
                   itemLegendary: i.rarity == 'L'
                 }"
+                id="craftNewAvatarHead"
+                (click)="craftAddSelectedImg(i, 0)"
+                onclick="craftItemSelect()"
               />
             </div>
           </div>
@@ -126,6 +163,8 @@
                   itemEpic: i.rarity == 'E',
                   itemLegendary: i.rarity == 'L'
                 }"
+                (click)="craftAddSelectedImg(i, 1)"
+                onclick="craftItemSelect()"
               />
             </div>
           </div>
@@ -144,6 +183,8 @@
                   itemEpic: i.rarity == 'E',
                   itemLegendary: i.rarity == 'L'
                 }"
+                (click)="craftAddSelectedImg(i, 2)"
+                onclick="craftItemSelect()"
               />
             </div>
           </div>
@@ -162,6 +203,8 @@
                   itemEpic: i.rarity == 'E',
                   itemLegendary: i.rarity == 'L'
                 }"
+                (click)="craftAddSelectedImg(i, 3)"
+                onclick="craftItemSelect()"
               />
             </div>
           </div>
@@ -180,6 +223,8 @@
                   itemEpic: i.rarity == 'E',
                   itemLegendary: i.rarity == 'L'
                 }"
+                (click)="craftAddSelectedImg(i, 4)"
+                onclick="craftItemSelect()"
               />
             </div>
           </div>
@@ -198,6 +243,8 @@
                   itemEpic: i.rarity == 'E',
                   itemLegendary: i.rarity == 'L'
                 }"
+                (click)="craftAddSelectedImg(i, 5)"
+                onclick="craftItemSelect()"
               />
             </div>
           </div>
