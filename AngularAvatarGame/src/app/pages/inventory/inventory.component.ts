@@ -49,6 +49,7 @@ export class InventoryComponent implements OnInit {
 
       // LIST OF ITEMS OF MAIN AVATAR OF CURRENT USER
       this.userService.localId = this.userAvatarsIDMain;
+
       this.userService.userAvatarList2().subscribe((result) => {
         this.userAvatarMainItems = result.compose;
       });

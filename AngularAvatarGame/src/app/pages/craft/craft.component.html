@@ -1,4 +1,4 @@
-<div id="craft">
+<div id="craft" onload="randomAvatarNameProp()">
   <p id="note">
     <i class="fa-solid fa-lightbulb"></i>
     Pour crafter un nouvel <b>Avatar</b>, sélectionnez les 6 composants qui vous
@@ -64,6 +64,16 @@
         ondragstart="return false"
         onclick="craftItemSelect('feet_left')"
       />
+    </div>
+    <div>
+      <label
+        >Nom de l'avatar :
+        <input
+          type="text"
+          autocomplete="off"
+          placeholder="test"
+          id="craftAvatarNameInput"
+      /></label>
     </div>
     <div>
       <button onclick="craftOverlay('on')" class="submit">Crafter !</button>
