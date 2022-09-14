@@ -33,6 +33,7 @@ export class GalleryComponent implements OnInit {
 
         this.userService.localId = value.avatar[0].id;
         this.userService.userAvatarList2().subscribe((result) => {
+          this.listAvatars?.push(result);
           this.temp = result.compose.sort((a: Items, b: Items) => {
             return (
               "" +
@@ -41,10 +42,6 @@ export class GalleryComponent implements OnInit {
               })
             );
           });
-          console.log(this.temp);
-          this.listAvatars?.push(this.temp);
-          console.log(this.listAvatars);
-
           //list of all firstavatar of each
         });
       });
