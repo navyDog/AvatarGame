@@ -10,8 +10,6 @@ export class GamesComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    var coin = require('coin-toss');
-    console.log(coin.toss());
   }
 
 }

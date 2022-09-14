@@ -31,12 +31,12 @@ export class GalleryComponent implements OnInit {
       console.log(this.listUsers); 
       this.listUsers?.forEach(value => (
        //first Avatar of each Users
-       console.log(value),
+        
         this.userService.localId = value.avatar[0].id, 
         this.userService.userAvatarList2().subscribe((result) =>
           
           this.listAvatars?.push(result),
-         
+          
          //items list of each avatar
         )
       ));
