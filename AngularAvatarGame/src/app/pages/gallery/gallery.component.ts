@@ -29,7 +29,7 @@ export class GalleryComponent implements OnInit {
       this.listUsers?.forEach((value) => {
         //first Avatar of each Users
 
-        this.userService.localId = value.avatar[0].id;
+        this.userService.localId = value.avatar![0].id;
         this.userService.userAvatarList2().subscribe((result) => {
           this.listAvatars?.push(result);
           result.compose.sort((a: Items, b: Items) => {

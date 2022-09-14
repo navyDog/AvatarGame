@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Avatars } from "src/app/entities/avatars";
 import { Items } from "src/app/entities/items";
+import { Param } from "src/app/entities/param";
 import { Users } from "src/app/entities/users";
 
 @Injectable({
@@ -37,7 +38,7 @@ export class ConverterService {
       id: item.id,
       membre: item.membre,
       rarity: item.rarity,
-      prix: item.prix!,
+      prix: item.prix,
       crafted: item.crafted,
       nom: item.nom,
       image: item.image
@@ -56,4 +57,19 @@ export class ConverterService {
   }
   return obj;
   }
+
+  public paramToJson(param: Param): any {
+    let obj = {
+      user: this.usersToJson(param.users!),
+      avatar: this.avatarToJson(param.avatar!),
+      h: param.h,
+      b: param.b,
+      lh: param.lh,
+      rh: param.rh,
+      ll: param.ll,
+      rl: param.rl
+    }
+    return obj;
+  }
+  
 }

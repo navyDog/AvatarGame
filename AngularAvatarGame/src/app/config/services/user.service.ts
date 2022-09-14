@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Items } from "src/app/entities/items";
+import { Param } from "src/app/entities/param";
 import { ConverterService } from "./converter.service";
 
 @Injectable({
@@ -125,7 +126,20 @@ export class UserService {
       {
         headers: this.sessionUserHeader,
       }
-    ); console.log(item.prix)
+    );
+  }
+
+  public createAvatar(param: Param): Observable<Param> {
+    return this.httpClient.post<Param>(
+      "http://localhost:8080/avatar/api/avatar/" +this.sessionUserId + "/" +
+      param.h!.id + "/" + param.b!.id + "/" + param.lh!.id + "/" +
+       param.rh!.id + "/" + param.ll!.id + "/" + param.rl!.id 
+      , this.converter.paramToJson(param),
+      {
+        headers: this.sessionUserHeader,
+      }
+
+    );
   }
 
   public get localId(): number | undefined {

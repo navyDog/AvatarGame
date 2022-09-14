@@ -114,11 +114,6 @@ export class InventoryComponent implements OnInit {
   }
 
   public inventorySend() {
-    console.log("enculé de merde")
-
-    this.item.nom="Jean";
-    
- 
     this.userService.updateItem(this.item).subscribe((result) => {
       console.log(this.item.prix)
       console.log(result.prix);
