@@ -67,24 +67,26 @@ export class UserService {
   }
 
   public usersItemsNoCraftedList(): Observable<any> {
-    return this.httpClient.get(
-      "http://localhost:8080/avatar/api/users/items",
-      {
-        headers: this.sessionUserHeader
-      }
-    );
+    return this.httpClient.get("http://localhost:8080/avatar/api/users/items", {
+      headers: this.sessionUserHeader,
+    });
   }
 
   public users(): Observable<any> {
-    return this.httpClient.get(
-      "http://localhost:8080/avatar/api/users",
-      {
-        headers: this.sessionUserHeader
-      }
-    );
-
+    return this.httpClient.get("http://localhost:8080/avatar/api/users", {
+      headers: this.sessionUserHeader,
+    });
   }
   public userAvatarList2(): Observable<any> {
+    return this.httpClient.get(
+      "http://localhost:8080/avatar/api/avatar/" + this.localId + "/items",
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+  public userAvatarList3(): Observable<any> {
+    // test
     return this.httpClient.get(
       "http://localhost:8080/avatar/api/avatar/" + this.localId + "/items",
       {

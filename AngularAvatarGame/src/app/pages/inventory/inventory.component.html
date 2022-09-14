@@ -5,7 +5,7 @@
     </div>
     <div id="invContentAvatar">
       <div id="invContentAvatarLeft" *ngIf="userAvatarMainItems.length">
-        <p>{{ userAvatarsMainName }}</p>
+        <p *ngIf="userAvatarsMainName">{{ userAvatarsMainName }}</p>
         <div class="invContentAvatar">
           <img
             id="invContentAvatarHead"

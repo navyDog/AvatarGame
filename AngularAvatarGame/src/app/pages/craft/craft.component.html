@@ -8,61 +8,61 @@
     <div class="craftLine">
       <img
         id="craftAvatarHead"
-        src="assets/items/HEAD/head_18.png"
+        src="assets/items/empty.png"
         alt=""
         title=""
         ondrag="false"
         ondragstart="return false"
-        onclick=""
+        onclick="craftItemSelect('head')"
       />
     </div>
     <div class="craftLine">
       <img
         id="craftAvatarHandRight"
-        src="assets/items/HAND_R/hand_right_18.png"
+        src="assets/items/empty.png"
         alt=""
         title=""
         ondrag="false"
         ondragstart="return false"
-        onclick=""
+        onclick="craftItemSelect('hand_right')"
       />
       <img
         id="craftAvatarBody"
-        src="assets/items/BODY/body_18.png"
+        src="assets/items/empty.png"
         alt=""
         title=""
         ondrag="false"
         ondragstart="return false"
-        onclick=""
+        onclick="craftItemSelect('body')"
       />
       <img
         id="craftAvatarHandLeft"
-        src="assets/items/HAND_L/hand_left_18.png"
+        src="assets/items/empty.png"
         alt=""
         title=""
         ondrag="false"
         ondragstart="return false"
-        onclick=""
+        onclick="craftItemSelect('hand_left')"
       />
     </div>
     <div class="craftLine">
       <img
         id="craftAvatarFeetRight"
-        src="assets/items/FEET_R/feet_right_18.png"
+        src="assets/items/empty.png"
         alt=""
         title=""
         ondrag="false"
         ondragstart="return false"
-        onclick=""
+        onclick="craftItemSelect('feet_right')"
       />
       <img
         id="craftAvatarFeetLeft"
-        src="assets/items/FEET_L/feet_left_18.png"
+        src="assets/items/empty.png"
         alt=""
         title=""
         ondrag="false"
         ondragstart="return false"
-        onclick=""
+        onclick="craftItemSelect('feet_left')"
       />
     </div>
     <div>
@@ -77,10 +77,122 @@
       <button onclick="craftOverlay('off')" class="erase">Non</button>
     </div>
   </div>
-  <div>
-    <h1>Choix d'un item</h1>
-    <div>
-      <div class="craftItem"></div>
+  <div id="craftItemSelect">
+    <div id="craftItemSelectMainContent">
+      <button onclick="craftItemSelect()" id="craftItemSelectClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h1>Choix d'un item</h1>
+      <div id="craftItemsSelectContent">
+        <div id="crafItemsHead" class="crafItems">
+          <div clas="ctc1" *ngFor="let i of userItemsNoCraftList">
+            <div class="ctc2" *ngIf="i.membre == 'H'">
+              <img
+                [src]="imgPath + i.image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.rarity == 'R',
+                  itemEpic: i.rarity == 'E',
+                  itemLegendary: i.rarity == 'L'
+                }"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="crafItemsHandRight" class="crafItems">
+          <div clas="ctc1" *ngFor="let i of userItemsNoCraftList">
+            <div class="ctc2" *ngIf="i.membre == 'RH'">
+              <img
+                [src]="imgPath + i.image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.rarity == 'R',
+                  itemEpic: i.rarity == 'E',
+                  itemLegendary: i.rarity == 'L'
+                }"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="crafItemsBody" class="crafItems">
+          <div clas="ctc1" *ngFor="let i of userItemsNoCraftList">
+            <div class="ctc2" *ngIf="i.membre == 'B'">
+              <img
+                [src]="imgPath + i.image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.rarity == 'R',
+                  itemEpic: i.rarity == 'E',
+                  itemLegendary: i.rarity == 'L'
+                }"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="crafItemsHandLeft" class="crafItems">
+          <div clas="ctc1" *ngFor="let i of userItemsNoCraftList">
+            <div class="ctc2" *ngIf="i.membre == 'LH'">
+              <img
+                [src]="imgPath + i.image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.rarity == 'R',
+                  itemEpic: i.rarity == 'E',
+                  itemLegendary: i.rarity == 'L'
+                }"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="crafItemsFeetRight" class="crafItems">
+          <div clas="ctc1" *ngFor="let i of userItemsNoCraftList">
+            <div class="ctc2" *ngIf="i.membre == 'RL'">
+              <img
+                [src]="imgPath + i.image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.rarity == 'R',
+                  itemEpic: i.rarity == 'E',
+                  itemLegendary: i.rarity == 'L'
+                }"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="crafItemsFeetLeft" class="crafItems">
+          <div clas="ctc1" *ngFor="let i of userItemsNoCraftList">
+            <div class="ctc2" *ngIf="i.membre == 'LL'">
+              <img
+                [src]="imgPath + i.image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.rarity == 'R',
+                  itemEpic: i.rarity == 'E',
+                  itemLegendary: i.rarity == 'L'
+                }"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

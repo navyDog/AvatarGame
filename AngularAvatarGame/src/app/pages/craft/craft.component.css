@@ -112,3 +112,73 @@ button[class="erase"]:hover {
   justify-content: center;
   align-items: center;
 }
+/* -------------------------------------------- CRAFT ITEM SELECT -------------------------------------------- */
+#craftItemSelect {
+  position: absolute;
+  top: calc(calc(100vh - var(--height-nav-top)) / 2 - 250px);
+  left: calc(calc(100vw - var(--width-nav)) / 2 - 250px);
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: solid 1px var(--col-line);
+  border-radius: 10px;
+  padding: var(--dist-2);
+}
+.crafItems {
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#craftItemSelectClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  transition: 0.2s;
+  color: var(--col-text-hover-red);
+  cursor: pointer;
+  padding: 0.5em;
+}
+#craftItemSelectClose:hover {
+  color: var(--col-text-hover-redbis);
+}
+#craftItemsSelectContent,
+#craftItemSelectMainContent {
+  width: 100%;
+  height: 100%;
+}
+.ctc1,
+.ctc2 {
+  width: auto;
+  height: auto;
+}
+#craftItemSelect h1 {
+  width: 100%;
+  font-size: 1.25em;
+  border-bottom: solid 1px var(--col-line);
+  text-align: center;
+  padding-bottom: 0.25em;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+#craftItemSelect img {
+  cursor: pointer;
+  height: 80px;
+}
+#craftItemSelect img[class~="itemRare"] {
+  background-image: radial-gradient(green 0.2%, transparent 70%);
+}
+#craftItemSelect img[class~="itemEpic"] {
+  background-image: radial-gradient(purple 0.2%, transparent 70%);
+}
+#craftItemSelect img[class~="itemLegendary"] {
+  background-image: radial-gradient(gold 0.2%, transparent 70%);
+}

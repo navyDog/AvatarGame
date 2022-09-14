@@ -22,6 +22,7 @@ export class AuthComponent implements OnInit {
         sessionStorage.setItem("token", btoa(this.login + ":" + this.password));
         this.authError = false;
         sessionStorage.setItem("user", JSON.stringify(result));
+        console.log(JSON.parse(sessionStorage.getItem("user")!).users.id);
         this.router.navigateByUrl("/inventory");
       },
       error: (err) => {
