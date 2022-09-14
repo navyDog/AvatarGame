@@ -26,6 +26,30 @@ export class GalleryComponent implements OnInit {
 
     this.userService.usersAvatar().subscribe((result) => {
       this.listUsers = result; //list of Users
+<<<<<<< HEAD
+  
+      console.log(this.listUsers); 
+      this.listUsers?.forEach(value => (
+       //first Avatar of each Users
+        
+        this.userService.localId = value.avatar[0].id, 
+        this.userService.userAvatarList2().subscribe((result) =>
+          
+          this.listAvatars?.push(result),
+          
+         //items list of each avatar
+        )
+      ));
+      this.listAvatars!.forEach(avatar => {
+        avatar.compose?.forEach(item => {
+          item.nom?.replace("body","hgfd")
+        })
+      })
+      console.log(this.listAvatars)
+      //list of all firstavatar of each
+    });
+=======
+>>>>>>> origin/main
 
       /*console.log(this.listUsers);*/
       this.listUsers?.forEach((value) => {
