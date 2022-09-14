@@ -27,10 +27,11 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 @Table(name="items")
 @SequenceGenerator(sequenceName = "seqItem", name = "seq_item", allocationSize = 1, initialValue = 1)
 public class Item {
-	@JsonView( {JsonViews.Base.class} )
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqItem")
 	@Column(name = "item_id")
+	@JsonView( {JsonViews.Base.class} )
 	private Long id;
 	@JsonView( {JsonViews.Base.class} )
 	@NotEmpty()
@@ -49,7 +50,7 @@ public class Item {
 	private String image;
 	@Column(name="item_price")
 	@JsonView( {JsonViews.Base.class} )
-	private Double prix;
+	private Long prix;
 	@ManyToOne
 	@JoinColumn(name="item_id_user", foreignKey = @ForeignKey(name="item_item_id_user_fk"))
 	@JsonView( {JsonViews.Item.class} )
@@ -101,11 +102,11 @@ public class Item {
 		this.image = image;
 	}
 
-	public Double getPrix() {
+	public Long getPrix() {
 		return prix;
 	}
 
-	public void setPrix(Double prix) {
+	public void setPrix(Long prix) {
 		this.prix = prix;
 	}
 

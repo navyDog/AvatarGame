@@ -1,3 +1,6 @@
+import { Avatars } from "./avatars";
+import { Users } from "./users";
+
 export class Items {
   constructor(
     private _itemCraftStat?: boolean,
@@ -7,8 +10,8 @@ export class Items {
     private _itemName?: string,
     private _itemprice?: number,
     private _itemRarity?: string,
-    private _itemAvatarId?: number,
-    private _itemUserId?: number
+    private _itemAvatarId?: Avatars,
+    private _itemUserId?: Users
   ) {}
 
   /* -------------------------------------------- GETTERS -------------------------------------------- */
@@ -33,12 +36,12 @@ export class Items {
   public get rarity(): string | undefined {
     return this._itemRarity;
   }
-  public get avatar(): number | undefined {
+  public get avatar(): Avatars | undefined {
     return this._itemAvatarId;
   }
-  /*public get itemUserId(): number | undefined {
+  public get owner(): Users | undefined {
     return this._itemUserId;
-  }*/
+  }
 
   /* -------------------------------------------- SETTERS -------------------------------------------- */
   public set id(value: number | undefined) {
@@ -62,10 +65,10 @@ export class Items {
   public set rarity(value: string | undefined) {
     this._itemRarity = value;
   }
-  public set avatar(value: number | undefined) {
+  public set avatar(value: Avatars | undefined) {
     this._itemAvatarId = value;
   }
-  /*public set itemUserId(value: number | undefined) {
+  public set owner(value: Users | undefined) {
     this._itemUserId = value;
-  }*/
+  }
 }

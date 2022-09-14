@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
+import { Items } from "src/app/entities/items";
 import { ConverterService } from "./converter.service";
 
 @Injectable({
@@ -106,6 +107,25 @@ export class UserService {
         headers: this.sessionUserHeader,
       }
     );
+  }
+
+  public getById(id: number): Observable<Items> { //getItemByID
+    return this.httpClient.get<Items>(
+      'http://localhost:8080/avatar/api/item/' + id,
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+
+  public updateItem(item: Items): Observable<Items> {
+    return this.httpClient.put<Items>(
+  
+      "http://localhost:8080/avatar/api/item/" + item.id, this.converter.itemToJson(item),
+      {
+        headers: this.sessionUserHeader,
+      }
+    ); console.log(item.prix)
   }
 
   public get localId(): number | undefined {

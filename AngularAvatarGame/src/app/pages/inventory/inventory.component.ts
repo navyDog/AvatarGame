@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
 import { UserService } from "src/app/config/services/user.service";
 import { Avatars } from "src/app/entities/avatars";
 import { Items } from "src/app/entities/items";
@@ -16,19 +17,26 @@ export class InventoryComponent implements OnInit {
   private _userAvatarsIDMain: number | undefined;
   private _userAvatarsMainName: string | undefined;
   private _userAvatarMainItems: Items[] = [];
-
+  item: Items;
   //
   private _userAvatarsList: Avatars[] = [];
 
   imgPath: string = "assets/items/";
   imgSufix: string = ".png";
 
-  constructor(private userService: UserService) {}
+  constructor(
+    private ar: ActivatedRoute,
+    private userService: UserService,
+    private router: Router
+    ) {
+    this.item = new Items;
+  }
 
   ngOnInit() {
     // ALLS ITEMS NO CRAFTED OF CURRENT USER
     this.userService.userItemsNoCraftedList().subscribe((result) => {
       this.userItemsNoCraftList = result.items;
+      console.log(result)
     });
 
     // ALLS ITEMS OF ALL AVATARS OF CURRENT USER
@@ -92,5 +100,29 @@ export class InventoryComponent implements OnInit {
   }
   public set userAvatarsList(value: Avatars[]) {
     this._userAvatarsList = value;
+  }
+
+  public inventoryId(id: number) {
+    console.log(id)
+    this.ar.params.subscribe((params) => {
+      this.userService.getById(id).subscribe((result) =>{
+        console.log(result);
+        this.item=result;
+       
+      })
+    });
+  }
+
+  public inventorySend() {
+    console.log("enculé de merde")
+
+    this.item.nom="Jean";
+    
+ 
+    this.userService.updateItem(this.item).subscribe((result) => {
+      console.log(this.item.prix)
+      console.log(result.prix);
+      this.router.navigateByUrl('/inventory');
+    });
   }
 }
