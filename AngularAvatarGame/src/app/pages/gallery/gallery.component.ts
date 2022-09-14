@@ -15,8 +15,6 @@ export class GalleryComponent implements OnInit {
   private _listUsers?: Users[] = [];
   private _listAvatars?: Avatars[] = [];
 
-  public temp: Avatars = new Avatars();
-
   imgPath: string = "assets/items/";
   imgSufix: string = ".png";
   constructor(private userService: UserService) {}
@@ -26,30 +24,6 @@ export class GalleryComponent implements OnInit {
 
     this.userService.usersAvatar().subscribe((result) => {
       this.listUsers = result; //list of Users
-<<<<<<< HEAD
-  
-      console.log(this.listUsers); 
-      this.listUsers?.forEach(value => (
-       //first Avatar of each Users
-        
-        this.userService.localId = value.avatar[0].id, 
-        this.userService.userAvatarList2().subscribe((result) =>
-          
-          this.listAvatars?.push(result),
-          
-         //items list of each avatar
-        )
-      ));
-      this.listAvatars!.forEach(avatar => {
-        avatar.compose?.forEach(item => {
-          item.nom?.replace("body","hgfd")
-        })
-      })
-      console.log(this.listAvatars)
-      //list of all firstavatar of each
-    });
-=======
->>>>>>> origin/main
 
       /*console.log(this.listUsers);*/
       this.listUsers?.forEach((value) => {
@@ -58,7 +32,7 @@ export class GalleryComponent implements OnInit {
         this.userService.localId = value.avatar[0].id;
         this.userService.userAvatarList2().subscribe((result) => {
           this.listAvatars?.push(result);
-          this.temp = result.compose.sort((a: Items, b: Items) => {
+          result.compose.sort((a: Items, b: Items) => {
             return (
               "" +
               a.membre?.localeCompare("" + b.membre, "en", {
