@@ -3,7 +3,7 @@ import { Items } from "./items";
 
 export class Users {
     constructor(
-        private _avatar: Avatars[],
+        private _avatar?: Avatars[],
         private _id?: number,
         private _solde?: number,
         private _items?: Items[]
@@ -32,10 +32,10 @@ public set items(value: Items[] | undefined) {
     this._items = value;
 }
 
-public get avatar(): Avatars[] {
+public get avatar(): Avatars[] | undefined {
     return this._avatar;
     }
-public set avatar(value: Avatars[]) {
+public set avatar(value: Avatars[] | undefined) {
     this._avatar = value;
 }
 

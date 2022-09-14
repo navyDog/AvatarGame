@@ -43,7 +43,7 @@ public class ItemService {
 		itemEnBase.setMembre(item.getMembre());
 		itemEnBase.setRarity(item.getRarity());
 		itemEnBase.setImage(item.getImage());
-//		itemEnBase.setPrix(item.getPrix()); WIP
+		itemEnBase.setPrix(item.getPrix()); 
 		Avatar avatar = item.getAvatar();
 		if (avatar != null) {
 			avatar = avatarService.getById(avatar.getId());

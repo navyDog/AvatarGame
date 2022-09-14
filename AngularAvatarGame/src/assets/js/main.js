@@ -35,15 +35,18 @@ function inventorySold(p) {
   /* let x1 = document.querySelector("#craftContent");
   let x2 = document.querySelector("#note");*/
   let y = document.querySelector("#invSoldItem");
+  let z = document.querySelector("#PriceItemInput")
 
   if (p == "on") {
     /*x1.style.filter = "blur(4px)";
     x2.style.filter = "blur(4px)";*/
     y.style.display = "flex";
+    //z.value = "";
   } else if (p == "off") {
     /* x1.style.filter = "blur(0px)";
     x2.style.filter = "blur(0px)";*/
     y.style.display = "none";
+    //z.value = "";
   }
 }
 
