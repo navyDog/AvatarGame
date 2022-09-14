@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { UserService } from "src/app/config/services/user.service";
+import { Items } from "src/app/entities/items";
 
 @Component({
   selector: "app-craft",
@@ -6,7 +8,27 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./craft.component.css"],
 })
 export class CraftComponent implements OnInit {
-  constructor() {}
+  // LIST OF ALL ITEMS NO CRAFTED OF CURRENT USER
+  private _userItemsNoCraftList: Items[] = [];
 
-  ngOnInit(): void {}
+  constructor(private userService: UserService) {}
+
+  imgPath: string = "assets/items/";
+  imgSufix: string = ".png";
+
+  ngOnInit() {
+    // ALLS ITEMS NO CRAFTED OF CURRENT USER
+    this.userService.userItemsNoCraftedList().subscribe((result) => {
+      this.userItemsNoCraftList = result.items;
+      console.log(this.userItemsNoCraftList);
+    });
+  }
+
+  // ALLS ITEMS NO CRAFTED OF CURRENT USER
+  public get userItemsNoCraftList(): Items[] {
+    return this._userItemsNoCraftList;
+  }
+  public set userItemsNoCraftList(value: Items[]) {
+    this._userItemsNoCraftList = value;
+  }
 }

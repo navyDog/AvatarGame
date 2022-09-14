@@ -18,7 +18,7 @@ export class InventoryComponent implements OnInit {
   private _userAvatarMainItems: Items[] = [];
 
   //
-  /*private _userAvatarsItemsIDList: Avatars[] = [];*/
+  private _userAvatarsList: Avatars[] = [];
 
   imgPath: string = "assets/items/";
   imgSufix: string = ".png";
@@ -35,7 +35,17 @@ export class InventoryComponent implements OnInit {
     this.userService.userAvatarList().subscribe((result) => {
       this.userAvatarsIDMain = result.avatar[0].id;
       this.userAvatarsMainName = result.avatar[0].nom;
-      /*this._userAvatarsItemsIDList = result;*/
+      this.userAvatarsList = result.avatar;
+
+      this.userAvatarsList.forEach(
+        (value) => (
+          (this.userService.localId = value.id),
+          console.log(this.userService.localId)
+        ),
+        this.userService
+          .userAvatarList3()
+          .subscribe((result) => console.log(result.compose))
+      );
 
       // LIST OF ITEMS OF MAIN AVATAR OF CURRENT USER
       this.userService.localId = this.userAvatarsIDMain;
@@ -68,18 +78,18 @@ export class InventoryComponent implements OnInit {
     this._userAvatarsIDMain = value;
   }
 
-  //
-  /*public get userAvatarsItemsIdList(): Avatars[] {
-    return this._userAvatarsItemsIDList;
-  }
-  public set userAvatarsItemsIdList(value: Avatars[]) {
-    this._userAvatarsItemsIDList = value;
-  }*/
-
   public get userAvatarMainItems(): Items[] {
     return this._userAvatarMainItems;
   }
   public set userAvatarMainItems(value: Items[]) {
     this._userAvatarMainItems = value;
+  }
+
+  //
+  public get userAvatarsList(): Avatars[] {
+    return this._userAvatarsList;
+  }
+  public set userAvatarsList(value: Avatars[]) {
+    this._userAvatarsList = value;
   }
 }

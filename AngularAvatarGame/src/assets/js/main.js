@@ -1,4 +1,38 @@
-let otherPlayer = "";
+/* -------------------------------------------- --------- -------------------------------------------- */
+/* -------------------------------------------- INVENTORY -------------------------------------------- */
+/* -------------------------------------------- --------- -------------------------------------------- */
+// ITEMS -- DISPLAY / HIDE THE ITEMS CONTENT
+function craftAccordion(p) {
+  let x1 = document.getElementById("invBotItemsHead");
+  let x2 = document.getElementById("invBotItemsHandRight");
+  let x3 = document.getElementById("invBotItemsBody");
+  let x4 = document.getElementById("invBotItemsHandLeft");
+  let x5 = document.getElementById("invBotItemsFeetRight");
+  let x6 = document.getElementById("invBotItemsFeetLeft");
+  let y = document.getElementsByClassName("invBotItems");
+
+  for (let i = 0; i < y.length; i++) {
+    y[i].style.display = "none";
+  }
+
+  if (p == "head") {
+    x1.style.display = "flex";
+  } else if (p == "handRight") {
+    x2.style.display = "flex";
+  } else if (p == "body") {
+    x3.style.display = "flex";
+  } else if (p == "handLeft") {
+    x4.style.display = "flex";
+  } else if (p == "feetRight") {
+    x5.style.display = "flex";
+  } else if (p == "feetLeft") {
+    x6.style.display = "flex";
+  }
+}
+
+/* -------------------------------------------- ----- -------------------------------------------- */
+/* -------------------------------------------- CRAFT -------------------------------------------- */
+/* -------------------------------------------- ----- -------------------------------------------- */
 
 // CRAFT -- DISPLAY CONFIRMATION BOX AND BLUR BACKGROUND
 function craftOverlay(p) {
@@ -34,31 +68,33 @@ function craftErase() {
   img6.src = "assets/items/empty.png";
 }
 
-//
-function craftAccordion(p) {
-  let x1 = document.getElementById("invBotItemsHead");
-  let x2 = document.getElementById("invBotItemsHandRight");
-  let x3 = document.getElementById("invBotItemsBody");
-  let x4 = document.getElementById("invBotItemsHandLeft");
-  let x5 = document.getElementById("invBotItemsFeetRight");
-  let x6 = document.getElementById("invBotItemsFeetLeft");
-  let y = document.getElementsByClassName("invBotItems");
+// CRAFT -- DISPLAY / HIDE THE CONTENT ITEMS SELECT
+function craftItemSelect(p) {
+  let x;
+  if (p == "head") {
+    x = document.getElementById("crafItemsHead");
+  } else if (p == "hand_right") {
+    x = document.getElementById("crafItemsHandRight");
+  } else if (p == "body") {
+    x = document.getElementById("crafItemsBody");
+  } else if (p == "hand_left") {
+    x = document.getElementById("crafItemsHandLeft");
+  } else if (p == "feet_right") {
+    x = document.getElementById("crafItemsFeetRight");
+  } else if (p == "feet_left") {
+    x = document.getElementById("crafItemsFeetLeft");
+  }
+  let y = document.getElementsByClassName("crafItems");
+  let z = document.getElementById("craftItemSelect");
 
   for (let i = 0; i < y.length; i++) {
     y[i].style.display = "none";
   }
 
-  if (p == "head") {
-    x1.style.display = "flex";
-  } else if (p == "handRight") {
-    x2.style.display = "flex";
-  } else if (p == "body") {
-    x3.style.display = "flex";
-  } else if (p == "handLeft") {
-    x4.style.display = "flex";
-  } else if (p == "feetRight") {
-    x5.style.display = "flex";
-  } else if (p == "feetLeft") {
-    x6.style.display = "flex";
+  if (typeof p != "undefined") {
+    z.style.display = "flex";
+    x.style.display = "flex";
+  } else {
+    z.style.display = "none";
   }
 }
