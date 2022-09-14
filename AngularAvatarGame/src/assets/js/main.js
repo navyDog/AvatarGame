@@ -115,3 +115,23 @@ function craftItemSelect(p) {
     z.style.display = "none";
   }
 }
+
+// ADD IMAGE TO THE CRAFTED AVATAR
+/*function craftAddSelectedImg(p, q) {
+  let x;
+  if (p == "head") {
+    x = document.getElementById("craftAvatarHead");
+  } else if (p == "hand_right") {
+    x = document.getElementById("craftAvatarHead");
+  } else if (p == "body") {
+    x = document.getElementById("craftAvatarHead");
+  } else if (p == "hand_left") {
+    x = document.getElementById("craftAvatarHead");
+  } else if (p == "feet_right") {
+    x = document.getElementById("craftAvatarHead");
+  } else if (p == "feet_left") {
+    x = document.getElementById("craftAvatarHead");
+  }
+  x.src = "assets/items/" + q + ".png";
+  console.log(q);
+}*/
