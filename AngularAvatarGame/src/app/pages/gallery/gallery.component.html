@@ -1,11 +1,11 @@
 <div id="gallery">
   <div id="galAvatar" *ngIf="listAvatars?.length">
-    <div class="galAvatarTop" *ngFor="let i of listAvatars">
-      <p>{{i.nom}}</p>
+    <!--<div class="galAvatarTop" *ngFor="let i of listAvatars">
+      <p>{{ i.nom }}</p>
       <div class="invContentAvatar">
         <img
           id="invContentAvatarHead"
-          [src]="imgPath + i.compose![0].image +imgSufix"
+          [src]="imgPath + i.compose![0].image + imgSufix"
           alt=""
           title=""
           ondrag="false"
@@ -56,246 +56,67 @@
           ondragstart="return false"
         />
       </div>
+    </div>
+  </div>-->
 
+    <div class="galItem" *ngFor="let i of listAvatars">
+      <div class="galItemsAvatar">
+        <div>
+          <img
+            id=""
+            [src]="imgPath + i.compose![0].image + imgSufix"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+        </div>
+        <div>
+          <img
+            id=""
+            [src]="imgPath + i.compose![1].image + imgSufix"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+          <img
+            id=""
+            [src]="imgPath + i.compose![2].image + imgSufix"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+          <img
+            id=""
+            [src]="imgPath + i.compose![3].image + imgSufix"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+        </div>
+        <div>
+          <img
+            id=""
+            [src]="imgPath + i.compose![4].image + imgSufix"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+          <img
+            id=""
+            [src]="imgPath + i.compose![5].image + imgSufix"
+            alt=""
+            title=""
+            ondrag="false"
+            ondragstart="return false"
+          />
+        </div>
+      </div>
+      <p>{{ i.nom }}</p>
     </div>
-
-  </div>
-
-
-  <div class="galItem">
-    <div class="galItemsAvatar">
-      <div>
-        <img
-          id=""
-          src="assets/items/HEAD/head_35.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div>
-        <img
-          id=""
-          src="assets/items/HAND_R/hand_right_35.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/BODY/body_35.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/HAND_L/hand_left_35.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div>
-        <img
-          id=""
-          src="assets/items/FEET_R/feet_right_35.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/FEET_L/feet_left_35.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-    </div>
-    <p>Autre Utilisateur</p>
-  </div>
-  <div class="galItem">
-    <div class="galItemsAvatar">
-      <div>
-        <img
-          id=""
-          src="assets/items/HEAD/head_41.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div>
-        <img
-          id=""
-          src="assets/items/HAND_R/hand_right_41.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/BODY/body_41.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/HAND_L/hand_left_41.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div>
-        <img
-          id=""
-          src="assets/items/FEET_R/feet_right_41.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/FEET_L/feet_left_41.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-    </div>
-    <p>Inconnu</p>
-  </div>
-  <div class="galItem">
-    <div class="galItemsAvatar">
-      <div>
-        <img
-          id=""
-          src="assets/items/HEAD/head_12.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div>
-        <img
-          id=""
-          src="assets/items/HAND_R/hand_right_12.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/BODY/body_12.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/HAND_L/hand_left_12.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div>
-        <img
-          id=""
-          src="assets/items/FEET_R/feet_right_12.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/FEET_L/feet_left_12.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-    </div>
-    <p>Nom Utilisateur</p>
-  </div>
-  <div class="galItem">
-    <div class="galItemsAvatar">
-      <div>
-        <img
-          id=""
-          src="assets/items/HEAD/head_24.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div>
-        <img
-          id=""
-          src="assets/items/HAND_R/hand_right_24.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/BODY/body_24.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/HAND_L/hand_left_24.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div>
-        <img
-          id=""
-          src="assets/items/FEET_R/feet_right_24.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id=""
-          src="assets/items/FEET_L/feet_left_24.png"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-    </div>
-    <p>Spartacus</p>
   </div>
 </div>
