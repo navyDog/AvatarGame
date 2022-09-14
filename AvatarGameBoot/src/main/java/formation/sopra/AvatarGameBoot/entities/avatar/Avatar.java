@@ -30,7 +30,7 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 @SequenceGenerator(name = "seqAvatar", sequenceName = "seq_avatar", allocationSize = 1, initialValue = 20000 )
 @NamedQueries({
 	@NamedQuery(name="Avatar.findByKeyWithItems", 
-			query = "select a from Avatar a left join fetch a.compose c where a.id=:id order by c.membre"),
+			query = "select a from Avatar a left join fetch a.compose c where a.id=:id order by c.membre DESC"),
 })
 public class Avatar {
 	@JsonView( {JsonViews.Base.class} )
