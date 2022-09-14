@@ -40,7 +40,13 @@ export class GalleryComponent implements OnInit {
          //items list of each avatar
         )
       ));
-      console.log(this.listAvatars) //list of all firstavatar of each
+      this.listAvatars!.forEach(avatar => {
+        avatar.compose?.forEach(item => {
+          item.nom?.replace("body","hgfd")
+        })
+      })
+      console.log(this.listAvatars)
+      //list of all firstavatar of each
     });
 
   }
