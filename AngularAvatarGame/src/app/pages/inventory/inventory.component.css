@@ -105,6 +105,7 @@
   border: solid 1px var(--col-line);
   margin: var(--dist-1);
   overflow: hidden;
+  border-radius: 10px;
 }
 .invItem div img[class~="itemRare"] {
   background-image: radial-gradient(green 0.2%, transparent 70%);

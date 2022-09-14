@@ -27,7 +27,7 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 @Table(name="items")
 @SequenceGenerator(sequenceName = "seqItem", name = "seq_item", allocationSize = 1, initialValue = 1)
 public class Item {
-	@JsonView( {JsonViews.Item.class} )
+	@JsonView( {JsonViews.Base.class} )
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqItem")
 	@Column(name = "item_id")
