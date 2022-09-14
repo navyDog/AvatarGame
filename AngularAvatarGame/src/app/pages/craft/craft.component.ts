@@ -77,6 +77,7 @@ export class CraftComponent implements OnInit {
   public craftAddSelectedImg(av: Items, i: number) {
     this.newAvatarItems[i] = av;
     this.newAvatarItemsImage[i] = this.imgPath + av.image! + this.imgSufix;
+    console.log(this.newAvatarItems);
   }
 
   public craftNewAvatar() {
