@@ -11,16 +11,15 @@ import { JeuUn } from "src/app/entities/jeu-un";
 })
 export class GamesComponent implements OnInit {
   game1: JeuUn;
-  random : Object;
-
+  random: Object;
 
   constructor(
     private ar: ActivatedRoute,
     private userService: UserService,
     private router: Router
   ) {
-    this.game1=new JeuUn();
-    this.random= new Object();
+    this.game1 = new JeuUn();
+    this.random = new Object();
   }
 
   ngOnInit(): void {
@@ -31,26 +30,27 @@ export class GamesComponent implements OnInit {
   public jouer() {
     this.ar.paramMap.subscribe((params) => {
       this.userService.game1().subscribe((result) => {
-        this.game1=result;
-        console.log(result)
-        this.router.navigateByUrl('/games');
-      })
-    })
+        this.game1 = result;
+        console.log(result);
+        this.router.navigateByUrl("/games");
+      });
+    });
   }
 
-  public random_item(){
+  public random_item() {
     this.userService.randomItem().subscribe((result) => {
       this.random = result;
-      console.log(result)
-      this.router.navigateByUrl('/games');
-    })
+      console.log(result);
+      this.router.navigateByUrl("/games");
+    });
   }
 
-  public random_set(){
+  public random_set() {
     this.userService.randomSet().subscribe((result) => {
+      console.log(result);
       this.random = result;
-      console.log(result)
-      this.router.navigateByUrl('/games');
-    })
+
+      this.router.navigateByUrl("/games");
+    });
   }
 }

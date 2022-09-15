@@ -171,7 +171,7 @@ export class UserService {
     );
   }
 
-  public randomItem() : Observable<any>{
+  public randomItem(): Observable<any> {
     return this.httpClient.post<any>(
       "http://localhost:8080/avatar/api/item/" + this.sessionUserId,
       {
@@ -180,10 +180,9 @@ export class UserService {
     );
   }
 
-  public randomSet() : Observable<any>{
+  public randomSet(): Observable<any> {
     return this.httpClient.post<any>(
-      "http://localhost:8080/avatar/api/item/" + this.sessionUserId +
-      "/set",
+      "http://localhost:8080/avatar/api/item/" + this.sessionUserId + "/set",
       {
         headers: this.sessionUserHeader,
       }
@@ -195,6 +194,18 @@ export class UserService {
   }
   public set localId(value: number | undefined) {
     this._localId = value;
+  }
+  public get _sessionUserId(): number | undefined {
+    return this.sessionUserId;
+  }
+  public set _sessionUserId(value: number | undefined) {
+    this.sessionUserId = value;
+  }
+  public get _sessionUserHeader(): any | undefined {
+    return this.sessionUserHeader;
+  }
+  public set _sessionUserHeader(value: any | undefined) {
+    this.sessionUserHeader = value;
   }
 
   public getAllItemsSaleable(): Observable<any> {

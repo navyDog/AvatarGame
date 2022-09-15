@@ -32,7 +32,11 @@ export class NavigationTopComponent implements OnInit {
   }
 
   public logout() {
+    /*this.userService.localId = 0;
+    this.userService._sessionUserId = 0;
+    this.userService._sessionUserHeader = "";*/
     sessionStorage.clear();
+    console.log(sessionStorage);
     this.router.navigateByUrl("/auth");
   }
 
