@@ -2,8 +2,8 @@
   <div>
     <h3>Pile ou Face</h3>
   </div>
-  <button (click)="jouer()" class="erase">
-    jouer </button>
+  <button> <img id="coinflip" [src]="'assets/imgs/coin.png'" (click)="jouer()" class="erase"></button>
+  <div>50/50... Wanna try?</div>
   <a> {{game1!.coin!}}</a>
 
   <div>
