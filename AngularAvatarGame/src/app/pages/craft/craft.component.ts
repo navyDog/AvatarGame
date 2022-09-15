@@ -36,6 +36,9 @@ export class CraftComponent implements OnInit {
   newCraftAvatarNameList: string[] = [
     "Automne-Hiver de JP Gautier",
     "Victoria's secret full suit",
+    "avatar nom 1",
+    "avatar nom 2",
+    "avatar nom 3",
   ];
 
   ngOnInit() {
@@ -89,14 +92,17 @@ export class CraftComponent implements OnInit {
         Math.floor(Math.random() * this.newCraftAvatarNameList.length)
       ];
   }
-  public craftNewAvatarNameInput() {
-    console.log(this.newAvatarName);
-  }
+  public craftNewAvatarNameInput() {}
 
   public craftAddSelectedImg(av: Items, i: number) {
     this.newAvatarItems[i] = av;
     this.newAvatarItemsImage[i] = this.imgPath + av.image! + this.imgSufix;
-    console.log(this.newAvatarItems);
+  }
+
+  public eraseNewAvatar() {
+    this.newAvatarName = "";
+    this.craftNewAvatarNameInputRandomValue();
+    this.newAvatarItems = [];
   }
 
   public craftNewAvatar() {

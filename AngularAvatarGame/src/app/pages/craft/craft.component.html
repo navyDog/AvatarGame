@@ -11,7 +11,7 @@
         [src]="
           this.newAvatarItemsImage[0]
             ? this.newAvatarItemsImage[0]
-            : 'assets/items/empty.png'
+            : 'assets/items/empty_head.png'
         "
         alt=""
         title=""
@@ -26,7 +26,7 @@
         [src]="
           this.newAvatarItemsImage[1]
             ? this.newAvatarItemsImage[1]
-            : 'assets/items/empty.png'
+            : 'assets/items/empty_hand_right.png'
         "
         alt=""
         title=""
@@ -39,7 +39,7 @@
         [src]="
           this.newAvatarItemsImage[2]
             ? this.newAvatarItemsImage[2]
-            : 'assets/items/empty.png'
+            : 'assets/items/empty_body.png'
         "
         alt=""
         title=""
@@ -52,7 +52,7 @@
         [src]="
           this.newAvatarItemsImage[3]
             ? this.newAvatarItemsImage[3]
-            : 'assets/items/empty.png'
+            : 'assets/items/empty_hand_left.png'
         "
         alt=""
         title=""
@@ -67,7 +67,7 @@
         [src]="
           this.newAvatarItemsImage[4]
             ? this.newAvatarItemsImage[4]
-            : 'assets/items/empty.png'
+            : 'assets/items/empty_feet_right.png'
         "
         alt=""
         title=""
@@ -80,7 +80,7 @@
         [src]="
           this.newAvatarItemsImage[5]
             ? this.newAvatarItemsImage[5]
-            : 'assets/items/empty.png'
+            : 'assets/items/empty_feet_left.png'
         "
         alt=""
         title=""
@@ -105,7 +105,9 @@
     </div>
     <div>
       <button onclick="craftOverlay('on')" class="submit">Crafter !</button>
-      <button onclick="craftErase()" class="erase">Annuler</button>
+      <button onclick="craftErase()" class="erase" (click)="eraseNewAvatar()">
+        Annuler
+      </button>
     </div>
   </div>
   <div id="craftConfirm">

@@ -21,9 +21,9 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit(): void {
     // ALLS ITEMS NO CRAFTED OF CURRENT USER
-
     this.userService.usersAvatar().subscribe((result) => {
       this.listUsers = result; //list of Users
+      /*console.log(result);*/
 
       /*console.log(this.listUsers);*/
       this.listUsers?.forEach((value) => {
@@ -31,6 +31,7 @@ export class GalleryComponent implements OnInit {
 
         this.userService.localId = value.avatar![0].id;
         this.userService.userAvatarList2().subscribe((result) => {
+          /* console.log(result);*/
           this.listAvatars?.push(result);
           result.compose.sort((a: Items, b: Items) => {
             return (
@@ -40,7 +41,7 @@ export class GalleryComponent implements OnInit {
               })
             );
           });
-          //list of all firstavatar of each
+          /*console.log(this.listAvatars);*/
         });
       });
     });

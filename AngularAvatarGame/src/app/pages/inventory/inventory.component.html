@@ -4,232 +4,302 @@
       <h2>Avatars</h2>
     </div>
     <div id="invContentAvatar">
-      <div id="invContentAvatarLeft" *ngIf="userAvatarMainItems.length">
-        <p *ngIf="userAvatarsMainName">{{ userAvatarsMainName }}</p>
-        <div class="invContentAvatar">
-          <img
-            id="invContentAvatarHead"
-            [src]="imgPath + userAvatarMainItems[1].image + imgSufix"
-            alt=""
-            title=""
-            ondrag="false"
-            ondragstart="return false"
-          />
-        </div>
-        <div class="incVontentAvatar">
-          <img
-            id="invContentAvatarHandRight"
-            [src]="imgPath + userAvatarMainItems[4].image + imgSufix"
-            alt=""
-            title=""
-            ondrag="false"
-            ondragstart="return false"
-          />
-          <img
-            id="invContentAvatarBody"
-            [src]="imgPath + userAvatarMainItems[0].image + imgSufix"
-            alt=""
-            title=""
-            ondrag="false"
-            ondragstart="return false"
-          />
-          <img
-            id="invContentAvatarHandLeft"
-            [src]="imgPath + userAvatarMainItems[2].image + imgSufix"
-            alt=""
-            title=""
-            ondrag="false"
-            ondragstart="return false"
-          />
-        </div>
-        <div class="incVontentAvatar">
-          <img
-            id="invContentAvatarFeetRight"
-            [src]="imgPath + userAvatarMainItems[5].image + imgSufix"
-            alt=""
-            title=""
-            ondrag="false"
-            ondragstart="return false"
-          />
-          <img
-            id="invContentAvatarHandLeft"
-            [src]="imgPath + userAvatarMainItems[3].image + imgSufix"
-            alt=""
-            title=""
-            ondrag="false"
-            ondragstart="return false"
-          />
+      <div id="invAvatar" *ngIf="userAvatarsListsItems?.length">
+        <div class="invItem" *ngFor="let i of userAvatarsListsItems">
+          <div class="invItemsAvatar">
+            <div>
+              <img
+                id=""
+                [src]="imgPath + i.compose![1].image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.compose![1].rarity == 'R',
+                  itemEpic: i.compose![1].rarity == 'E',
+                  itemLegendary: i.compose![1].rarity == 'L'
+                }"
+              />
+            </div>
+            <div>
+              <img
+                id=""
+                [src]="imgPath + i.compose![4].image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.compose![4].rarity == 'R',
+                  itemEpic: i.compose![4].rarity == 'E',
+                  itemLegendary: i.compose![4].rarity == 'L'
+                }"
+              />
+              <img
+                id=""
+                [src]="imgPath + i.compose![0].image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.compose![0].rarity == 'R',
+                  itemEpic: i.compose![0].rarity == 'E',
+                  itemLegendary: i.compose![0].rarity == 'L'
+                }"
+              />
+              <img
+                id=""
+                [src]="imgPath + i.compose![2].image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.compose![2].rarity == 'R',
+                  itemEpic: i.compose![2].rarity == 'E',
+                  itemLegendary: i.compose![2].rarity == 'L'
+                }"
+              />
+            </div>
+            <div>
+              <img
+                id=""
+                [src]="imgPath + i.compose![5].image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.compose![5].rarity == 'R',
+                  itemEpic: i.compose![5].rarity == 'E',
+                  itemLegendary: i.compose![5].rarity == 'L'
+                }"
+              />
+              <img
+                id=""
+                [src]="imgPath + i.compose![3].image + imgSufix"
+                alt=""
+                title=""
+                ondrag="false"
+                ondragstart="return false"
+                [ngClass]="{
+                  itemRare: i.compose![3].rarity == 'R',
+                  itemEpic: i.compose![3].rarity == 'E',
+                  itemLegendary: i.compose![3].rarity == 'L'
+                }"
+              />
+            </div>
+          </div>
+          <p>{{ i.nom }}</p>
+          <button type="button">Vendre</button>
         </div>
       </div>
-      <div id="invContentAvatarRight"></div>
     </div>
   </div>
 
   <div id="invBottom">
     <div class="invTopBtns">
       <h2>Items</h2>
-      <button type="button" onclick="craftAccordion('head')">Tête</button>
-      <button type="button" onclick="craftAccordion('body')">Corps</button>
-      <button type="button" onclick="craftAccordion('handRight')">
+      <button
+        type="button"
+        onclick="invtAccordion('head')"
+        id="invBotItemsHeadBtn"
+        class="invItemBotBtn active"
+      >
+        Tête
+      </button>
+      <button
+        type="button"
+        onclick="invtAccordion('body')"
+        id="invBotItemsHandRightBtn"
+        class="invItemBotBtn"
+      >
+        Corps
+      </button>
+      <button
+        type="button"
+        onclick="invtAccordion('handRight')"
+        id="invBotItemsBodyBtn"
+        class="invItemBotBtn"
+      >
         Main droite
       </button>
-      <button type="button" onclick="craftAccordion('handLeft')">
+      <button
+        type="button"
+        onclick="invtAccordion('handLeft')"
+        id="invBotItemsHandLeftBtn"
+        class="invItemBotBtn"
+      >
         Main gauche
       </button>
-      <button type="button" onclick="craftAccordion('feetRight')">
+      <button
+        type="button"
+        onclick="invtAccordion('feetRight')"
+        id="invBotItemsFeetRightBtn"
+        class="invItemBotBtn"
+      >
         Jambe droite
       </button>
-      <button type="button" onclick="craftAccordion('feetLeft')">
+      <button
+        type="button"
+        onclick="invtAccordion('feetLeft')"
+        id="invBotItemsFeetRightBtn"
+        class="invItemBotBtn"
+      >
         Jambe gauche
       </button>
     </div>
-    <div class="invBotItems" id="invBotItemsHead" style="display: flex">
-      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
-        <div *ngIf="i.membre === 'H'">
-          <p>{{ i.nom }}</p>
-          <img
-            [src]="imgPath + i.image + imgSufix"
-            alt=""
-            draggable="false"
-            ondragstart="return false"
-            [ngClass]="{
-              itemRare: i.rarity == 'R',
-              itemEpic: i.rarity == 'E',
-              itemLegendary: i.rarity == 'L'
-            }"
-          />
-          <button
-            onclick="inventorySold('on')"
-            (click)="inventoryId(i.id!)"
-            class="erase"
-          >
-            vendre
-          </button>
+    <div id="invBotContent">
+      <div class="invBotItemsBot" id="invBotItemsHead" style="display: flex">
+        <div class="invItemBot" *ngFor="let i of userItemsNoCraftList">
+          <div *ngIf="i.membre === 'H'">
+            <p>{{ i.nom }}</p>
+            <img
+              [src]="imgPath + i.image + imgSufix"
+              alt=""
+              draggable="false"
+              ondragstart="return false"
+              [ngClass]="{
+                itemRare: i.rarity == 'R',
+                itemEpic: i.rarity == 'E',
+                itemLegendary: i.rarity == 'L'
+              }"
+            />
+            <button
+              onclick="inventorySold('on')"
+              (click)="inventoryId(i.id!)"
+              class="erase"
+            >
+              vendre
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="invBotItems" id="invBotItemsHandRight">
-      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
-        <div *ngIf="i.membre === 'RH'">
-          <p>{{ i.nom }}</p>
-          <img
-            [src]="imgPath + i.image + imgSufix"
-            alt=""
-            draggable="false"
-            ondragstart="return false"
-            [ngClass]="{
-              itemRare: i.rarity == 'R',
-              itemEpic: i.rarity == 'E',
-              itemLegendary: i.rarity == 'L'
-            }"
-          />
-          <button
-            onclick="inventorySold('on')"
-            (click)="inventoryId(i.id!)"
-            class="erase"
-          >
-            vendre
-          </button>
+      <div class="invBotItemsBot" id="invBotItemsHandRight">
+        <div class="invItemBot" *ngFor="let i of userItemsNoCraftList">
+          <div *ngIf="i.membre === 'RH'">
+            <p>{{ i.nom }}</p>
+            <img
+              [src]="imgPath + i.image + imgSufix"
+              alt=""
+              draggable="false"
+              ondragstart="return false"
+              [ngClass]="{
+                itemRare: i.rarity == 'R',
+                itemEpic: i.rarity == 'E',
+                itemLegendary: i.rarity == 'L'
+              }"
+            />
+            <button
+              onclick="inventorySold('on')"
+              (click)="inventoryId(i.id!)"
+              class="erase"
+            >
+              vendre
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="invBotItems" id="invBotItemsBody">
-      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
-        <div *ngIf="i.membre === 'B'">
-          <p>{{ i.nom }}</p>
-          <img
-            [src]="imgPath + i.image + imgSufix"
-            alt=""
-            draggable="false"
-            ondragstart="return false"
-            [ngClass]="{
-              itemRare: i.rarity == 'R',
-              itemEpic: i.rarity == 'E',
-              itemLegendary: i.rarity == 'L'
-            }"
-          />
-          <button
-            onclick="inventorySold('on')"
-            (click)="inventoryId(i.id!)"
-            class="erase"
-          >
-            vendre
-          </button>
+      <div class="invBotItemsBot" id="invBotItemsBody">
+        <div class="invItemBot" *ngFor="let i of userItemsNoCraftList">
+          <div *ngIf="i.membre === 'B'">
+            <p>{{ i.nom }}</p>
+            <img
+              [src]="imgPath + i.image + imgSufix"
+              alt=""
+              draggable="false"
+              ondragstart="return false"
+              [ngClass]="{
+                itemRare: i.rarity == 'R',
+                itemEpic: i.rarity == 'E',
+                itemLegendary: i.rarity == 'L'
+              }"
+            />
+            <button
+              onclick="inventorySold('on')"
+              (click)="inventoryId(i.id!)"
+              class="erase"
+            >
+              vendre
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="invBotItems" id="invBotItemsHandLeft">
-      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
-        <div *ngIf="i.membre === 'LH'">
-          <p>{{ i.nom }}</p>
-          <img
-            [src]="imgPath + i.image + imgSufix"
-            alt=""
-            draggable="false"
-            ondragstart="return false"
-            [ngClass]="{
-              itemRare: i.rarity == 'R',
-              itemEpic: i.rarity == 'E',
-              itemLegendary: i.rarity == 'L'
-            }"
-          />
-          <button
-            onclick="inventorySold('on')"
-            (click)="inventoryId(i.id!)"
-            class="erase"
-          >
-            vendre
-          </button>
+      <div class="invBotItemsBot" id="invBotItemsHandLeft">
+        <div class="invItemBot" *ngFor="let i of userItemsNoCraftList">
+          <div *ngIf="i.membre === 'LH'">
+            <p>{{ i.nom }}</p>
+            <img
+              [src]="imgPath + i.image + imgSufix"
+              alt=""
+              draggable="false"
+              ondragstart="return false"
+              [ngClass]="{
+                itemRare: i.rarity == 'R',
+                itemEpic: i.rarity == 'E',
+                itemLegendary: i.rarity == 'L'
+              }"
+            />
+            <button
+              onclick="inventorySold('on')"
+              (click)="inventoryId(i.id!)"
+              class="erase"
+            >
+              vendre
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="invBotItems" id="invBotItemsFeetRight">
-      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
-        <div *ngIf="i.membre === 'RL'">
-          <p>{{ i.nom }}</p>
-          <img
-            [src]="imgPath + i.image + imgSufix"
-            alt=""
-            draggable="false"
-            ondragstart="return false"
-            [ngClass]="{
-              itemRare: i.rarity == 'R',
-              itemEpic: i.rarity == 'E',
-              itemLegendary: i.rarity == 'L'
-            }"
-          />
-          <button
-            onclick="inventorySold('on')"
-            (click)="inventoryId(i.id!)"
-            class="erase"
-          >
-            vendre
-          </button>
+      <div class="invBotItemsBot" id="invBotItemsFeetRight">
+        <div class="invItemBot" *ngFor="let i of userItemsNoCraftList">
+          <div *ngIf="i.membre === 'RL'">
+            <p>{{ i.nom }}</p>
+            <img
+              [src]="imgPath + i.image + imgSufix"
+              alt=""
+              draggable="false"
+              ondragstart="return false"
+              [ngClass]="{
+                itemRare: i.rarity == 'R',
+                itemEpic: i.rarity == 'E',
+                itemLegendary: i.rarity == 'L'
+              }"
+            />
+            <button
+              onclick="inventorySold('on')"
+              (click)="inventoryId(i.id!)"
+              class="erase"
+            >
+              vendre
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="invBotItems" id="invBotItemsFeetLeft">
-      <div class="invItem" *ngFor="let i of userItemsNoCraftList">
-        <div *ngIf="i.membre === 'LL'">
-          <p>{{ i.nom }}</p>
-          <img
-            [src]="imgPath + i.image + imgSufix"
-            alt=""
-            draggable="false"
-            ondragstart="return false"
-            [ngClass]="{
-              itemRare: i.rarity == 'R',
-              itemEpic: i.rarity == 'E',
-              itemLegendary: i.rarity == 'L'
-            }"
-          />
-          <button
-            onclick="inventorySold('on')"
-            (click)="inventoryId(i.id!)"
-            class="erase"
-          >
-            vendre
-          </button>
+      <div class="invBotItemsBot" id="invBotItemsFeetLeft">
+        <div class="invItemBot" *ngFor="let i of userItemsNoCraftList">
+          <div *ngIf="i.membre === 'LL'">
+            <p>{{ i.nom }}</p>
+            <img
+              [src]="imgPath + i.image + imgSufix"
+              alt=""
+              draggable="false"
+              ondragstart="return false"
+              [ngClass]="{
+                itemRare: i.rarity == 'R',
+                itemEpic: i.rarity == 'E',
+                itemLegendary: i.rarity == 'L'
+              }"
+            />
+            <button
+              onclick="inventorySold('on')"
+              (click)="inventoryId(i.id!)"
+              class="erase"
+            >
+              vendre
+            </button>
+          </div>
         </div>
       </div>
     </div>

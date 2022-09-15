@@ -16,7 +16,7 @@
 }
 .craftLine {
   width: auto;
-  height: 120px;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-items: center;
@@ -24,8 +24,8 @@
   flex-wrap: nowrap;
 }
 .craftLine img {
-  width: 100px;
-  height: 120px;
+  width: 60px;
+  height: 80px;
   border: solid 1px white;
   cursor: pointer;
   transition: 0.3s;
@@ -35,7 +35,7 @@
 }
 .craftLine:first-child img,
 .craftLine:nth-child(2) img:nth-child(2) {
-  width: 120px;
+  width: 80px;
 }
 #note {
   margin: 1em;

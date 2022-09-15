@@ -39,7 +39,8 @@
   font-weight: inherit;
   font-size: 1em;
 }
-.invTopBtns button:hover {
+.invTopBtns button:hover,
+.invTopBtns button[class~="active"] {
   color: var(--col-text-hover-red);
 }
 .invTopBtns h2 {
@@ -78,89 +79,101 @@
   border: solid 1px var(--col-line);
   border-top: none;
 }
-.invItem {
-  /* width: 120px;
-  height: calc(120px + 1em + 0.25em + 0.7em + var(--dist-2) + 0.25em + 0.25em);*/
-  border-radius: 10px;
-  /*display: flex;
-  flex-direction: column;
+#invAvatar {
+  width: calc(100vw - var(--width-nav));
+  height: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
-  align-items: center;*/
-  /*margin: var(--dist-1);
-  overflow: hidden;*/
+  align-items: center;
+  flex-wrap: wrap;
 }
-.invItem:hover div {
+.invItem {
+  width: calc(80px + 60px + 60px + var(--dist-2));
+  height: calc(80px + 80px + 80px + var(--dist-2) + 40px + 20px);
+  border-radius: 10px;
+  border: solid 1px var(--col-line);
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 0;
+  margin: var(--dist-1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.invItem:hover {
   background-color: var(--col-line-hover);
   border: solid 1px var(--col-line-dark);
 }
-.invItem div {
-  /* width: 100%;
-  height: 100%;*/
-  width: calc(120px + var(--dist-1));
-  height: calc(120px + 1em + 0.25em + 0.7em + var(--dist-2) + 0.25em + 0.25em);
+.invItemsAvatar {
+  width: 100%;
+  height: calc(80px + 80px + 80px + var(--dist-2));
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  border: solid 1px var(--col-line);
-  margin: var(--dist-1);
-  overflow: hidden;
-  border-radius: 10px;
 }
-.invItem div img[class~="itemRare"] {
+.invItemsAvatar div {
+  width: 100%;
+  height: calc(80px + 80px + 80px + var(--dist-2));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.invItemsAvatar div img[class~="itemRare"] {
   background-image: radial-gradient(var(--rarity-rare) 0.2%, transparent 70%);
 }
-.invItem div img[class~="itemEpic"] {
+.invItemsAvatar div img[class~="itemEpic"] {
   background-image: radial-gradient(var(--rarity-epic) 0.2%, transparent 70%);
 }
-.invItem div img[class~="itemLegendary"] {
+.invItemsAvatar div img[class~="itemLegendary"] {
   background-image: radial-gradient(var(--rarity-legend) 0.2%, transparent 70%);
 }
-.invItem[class~="selable"] {
+.invItemsAvatar[class~="selable"] {
   background-color: var(--col-bckg-note);
 }
-.invItem img {
-  min-width: 100px;
-  height: 120px;
+.invItemsAvatar img {
+  width: 60px;
+  height: 80px;
   border-radius: 10px;
   overflow: hidden;
   border: solid 1px transparent;
-  /*border: solid 2px pink;*/
-  /*background-color: lightgreen;*/
 }
-.invItem p,
+.invItemsAvatar div:first-child img,
+.invItemsAvatar div:nth-child(2) img:nth-child(2) {
+  width: 80px;
+}
 .invItem button {
   border: none;
-  background-color: transparent;
-  font-size: 0.7em;
-  color: inherit;
-  text-decoration: none;
-  color: rgba(150, 150, 150, 1);
+  background-color: none;
+  font-size: 13px;
+  font-family: inherit;
   cursor: pointer;
-  margin-top: 0.25em;
-  line-height: 1em;
-  border: none;
-}
-.invItem button {
-  margin-top: 1em;
-  text-align: center;
+  color: rgba(150, 150, 150, 1);
+  background-color: transparent;
 }
 .invItem p {
-  font-size: 0.8em;
+  font-size: 15px;
+  height: auto;
+  min-height: 20px;
+  max-height: 40px;
   border: none;
-  padding: 0.25em;
+  padding: 0 0.25em;
   margin: 0;
-  margin-bottom: 0.25em;
-  cursor: default;
-  /*background-color: rgba(255, 0, 255, 0.2);*/
   text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .invItem button:hover {
   text-decoration: underline;
 }
 
 /* -------------------------------------------- TOP -------------------------------------------- */
-#invContentAvatar {
+#invContentAvatar,
+#invAvatar {
   width: auto;
   min-width: calc(100vw - var(--width-nav));
   display: flex;
@@ -170,45 +183,82 @@
   flex-wrap: nowrap;
   border: solid 1px var(--col-line);
   border-top: none;
+}
+#invAvatar {
+  border: none;
+}
+#invContentAvatar {
   padding-top: 0.25em;
 }
-#invContentAvatarLeft {
-  width: 400px;
-  height: calc(400px + 2em);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: nowrap;
-  border-right: solid 1px var(--col-line);
-}
-#invContentAvatarLeft p {
-  width: 100%;
-  height: 2em;
-  margin: 0.5em 0;
-  padding: 0;
-  text-align: center;
-}
-#invContentAvatarLeft div {
-  height: 120px;
-}
-#invContentAvatarLeft div:first-child img:first-child {
-  width: 120px;
-  height: 120px;
-}
-#invContentAvatarLeft div:nth-child(2) img:first-child,
-#invContentAvatarLeft div:nth-child(2) img:last-child,
-#invContentAvatarLeft div:last-child img {
-  width: 100px;
-  height: 120px;
-}
-#invContentAvatarRight {
-  width: calc();
-  min-width: calc(calc(100vw - var(--width-nav)) - 400px - var(--dist-2));
-  height: 400px;
-  /*background-color: lightblue;*/
-}
-
 #invSoldItem {
   display: none;
+}
+#invBotContent {
+  width: var(100vw - var(--col-line) - var(--dist-2));
+  height: auto;
+  border: solid 1px var(--col-line);
+  border-top: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: red;
+}
+.invBotItemsBot {
+  width: auto;
+  height: auto;
+  /*border: solid 1px var(--col-line);*/
+  border-top: none;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.invItemBot {
+  width: 100%;
+  height: 100%;
+}
+.invItemBot div {
+  width: calc(80px + var(--dist-2));
+  height: calc(80px + 40px + 15px + var(--dist-2));
+  margin: var(--dist-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  border: solid 1px var(--col-line);
+  border-radius: 10px;
+}
+.invItemBot div p {
+  font-size: 15px;
+  height: auto;
+  min-height: 20px;
+  max-height: 40px;
+  border: none;
+  padding: 0.25em 0.25em;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.invItemBot div img {
+  width: auto;
+  height: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid 1px transparent;
+}
+.invItemBot div button {
+  border: none;
+  background-color: none;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  color: rgba(150, 150, 150, 1);
+  background-color: transparent;
+}
+.invItemBot div button:hover {
+  text-decoration: underline;
 }
