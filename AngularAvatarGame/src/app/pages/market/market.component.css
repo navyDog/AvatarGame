@@ -46,6 +46,8 @@
   border-top: none;
 }
 .marItem {
+}
+.marItem div {
   width: 110px;
   height: calc(80px + 15px + 30px + 13px + var(--dist-3));
   border: solid 1px var(--col-line);

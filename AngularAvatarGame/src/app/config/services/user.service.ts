@@ -12,7 +12,6 @@ import { ConverterService } from "./converter.service";
 })
 export class UserService {
   constructor(
-    
     private httpClient: HttpClient,
     private converter: ConverterService
   ) {}
@@ -81,9 +80,15 @@ export class UserService {
     return this.httpClient.get("http://localhost:8080/avatar/api/users", {
       headers: this.sessionUserHeader,
     });
-    return this.httpClient.get("http://localhost:8080/avatar/api/users", {
-      headers: this.sessionUserHeader,
-    });
+  }
+
+  public usersInfo(): Observable<any> {
+    return this.httpClient.get(
+      "http://localhost:8080/avatar/api/users/" + this.localId + "/information",
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
   }
 
   public usersAvatar(): Observable<any> {
@@ -157,10 +162,9 @@ export class UserService {
     );
   }
 
-  public game1() : Observable<JeuUn> {
+  public game1(): Observable<JeuUn> {
     return this.httpClient.get<JeuUn>(
-      "http://localhost:8080/avatar/api/users/" + this.sessionUserId +
-        "/game1",
+      "http://localhost:8080/avatar/api/users/" + this.sessionUserId + "/game1",
       {
         headers: this.sessionUserHeader,
       }
@@ -172,5 +176,14 @@ export class UserService {
   }
   public set localId(value: number | undefined) {
     this._localId = value;
+  }
+
+  public getAllItemsSaleable(): Observable<any> {
+    return this.httpClient.get<any>(
+      "http://localhost:8080/avatar/api/item/saleable",
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
   }
 }

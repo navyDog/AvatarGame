@@ -156,37 +156,207 @@
       >
         Jambe gauche
       </button>
-      <button
+      <!--<button
         type="button"
         id="marContentBotAvatarBtn"
         class="marContentBotBtn"
         onclick="marketAccordion('bot','avatars')"
       >
         Avatars
-      </button>
+      </button>-->
     </div>
-    <div class="marContentBot" id="marContentBotHead" style="display: flex">
-      <div class="marItem">
-        <p>Casque mes couilles</p>
-        <p class="player">joueur 1</p>
-        <img
-          class="itemLegendary"
-          alt=""
-          title=""
-          src="assets/items/HEAD/head_38.png"
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <button onclick="marketBuyItem('on')">Acheter</button>
+    <div
+      class="marContentBot"
+      id="marContentBotHead"
+      style="display: flex"
+      *ngIf="marketItemsList.length"
+    >
+      <div class="marItem" *ngFor="let i of marketItemsList">
+        <div *ngIf="i.membre === 'H'">
+          <p>{{ i.nom }}s</p>
+          <p class="player">{{ searchByUserId(i.id!)!.utilisateur!.login }}</p>
+          <img
+            class="itemLegendary"
+            alt=""
+            title=""
+            [src]="imgPath + i.image + imgSufix"
+            ondrag="false"
+            ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.rarity == 'R',
+              itemEpic: i.rarity == 'E',
+              itemLegendary: i.rarity == 'L'
+            }"
+          />
+          <button
+            (click)="addItemToBuy(i, searchByUserId(i.id!))"
+            onclick="marketBuyItem('on')"
+          >
+            Acheter
+          </button>
+        </div>
       </div>
     </div>
-    <div class="marContentBot" id="marContentBotHead"></div>
-    <div class="marContentBot" id="marContentBotBody"></div>
-    <div class="marContentBot" id="marContentBotHandRight"></div>
-    <div class="marContentBot" id="marContentBotHandLeft"></div>
-    <div class="marContentBot" id="marContentBotFeetRight"></div>
-    <div class="marContentBot" id="marContentBotFeetLeft"></div>
-    <div class="marContentBot" id="marContentBotAvatar"></div>
+    <div
+      class="marContentBot"
+      id="marContentBotBody"
+      *ngIf="marketItemsList.length"
+    >
+      <div class="marItem" *ngFor="let i of marketItemsList">
+        <div *ngIf="i.membre === 'B'">
+          <p>{{ i.nom }}s</p>
+          <p class="player">{{ searchByUserId(i.id!)!.utilisateur!.login }}</p>
+          <img
+            class="itemLegendary"
+            alt=""
+            title=""
+            [src]="imgPath + i.image + imgSufix"
+            ondrag="false"
+            ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.rarity == 'R',
+              itemEpic: i.rarity == 'E',
+              itemLegendary: i.rarity == 'L'
+            }"
+          />
+          <button
+            (click)="addItemToBuy(i, searchByUserId(i.id!))"
+            onclick="marketBuyItem('on')"
+          >
+            Acheter
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="marContentBot"
+      id="marContentBotHandRight"
+      *ngIf="marketItemsList.length"
+    >
+      <div class="marItem" *ngFor="let i of marketItemsList">
+        <div *ngIf="i.membre === 'RH'">
+          <p>{{ i.nom }}s</p>
+          <p class="player">{{ searchByUserId(i.id!)!.utilisateur!.login }}</p>
+          <img
+            class="itemLegendary"
+            alt=""
+            title=""
+            [src]="imgPath + i.image + imgSufix"
+            ondrag="false"
+            ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.rarity == 'R',
+              itemEpic: i.rarity == 'E',
+              itemLegendary: i.rarity == 'L'
+            }"
+          />
+          <button
+            (click)="addItemToBuy(i, searchByUserId(i.id!))"
+            onclick="marketBuyItem('on')"
+          >
+            Acheter
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="marContentBot"
+      id="marContentBotHandLeft"
+      *ngIf="marketItemsList.length"
+    >
+      <div class="marItem" *ngFor="let i of marketItemsList">
+        <div *ngIf="i.membre === 'LH'">
+          <p>{{ i.nom }}s</p>
+          <p class="player">{{ searchByUserId(i.id!)!.utilisateur!.login }}</p>
+          <img
+            class="itemLegendary"
+            alt=""
+            title=""
+            [src]="imgPath + i.image + imgSufix"
+            ondrag="false"
+            ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.rarity == 'R',
+              itemEpic: i.rarity == 'E',
+              itemLegendary: i.rarity == 'L'
+            }"
+          />
+          <button
+            (click)="addItemToBuy(i, searchByUserId(i.id!))"
+            onclick="marketBuyItem('on')"
+          >
+            Acheter
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="marContentBot"
+      id="marContentBotFeetRight"
+      *ngIf="marketItemsList.length"
+    >
+      <div class="marItem" *ngFor="let i of marketItemsList">
+        <div *ngIf="i.membre === 'RL'">
+          <p>{{ i.nom }}s</p>
+          <p class="player">{{ searchByUserId(i.id!)!.utilisateur!.login }}</p>
+          <img
+            class="itemLegendary"
+            alt=""
+            title=""
+            [src]="imgPath + i.image + imgSufix"
+            ondrag="false"
+            ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.rarity == 'R',
+              itemEpic: i.rarity == 'E',
+              itemLegendary: i.rarity == 'L'
+            }"
+          />
+          <button
+            (click)="addItemToBuy(i, searchByUserId(i.id!))"
+            onclick="marketBuyItem('on')"
+          >
+            Acheter
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="marContentBot"
+      id="marContentBotFeetLeft"
+      *ngIf="marketItemsList.length"
+    >
+      <div class="marItem" *ngFor="let i of marketItemsList">
+        <div *ngIf="i.membre === 'LL'">
+          <p>{{ i.nom }}s</p>
+          <p class="player">{{ searchByUserId(i.id!)!.utilisateur!.login }}</p>
+          <img
+            class="itemLegendary"
+            alt=""
+            title=""
+            [src]="imgPath + i.image + imgSufix"
+            ondrag="false"
+            ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.rarity == 'R',
+              itemEpic: i.rarity == 'E',
+              itemLegendary: i.rarity == 'L'
+            }"
+          />
+          <button
+            (click)="addItemToBuy(i, searchByUserId(i.id!))"
+            onclick="marketBuyItem('on')"
+          >
+            Acheter
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="marContentBot"
+      id="marContentBotAvatar"
+      *ngIf="marketItemsList.length"
+    ></div>
   </div>
 
   <div id="marBuyPopup">
