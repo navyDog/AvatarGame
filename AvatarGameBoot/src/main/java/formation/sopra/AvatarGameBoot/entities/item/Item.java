@@ -30,7 +30,7 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 @SequenceGenerator(sequenceName = "seqItem", name = "seq_item", allocationSize = 1, initialValue = 1)
 @NamedQueries({
 	@NamedQuery(name="Item.findAllSaleable", 
-			query = "select i from Item i left where i.prix<>0"),
+			query = "select i from Item i where i.prix<>0"),
 	})
 	
 public class Item {
