@@ -171,9 +171,10 @@ export class UserService {
     );
   }
 
+  //ATTENTION C'EST UNE METHODE POST 'VIDE' DONC ON A MIS UN BODY VIDE :""
   public randomItem() : Observable<any>{
     return this.httpClient.post<any>(
-      "http://localhost:8080/avatar/api/item/" + this.sessionUserId,
+      "http://localhost:8080/avatar/api/item/" + this.sessionUserId,"",
       {
         headers: this.sessionUserHeader,
       }
@@ -183,7 +184,7 @@ export class UserService {
   public randomSet() : Observable<any>{
     return this.httpClient.post<any>(
       "http://localhost:8080/avatar/api/item/" + this.sessionUserId +
-      "/set",
+      "/set","",
       {
         headers: this.sessionUserHeader,
       }
