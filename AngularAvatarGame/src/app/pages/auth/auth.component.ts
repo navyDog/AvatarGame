@@ -17,7 +17,7 @@ export class AuthComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private router: Router,
-    private userService: UserService,
+//    private userService: UserService,
     private httpClient: HttpClient
   ) {}
 
@@ -31,13 +31,13 @@ export class AuthComponent implements OnInit {
         sessionStorage.setItem("user", JSON.stringify(result));
         console.log(JSON.parse(sessionStorage.getItem("user")!).users.id);
 
-        this.userService._sessionUserId = JSON.parse(
-          sessionStorage.getItem("user")!
-        ).users.id;
-        this.userService._sessionUserHeader = new HttpHeaders({
-          "Content-Type": "application/json",
-          Authorization: "Basic " + sessionStorage.getItem("token"),
-        });
+//        this.userService._sessionUserId = JSON.parse(
+//          sessionStorage.getItem("user")!
+//        ).users.id;
+//        this.userService._sessionUserHeader = new HttpHeaders({
+//          "Content-Type": "application/json",
+//          Authorization: "Basic " + sessionStorage.getItem("token"),
+//        });
 
         this.router.navigateByUrl("/inventory");
       },

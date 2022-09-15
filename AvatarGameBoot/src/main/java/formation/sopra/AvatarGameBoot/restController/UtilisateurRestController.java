@@ -29,7 +29,6 @@ import formation.sopra.AvatarGameBoot.repositories.UtilisateurRepository;
 import formation.sopra.AvatarGameBoot.service.ItemService;
 import formation.sopra.AvatarGameBoot.service.UsersService;
 
-//de la merde
 
 
 @RestController

@@ -194,7 +194,7 @@ export class UserService {
 
   public randomSet(): Observable<any> {
     return this.httpClient.post<any>(
-      "http://localhost:8080/avatar/api/item/" + this.sessionUserId + "/set",
+      "http://localhost:8080/avatar/api/item/" + this.sessionUserId + "/set","",
       {
         headers: this.sessionUserHeader,
       }

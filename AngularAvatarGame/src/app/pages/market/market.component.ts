@@ -95,7 +95,7 @@ export class MarketComponent implements OnInit {
       solde: 400
     }
 
-    this.userService.updateUsers(me).subscribe((result) => {
+    this.userService.updateUsers(this.ownerItemToBuy).subscribe((result) => {
       console.log(result);
     });
 
