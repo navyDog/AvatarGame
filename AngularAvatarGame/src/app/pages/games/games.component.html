@@ -1,12 +1,20 @@
+<div>
+  <div>
+    <h3>Pile ou Face</h3>
+  </div>
+  <button (click)="jouer()" class="erase">
+    jouer </button>
+  <a> {{game1!.coin!}}</a>
 
-
-
-<button
-           
-            (click)="jouer()"
-            class="erase"
-          >
-            jouer
-</button>
-
-<a>{{game1!.coin!}}</a>
+  <div>
+    <h3>Random shop</h3>
+  </div>
+  <div>
+    <button><img id="randomItem" [src]="'assets/imgs/random_item.png'"
+    alt="" title="random_item" (click)="random_item()"></button>
+      <div>Obtenir un item</div><br>
+    <button><img id="randomSet" [src]="'assets/imgs/random_set.png'"
+    alt="" title="random_set" (click)="random_set()"></button>
+      <div>Obtenir un set d'item</div>
+  </div>
+</div>

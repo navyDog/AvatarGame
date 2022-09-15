@@ -81,9 +81,6 @@ export class UserService {
     return this.httpClient.get("http://localhost:8080/avatar/api/users", {
       headers: this.sessionUserHeader,
     });
-    return this.httpClient.get("http://localhost:8080/avatar/api/users", {
-      headers: this.sessionUserHeader,
-    });
   }
 
   public usersAvatar(): Observable<any> {
@@ -161,6 +158,25 @@ export class UserService {
     return this.httpClient.get<JeuUn>(
       "http://localhost:8080/avatar/api/users/" + this.sessionUserId +
         "/game1",
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+
+  public randomItem() : Observable<any>{
+    return this.httpClient.post<any>(
+      "http://localhost:8080/avatar/api/item/" + this.sessionUserId,
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+
+  public randomSet() : Observable<any>{
+    return this.httpClient.post<any>(
+      "http://localhost:8080/avatar/api/item/" + this.sessionUserId +
+      "/set",
       {
         headers: this.sessionUserHeader,
       }

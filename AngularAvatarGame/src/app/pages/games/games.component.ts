@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute, Route, Router } from "@angular/router";
+import { AnyCatcher } from "rxjs/internal/AnyCatcher";
 import { UserService } from "src/app/config/services/user.service";
 import { JeuUn } from "src/app/entities/jeu-un";
 
@@ -10,6 +11,7 @@ import { JeuUn } from "src/app/entities/jeu-un";
 })
 export class GamesComponent implements OnInit {
   game1: JeuUn;
+  random : Object;
 
 
   constructor(
@@ -18,6 +20,7 @@ export class GamesComponent implements OnInit {
     private router: Router
   ) {
     this.game1=new JeuUn();
+    this.random= new Object();
   }
 
   ngOnInit(): void {
@@ -32,6 +35,22 @@ export class GamesComponent implements OnInit {
         console.log(result)
         this.router.navigateByUrl('/games');
       })
+    })
+  }
+
+  public random_item(){
+    this.userService.randomItem().subscribe((result) => {
+      this.random = result;
+      console.log(result)
+      this.router.navigateByUrl('/games');
+    })
+  }
+
+  public random_set(){
+    this.userService.randomSet().subscribe((result) => {
+      this.random = result;
+      console.log(result)
+      this.router.navigateByUrl('/games');
     })
   }
 }
