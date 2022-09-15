@@ -2,7 +2,9 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Items } from "src/app/entities/items";
+import { JeuUn } from "src/app/entities/jeu-un";
 import { Param } from "src/app/entities/param";
+import { Users } from "src/app/entities/users";
 import { ConverterService } from "./converter.service";
 
 @Injectable({
@@ -10,6 +12,7 @@ import { ConverterService } from "./converter.service";
 })
 export class UserService {
   constructor(
+    
     private httpClient: HttpClient,
     private converter: ConverterService
   ) {}
@@ -148,6 +151,16 @@ export class UserService {
         "/" +
         param.rl!.id,
       this.converter.paramToJson(param),
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+
+  public game1() : Observable<JeuUn> {
+    return this.httpClient.get<JeuUn>(
+      "http://localhost:8080/avatar/api/users/" + this.sessionUserId +
+        "/game1",
       {
         headers: this.sessionUserHeader,
       }

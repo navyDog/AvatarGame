@@ -15,6 +15,7 @@ import com.fasterxml.jackson.annotation.JsonView;
 
 import formation.sopra.AvatarGameBoot.entities.user.Users;
 import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
+import formation.sopra.AvatarGameBoot.restController.Param.JeuUN;
 import formation.sopra.AvatarGameBoot.service.UsersService;
 
 @RestController
@@ -114,6 +115,28 @@ public class UsersRestController {
 		return usersService.getByIdWithNoCraftItems(id);
 	}
 	
+	
+	@GetMapping("/{id}/game1")
+	@JsonView(JsonViews.Base.class)
+	public JeuUN game1(@PathVariable Long id) {
+			Double piece;
+			JeuUN jeuUn = new JeuUN();
+			piece = Math.random();
+			Users users = usersService.getById(id);
+			if (piece<0.5) {
+				users.setSolde(users.getSolde()-50);
+				usersService.update(users);
+				jeuUn.setCoin("loose");
+				return jeuUn;
+			}
+			else {
+				users.setSolde(users.getSolde()+50);
+				usersService.update(users);
+				jeuUn.setCoin("win");
+				return jeuUn;
+			}		
+
+	}
 	
 	@GetMapping("/{id}/avatars")
 	@JsonView(JsonViews.UsersWithAvatars.class)
