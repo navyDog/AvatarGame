@@ -13,7 +13,7 @@ import { NavigationTopComponent } from "./config/navigation-top/navigation-top.c
 import { SettingsComponent } from "./pages/settings/settings.component";
 import { AuthComponent } from "./pages/auth/auth.component";
 import { RegisComponent } from "./pages/regis/regis.component";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
@@ -35,6 +35,7 @@ import { HttpClientModule } from "@angular/common/http";
     RouterModule.forRoot(routes),
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
