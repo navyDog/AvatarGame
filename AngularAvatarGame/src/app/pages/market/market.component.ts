@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { UserService } from "src/app/config/services/user.service";
 import { Items } from "src/app/entities/items";
 import { Users } from "src/app/entities/users";
@@ -18,7 +19,10 @@ export class MarketComponent implements OnInit {
   imgPath: string = "assets/items/";
   imgSufix: string = ".png";
 
-  constructor(private userService: UserService) {}
+  constructor(
+    
+    router: Router,
+    private userService: UserService) {}
 
   ngOnInit() {
     // GET ALL ITEMS ON SALE OF ALL PLAYERS
@@ -71,8 +75,31 @@ export class MarketComponent implements OnInit {
   }
 
   public addItemToBuy(item: Items, user: Users) {
+  
     this.itemToBuy = item;
     this.ownerItemToBuy = user;
+
+
+    this.itemToBuy.prix=0;
+    this.itemToBuy.owner!.id=this.ownerItemToBuy.id;
+    this.userService.updateItem(this.itemToBuy).subscribe((result) => {
+      console.log(result);
+    });
+    this.ownerItemToBuy.solde=-100;
+    this.userService.updateUsers(this.ownerItemToBuy).subscribe((result) => {
+      console.log(result);
+    });
+
+    let me = {
+      id: JSON.parse(sessionStorage.getItem("user")!).users.id,
+      solde: 400
+    }
+
+    this.userService.updateUsers(me).subscribe((result) => {
+      console.log(result);
+    });
+
+
     /*console.log(this.itemToBuy);*/
   }
 

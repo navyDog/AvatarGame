@@ -9,9 +9,11 @@ import org.springframework.stereotype.Service;
 
 import formation.sopra.AvatarGameBoot.entities.avatar.Avatar;
 import formation.sopra.AvatarGameBoot.entities.user.Users;
+import formation.sopra.AvatarGameBoot.entities.user.Utilisateur;
 import formation.sopra.AvatarGameBoot.exceptions.AvatarException;
 import formation.sopra.AvatarGameBoot.exceptions.UsersException;
 import formation.sopra.AvatarGameBoot.repositories.UsersRepository;
+import formation.sopra.AvatarGameBoot.repositories.UtilisateurRepository;
 
 
 @Service
@@ -19,6 +21,8 @@ public class UsersService {
 
 	@Autowired
 	private UsersRepository usersRepo;
+	@Autowired
+	private UtilisateurRepository utilisateurRepository;
 
 	
 	public Users create(Users users) {		
@@ -88,7 +92,7 @@ public class UsersService {
 	public Users update(Users users) {
 		Users clientEnBase = getById(users.getId());
 		clientEnBase.setSolde(users.getSolde());
-		//to DO
+		
 		return usersRepo.save(clientEnBase);
 	}
 
