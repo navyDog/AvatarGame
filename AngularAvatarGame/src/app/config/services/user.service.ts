@@ -181,6 +181,25 @@ export class UserService {
     );
   }
 
+  public randomItem() : Observable<any>{
+    return this.httpClient.post<any>(
+      "http://localhost:8080/avatar/api/item/" + this.sessionUserId,
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+
+  public randomSet() : Observable<any>{
+    return this.httpClient.post<any>(
+      "http://localhost:8080/avatar/api/item/" + this.sessionUserId +
+      "/set",
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+
   public get localId(): number | undefined {
     return this._localId;
   }

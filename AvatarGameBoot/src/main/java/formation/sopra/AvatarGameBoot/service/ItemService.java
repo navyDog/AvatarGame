@@ -96,7 +96,6 @@ public class ItemService {
 		create(head);
 	}
 
-	//Peut etre une gestion des problèmes long-int
 	public void creationStart(Users users) {
 		for (int i = 0; i<6 ; i++) {
 			Item item = new Item();
@@ -112,7 +111,7 @@ public class ItemService {
 		}
 	}
 	
-	public void creationRandom(Users users) {
+	public Item creationRandom(Users users) {
 			Item item = new Item();
 			BankItem bankItem = new BankItem();
 			bankItem = bankItemService.getBankItemRandom();
@@ -123,6 +122,7 @@ public class ItemService {
 			item.setImage(bankItem.getPicture());
 			item.setPrix(null);
 			create(item);
+			return item;
 	}
 	
 	public void creationLegendary(Users users) {
