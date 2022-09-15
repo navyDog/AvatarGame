@@ -1,64 +1,5 @@
 <div id="gallery">
   <div id="galAvatar" *ngIf="listAvatars?.length">
-    <!--<div class="galAvatarTop" *ngFor="let i of listAvatars">
-      <p>{{ i.nom }}</p>
-      <div class="invContentAvatar">
-        <img
-          id="invContentAvatarHead"
-          [src]="imgPath + i.compose![0].image + imgSufix"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div class="incVontentAvatar">
-        <img
-          id="invContentAvatarHandRight"
-          [src]="imgPath + i.compose![1].image + imgSufix"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id="invContentAvatarBody"
-          [src]="imgPath + i.compose![2].image + imgSufix"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id="invContentAvatarHandLeft"
-          [src]="imgPath + i.compose![3].image + imgSufix"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-      <div class="incVontentAvatar">
-        <img
-          id="invContentAvatarFeetRight"
-          [src]="imgPath + i.compose![4].image + imgSufix"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <img
-          id="invContentAvatarHandLeft"
-          [src]="imgPath + i.compose![5].image + imgSufix"
-          alt=""
-          title=""
-          ondrag="false"
-          ondragstart="return false"
-        />
-      </div>
-    </div>
-  </div>-->
-
     <div class="galItem" *ngFor="let i of listAvatars">
       <!--<div *ngFor="let j of i">-->
       <div class="galItemsAvatar">
@@ -69,8 +10,12 @@
             alt=""
             title=""
             ondrag="false"
-            ondragstart="return
-          false"
+            ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.compose![1].rarity == 'R',
+              itemEpic: i.compose![1].rarity == 'E',
+              itemLegendary: i.compose![1].rarity == 'L'
+            }"
           />
         </div>
         <div>
@@ -81,6 +26,11 @@
             title=""
             ondrag="false"
             ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.compose![4].rarity == 'R',
+              itemEpic: i.compose![4].rarity == 'E',
+              itemLegendary: i.compose![4].rarity == 'L'
+            }"
           />
           <img
             id=""
@@ -89,6 +39,11 @@
             title=""
             ondrag="false"
             ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.compose![0].rarity == 'R',
+              itemEpic: i.compose![0].rarity == 'E',
+              itemLegendary: i.compose![0].rarity == 'L'
+            }"
           />
           <img
             id=""
@@ -97,6 +52,11 @@
             title=""
             ondrag="false"
             ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.compose![2].rarity == 'R',
+              itemEpic: i.compose![2].rarity == 'E',
+              itemLegendary: i.compose![2].rarity == 'L'
+            }"
           />
         </div>
         <div>
@@ -107,6 +67,11 @@
             title=""
             ondrag="false"
             ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.compose![5].rarity == 'R',
+              itemEpic: i.compose![5].rarity == 'E',
+              itemLegendary: i.compose![5].rarity == 'L'
+            }"
           />
           <img
             id=""
@@ -115,11 +80,15 @@
             title=""
             ondrag="false"
             ondragstart="return false"
+            [ngClass]="{
+              itemRare: i.compose![3].rarity == 'R',
+              itemEpic: i.compose![3].rarity == 'E',
+              itemLegendary: i.compose![3].rarity == 'L'
+            }"
           />
         </div>
       </div>
       <p>{{ i.nom }}</p>
     </div>
   </div>
-  <!-- </div>-->
 </div>

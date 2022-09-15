@@ -1,0 +1,227 @@
+#market {
+  position: relative;
+  min-width: calc(100vw - var(--width-nav));
+  width: calc(100vw - var(--width-nav));
+  height: 100%;
+  min-height: calc(100vh - var(--height-nav-top));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-family: var(--font-main);
+  padding: var(--dist-1);
+}
+#marMarketItems,
+#marUsersItems {
+  width: 100%;
+  height: auto;
+}
+#marMarketItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: var(--dist-2);
+}
+#marUsersItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.marContentTop,
+.marContentBot {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  border: solid 1px var(--col-line);
+  border-top: none;
+}
+.marItem {
+  width: 110px;
+  height: calc(80px + 15px + 30px + 13px + var(--dist-3));
+  border: solid 1px var(--col-line);
+  border-radius: 10px;
+  margin: var(--dist-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.marItem + .own p,
+.marItem + .own img,
+.marItem + .own button {
+  opacity: 0.5;
+}
+.marItem + .own button {
+  cursor: default;
+}
+.marItem + .own button:hover {
+  text-decoration: none;
+}
+.marItem button {
+  border: none;
+  background-color: none;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  color: rgba(150, 150, 150, 1);
+  background-color: transparent;
+}
+.marItem button:hover {
+  text-decoration: underline;
+}
+.marItem img {
+  height: 80px;
+}
+.marItem img[class~="itemRare"] {
+  background-image: radial-gradient(var(--rarity-rare) 0.2%, transparent 70%);
+}
+.marItem img[class~="itemEpic"] {
+  background-image: radial-gradient(var(--rarity-epic) 0.2%, transparent 70%);
+}
+.marItem img[class~="itemLegendary"] {
+  background-image: radial-gradient(var(--rarity-legend) 0.2%, transparent 70%);
+}
+.marItem p {
+  font-size: 15px;
+  height: auto;
+  min-height: 20px;
+  max-height: 40px;
+  margin: 0;
+  padding: 0 0.25em;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.marItem p[class~="player"] {
+  font-size: 13px;
+  color: rgba(150, 150, 150, 1);
+}
+.marItem p[class~="player"]:before {
+  content: "[ ";
+}
+.marItem p[class~="player"]:after {
+  content: " ]";
+}
+
+.marTitles {
+  width: 100%;
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  background-color: var(--col-line);
+  border-bottom: solid 1px var(--col-line);
+  font-family: var(--font-titles);
+  font-weight: bold;
+}
+.marTitles button {
+  height: 100%;
+  width: auto;
+  border: none;
+  border-radius: 0;
+  border-bottom: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 1em;
+}
+.marTitles button:hover,
+.marTitles button[class~="active"] {
+  color: var(--col-text-hover-red);
+}
+.marTitles h2 {
+  height: 0.75em;
+  margin: 0;
+  padding: 0 1em 0 0.25em;
+  font-size: 1.25em;
+  margin: 0.25em 1em;
+  border-right: solid 1px var(--col-line-dark);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#marBuyPopup {
+  position: absolute;
+  top: calc(calc(100vh - var(--height-nav-top)) / 2 - 100px);
+  left: calc(calc(100vw - var(--width-nav)) / 2 - 175px);
+  width: 350px;
+  height: 200px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: solid 1px var(--col-line);
+  border-radius: 10px;
+  padding: var(--dist-2);
+}
+#marBuyPopup h1 {
+  width: 100%;
+  font-size: 1.25em;
+  border-bottom: solid 1px var(--col-line);
+  text-align: center;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.5em;
+}
+#marBuyPopup div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#marBuyPopup p {
+  font-size: 0.8em;
+  line-height: normal;
+  margin: 1em 0;
+  padding: 0;
+}
+button[class="submit"] {
+  display: inline;
+  border: solid 1px var(--col-text-hover-red);
+  padding: 0.5em 0.75em;
+  background-color: var(--col-text-hover-red);
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 1.5em;
+  margin: 1em;
+  font-family: inherit;
+  font-size: 0.7em;
+  color: white;
+}
+button[class="submit"]:hover {
+  background-color: var(--col-text-hover-redbis);
+}
+button[class="erase"] {
+  border: solid 1px var(--col-line);
+  padding: 0.5em 0.75em;
+  background-color: var(--col-line);
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 1.5em;
+  margin: 1em;
+  font-family: inherit;
+  font-size: 0.7em;
+  color: inherit;
+}
+button[class="erase"]:hover {
+  background-color: var(--col-text-sec);
+  border: solid 1px var(--col-text-sec);
+}

@@ -98,7 +98,13 @@
               itemLegendary: i.rarity == 'L'
             }"
           />
-          <button onclick="inventorySold('on')" (click)="inventoryId(i.id!)" class="erase">vendre</button>
+          <button
+            onclick="inventorySold('on')"
+            (click)="inventoryId(i.id!)"
+            class="erase"
+          >
+            vendre
+          </button>
         </div>
       </div>
     </div>
@@ -117,7 +123,13 @@
               itemLegendary: i.rarity == 'L'
             }"
           />
-          <button onclick="inventorySold('on')" (click)="inventoryId(i.id!)" class="erase">vendre</button>
+          <button
+            onclick="inventorySold('on')"
+            (click)="inventoryId(i.id!)"
+            class="erase"
+          >
+            vendre
+          </button>
         </div>
       </div>
     </div>
@@ -136,7 +148,13 @@
               itemLegendary: i.rarity == 'L'
             }"
           />
-          <button onclick="inventorySold('on')" (click)="inventoryId(i.id!)" class="erase">vendre</button>
+          <button
+            onclick="inventorySold('on')"
+            (click)="inventoryId(i.id!)"
+            class="erase"
+          >
+            vendre
+          </button>
         </div>
       </div>
     </div>
@@ -155,7 +173,13 @@
               itemLegendary: i.rarity == 'L'
             }"
           />
-          <button onclick="inventorySold('on')" (click)="inventoryId(i.id!)" class="erase">vendre</button>
+          <button
+            onclick="inventorySold('on')"
+            (click)="inventoryId(i.id!)"
+            class="erase"
+          >
+            vendre
+          </button>
         </div>
       </div>
     </div>
@@ -174,7 +198,13 @@
               itemLegendary: i.rarity == 'L'
             }"
           />
-          <button onclick="inventorySold('on')" (click)="inventoryId(i.id!)" class="erase">vendre</button>
+          <button
+            onclick="inventorySold('on')"
+            (click)="inventoryId(i.id!)"
+            class="erase"
+          >
+            vendre
+          </button>
         </div>
       </div>
     </div>
@@ -193,25 +223,33 @@
               itemLegendary: i.rarity == 'L'
             }"
           />
-          <button onclick="inventorySold('on')" (click)="inventoryId(i.id!)" class="erase">vendre</button>
+          <button
+            onclick="inventorySold('on')"
+            (click)="inventoryId(i.id!)"
+            class="erase"
+          >
+            vendre
+          </button>
         </div>
       </div>
     </div>
   </div>
   <div id="invSoldItem">
     <form>
-    <label>Prix de vente :
-    <input
-      name="sellItem"
-      type="number"
-      min="0.1"
-      step="0.1"
-      autocomplete="off"
-      value="100.00"
-      id="PriceItemInput" [(ngModel)]="this.item.prix"
-  /></label>
-</form>
-  <button (click)="inventorySend()"> Send </button>
-  <button onclick="inventorySold('off')">x</button>
+      <label
+        >Prix de vente :
+        <input
+          name="sellItem"
+          type="number"
+          min="0.1"
+          step="0.1"
+          autocomplete="off"
+          value="100.00"
+          id="PriceItemInput"
+          [(ngModel)]="this.item.prix"
+      /></label>
+    </form>
+    <button (click)="inventorySend()">Send</button>
+    <button onclick="inventorySold('off')">x</button>
   </div>
 </div>

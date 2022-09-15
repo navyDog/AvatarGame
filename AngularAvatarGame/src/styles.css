@@ -23,6 +23,10 @@
   --col-bckg-note: rgba(51, 142, 255, 0.1);
   --col-bckg-note-border: rgba(51, 255, 144, 0.1);
   --col-bckg-note-i: rgba(51, 142, 255, 1);
+
+  --rarity-rare: rgba(64, 112, 255, 1);
+  --rarity-epic: rgba(136, 64, 255, 1);
+  --rarity-legend: rgba(255, 241, 64, 1);
 }
 body {
   position: absolute;
