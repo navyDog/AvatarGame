@@ -165,22 +165,6 @@ function craftItemSelect(p) {
   }
 }
 
-// ADD IMAGE TO THE CRAFTED AVATAR
-function marketBuyItem(p) {
-  let x = document.querySelector("#marMarketItems");
-  let y = document.querySelector("#marUsersItems");
-  let z = document.querySelector("#marBuyPopup");
-
-  if (p == "on") {
-    x.style.filter = "blur(4px)";
-    y.style.filter = "blur(4px)";
-    z.style.display = "flex";
-  } else if (p == "off") {
-    x.style.filter = "blur(0px)";
-    y.style.filter = "blur(0px)";
-    z.style.display = "none";
-  }
-}
 /* -------------------------------------------- ------ -------------------------------------------- */
 /* -------------------------------------------- MARKET -------------------------------------------- */
 /* -------------------------------------------- ------ -------------------------------------------- */
@@ -246,5 +230,22 @@ function marketAccordion(p, q) {
   } else if (q == "avatars") {
     x7.style.display = "flex";
     y7.classList.add("active");
+  }
+}
+
+// ADD IMAGE TO THE CRAFTED AVATAR
+function marketBuyItem(p) {
+  /*let x = document.querySelector("#marMarketItems");*/
+  let y = document.querySelector("#marUsersItems");
+  let z = document.querySelector("#marBuyPopup");
+
+  if (p == "on") {
+    /*x.style.filter = "blur(4px)";*/
+    y.style.filter = "blur(4px)";
+    z.style.display = "flex";
+  } else if (p == "off") {
+    /*x.style.filter = "blur(0px)";*/
+    y.style.filter = "blur(0px)";
+    z.style.display = "none";
   }
 }

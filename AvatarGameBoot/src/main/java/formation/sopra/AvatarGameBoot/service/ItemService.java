@@ -12,6 +12,7 @@ import formation.sopra.AvatarGameBoot.entities.item.Membres;
 import formation.sopra.AvatarGameBoot.entities.item.Rarity;
 import formation.sopra.AvatarGameBoot.entities.user.Users;
 import formation.sopra.AvatarGameBoot.exceptions.ItemException;
+import formation.sopra.AvatarGameBoot.exceptions.UsersException;
 import formation.sopra.AvatarGameBoot.repositories.ItemRepository;
 
 
@@ -35,6 +36,10 @@ public class ItemService {
 	
 	public Item getById(Long id) {
 		return itemRepo.findById(id).orElseThrow(ItemException::new);
+	}
+	
+	public List<Item> getAllSaleable() {
+		return itemRepo.findAllSaleable().orElseThrow(UsersException::new);
 	}
 	
 	public Item update(Item item) {

@@ -182,3 +182,20 @@ button[class="erase"]:hover {
 #craftItemSelect img[class~="itemLegendary"] {
   background-image: radial-gradient(gold 0.2%, transparent 70%);
 }
+
+#craftNewAvatarNameContent {
+  width: auto;
+  height: auto;
+  margin: 1em;
+}
+#craftAvatarNameInputInput {
+  font-family: inherit;
+  font-size: 0.8em;
+}
+#craftAvatarNameInput {
+  background-color: white;
+  border: solid 1px var(--col-line);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1em;
+}
