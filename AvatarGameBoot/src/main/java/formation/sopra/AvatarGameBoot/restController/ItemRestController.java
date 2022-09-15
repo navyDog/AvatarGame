@@ -44,6 +44,12 @@ public class ItemRestController {
 		return itemService.getById(id);
 	}
 	
+	//get ALL ITEMS
+	@GetMapping("/saleable")
+	@JsonView(JsonViews.ItemUpdate.class)
+	public List<Item> getAllSaleable() {
+		return itemService.getAllSaleable();
+	}
 	
 	//get ALL ITEMS
 	@GetMapping("")

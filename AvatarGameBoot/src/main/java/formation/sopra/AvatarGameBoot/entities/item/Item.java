@@ -12,6 +12,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Version;
@@ -26,6 +28,11 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 @Entity
 @Table(name="items")
 @SequenceGenerator(sequenceName = "seqItem", name = "seq_item", allocationSize = 1, initialValue = 1)
+@NamedQueries({
+	@NamedQuery(name="Item.findAllSaleable", 
+			query = "select i from Item i left where i.prix<>0"),
+	})
+	
 public class Item {
 	
 	@Id
