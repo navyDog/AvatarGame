@@ -139,6 +139,16 @@ export class UserService {
     );
   }
 
+  public updateUsers(user: Users): Observable<Users> {
+    return this.httpClient.put<Users>(
+      "http://localhost:8080/avatar/api/users/" + user.id,
+      this.converter.usersToJson(user),
+      {
+        headers: this.sessionUserHeader,
+      }
+    );
+  }
+
   public createAvatar(param: Param): Observable<Param> {
     return this.httpClient.post<Param>(
       "http://localhost:8080/avatar/api/avatar/" +
@@ -171,9 +181,11 @@ export class UserService {
     );
   }
 
+  //ATTENTION C'EST UNE METHODE POST 'VIDE' DONC ON A MIS UN BODY VIDE :""
   public randomItem(): Observable<any> {
     return this.httpClient.post<any>(
       "http://localhost:8080/avatar/api/item/" + this.sessionUserId,
+      "",
       {
         headers: this.sessionUserHeader,
       }

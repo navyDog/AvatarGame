@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute, Route, Router } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 import { AnyCatcher } from "rxjs/internal/AnyCatcher";
 import { UserService } from "src/app/config/services/user.service";
 import { JeuUn } from "src/app/entities/jeu-un";
