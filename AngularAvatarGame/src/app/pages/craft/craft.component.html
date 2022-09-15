@@ -89,9 +89,9 @@
         onclick="craftItemSelect('feet_left')"
       />
     </div>
-    <div>
+    <div id="craftNewAvatarNameContent">
       <form (submit)="craftNewAvatarNameInput()">
-        <label
+        <label id="craftAvatarNameInputInput"
           >Nom de l'avatar :
           <input
             [(ngModel)]="newAvatarName"
@@ -100,6 +100,7 @@
             placeholder="test"
             id="craftAvatarNameInput"
             name="newAvatarNameBtn"
+            maxlength="30"
         /></label>
       </form>
     </div>
