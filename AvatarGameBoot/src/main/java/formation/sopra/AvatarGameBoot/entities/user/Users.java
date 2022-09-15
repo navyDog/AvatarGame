@@ -37,8 +37,9 @@ import formation.sopra.AvatarGameBoot.entities.view.JsonViews;
 						query = "select distinct u from Users u right join fetch u.items i where i.crafted=false"),
 				
 				@NamedQuery(name="Users.findAvatar",
-				query = "select distinct u from Users u right join fetch u.avatar"),
+					query = "select distinct u from Users u right join fetch u.avatar"),
 				//
+				
 				
 				@NamedQuery(name="Users.findByKeyWithHeadItems", 
 				query = "select u from Users u left join fetch u.items i where u.id=:id and i.membre=0"),
