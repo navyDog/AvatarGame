@@ -20,17 +20,17 @@
   flex-wrap: wrap;
 }
 .galItem {
-  width: calc(160px + var(dist-2));
+  width: calc(160px + var(--dist-2));
   height: calc(180px + 2.5em + var(--dist-2));
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   border-radius: 10px;
   border: solid 1px var(--col-line);
   cursor: pointer;
-  padding: var(--dist-2);
   margin: var(--dist-1);
+  padding: var(--dist-1) 0;
   transition: 0.2s;
 }
 .galItem:hover {
@@ -49,14 +49,30 @@
   width: 50px;
   height: 60px;
 }
+.galItemsAvatar div img[class~="itemRare"] {
+  background-image: radial-gradient(var(--rarity-rare) 0.2%, transparent 70%);
+}
+.galItemsAvatar div img[class~="itemEpic"] {
+  background-image: radial-gradient(var(--rarity-epic) 0.2%, transparent 70%);
+}
+.galItemsAvatar div img[class~="itemLegendary"] {
+  background-image: radial-gradient(var(--rarity-legend) 0.2%, transparent 70%);
+}
 .galItemsAvatar div:first-child img,
 .galItemsAvatardiv:nth-child(2) img:nth-child(2) {
   width: 60px;
 }
 .galItem p {
+  width: 100%;
+  height: auto;
+  min-height: 20px;
+  max-height: 40px;
   margin: 0;
-  margin-top: 0.5em;
-  padding: 0;
-  line-height: 1em;
+  padding: 0 1em;
+  line-height: 1.25em;
   font-family: inherit;
+  font-size: 0.8em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
 }

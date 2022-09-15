@@ -27,7 +27,7 @@ export class CraftComponent implements OnInit {
     private userService: UserService,
     private router: Router,
     private convertor: ConverterService
-    ) {
+  ) {
     this.param = new Param();
   }
 
@@ -83,7 +83,6 @@ export class CraftComponent implements OnInit {
     return this._userBalance;
   }
 
-
   public craftNewAvatarNameInputRandomValue() {
     this.newAvatarName =
       this.newCraftAvatarNameList[
@@ -101,26 +100,23 @@ export class CraftComponent implements OnInit {
   }
 
   public craftNewAvatar() {
-    
     let newAvatar: Avatars = new Avatars();
-    newAvatar.nom=this.newAvatarName;
-    this.param.avatar=newAvatar;
-    this.param.h=this.newAvatarItems[0];
-    this.param.b=this.newAvatarItems[2];
-    this.param.lh=this.newAvatarItems[3];
-    this.param.rh=this.newAvatarItems[1];
-    this.param.ll=this.newAvatarItems[5];
-    this.param.rl=this.newAvatarItems[4];
-    this.param.users=new Users();
-    this.param.users.solde=this.userBalance;
-    this.param.users.id=JSON.parse(sessionStorage.getItem("user")!).users.id;
+    newAvatar.nom = this.newAvatarName;
+    this.param.avatar = newAvatar;
+    this.param.h = this.newAvatarItems[0];
+    this.param.b = this.newAvatarItems[2];
+    this.param.lh = this.newAvatarItems[3];
+    this.param.rh = this.newAvatarItems[1];
+    this.param.ll = this.newAvatarItems[5];
+    this.param.rl = this.newAvatarItems[4];
+    this.param.users = new Users();
+    this.param.users.solde = this.userBalance;
+    this.param.users.id = JSON.parse(sessionStorage.getItem("user")!).users.id;
     console.log(this.param);
-    console.log(this.convertor.paramToJson(this.param))
+    console.log(this.convertor.paramToJson(this.param));
     this.userService.createAvatar(this.param).subscribe((result) => {
-  
       console.log(result);
-      this.router.navigateByUrl('/inventory');
+      this.router.navigateByUrl("/inventory");
     });
-
   }
 }

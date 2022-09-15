@@ -66,7 +66,6 @@
   margin-bottom: 0.25em;
 }
 .navTopItem p {
-  before: "-";
   font-size: 0.6em;
   font-family: var(--font-main);
   color: var(--col-text-sec);

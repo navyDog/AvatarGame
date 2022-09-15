@@ -108,13 +108,13 @@
   border-radius: 10px;
 }
 .invItem div img[class~="itemRare"] {
-  background-image: radial-gradient(green 0.2%, transparent 70%);
+  background-image: radial-gradient(var(--rarity-rare) 0.2%, transparent 70%);
 }
 .invItem div img[class~="itemEpic"] {
-  background-image: radial-gradient(purple 0.2%, transparent 70%);
+  background-image: radial-gradient(var(--rarity-epic) 0.2%, transparent 70%);
 }
 .invItem div img[class~="itemLegendary"] {
-  background-image: radial-gradient(gold 0.2%, transparent 70%);
+  background-image: radial-gradient(var(--rarity-legend) 0.2%, transparent 70%);
 }
 .invItem[class~="selable"] {
   background-color: var(--col-bckg-note);
