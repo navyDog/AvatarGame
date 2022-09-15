@@ -3,13 +3,14 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Items } from "src/app/entities/items";
 import { Param } from "src/app/entities/param";
+import { Users } from "src/app/entities/users";
 import { ConverterService } from "./converter.service";
 
 @Injectable({
   providedIn: "root",
 })
 export class UserService {
-  constructor(
+  constructor(sers : Users,
     private httpClient: HttpClient,
     private converter: ConverterService
   ) {}
@@ -139,6 +140,16 @@ export class UserService {
         headers: this.sessionUserHeader,
       }
 
+    );
+  }
+
+  public game1() : Observable<any> {
+    return this.httpClient.get(
+      "http://localhost:8080/avatar/api/users/" + this.sessionUserId +
+        "/game1",
+      {
+        headers: this.sessionUserHeader,
+      }
     );
   }
 

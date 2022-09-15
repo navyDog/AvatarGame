@@ -115,6 +115,25 @@ public class UsersRestController {
 	}
 	
 	
+	@GetMapping("/{id}/game1")
+	@JsonView(JsonViews.Base.class)
+	public String game(@PathVariable Long id) {
+			Double piece;
+			piece = Math.random();
+			Users users = usersService.getById(id);
+			if (piece<0.5) {
+				users.setSolde(users.getSolde()-50);
+				usersService.update(users);
+				return "Loose";
+			}
+			else {
+				users.setSolde(users.getSolde()+50);
+				usersService.update(users);
+				return "Win";
+			}		
+
+	}
+	
 	@GetMapping("/{id}/avatars")
 	@JsonView(JsonViews.UsersWithAvatars.class)
 	public Users findByKeyWithAvatars(@PathVariable Long id) {
