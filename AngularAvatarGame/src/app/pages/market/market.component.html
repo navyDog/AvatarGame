@@ -1,110 +1,4 @@
 <div id="market">
-  <!--<div id="marMarketItems">
-    <div class="marTitles">
-      <h2>Marché "du site"</h2>
-      <button
-        type="button"
-        id="marContentTopHeadBtn"
-        class="marContentTopBtn active"
-        onclick="marketAccordion('top','head')"
-      >
-        Tête
-      </button>
-      <button
-        type="button"
-        id="marContentTopBodyBtn"
-        class="marContentTopBtn"
-        onclick="marketAccordion('top','body')"
-      >
-        Corps
-      </button>
-      <button
-        type="button"
-        id="marContentTopHandRightBtn"
-        class="marContentTopBtn"
-        onclick="marketAccordion('top','handRight')"
-      >
-        Main droite
-      </button>
-      <button
-        type="button"
-        id="marContentTopHandLeftBtn"
-        class="marContentTopBtn"
-        onclick="marketAccordion('top','handLeft')"
-      >
-        Main gauche
-      </button>
-      <button
-        type="button"
-        id="marContentTopFeetRightBtn"
-        class="marContentTopBtn"
-        onclick="marketAccordion('top','feetRight')"
-      >
-        Jambe droite
-      </button>
-      <button
-        type="button"
-        id="marContentTopFeetLeftBtn"
-        class="marContentTopBtn"
-        onclick="marketAccordion('top','feetLeft')"
-      >
-        Jambe gauche
-      </button>
-      <button
-        type="button"
-        id="marContentTopAvatarBtn"
-        class="marContentTopBtn"
-        onclick="marketAccordion('top','avatars')"
-      >
-        Avatars
-      </button>
-    </div>
-    <div class="marContentTop" id="marContentTopHead" style="display: flex">
-      <div class="marItem">
-        <p>Casque mes couilles</p>
-        <img
-          class="itemLegendary"
-          alt=""
-          title=""
-          src="assets/items/HEAD/head_1.png"
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <button onclick="marketBuyItem('on')">Acheter</button>
-      </div>
-      <div class="marItem">
-        <p>Plastron mes couilles</p>
-        <img
-          class="itemEpic"
-          alt=""
-          title=""
-          src="assets/items/BODY/body_1.png"
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <button onclick="marketBuyItem('on')">Acheter</button>
-      </div>
-      <div class="marItem">
-        <p>Bottes droites mes couilles</p>
-        <img
-          class="itemRare"
-          alt=""
-          title=""
-          src="assets/items/FEET_R/feet_right_1.png"
-          ondrag="false"
-          ondragstart="return false"
-        />
-        <button onclick="marketBuyItem('on')">Acheter</button>
-      </div>
-    </div>
-    <div class="marContentTop" id="marContentTopBody"></div>
-    <div class="marContentTop" id="marContentTopHandRight"></div>
-    <div class="marContentTop" id="marContentTopHandLeft"></div>
-    <div class="marContentTop" id="marContentTopFeetRight"></div>
-    <div class="marContentTop" id="marContentTopFeetLeft"></div>
-    <div class="marContentTop" id="marContentTopAvatar"></div>
-  </div>-->
-
   <div id="marUsersItems">
     <div class="marTitles">
       <h2>Marché</h2>
@@ -174,7 +68,7 @@
       <div class="marItem" *ngFor="let i of marketItemsList">
         <div *ngIf="i.membre === 'H'">
           <p>{{ i.nom }}s</p>
-          <p class="player">{{ searchByUserId(i.id!)!.utilisateur!.login }}</p>
+          <!--<p class="player">{{ searchByUserId(i.id!)!.utilisateur!.login }}</p>-->
           <img
             class="itemLegendary"
             alt=""
@@ -192,7 +86,7 @@
             (click)="addItemToBuy(i, searchByUserId(i.id!))"
             onclick="marketBuyItem('on')"
           >
-            Acheter
+            Acheter ({{ i.prix }})
           </button>
         </div>
       </div>

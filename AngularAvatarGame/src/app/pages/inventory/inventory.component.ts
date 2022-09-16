@@ -38,6 +38,7 @@ export class InventoryComponent implements OnInit {
     // ALLS ITEMS NO CRAFTED OF CURRENT USER
     this.userService.userItemsNoCraftedList().subscribe((result) => {
       this.userItemsNoCraftList = result.items;
+      /*console.log(this.userItemsNoCraftList);*/
     });
 
     // ALLS ITEMS OF ALL AVATARS OF CURRENT USER
@@ -115,10 +116,10 @@ export class InventoryComponent implements OnInit {
   }
 
   public inventoryId(id: number) {
-    console.log(id);
+    /*console.log(id);*/
     this.ar.params.subscribe((params) => {
       this.userService.getById(id).subscribe((result) => {
-        console.log(result);
+        /*console.log(result);*/
         this.item = result;
       });
     });
@@ -126,8 +127,8 @@ export class InventoryComponent implements OnInit {
 
   public inventorySend() {
     this.userService.updateItem(this.item).subscribe((result) => {
-      console.log(this.item.prix);
-      console.log(result.prix);
+      /*console.log(this.item.prix);
+      console.log(result.prix);*/
       this.router.navigateByUrl("/inventory");
     });
   }

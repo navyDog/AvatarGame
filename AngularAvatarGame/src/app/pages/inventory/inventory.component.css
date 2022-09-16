@@ -123,18 +123,22 @@
   justify-content: center;
   align-items: center;
 }
-.invItemsAvatar div img[class~="itemRare"] {
+.invItemsAvatar div img[class~="itemRare"],
+#invBotContent img[class~="itemRare"] {
   background-image: radial-gradient(var(--rarity-rare) 0.2%, transparent 70%);
 }
-.invItemsAvatar div img[class~="itemEpic"] {
+.invItemsAvatar div img[class~="itemEpic"],
+#invBotContent img[class~="itemEpic"] {
   background-image: radial-gradient(var(--rarity-epic) 0.2%, transparent 70%);
 }
-.invItemsAvatar div img[class~="itemLegendary"] {
+.invItemsAvatar div img[class~="itemLegendary"],
+#invBotContent img[class~="itemLegendary"] {
   background-image: radial-gradient(var(--rarity-legend) 0.2%, transparent 70%);
 }
-.invItemsAvatar[class~="selable"] {
-  background-color: var(--col-bckg-note);
+#invBotContent div[class~="saleable"] {
+  background-color: var(--col-item-sel);
 }
+
 .invItemsAvatar img {
   width: 60px;
   height: 80px;
@@ -258,4 +262,83 @@
 }
 .invItemBot div button:hover {
   text-decoration: underline;
+}
+
+#invSoldItem {
+  position: absolute;
+  top: calc(calc(100vh - var(--height-nav-top)) / 2 - 100px);
+  left: calc(calc(100vw - var(--width-nav)) / 2 - 150px);
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: solid 1px var(--col-line);
+  border-radius: 10px;
+  padding: var(--dist-2);
+}
+#invSoldItem h1 {
+  width: 100%;
+  font-size: 1.25em;
+  border-bottom: solid 1px var(--col-line);
+  text-align: center;
+  padding-bottom: 0.25em;
+  margin-bottom: 0.5em;
+}
+#invSoldItem div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#invSoldItem label {
+  font-size: 0.8em;
+  display: inline;
+}
+#invSoldItem input {
+  width: 5em;
+  height: 2em;
+  display: inline;
+  background-color: white;
+  border: solid 1px var(--col-line);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  font-size: 1em;
+  margin: 1em 0;
+  margin-left: 1em;
+}
+#invSoldItem button[class="submit"] {
+  display: inline;
+  border: solid 1px var(--col-text-hover-red);
+  padding: 0.5em 0.75em;
+  background-color: var(--col-text-hover-red);
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 1.5em;
+  margin: 1em;
+  font-family: inherit;
+  font-size: 0.7em;
+  color: white;
+}
+#invSoldItem button[class="submit"]:hover {
+  background-color: var(--col-text-hover-redbis);
+}
+#invSoldItem button[class="erase"] {
+  border: solid 1px var(--col-line);
+  padding: 0.5em 0.75em;
+  background-color: var(--col-line);
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 1.5em;
+  margin: 1em;
+  font-family: inherit;
+  font-size: 0.7em;
+  color: inherit;
+}
+#invSoldItem button[class="erase"]:hover {
+  background-color: var(--col-text-sec);
+  border: solid 1px var(--col-text-sec);
 }

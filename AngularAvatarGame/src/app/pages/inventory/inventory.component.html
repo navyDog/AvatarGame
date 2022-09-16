@@ -93,7 +93,7 @@
             </div>
           </div>
           <p>{{ i.nom }}</p>
-          <button type="button">Vendre</button>
+          <!--<button type="button" onclick="inventorySold('on')">vendre</button>-->
         </div>
       </div>
     </div>
@@ -145,7 +145,7 @@
       <button
         type="button"
         onclick="invtAccordion('feetLeft')"
-        id="invBotItemsFeetLefttBtn"
+        id="invBotItemsFeetLeftBtn"
         class="invItemBotBtn"
       >
         Jambe gauche
@@ -154,7 +154,7 @@
     <div id="invBotContent">
       <div class="invBotItemsBot" id="invBotItemsHead" style="display: flex">
         <div class="invItemBot" *ngFor="let i of userItemsNoCraftList">
-          <div *ngIf="i.membre === 'H'">
+          <div *ngIf="i.membre === 'H'" [ngClass]="{ saleable: i.prix! > 0 }">
             <p>{{ i.nom }}</p>
             <img
               [src]="imgPath + i.image + imgSufix"
@@ -172,7 +172,7 @@
               (click)="inventoryId(i.id!)"
               class="erase"
             >
-              vendre
+              vendre {{ i.prix! > 0 ? "(" + i.prix + ")" : "" }}
             </button>
           </div>
         </div>
@@ -197,7 +197,7 @@
               (click)="inventoryId(i.id!)"
               class="erase"
             >
-              vendre
+              vendre ({{ i.prix }})
             </button>
           </div>
         </div>
@@ -222,7 +222,7 @@
               (click)="inventoryId(i.id!)"
               class="erase"
             >
-              vendre
+              vendre ({{ i.prix }})
             </button>
           </div>
         </div>
@@ -247,7 +247,7 @@
               (click)="inventoryId(i.id!)"
               class="erase"
             >
-              vendre
+              vendre ({{ i.prix }})
             </button>
           </div>
         </div>
@@ -272,7 +272,7 @@
               (click)="inventoryId(i.id!)"
               class="erase"
             >
-              vendre
+              vendre ({{ i.prix }})
             </button>
           </div>
         </div>
@@ -297,7 +297,7 @@
               (click)="inventoryId(i.id!)"
               class="erase"
             >
-              vendre
+              vendre ({{ i.prix }})
             </button>
           </div>
         </div>
@@ -305,6 +305,7 @@
     </div>
   </div>
   <div id="invSoldItem">
+    <h1>Vente</h1>
     <form>
       <label
         >Prix de vente :
@@ -319,7 +320,15 @@
           [(ngModel)]="this.item.prix"
       /></label>
     </form>
-    <button (click)="inventorySend()">Send</button>
-    <button onclick="inventorySold('off')">x</button>
+    <div>
+      <button
+        class="submit"
+        (click)="inventorySend()"
+        onclick="inventorySold('off')"
+      >
+        Vendre !
+      </button>
+      <button class="erase" onclick="inventorySold('off')">Annuler</button>
+    </div>
   </div>
 </div>

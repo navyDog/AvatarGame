@@ -10,13 +10,13 @@ function invtAccordion(p) {
   let x3 = document.getElementById("invBotItemsBody");
   let x4 = document.getElementById("invBotItemsHandLeft");
   let x5 = document.getElementById("invBotItemsFeetRight");
-  let x6 = document.getElementById("invBotItemsFeetRight");
+  let x6 = document.getElementById("invBotItemsFeetLeft");
   let y1 = document.getElementById("invBotItemsHeadBtn");
   let y2 = document.getElementById("invBotItemsHandRightBtn");
   let y3 = document.getElementById("invBotItemsBodyBtn");
   let y4 = document.getElementById("invBotItemsHandLeftBtn");
   let y5 = document.getElementById("invBotItemsFeetRightBtn");
-  let y6 = document.getElementById("invBotItemsFeetRightBtn");
+  let y6 = document.getElementById("invBotItemsFeetLeftBtn");
   let z1 = document.getElementsByClassName("invItemBotBtn");
   let z2 = document.getElementsByClassName("invBotItemsBot");
 
@@ -27,10 +27,10 @@ function invtAccordion(p) {
   if (p == "head") {
     x1.style.display = "flex";
     y1.classList.add("active");
-  } else if (p == "body") {
+  } else if (p == "handRight") {
     x2.style.display = "flex";
     y2.classList.add("active");
-  } else if (p == "handRight") {
+  } else if (p == "body") {
     x3.style.display = "flex";
     y3.classList.add("active");
   } else if (p == "handLeft") {
@@ -78,19 +78,19 @@ function craftAccordion(p) {
 
 // INVENTORY -- DISPLAY SOLD CONFIRMATION BOX
 function inventorySold(p) {
-  /* let x1 = document.querySelector("#craftContent");
-  let x2 = document.querySelector("#note");*/
+  let x1 = document.querySelector("#invTop");
+  let x2 = document.querySelector("#invBottom");
   let y = document.querySelector("#invSoldItem");
   let z = document.querySelector("#PriceItemInput");
 
   if (p == "on") {
-    /*x1.style.filter = "blur(4px)";
-    x2.style.filter = "blur(4px)";*/
+    x1.style.filter = "blur(4px)";
+    x2.style.filter = "blur(4px)";
     y.style.display = "flex";
     //z.value = "";
   } else if (p == "off") {
-    /* x1.style.filter = "blur(0px)";
-    x2.style.filter = "blur(0px)";*/
+    x1.style.filter = "blur(0px)";
+    x2.style.filter = "blur(0px)";
     y.style.display = "none";
     //z.value = "";
   }

@@ -9,7 +9,7 @@
 }
 #regis form {
   width: 500px;
-  height: 400px;
+  height: 450px;
   border: solid 1px var(--col-line);
   padding: var(--dist-2);
   border-radius: 10px;
@@ -62,4 +62,41 @@ form button:hover {
 }
 #regis form a:hover {
   text-decoration: underline;
+}
+a[class="erase"] {
+  border: solid 1px var(--col-line);
+  padding: 0.5em 0.75em;
+  background-color: var(--col-line);
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 1.5em;
+  margin: 1em;
+  font-family: inherit;
+  font-size: 0.7em;
+  color: inherit;
+}
+a[class="erase"]:hover {
+  background-color: var(--col-text-sec);
+  border: solid 1px var(--col-text-sec);
+}
+.form-group {
+  width: auto;
+}
+.form-group label {
+  display: inline-block;
+  width: 180px !important;
+}
+.form_alert {
+  border: solid 1px var(--col-text-hover-red);
+  background-color: rgba(239, 84, 102, 0.1);
+  color: var(--col-text-hover-red);
+  font-family: inherit;
+  font-size: 0.7em;
+  padding: 0.25em;
+  border-radius: 10px;
+  margin: 0.5em 0;
+}
+fieldset {
+  border: none;
+  padding: 0;
 }

@@ -34,8 +34,6 @@ export class CraftComponent implements OnInit {
   imgPath: string = "assets/items/";
   imgSufix: string = ".png";
   newCraftAvatarNameList: string[] = [
-    "Automne-Hiver de JP Gautier",
-    "Victoria's secret full suit",
     "avatar nom 1",
     "avatar nom 2",
     "avatar nom 3",

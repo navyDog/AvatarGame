@@ -49,7 +49,7 @@
 }
 .marItem div {
   width: 110px;
-  height: calc(80px + 15px + 30px + 13px + var(--dist-3));
+  height: calc(80px + 15px + 30px + var(--dist-3));
   border: solid 1px var(--col-line);
   border-radius: 10px;
   margin: var(--dist-1);
